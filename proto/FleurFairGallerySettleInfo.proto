@@ -1,11 +1,12 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message FleurFairGallerySettleInfo {
-	bool isSuccess = 5;
-	uint32 energy = 7;
-	map<uint32, int32> energyStatMap = 9;
-	uint32 galleryStageCount = 14;
-	uint32 galleryStageIndex = 15;
+	bool IsSuccess = 5;
+	uint32 Energy = 7;
+	map<uint32, int32> EnergyStatMap = 9;
+	uint32 GalleryStageCount = 14;
+	uint32 GalleryStageIndex = 15;
 }

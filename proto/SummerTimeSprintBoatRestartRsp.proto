@@ -1,17 +1,18 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message SummerTimeSprintBoatRestartRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 8585;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum SummerTimeSprintBoatRestartRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8585;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	int32 retcode = 8;
-	uint32 groupId = 6;
-	uint32 scheduleId = 15;
+	int32 Retcode = 8;
+	uint32 GroupId = 6;
+	uint32 ScheduleId = 15;
 }

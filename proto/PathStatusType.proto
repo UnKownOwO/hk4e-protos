@@ -1,9 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 enum PathStatusType {
-    STATUS_FAIL    = 0;
-    STATUS_SUCC    = 1;
-    STATUS_PARTIAL = 2;
+	StatusFail = 0;
+	StatusSucc = 1;
+	StatusPartial = 2;
 }

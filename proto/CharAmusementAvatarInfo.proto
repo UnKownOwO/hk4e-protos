@@ -1,9 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message CharAmusementAvatarInfo {
-	uint32 uid = 3;
-	repeated uint32 avatarIdList = 11;
-	uint32 pmahgkplcgi = 1;
+	uint32 Uid = 3;
+	repeated uint32 AvatarIdList = 11;
+	uint32 PunishTime = 1;
 }

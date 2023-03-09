@@ -1,11 +1,11 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "PBNavMeshPoly.proto";
-import "Vector.proto";
+import "Rotation.proto";
 
 message PBNavMeshTile {
-	repeated PBNavMeshPoly polys = 11;
-	repeated Vector vecs = 1;
+	repeated PBNavMeshPoly Polys = 11;
+	repeated Rotation Vecs = 1;
 }

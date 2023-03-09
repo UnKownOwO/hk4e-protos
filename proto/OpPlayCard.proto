@@ -1,10 +1,11 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message OpPlayCard {
-	uint32 replaceCardGuid = 6;
-	repeated uint32 targetCardGuidList = 11;
-	uint32 cardGuid = 14;
-	repeated uint32 costDiceIndexList = 13;
+	uint32 ReplaceCardGuid = 6;
+	repeated uint32 TargetCardGuidList = 11;
+	uint32 CardGuid = 14;
+	repeated uint32 CostDiceIndexList = 13;
 }

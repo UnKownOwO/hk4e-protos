@@ -1,17 +1,18 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message DungeonCandidateTeamInviteNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 975;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum DungeonCandidateTeamInviteNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 975;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 dungeonId = 15;
-	uint32 playerUid = 9;
-	uint32 validDeadlineTimeSec = 4;
+	uint32 DungeonId = 15;
+	uint32 PlayerUid = 9;
+	uint32 VaildDeadlineTimeSec = 4;
 }

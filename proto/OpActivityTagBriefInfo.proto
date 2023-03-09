@@ -1,9 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message OpActivityTagBriefInfo {
-	uint32 configId = 10;
-	bool hasReward = 11;
-	uint32 opActivityType = 3;
+	uint32 ConfigId = 10;
+	bool HasReward = 11;
+	uint32 OpActivityType = 3;
 }

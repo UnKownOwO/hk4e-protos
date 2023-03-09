@@ -1,10 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "SumoAvatarInfo.proto";
 
 message SumoTeamData {
-	repeated SumoAvatarInfo avatarInfoList = 10;
-	repeated uint32 skillIdList = 8;
+	repeated SumoAvatarInfo AvatarInfoList = 10;
+	repeated uint32 SkillIdList = 8;
 }

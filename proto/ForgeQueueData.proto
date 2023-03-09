@@ -1,13 +1,14 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message ForgeQueueData {
-	uint32 forgeId = 6;
-	uint32 finishCount = 1;
-	uint32 queueId = 9;
-	uint32 unfinishCount = 8;
-	uint32 totalFinishTimestamp = 11;
-	uint32 avatarId = 12;
-	uint32 nextFinishTimestamp = 2;
+	uint32 ForgeId = 6;
+	uint32 FinishCount = 1;
+	uint32 QueueId = 9;
+	uint32 UnfinishCount = 8;
+	uint32 TotalFinishTimestamp = 11;
+	uint32 AvatarId = 12;
+	uint32 NextFinishTimestamp = 2;
 }

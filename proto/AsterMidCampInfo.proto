@@ -1,10 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
-import "Vector.proto";
+import "Rotation.proto";
 
 message AsterMidCampInfo {
-	Vector pos = 10;
-	uint32 campId = 14;
+	Rotation Pos = 10;
+	uint32 CampId = 14;
 }

@@ -1,9 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 enum BargainResultType {
-  BARGAIN_COMPLETE_SUCC = 0;
-  BARGAIN_SINGLE_FAIL   = 1;
-  BARGAIN_COMPLETE_FAIL = 2;
+	BargainCompleteSucc = 0;
+	BargainSingleFail = 1;
+	BargainCompleteFail = 2;
 }

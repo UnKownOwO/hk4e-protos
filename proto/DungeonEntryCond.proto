@@ -1,10 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "DungeonEntryBlockReason.proto";
 
 message DungeonEntryCond {
-	DungeonEntryBlockReason condReason = 14;
-	uint32 param1 = 12;
+	DungeonEntryBlockReason CondReason = 14;
+	uint32 Param1 = 12;
 }

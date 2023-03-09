@@ -1,11 +1,11 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "ItemParam.proto";
 
 message WinterCampAcceptItemResultInfo {
-	uint32 uid = 6;
-	repeated ItemParam Unk3300_ILELLFNPDFJ = 9;
-	repeated ItemParam Unk3300_JHKOMCFHAOG = 11;
+	uint32 Uid = 6;
+	repeated ItemParam UnacceptItemList = 9;
+	repeated ItemParam AcceptItemList = 11;
 }

@@ -1,8 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message AvatarTeam {
-	string teamName = 11;
-	repeated uint64 avatarGuidList = 5;
+	string TeamName = 11;
+	repeated uint64 AvatarGuidList = 5;
 }

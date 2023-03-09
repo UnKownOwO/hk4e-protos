@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message ChannellerSlabAssistInfo {
+	uint32 Uid = 11;
+	uint32 AvatarId = 15;
+	uint32 AvatarLevel = 3;
+}

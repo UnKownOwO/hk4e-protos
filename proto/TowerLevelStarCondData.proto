@@ -1,10 +1,11 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message TowerLevelStarCondData {
-	uint32 Unk3300_JGOLBFMJBCL = 5;
-	bool Unk3300_KBCFDFOAJMM = 1;
-	bool Unk3300_CPBCNACKAAK = 2;
-	uint32 condValue = 8;
+	uint32 CondValue = 5;
+	bool IsFail = 1;
+	bool IsPause = 2;
+	uint32 StarCondIndex = 8;
 }

@@ -1,18 +1,20 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
+import "GCGLevelData.proto";
+import "GCGBossChallengeData.proto";
 
 message GCGLevelChallengeNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 7187;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// 	IS_ALLOW_CLIENT = 1;
-	// }
+	enum HDFPCKFMMLI {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 7016;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 levelId = 7;
-	uint32 unlockWorldChallengeList = 11;
-	uint32 configId = 13;
+	repeated GCGLevelData LevelList = 13;
+	repeated uint32 UnlockWorldChallengeList = 1;
+	repeated GCGBossChallengeData UnlockBossChallengeList = 11;
 }

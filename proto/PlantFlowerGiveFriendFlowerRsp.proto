@@ -1,17 +1,18 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message PlantFlowerGiveFriendFlowerRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 8151;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum PlantFlowerGiveFriendFlowerRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8151;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 scheduleId = 9;
-	int32 retcode = 1;
-	repeated uint32 limitFlowerList = 13;
+	uint32 ScheduleId = 9;
+	int32 Retcode = 1;
+	repeated uint32 LimitFlowerList = 13;
 }

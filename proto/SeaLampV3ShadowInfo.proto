@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package Proto;
+
+import "SeaLampV3ShadowStageInfo.proto";
+
+message SeaLampV3ShadowInfo {
+	repeated SeaLampV3ShadowStageInfo StageInfoList = 9;
+}

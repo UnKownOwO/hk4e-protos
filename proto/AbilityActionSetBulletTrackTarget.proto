@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message AbilityActionSetBulletTrackTarget {
+	uint32 ChasedEntityId = 5;
+	uint32 LockPointIndex = 7;
+}

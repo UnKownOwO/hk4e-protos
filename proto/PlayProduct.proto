@@ -1,9 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message PlayProduct {
-	string productId = 1;
-	string priceTier = 2;
-	uint32 scheduleId = 3;
+	string ProductId = 1;
+	string PriceTier = 2;
+	uint32 ScheduleId = 3;
 }

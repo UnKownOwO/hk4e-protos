@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+package Proto;
+
+enum FGAFMCEGHPG {
+	LDBMOGPBCPB = 0;
+	OECECBNJNNM = 1;
+}

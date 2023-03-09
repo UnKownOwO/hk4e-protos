@@ -1,9 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message VintageHuntingSecondStageInfo {
-	uint32 totalNum = 15;
-	uint32 captureAnimalNum = 11;
-	uint32 homaiophceb = 14;
+	uint32 TotalNum = 15;
+	uint32 CaptureAnimalNum = 11;
+	uint32 LeftNum = 14;
 }

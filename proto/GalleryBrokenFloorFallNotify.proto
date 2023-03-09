@@ -1,16 +1,17 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message GalleryBrokenFloorFallNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 5529;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum GalleryBrokenFloorFallNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 5529;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 fallCount = 2;
-	uint32 galleryId = 6;
+	uint32 FallCount = 2;
+	uint32 GalleryId = 6;
 }

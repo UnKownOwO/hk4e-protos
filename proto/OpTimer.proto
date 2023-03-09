@@ -1,12 +1,12 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "GCGPhaseType.proto";
 
 message OpTimer {
-	uint64 timeStamp = 9;
-	uint64 beginTime = 10;
-	uint32 controllerId = 6;
-	GCGPhaseType phase = 1;
+	uint64 TimeStamp = 9;
+	uint64 BeginTime = 10;
+	uint32 ControllerId = 6;
+	GCGPhaseType Phase = 1;
 }

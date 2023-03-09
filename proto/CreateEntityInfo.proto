@@ -1,20 +1,25 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
-import "Vector.proto";
+import "Rotation.proto";
+import "CreateGadgetInfo.proto";
 
 message CreateEntityInfo {
-	oneof entity {
+	oneof CreateEntityInfo_EntityOneofCase {
 		uint32 monster_id = 1;
 		uint32 npc_id = 2;
 		uint32 gadget_id = 3;
 		uint32 item_id = 4;
 	}
-	uint32 level = 5;
-	Vector pos = 6;
-	Vector rot = 7;
-	uint32 sceneId = 10;
-	uint32 roomId = 11;
-	uint32 clientUniqueId = 12;
+	uint32 Level = 5;
+	Rotation Pos = 6;
+	Rotation Rot = 7;
+	uint32 SceneId = 10;
+	uint32 RoomId = 11;
+	uint32 ClientUniqueId = 12;
+
+  oneof EntityCreateInfo {
+	  CreateGadgetInfo Gadget = 13;
+  }
 }

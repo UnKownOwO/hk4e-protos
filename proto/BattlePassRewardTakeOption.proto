@@ -1,10 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "BattlePassRewardTag.proto";
 
 message BattlePassRewardTakeOption {
-	BattlePassRewardTag tag = 15;
-	uint32 optionIdx = 14;
+	BattlePassRewardTag Tag = 15;
+	uint32 OptionIdx = 14;
 }

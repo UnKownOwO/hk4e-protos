@@ -1,7 +1,8 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message SalvagePreventInfo {
-	uint32 monsterCount = 2;
+	uint32 MonsterCount = 2;
 }

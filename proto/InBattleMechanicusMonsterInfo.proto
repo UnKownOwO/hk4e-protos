@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message InBattleMechanicusMonsterInfo {
+	uint32 Count = 3;
+	uint32 Level = 14;
+	uint32 MonsterId = 10;
+}

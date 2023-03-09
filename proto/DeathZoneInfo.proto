@@ -1,8 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message DeathZoneInfo {
-	bool isOpen = 15;
-	uint32 id = 6;
+	bool IsOpen = 15;
+	uint32 Id = 6;
 }

@@ -1,18 +1,19 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message EvtBeingHealedNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 391;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum EvtBeingHealedNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 391;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 sourceId = 13;
-	float realHealAmount = 12;
-	float healAmount = 11;
-	uint32 targetId = 8;
+	uint32 SourceId = 13;
+	float RealHealAmount = 12;
+	float HealAmount = 11;
+	uint32 TargetId = 8;
 }

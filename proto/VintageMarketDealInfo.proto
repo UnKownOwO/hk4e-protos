@@ -1,9 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "VintageMarketTraderInfo.proto";
 
 message VintageMarketDealInfo {
-	map<uint32, VintageMarketTraderInfo> traderItemInfoMap = 13;
+	map<uint32, VintageMarketTraderInfo> TraderItemInfoMap = 13;
 }

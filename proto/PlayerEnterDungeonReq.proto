@@ -1,20 +1,20 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "DungeonEnterPosInfo.proto";
 
 message PlayerEnterDungeonReq {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 987;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// 	IS_ALLOW_CLIENT = 1;
-	// }
+	enum PlayerEnterDungeonReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 987;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
 
-	uint32 dungeonId = 2;
-	uint32 pointId = 9;
-	DungeonEnterPosInfo enterPosInfo = 4;
+	uint32 DungeonId = 2;
+	uint32 PointId = 9;
+	DungeonEnterPosInfo EnterPosInfo = 4;
 }

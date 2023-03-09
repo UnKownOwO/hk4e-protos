@@ -1,14 +1,15 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message CityReputationRequestInfo {
-	message RequestInfo {
-		uint32 requestId = 11;
-		uint32 questId = 14;
-		bool isTakenReward = 13;
+	message CityReputationRequestInfo_RequestInfo {
+		uint32 RequestId = 11;
+		uint32 QuestId = 14;
+		bool IsTakenReward = 13;
 	}
 
-	bool isOpen = 1;
-	repeated RequestInfo requestInfoList = 2;
+	bool IsOpen = 1;
+	repeated CityReputationRequestInfo_RequestInfo RequestInfoList = 2;
 }

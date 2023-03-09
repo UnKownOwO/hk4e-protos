@@ -1,18 +1,19 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message ProudSkillExtraLevelNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 1013;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum ProudSkillExtraLevelNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 1013;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 talentIndex = 4;
-	uint64 avatarGuid = 2;
-	uint32 talentType = 5;
-	uint32 extraLevel = 13;
+	uint32 TalentIndex = 4;
+	uint64 AvatarGuid = 2;
+	uint32 TalentType = 5;
+	uint32 ExtraLevel = 13;
 }

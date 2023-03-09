@@ -1,7 +1,8 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message ThunderBirdFeatherInfo {
-	repeated uint32 entityIdList = 12;
+	repeated uint32 EntityIdList = 12;
 }

@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+import "Rotation.proto";
+
+message EvtSyncSkillAnchorPosition {
+	uint32 EntityId = 7;
+	Rotation SkillAnchorPosition = 9;
+}

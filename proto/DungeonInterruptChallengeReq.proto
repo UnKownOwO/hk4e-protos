@@ -1,18 +1,19 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message DungeonInterruptChallengeReq {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 927;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// 	IS_ALLOW_CLIENT = 1;
-	// }
+	enum DungeonInterruptChallengeReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 927;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
 
-	uint32 groupId = 13;
-	uint32 challengeId = 1;
-	uint32 challengeIndex = 11;
+	uint32 GroupId = 13;
+	uint32 ChallengeId = 1;
+	uint32 ChallengeIndex = 11;
 }

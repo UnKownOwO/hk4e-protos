@@ -1,20 +1,20 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "HuntingPair.proto";
-import "Vector.proto";
+import "Rotation.proto";
 
 message HuntingRevealFinalNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 4316;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum HuntingRevealFinalNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4316;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	HuntingPair huntingPair = 11;
-	uint32 finishedGroupId = 2;
-	Vector finalPosition = 5;
+	HuntingPair HuntingPair = 11;
+	uint32 FinishedGroupId = 2;
+	Rotation FinalPosition = 5;
 }

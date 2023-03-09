@@ -1,13 +1,13 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "ProfilePicture.proto";
 
 message CrucibleBattleUidInfo {
-	string nickname = 4;
-	uint32 icon = 5;
-	uint32 uid = 2;
-	ProfilePicture profilePicture = 11;
-	string onlineId = 6;
+	string Nickname = 4;
+	uint32 Icon = 5;
+	uint32 Uid = 2;
+	ProfilePicture ProfilePicture = 11;
+	string OnlineId = 6;
 }

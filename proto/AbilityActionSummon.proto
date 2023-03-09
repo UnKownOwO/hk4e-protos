@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+import "Rotation.proto";
+
+message AbilityActionSummon {
+	Rotation Rot = 10;
+	Rotation Pos = 14;
+}

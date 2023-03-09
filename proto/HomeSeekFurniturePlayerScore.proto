@@ -1,10 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "HomeGroupPlayerInfo.proto";
 
 message HomeSeekFurniturePlayerScore {
-	HomeGroupPlayerInfo playerInfo = 4;
-	uint32 score = 9;
+	HomeGroupPlayerInfo PlayerInfo = 4;
+	uint32 Score = 9;
 }

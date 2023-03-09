@@ -1,17 +1,23 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
-import "CmdId.proto";
+import "GCGDSCardData.proto";
+import "GCGDSDeckData.proto";
 
 message GCGDSDataNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 7534;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum EGDHDJOMKPG {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 7558;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	CmdId mjjacnclhpf = 1;
+	repeated uint32 UnlockCardBackIdList = 5;
+	repeated GCGDSCardData CardList = 7;
+	uint32 CurDeckId = 2;
+	repeated uint32 UnlockDeckIdList = 13;
+	repeated GCGDSDeckData DeckList = 11;
+	repeated uint32 UnlockFieldIdList = 8;
 }

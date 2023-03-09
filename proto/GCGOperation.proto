@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "OpRedraw.proto";
 import "OpSelectOnStage.proto";
@@ -12,7 +12,7 @@ import "OpReboot.proto";
 import "OpSurrender.proto";
 
 message GCGOperation {
-	oneof op {
+	oneof Op {
 		OpRedraw op_redraw = 12;
 		OpSelectOnStage op_select_on_stage = 4;
 		OpReroll op_reroll = 13;

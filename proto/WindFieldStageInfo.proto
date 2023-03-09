@@ -1,9 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message WindFieldStageInfo {
-	uint32 openTime = 13;
-	bool isOpen = 2;
-	uint32 stageId = 10;
+	uint32 OpenTime = 13;
+	bool IsOpen = 2;
+	uint32 StageId = 10;
 }

@@ -1,28 +1,28 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "ItemParam.proto";
 
 message ShopGoods {
-	uint32 Unk3300_MBGOMHNBHMG = 655;
-	uint32 maxLevel = 3;
-	uint32 hcoin = 13;
-	uint32 secondarySheetId = 363;
-	uint32 scoin = 11;
-	uint32 goodsId = 2;
-	uint32 buyLimit = 10;
-	repeated uint32 preGoodsIdList = 12;
-	ItemParam goodsItem = 6;
-	repeated ItemParam costItemList = 7;
-	uint32 singleLimit = 424;
-	uint32 nextRefreshTime = 1;
-	uint32 Unk3300_NJCPAJBCEPH = 182;
-	uint32 boughtNum = 4;
-	uint32 Unk3300_OMKIFIMDGDN = 636;
-	uint32 minLevel = 14;
-	uint32 endTime = 15;
-	uint32 beginTime = 8;
-	uint32 disableType = 9;
-	uint32 mcoin = 5;
+	uint32 DiscountEndTime = 655;
+	uint32 MaxLevel = 3;
+	uint32 Hcoin = 13;
+	uint32 SecondarySheetId = 363;
+	uint32 Scoin = 11;
+	uint32 GoodsId = 2;
+	uint32 BuyLimit = 10;
+	repeated uint32 PreGoodsIdList = 12;
+	ItemParam GoodsItem = 6;
+	repeated ItemParam CostItemList = 7;
+	uint32 SingleLimit = 424;
+	uint32 NextRefreshTime = 1;
+	uint32 DiscountId = 182;
+	uint32 BoughtNum = 4;
+	uint32 DiscountBeginTime = 636;
+	uint32 MinLevel = 14;
+	uint32 EndTime = 15;
+	uint32 BeginTime = 8;
+	uint32 DisableType = 9;
+	uint32 Mcoin = 5;
 }

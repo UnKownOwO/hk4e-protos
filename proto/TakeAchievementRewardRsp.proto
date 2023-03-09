@@ -1,19 +1,19 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "ItemParam.proto";
 
 message TakeAchievementRewardRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 2691;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum TakeAchievementRewardRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 2691;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	repeated ItemParam itemList = 7;
-	repeated uint32 idList = 4;
-	int32 retcode = 13;
+	repeated ItemParam ItemList = 7;
+	repeated uint32 IdList = 4;
+	int32 Retcode = 13;
 }

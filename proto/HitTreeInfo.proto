@@ -1,10 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
-import "Vector.proto";
+import "Rotation.proto";
 
 message HitTreeInfo {
-	uint32 treeType = 1;
-	Vector treePos = 2;
+	uint32 TreeType = 1;
+	Rotation TreePos = 2;
 }

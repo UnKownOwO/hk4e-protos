@@ -1,8 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message ReactionBegin {
-	uint32 skillId = 8;
-	uint32 cardGuid = 3;
+	uint32 SkillId = 8;
+	uint32 CardGuid = 3;
 }

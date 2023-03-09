@@ -1,10 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "FireworksLaunchParamType.proto";
 
 message FireworksLaunchParam {
-	FireworksLaunchParamType type = 5;
-	int32 value = 14;
+	FireworksLaunchParamType Type = 5;
+	int32 Value = 14;
 }

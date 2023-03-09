@@ -1,15 +1,16 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message InBattleMechanicusBuildingPointsNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 5380;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum InBattleMechanicusBuildingPointsNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 5380;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	map<uint32, uint32> playerBuildingPointsMap = 7;
+	map<uint32, uint32> PlayerBuildingPointsMap = 7;
 }

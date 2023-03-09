@@ -1,7 +1,8 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message WidgetCameraInfo {
-	uint32 targetEntityId = 6;
+	uint32 TargetEntityId = 6;
 }

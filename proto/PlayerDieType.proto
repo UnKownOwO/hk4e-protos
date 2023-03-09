@@ -1,15 +1,15 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 enum PlayerDieType {
-  PLAYER_DIE_NONE            = 0;
-  PLAYER_DIE_KILL_BY_MONSTER = 1;
-  PLAYER_DIE_KILL_BY_GEAR    = 2;
-  PLAYER_DIE_FALL            = 3;
-  PLAYER_DIE_DRAWN           = 4;
-  PLAYER_DIE_ABYSS           = 5;
-  PLAYER_DIE_GM              = 6;
-  PLAYER_DIE_CLIMATE_COLD    = 7;
-  PLAYER_DIE_STORM_LIGHTING  = 8;
+	PlayerDieNone = 0;
+	PlayerDieKillByMonster = 1;
+	PlayerDieKillByGear = 2;
+	PlayerDieFall = 3;
+	PlayerDieDrawn = 4;
+	PlayerDieAbyss = 5;
+	PlayerDieGm = 6;
+	PlayerDieClimateCold = 7;
+	PlayerDieStormLighting = 8;
 }

@@ -1,17 +1,18 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message SceneTimeNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 232;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum SceneTimeNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 232;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	bool isPaused = 4;
-	uint64 sceneTime = 10;
-	uint32 sceneId = 13;
+	bool IsPaused = 4;
+	uint64 SceneTime = 10;
+	uint32 SceneId = 13;
 }

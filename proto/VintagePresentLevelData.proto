@@ -1,10 +1,11 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message VintagePresentLevelData {
-	bool isOpen = 2;
-	uint32 stageId = 7;
-	uint32 presentId = 5;
-	bool isFinish = 3;
+	bool IsOpen = 2;
+	uint32 StageId = 7;
+	uint32 PresentId = 5;
+	bool IsFinish = 3;
 }

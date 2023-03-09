@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "HomeFurnitureSuiteData.proto";
 import "HomeBlockFieldData.proto";
@@ -13,17 +13,17 @@ import "HomeFurnitureCustomSuiteData.proto";
 import "HomeAnimalData.proto";
 
 message HomeBlockArrangementInfo {
-	repeated HomeFurnitureSuiteData furnitureSuiteList = 12;
-	repeated HomeBlockFieldData fieldList = 13;
-	repeated WeekendDjinnInfo weekendDjinnInfoList = 8;
-	repeated HomeFurnitureData persistentFurnitureList = 6;
-	repeated HomeBlockDotPattern dotPatternList = 7;
-	uint32 comfortValue = 9;
-	repeated HomeFurnitureGroupData furnitureGroupList = 3;
-	repeated HomeFurnitureData deployFurniureList = 15;
-	repeated HomeNpcData deployNpcList = 5;
-	repeated HomeFurnitureCustomSuiteData furnitureCustomSuiteList = 4;
-	bool isUnlocked = 1;
-	uint32 blockId = 2;
-	repeated HomeAnimalData deployAnimalList = 14;
+	repeated HomeFurnitureSuiteData FurnitureSuiteList = 12;
+	repeated HomeBlockFieldData FieldList = 13;
+	repeated WeekendDjinnInfo WeekendDjinnInfoList = 8;
+	repeated HomeFurnitureData PersistentFurnitureList = 6;
+	repeated HomeBlockDotPattern DotPatternList = 7;
+	uint32 ComfortValue = 9;
+	repeated HomeFurnitureGroupData FurnitureGroupList = 3;
+	repeated HomeFurnitureData DeployFurniureList = 15;
+	repeated HomeNpcData DeployNpcList = 5;
+	repeated HomeFurnitureCustomSuiteData FurnitureCustomSuiteList = 4;
+	bool IsUnlocked = 1;
+	uint32 BlockId = 2;
+	repeated HomeAnimalData DeployAnimalList = 14;
 }

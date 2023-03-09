@@ -1,17 +1,18 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message HomeSetBlueprintSlotOptionRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 4749;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum HAKCGBFOHIP {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4749;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	int32 retcode = 15;
-	uint32 slotId = 2;
-	bool isAllowCopy = 1;
+	int32 Retcode = 15;
+	uint32 SlotId = 2;
+	bool IsAllowCopy = 1;
 }

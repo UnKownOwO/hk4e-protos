@@ -1,12 +1,12 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
-import "State.proto";
+import "Investigation_State.proto";
 
 message Investigation {
-	uint32 progress = 11;
-	uint32 id = 5;
-	State state = 4;
-	uint32 totalProgress = 14;
+	uint32 Progress = 11;
+	uint32 Id = 5;
+	Investigation_State State = 4;
+	uint32 TotalProgress = 14;
 }

@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+enum PBNavMeshPoly_EdgeType {
+	Inner = 0;
+	TileBound = 1;
+	TileBoundUnconnect = 2;
+	TileBoundOveride = 3;
+}

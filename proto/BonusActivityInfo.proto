@@ -1,8 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message BonusActivityInfo {
-	uint32 bonusActivityId = 5;
-	uint32 state = 4;
+	uint32 BonusActivityId = 5;
+	uint32 State = 4;
 }

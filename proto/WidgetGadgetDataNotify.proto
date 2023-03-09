@@ -1,17 +1,17 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "WidgetGadgetData.proto";
 
 message WidgetGadgetDataNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 4282;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum WidgetGadgetDataNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4282;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	WidgetGadgetData widgetGadgetData = 10;
+	WidgetGadgetData WidgetGadgetData = 10;
 }

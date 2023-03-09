@@ -1,23 +1,23 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "AbilityInvokeEntry.proto";
 
 message AbilityInvocationFixedNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 1105;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// 	IS_ALLOW_CLIENT = 1;
-	// }
+	enum AbilityInvocationFixedNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 1105;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
 
-	AbilityInvokeEntry Unk3300_LDIAOMFIBPL = 3;
-	AbilityInvokeEntry Unk3300_AHDFHHFHEFM = 6;
-	AbilityInvokeEntry Unk3300_ONGNOHLIIBO = 8;
-	AbilityInvokeEntry Unk3300_EMGKKHKLIEG = 5;
-	AbilityInvokeEntry Unk3300_KFMHLLHECCJ = 15;
-	AbilityInvokeEntry Unk3300_GAFFBFFKDIC = 1;
+	AbilityInvokeEntry Invoke2Nd = 3;
+	AbilityInvokeEntry Invoke3Rd = 6;
+	AbilityInvokeEntry Invoke5Th = 8;
+	AbilityInvokeEntry Invoke4Th = 5;
+	AbilityInvokeEntry Invoke6Th = 15;
+	AbilityInvokeEntry Invoke1St = 1;
 }

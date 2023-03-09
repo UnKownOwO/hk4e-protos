@@ -1,26 +1,27 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message GetScenePointRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 213;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum GetScenePointRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 213;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	repeated uint32 lockedPointList = 7;
-	repeated uint32 notInteractDungeonEntryList = 10;
-	int32 retcode = 2;
-	repeated uint32 toBeExploreDungeonEntryList = 13;
-	uint32 belongUid = 6;
-	repeated uint32 hidePointList = 3;
-	repeated uint32 unlockAreaList = 9;
-	repeated uint32 unlockedPointList = 12;
-	repeated uint32 notExploredDungeonEntryList = 4;
-	repeated uint32 unhidePointList = 5;
-	uint32 sceneId = 14;
-	repeated uint32 groupUnlimitPointList = 1;
+	repeated uint32 LockedPointList = 7;
+	repeated uint32 NotInteractDungeonEntryList = 10;
+	int32 Retcode = 2;
+	repeated uint32 ToBeExploreDungeonEntryList = 13;
+	uint32 BelongUid = 6;
+	repeated uint32 HidePointList = 3;
+	repeated uint32 UnlockAreaList = 9;
+	repeated uint32 UnlockedPointList = 12;
+	repeated uint32 NotExploredDungeonEntryList = 4;
+	repeated uint32 UnhidePointList = 5;
+	uint32 SceneId = 14;
+	repeated uint32 GroupUnlimitPointList = 1;
 }

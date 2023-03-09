@@ -1,17 +1,17 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "EntityMoveFailInfo.proto";
 
 message SceneEntitiesMovesRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 293;
-	// 	ENET_CHANNEL_ID = 1;
-	// 	ENET_IS_RELIABLE = 0;
-	// }
+	enum SceneEntitiesMovesRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 293;
+		EnetChannelId = 1;
+		EnetIsReliable = 0;
+	}
 
-	repeated EntityMoveFailInfo entityMoveFailInfoList = 5;
+	repeated EntityMoveFailInfo EntityMoveFailInfoList = 5;
 }

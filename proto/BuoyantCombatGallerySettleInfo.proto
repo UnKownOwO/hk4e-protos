@@ -1,13 +1,14 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message BuoyantCombatGallerySettleInfo {
-	uint32 killSpecialMonsterCount = 4;
-	uint32 galleryId = 14;
-	uint32 killMonsterCount = 10;
-	uint32 Unk3300_HLFHLPEKOML = 9;
-	uint32 galleryLevel = 8;
-	uint32 finalScore = 6;
-	uint32 Unk3300_KPCJBOOGEMG = 2;
+	uint32 KillSpecialMonsterCount = 4;
+	uint32 GalleryId = 14;
+	uint32 KillMonsterCount = 10;
+	uint32 KillTargetCount = 9;
+	uint32 GalleryLevel = 8;
+	uint32 FinalScore = 6;
+	uint32 GalleryMultiple = 2;
 }

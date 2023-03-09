@@ -1,13 +1,13 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "VintagePresentLevelData.proto";
 
 message VintagePresentStageData {
-	bool isFinish = 4;
-	uint32 openTime = 14;
-	bool isOpen = 9;
-	map<uint32, VintagePresentLevelData> presentLevelMap = 7;
-	uint32 stageId = 15;
+	bool IsFinish = 4;
+	uint32 OpenTime = 14;
+	bool IsOpen = 9;
+	map<uint32, VintagePresentLevelData> PresentLevelMap = 7;
+	uint32 StageId = 15;
 }

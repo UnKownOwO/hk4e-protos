@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message AbilityMixinUGCTimeControl {
+	uint32 StartMoveTime = 6;
+	uint64 StartMoveTimeMs = 5;
+}

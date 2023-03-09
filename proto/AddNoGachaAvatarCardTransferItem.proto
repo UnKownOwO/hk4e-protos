@@ -1,9 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message AddNoGachaAvatarCardTransferItem {
-	uint32 count = 10;
-	bool isNew = 11;
-	uint32 itemId = 12;
+	uint32 Count = 10;
+	bool IsNew = 11;
+	uint32 ItemId = 12;
 }

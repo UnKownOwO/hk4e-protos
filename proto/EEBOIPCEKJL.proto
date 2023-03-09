@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message EEBOIPCEKJL {
+	enum PPJDKEJDOGN {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 108;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	bool IsForceSet = 3;
+	uint32 ClientGameTime = 1;
+	uint32 GameTime = 15;
+}

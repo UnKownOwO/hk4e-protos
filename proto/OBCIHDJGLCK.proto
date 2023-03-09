@@ -1,9 +1,0 @@
-syntax = "proto3";
-
-option go_package = "./;proto";
-
-import "Vector.proto";
-
-message OBCIHDJGLCK {
-	Vector hhfmfeegcei = 2;
-}

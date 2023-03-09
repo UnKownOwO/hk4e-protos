@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message GCGWeekChallengeInfo {
+	bool IsFinished = 12;
+	uint32 NpcId = 14;
+	uint32 UnlockTime = 15;
+}

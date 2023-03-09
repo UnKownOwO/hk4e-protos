@@ -1,13 +1,14 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message CustomDungeonSetting {
-	repeated uint32 openRoomList = 13;
-	uint32 lifeNum = 9;
-	uint32 coinLimit = 4;
-	uint32 startRoomId = 10;
-	bool isForbidSkill = 11;
-	uint32 timeLimit = 2;
-	bool isArriveFinish = 14;
+	repeated uint32 OpenRoomList = 13;
+	uint32 LifeNum = 9;
+	uint32 CoinLimit = 4;
+	uint32 StartRoomId = 10;
+	bool IsForbidSkill = 11;
+	uint32 TimeLimit = 2;
+	bool IsArriveFinish = 14;
 }

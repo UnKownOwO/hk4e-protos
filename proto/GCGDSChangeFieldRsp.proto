@@ -1,17 +1,18 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message GCGDSChangeFieldRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 7569;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum IHFJEPEMDGL {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 7818;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 faceType = 6;
-	uint32 rewardIndex = 3;
-	int32 retcode = 4;
+	uint32 FieldId = 12;
+	uint32 DeckId = 1;
+	int32 Retcode = 6;
 }

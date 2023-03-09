@@ -1,17 +1,17 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "CustomDungeonFinishType.proto";
 import "ChallengeBrief.proto";
 
 message CustomDungeonResultInfo {
-	CustomDungeonFinishType finishType = 2;
-	bool isStored = 8;
-	uint64 dungeonGuid = 9;
-	bool isLiked = 14;
-	bool isArriveFinish = 15;
-	uint32 gotCoinNum = 11;
-	repeated ChallengeBrief childChallengeList = 3;
-	uint32 timeCost = 4;
+	CustomDungeonFinishType FinishType = 2;
+	bool IsStored = 8;
+	uint64 DungeonGuid = 9;
+	bool IsLiked = 14;
+	bool IsArriveFinish = 15;
+	uint32 GotCoinNum = 11;
+	repeated ChallengeBrief ChildChallengeList = 3;
+	uint32 TimeCost = 4;
 }

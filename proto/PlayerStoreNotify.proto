@@ -1,20 +1,20 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "StoreType.proto";
-import "Item.proto";
+import "TrifleItem.proto";
 
 message PlayerStoreNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 605;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum PlayerStoreNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 605;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	repeated Item itemList = 5;
-	uint32 weightLimit = 6;
-	StoreType storeType = 10;
+	repeated TrifleItem ItemList = 5;
+	uint32 WeightLimit = 6;
+	StoreType StoreType = 10;
 }

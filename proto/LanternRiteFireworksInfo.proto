@@ -1,9 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "LanternRiteFireworksStageInfo.proto";
 
 message LanternRiteFireworksInfo {
-	repeated LanternRiteFireworksStageInfo stageInfoList = 1;
+	repeated LanternRiteFireworksStageInfo StageInfoList = 1;
 }

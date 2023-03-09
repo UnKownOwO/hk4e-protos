@@ -1,13 +1,14 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message EffigyDailyInfo {
-	uint32 challengeId = 15;
-	bool isFirstPassRewardTaken = 2;
-	uint32 Unk3300_NEBCDALEFEC = 10;
-	uint32 dayIndex = 14;
-	uint32 challengeMaxScore = 6;
-	uint32 beginTime = 7;
-	uint32 Unk3300_NNHICCGELHP = 12;
+	uint32 ChallengeId = 15;
+	bool IsFirstPassRewardTaken = 2;
+	uint32 ChallengeTotalScore = 10;
+	uint32 DayIndex = 14;
+	uint32 ChallengeMaxScore = 6;
+	uint32 BeginTime = 7;
+	uint32 ChallengeCount = 12;
 }

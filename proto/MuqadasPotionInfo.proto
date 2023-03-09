@@ -1,10 +1,11 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message MuqadasPotionInfo {
-	uint32 muqadasPotionLevelDataList = 13;
-	uint32 score = 14;
-	uint32 Unk3300_LKEICOLMPII = 3;
-	uint32 captureWeaknessCount = 5;
+	uint32 SkillUseLimit = 13;
+	uint32 Score = 14;
+	uint32 SkillEnergy = 3;
+	uint32 CaptureWeaknessCount = 5;
 }

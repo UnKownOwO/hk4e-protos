@@ -1,29 +1,29 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "ShapeSphere.proto";
 import "ShapeBox.proto";
 
 message MassiveEntityElementOpBatchNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 390;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// 	IS_ALLOW_CLIENT = 1;
-	// }
+	enum MassiveEntityElementOpBatchNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 390;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
 
-	float attackElementDurability = 6;
-	int32 Unk3300_KNLDJPEMCKP = 9;
-	int32 Unk3300_PNANGDNNFCH = 11;
-	uint32 attackerId = 10;
-	uint32 userId = 4;
-	int32 entityType = 2;
-	oneof check_shape {
+	float AttackElementDurability = 6;
+	int32 SourceElementType = 9;
+	int32 ReactionSourceType = 11;
+	uint32 AttackerId = 10;
+	uint32 UserId = 4;
+	int32 EntityType = 2;
+	oneof MassiveEntityElementOpBatchNotify_CheckShapeOneofCase {
 		ShapeSphere shape_sphere = 7;
 		ShapeBox shape_box = 8;
 	}
-	uint32 opIdx = 1;
+	uint32 OpIdx = 1;
 }

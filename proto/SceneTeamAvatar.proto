@@ -1,29 +1,29 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "AbilityControlBlock.proto";
 import "AbilitySyncStateInfo.proto";
-import "SceneAvatarInfo.proto";
+import "Avatar.proto";
 import "AvatarInfo.proto";
 import "SceneEntityInfo.proto";
 import "ServerBuff.proto";
 
 message SceneTeamAvatar {
-	bool isReconnect = 8;
-	AbilityControlBlock abilityControlBlock = 10;
-	uint32 entityId = 13;
-	uint32 weaponEntityId = 15;
-	bool isOnScene = 776;
-	uint64 weaponGuid = 3;
-	repeated ServerBuff serverBuffList = 14;
-	AbilitySyncStateInfo weaponAbilityInfo = 6;
-	uint32 sceneId = 4;
-	bool isPlayerCurAvatar = 7;
-	uint64 avatarGuid = 9;
-	SceneAvatarInfo sceneAvatarInfo = 5;
-	AvatarInfo avatarInfo = 2;
-	SceneEntityInfo sceneEntityInfo = 1;
-	uint32 playerUid = 11;
-	AbilitySyncStateInfo avatarAbilityInfo = 12;
+	bool IsReconnect = 8;
+	AbilityControlBlock AbilityControlBlock = 10;
+	uint32 EntityId = 13;
+	uint32 WeaponEntityId = 15;
+	bool IsOnScene = 776;
+	uint64 WeaponGuid = 3;
+	repeated ServerBuff ServerBuffList = 14;
+	AbilitySyncStateInfo WeaponAbilityInfo = 6;
+	uint32 SceneId = 4;
+	bool IsPlayerCurAvatar = 7;
+	uint64 AvatarGuid = 9;
+	Avatar SceneAvatarInfo = 5;
+	AvatarInfo AvatarInfo = 2;
+	SceneEntityInfo SceneEntityInfo = 1;
+	uint32 PlayerUid = 11;
+	AbilitySyncStateInfo AvatarAbilityInfo = 12;
 }

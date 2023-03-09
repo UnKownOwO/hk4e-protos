@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package Proto;
+
+
+import "RegionSimpleInfo.proto";
+
+message QueryRegionListHttpRsp {
+	int32 Retcode = 1;
+	repeated RegionSimpleInfo RegionList = 2;
+	bytes ClientSecretKey = 5;
+	bytes ClientCustomConfigEncrypted = 6;
+	bool EnableLoginPc = 7;
+}

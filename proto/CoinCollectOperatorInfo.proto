@@ -1,7 +1,8 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message CoinCollectOperatorInfo {
-	uint32 levelId = 1;
+	uint32 LevelId = 1;
 }

@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package Proto;
+
+import "Rotation.proto";
+
+message EvtSyncEntityPositionInfo {
+	uint32 EntityId = 12;
+	uint32 StateHash = 7;
+	Rotation Pos = 2;
+	int32 FaceAngleCompact = 3;
+	uint32 NormalizedTimeCompact = 1;
+}

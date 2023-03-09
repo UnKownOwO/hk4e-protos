@@ -1,18 +1,18 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "ChatInfo.proto";
 
 message ChatHistoryNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 3099;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum ChatHistoryNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 3099;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 channelId = 14;
-	repeated ChatInfo chatInfo = 12;
+	uint32 ChannelId = 14;
+	repeated ChatInfo ChatInfo = 12;
 }

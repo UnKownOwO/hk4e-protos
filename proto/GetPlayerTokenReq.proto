@@ -1,35 +1,36 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message GetPlayerTokenReq {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 105;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// 	IS_ALLOW_CLIENT = 1;
-	// }
+	enum GetPlayerTokenReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 105;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
 
-	uint32 platformType = 10;
-	string Unk3300_PHNOHCKIHIA = 6;
-	string countryCode = 1;
-	string clientIpStr = 8;
-	uint32 Unk3300_PMGFBMJNNCL = 13;
-	uint32 keyId = 294;
-	string Unk3300_PKONAOIDNFK = 9;
-	uint32 accountType = 5;
-	bool isGuest = 14;
-	uint32 cloudClientIp = 1399;
-	string birthday = 65;
-	string onlineId = 12;
-	uint32 uid = 11;
-	string clientRandKey = 776;
-	uint32 subChannelId = 7;
-	string accountUid = 4;
-	string accountToken = 2;
-	string psnId = 15;
-	uint32 channelId = 3;
-	uint32 lang = 904;
+	uint32 PlatformType = 10;
+	string AccountExt = 6;
+	string CountryCode = 1;
+	string ClientIpStr = 8;
+	uint32 CloudClientIp = 13;
+	uint32 KeyId = 294;
+	string PsnRegion = 9;
+	uint32 AccountType = 5;
+	bool IsGuest = 14;
+	uint32 MinorsRegMinAge = 1399;
+	string Birthday = 65;
+	string OnlineId = 12;
+	uint32 Uid = 11;
+	string ClientRandKey = 776;
+	uint32 SubChannelId = 7;
+	string AccountUid = 4;
+	string AccountToken = 2;
+	string PsnId = 15;
+	uint32 ChannelId = 3;
+	uint32 Lang = 904;
 }

@@ -1,9 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message ExhibitionDisplayInfo {
-	uint32 id = 1;
-	uint32 param = 2;
-	uint32 detailParam = 3;
+	uint32 Id = 1;
+	uint32 Param = 2;
+	uint32 DetailParam = 3;
 }

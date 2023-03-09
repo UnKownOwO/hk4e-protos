@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message BlossomChest {
+	uint32 Resin = 1;
+	repeated uint32 QualifyUidList = 2;
+	repeated uint32 RemainUidList = 3;
+	uint32 DeadTime = 4;
+	uint32 BlossomRefreshType = 5;
+	uint32 RefreshId = 6;
+}

@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package Proto;
+
+import "AnimatorParameterValueInfoPair.proto";
+
+message AbilityMetaSetPoseParameter {
+	AnimatorParameterValueInfoPair Value = 2;
+}

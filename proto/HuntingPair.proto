@@ -1,8 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message HuntingPair {
-	uint32 refreshId = 5;
-	uint32 monsterConfigId = 12;
+	uint32 RefreshId = 5;
+	uint32 MonsterConfigId = 12;
 }

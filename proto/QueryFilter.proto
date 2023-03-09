@@ -1,8 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message QueryFilter {
-	int32 areaMask = 9;
-	int32 typeId = 3;
+	int32 AreaMask = 9;
+	int32 TypeId = 3;
 }

@@ -1,8 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message AsterLargeDetailInfo {
-	bool isOpen = 3;
-	uint32 beginTime = 7;
+	bool IsOpen = 3;
+	uint32 BeginTime = 7;
 }

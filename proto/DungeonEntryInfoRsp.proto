@@ -1,22 +1,22 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "DungeonEntryPointInfo.proto";
 import "DungeonEntryInfo.proto";
 
 message DungeonEntryInfoRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 955;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum DungeonEntryInfoRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 955;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	repeated DungeonEntryPointInfo dungeonEntryPointList = 5;
-	uint32 recommendDungeonId = 4;
-	uint32 pointId = 7;
-	repeated DungeonEntryInfo dungeonEntryList = 1;
-	int32 retcode = 3;
+	repeated DungeonEntryPointInfo DungeonEntryPointList = 5;
+	uint32 RecommendDungeonId = 4;
+	uint32 PointId = 7;
+	repeated DungeonEntryInfo DungeonEntryList = 1;
+	int32 Retcode = 3;
 }

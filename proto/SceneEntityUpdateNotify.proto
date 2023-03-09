@@ -1,20 +1,20 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "VisionType.proto";
 import "SceneEntityInfo.proto";
 
 message SceneEntityUpdateNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 3388;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum SceneEntityUpdateNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 3388;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	VisionType appearType = 10;
-	uint32 param = 2;
-	repeated SceneEntityInfo entityList = 7;
+	VisionType AppearType = 10;
+	uint32 Param = 2;
+	repeated SceneEntityInfo EntityList = 7;
 }

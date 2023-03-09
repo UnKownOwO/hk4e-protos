@@ -1,10 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "ItemParam.proto";
 
 message GachaTransferItem {
-	ItemParam item = 5;
-	bool isTransferItemNew = 3;
+	ItemParam Item = 5;
+	bool IsTransferItemNew = 3;
 }

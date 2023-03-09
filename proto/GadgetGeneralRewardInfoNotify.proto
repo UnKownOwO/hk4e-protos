@@ -1,18 +1,18 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
-import "GadgetGeneralRewardInfo.proto";
+import "GeneralReward.proto";
 
 message GadgetGeneralRewardInfoNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 878;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum GadgetGeneralRewardInfoNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 878;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 entityId = 5;
-	GadgetGeneralRewardInfo generalRewardInfo = 15;
+	uint32 EntityId = 5;
+	GeneralReward GeneralRewardInfo = 15;
 }

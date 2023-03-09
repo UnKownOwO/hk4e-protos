@@ -1,21 +1,21 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "VehicleMember.proto";
 import "VehicleInteractType.proto";
 
 message VehicleInteractRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 825;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum VehicleInteractRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 825;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	VehicleMember member = 15;
-	uint32 entityId = 2;
-	int32 retcode = 10;
-	VehicleInteractType interactType = 8;
+	VehicleMember Member = 15;
+	uint32 EntityId = 2;
+	int32 Retcode = 10;
+	VehicleInteractType InteractType = 8;
 }

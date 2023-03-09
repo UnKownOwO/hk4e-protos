@@ -1,18 +1,19 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message PullPrivateChatReq {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 5024;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// 	IS_ALLOW_CLIENT = 1;
-	// }
+	enum PullPrivateChatReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 5024;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
 
-	uint32 targetUid = 1;
-	uint32 fromSequence = 4;
-	uint32 pullNum = 6;
+	uint32 TargetUid = 1;
+	uint32 FromSequence = 4;
+	uint32 PullNum = 6;
 }

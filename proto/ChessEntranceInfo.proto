@@ -1,11 +1,11 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "ChessMonsterInfo.proto";
 
 message ChessEntranceInfo {
-	repeated ChessMonsterInfo lhjhgbpjpkl = 7;
-	uint32 dfpedbghhma = 6;
-	uint32 lfemigkpkdd = 9;
+	repeated ChessMonsterInfo MonsterInfoList = 7;
+	uint32 EntrancePointId = 6;
+	uint32 EntranceIndex = 9;
 }

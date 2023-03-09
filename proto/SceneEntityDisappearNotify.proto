@@ -1,19 +1,19 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "VisionType.proto";
 
 message SceneEntityDisappearNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 280;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum SceneEntityDisappearNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 280;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	repeated uint32 entityList = 13;
-	uint32 param = 10;
-	VisionType disappearType = 7;
+	repeated uint32 EntityList = 13;
+	uint32 Param = 10;
+	VisionType DisappearType = 7;
 }

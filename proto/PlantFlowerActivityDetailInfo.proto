@@ -1,12 +1,13 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message PlantFlowerActivityDetailInfo {
-	map<uint32, uint32> Unk3300_ELAIBMDIBFJ = 14;
-	uint32 dayIndex = 8;
-	bool isTodayHasAwarded = 2;
-	bool leftMonsters = 1;
-	map<uint32, uint32> Unk3300_EPMKDFOBLFK = 11;
-	uint32 todaySeedRewardId = 4;
+	map<uint32, uint32> WishFlowerNumMap = 14;
+	uint32 DayIndex = 8;
+	bool IsTodayHasAwarded = 2;
+	bool IsContentClosed = 1;
+	map<uint32, uint32> UsedFlowerNumMap = 11;
+	uint32 TodaySeedRewardId = 4;
 }

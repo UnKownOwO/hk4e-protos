@@ -1,8 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message BrokenFloorInfo {
-	map<uint32, uint32> fallCountMap = 15;
-	uint32 endTime = 10;
+	map<uint32, uint32> FallCountMap = 15;
+	uint32 EndTime = 10;
 }

@@ -1,10 +1,11 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message MultistageSettleWatcherInfo {
-	uint32 curProgress = 1;
-	uint32 totalProgress = 8;
-	uint32 watcherId = 5;
-	bool isInverse = 10;
+	uint32 CurProgress = 1;
+	uint32 TotalProgress = 8;
+	uint32 WatcherId = 5;
+	bool IsInverse = 10;
 }

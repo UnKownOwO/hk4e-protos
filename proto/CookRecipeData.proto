@@ -1,8 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message CookRecipeData {
-	uint32 proficiency = 1;
-	uint32 recipeId = 6;
+	uint32 Proficiency = 1;
+	uint32 RecipeId = 6;
 }

@@ -1,9 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message SumoDungeonAvatar {
-	bool isAlive = 10;
-	bool isTrial = 5;
-	uint64 avatarGuid = 3;
+	bool IsAvlive = 10;
+	bool IsTrial = 5;
+	uint64 AvatarGuid = 3;
 }

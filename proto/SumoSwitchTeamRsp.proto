@@ -1,22 +1,22 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "SumoDungeonTeam.proto";
 
 message SumoSwitchTeamRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 8137;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum SumoSwitchTeamRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8137;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 Unk3300_BNJBIGHIJOC = 9;
-	uint32 activityId = 7;
-	int32 retcode = 3;
-	uint32 stageId = 8;
-	uint32 Unk3300_DJBJACGHGDM = 13;
-	repeated SumoDungeonTeam dungeonTeamList = 5;
+	uint32 NextValidSwitchTime = 9;
+	uint32 ActivityId = 7;
+	int32 Retcode = 3;
+	uint32 StageId = 8;
+	uint32 CurTeamIndex = 13;
+	repeated SumoDungeonTeam DungeonTeamList = 5;
 }

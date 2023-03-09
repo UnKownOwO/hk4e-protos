@@ -1,8 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message ArenaChallengeMonsterLevel {
-	uint32 Unk3300_FDFNFLAKONG = 13;
-	uint32 Unk3300_DBHAGHMMLAI = 3;
+	uint32 ArenaChallengeLevel = 13;
+	uint32 ArenaChallengeId = 3;
 }

@@ -1,18 +1,18 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
-import "ChannelerSlabAssistInfo.proto";
+import "ChannellerSlabAssistInfo.proto";
 
 message ChannellerSlabSaveAssistInfoRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 8443;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum ChannellerSlabSaveAssistInfoRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8443;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	repeated ChannelerSlabAssistInfo assistInfoList = 6;
-	int32 retcode = 4;
+	repeated ChannellerSlabAssistInfo AssistInfoList = 6;
+	int32 Retcode = 4;
 }

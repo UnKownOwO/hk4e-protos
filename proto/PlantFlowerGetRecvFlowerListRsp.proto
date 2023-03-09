@@ -1,19 +1,19 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "PlantFlowerRecvFlowerData.proto";
 
 message PlantFlowerGetRecvFlowerListRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 8952;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum PlantFlowerGetRecvFlowerListRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8952;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	repeated PlantFlowerRecvFlowerData recvFlowerList = 12;
-	int32 retcode = 10;
-	uint32 scheduleId = 11;
+	repeated PlantFlowerRecvFlowerData RecvFlowerList = 12;
+	int32 Retcode = 10;
+	uint32 ScheduleId = 11;
 }

@@ -1,10 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 enum GCGClientPerformType {
-  GCG_PERFORM_INVALID       = 0;
-  GCG_PERFORM_CARD_EXCHANGE = 1;
-  GCG_PERFORM_FIRST_HAND    = 2;
-  GCG_PERFORM_REROLL        = 3;
+	GCGClientPerformTypeInvalid = 0;
+	GCGClientPerformTypeCardExchange = 1;
+	GCGClientPerformTypeFirstHand = 2;
+	GCGClientPerformTypeReroll = 3;
 }

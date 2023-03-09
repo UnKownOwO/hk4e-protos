@@ -1,16 +1,17 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message HideAndSeekSelectSkillRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 8442;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum HideAndSeekSelectSkillRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8442;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	int32 retcode = 14;
-	repeated uint32 skillList = 10;
+	int32 Retcode = 14;
+	repeated uint32 SkillList = 10;
 }

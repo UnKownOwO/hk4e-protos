@@ -1,33 +1,33 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
-import "Vector.proto";
+import "Rotation.proto";
 import "EnterType.proto";
 
 message PlayerEnterSceneNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 205;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum PlayerEnterSceneNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 205;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	bool isFirstLoginEnterScene = 10;
-	uint32 enterSceneToken = 2;
-	uint32 prevSceneId = 4;
-	uint32 worldType = 1090;
-	bool isSkipUi = 317;
-	uint32 sceneId = 3;
-	Vector pos = 13;
-	uint32 worldLevel = 5;
-	string sceneTransaction = 647;
-	uint32 enterReason = 74;
-	EnterType type = 9;
-	uint32 dungeonId = 11;
-	repeated uint32 sceneTagIdList = 8;
-	Vector prevPos = 12;
-	uint64 sceneBeginTime = 15;
-	uint32 targetUid = 1;
+	bool IsFirstLoginEnterScene = 10;
+	uint32 EnterSceneToken = 2;
+	uint32 PrevSceneId = 4;
+	uint32 WorldType = 1090;
+	bool IsSkipUi = 317;
+	uint32 SceneId = 3;
+	Rotation Pos = 13;
+	uint32 WorldLevel = 5;
+	string SceneTransaction = 647;
+	uint32 EnterReason = 74;
+	EnterType Type = 9;
+	uint32 DungeonId = 11;
+	repeated uint32 SceneTagIdList = 8;
+	Rotation PrevPos = 12;
+	uint64 SceneBeginTime = 15;
+	uint32 TargetUid = 1;
 }

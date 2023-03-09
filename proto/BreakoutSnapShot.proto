@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "BreakoutPhysicalObject.proto";
 import "BreakoutAction.proto";
@@ -9,24 +9,24 @@ import "BreakoutElementReactionCounter.proto";
 import "BreakoutSyncConnectUidInfo.proto";
 
 message BreakoutSnapShot {
-	uint64 clientGameTime = 1;
-	uint64 serverGameTime = 2;
-	repeated BreakoutPhysicalObject ballList = 3;
-	repeated BreakoutPhysicalObject physicalObjectList = 4;
-	repeated BreakoutAction actionList = 5;
-	uint32 waveIndex = 6;
-	bool isFinish = 7;
-	uint32 score = 8;
-	uint32 combo = 9;
-	uint32 maxCombo = 10;
-	uint32 lifeCount = 11;
-	uint32 waveSuiteIndex = 12;
-	repeated BreakoutSpawnPoint spawnPointList = 13;
-	uint32 remainingBossHp = 14;
-	repeated BreakoutElementReactionCounter brickElementReactionList = 15;
-	repeated BreakoutElementReactionCounter ballElementReactionList = 16;
-	repeated BreakoutSyncConnectUidInfo uidInfoList = 17;
-	repeated BreakoutPhysicalObject dynamicObjectList = 18;
-	repeated uint32 idIndexList = 19;
-	int32 rawClientGameTime = 20;
+	uint64 ClientGameTime = 1;
+	uint64 ServerGameTime = 2;
+	repeated BreakoutPhysicalObject BallList = 3;
+	repeated BreakoutPhysicalObject PhysicalObjectList = 4;
+	repeated BreakoutAction ActionList = 5;
+	uint32 WaveIndex = 6;
+	bool IsFinish = 7;
+	uint32 Score = 8;
+	uint32 Combo = 9;
+	uint32 MaxCombo = 10;
+	uint32 LifeCount = 11;
+	uint32 WaveSuiteIndex = 12;
+	repeated BreakoutSpawnPoint SpawnPointList = 13;
+	uint32 RemainingBossHp = 14;
+	repeated BreakoutElementReactionCounter BrickElementReactionList = 15;
+	repeated BreakoutElementReactionCounter BallElementReactionList = 16;
+	repeated BreakoutSyncConnectUidInfo UidInfoList = 17;
+	repeated BreakoutPhysicalObject DynamicObjectList = 18;
+	repeated uint32 IdIndexList = 19;
+	int32 RawClientGameTime = 20;
 }

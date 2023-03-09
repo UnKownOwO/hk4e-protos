@@ -1,26 +1,27 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message MusicBriefInfo {
-	uint64 ugcGuid = 8;
-	uint32 Unk3300_CCMMPAHIMDO = 88;
-	uint32 Unk3300_PLNOFOHFAPE = 15;
-	repeated uint32 Unk3300_HKBHAIMOBKO = 1363;
-	bool Unk3300_FKIGPAJFPLG = 5;
-	uint64 importFromUgcGuid = 6;
-	uint32 musicId = 14;
-	repeated uint32 Unk3300_JEEBFPFEHHG = 1062;
-	uint32 Unk3300_MBKDGBNFPOA = 1837;
-	uint32 Unk3300_OJOKFBJALIJ = 7;
-	uint32 Unk3300_EGIGIOOKBAB = 287;
-	uint32 Unk3300_OBBMCFADNIN = 2;
-	uint32 Unk3300_PBENMAHHGIL = 9;
-	bool Unk3300_NCDKCNOLGKB = 4;
-	uint32 version = 1;
-	string creatorNickname = 3;
-	bool Unk3300_GDNAPNAINBA = 11;
-	uint32 maxScore = 12;
-	uint32 Unk3300_KMMBLIMKJCM = 10;
-	bool isPsnPlatform = 13;
+	uint64 UgcGuid = 8;
+	uint32 RealTimeEditTime = 88;
+	uint32 PublishTime = 15;
+	repeated uint32 BeforeNoteList = 1363;
+	bool IsPlayed = 5;
+	uint64 ImportFromUgcGuid = 6;
+	uint32 MusicId = 14;
+	repeated uint32 AfterNoteList = 1062;
+	uint32 TimeLineEditTime = 1837;
+	uint32 SelfMaxScore = 7;
+	uint32 SavePageType = 287;
+	uint32 NoteCount = 2;
+	uint32 SaveIdx = 9;
+	bool IsChangedAfterPublish = 4;
+	uint32 Version = 1;
+	string CreatorNickname = 3;
+	bool IsPublished = 11;
+	uint32 MaxScore = 12;
+	uint32 SaveTime = 10;
+	bool IsPsnPlatform = 13;
 }

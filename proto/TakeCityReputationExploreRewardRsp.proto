@@ -1,20 +1,20 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "ItemParam.proto";
 
 message TakeCityReputationExploreRewardRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 2813;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum TakeCityReputationExploreRewardRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 2813;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 cityId = 4;
-	repeated uint32 exploreIdList = 2;
-	int32 retcode = 12;
-	repeated ItemParam itemList = 11;
+	uint32 CityId = 4;
+	repeated uint32 ExploreIdList = 2;
+	int32 Retcode = 12;
+	repeated ItemParam ItemList = 11;
 }

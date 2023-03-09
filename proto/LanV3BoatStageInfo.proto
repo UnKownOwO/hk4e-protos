@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message LanV3BoatStageInfo {
+	repeated uint32 PlayerUidList = 4;
+	uint32 MatchId = 11;
+	uint32 MapId = 15;
+	bool IsSingle = 8;
+}

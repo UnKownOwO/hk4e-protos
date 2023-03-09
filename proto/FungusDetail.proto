@@ -1,11 +1,12 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message FungusDetail {
-	bool isCultivate = 12;
-	uint32 Unk3300_GCLBPDJDEDN = 14;
-	uint32 Unk3300_EHNBDJPANKL = 3;
-	uint32 fungusId = 6;
-	uint32 nameId = 4;
+	bool IsCultivate = 12;
+	uint32 CaptureOrder = 14;
+	uint32 MinCultivateStep = 3;
+	uint32 FungusId = 6;
+	uint32 NameId = 4;
 }

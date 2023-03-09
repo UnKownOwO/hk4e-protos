@@ -1,9 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message HomeScenePointFishFarmingInfo {
-	repeated uint32 fishIdList = 11;
-	uint32 sceneId = 6;
-	uint32 localEntityId = 5;
+	repeated uint32 FishIdList = 11;
+	uint32 SceneId = 6;
+	uint32 LocalEntityId = 5;
 }

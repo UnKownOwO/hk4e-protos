@@ -1,8 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message ServantInfo {
-	uint32 masterEntityId = 1;
-	uint32 bornSlotIndex = 2;
+	uint32 MasterEntityId = 1;
+	uint32 BornSlotIndex = 2;
 }

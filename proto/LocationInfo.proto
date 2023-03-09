@@ -1,10 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
-import "Vector.proto";
+import "Rotation.proto";
 
 message LocationInfo {
-	Vector pos = 3;
-	Vector rot = 2;
+	Rotation Pos = 3;
+	Rotation Rot = 2;
 }

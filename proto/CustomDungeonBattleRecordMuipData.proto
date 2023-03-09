@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message CustomDungeonBattleRecordMuipData {
+	uint64 DungeonGuid = 1;
+	uint32 MinCostTime = 2;
+}

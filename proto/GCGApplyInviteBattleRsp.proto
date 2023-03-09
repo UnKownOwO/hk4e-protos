@@ -1,16 +1,17 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message GCGApplyInviteBattleRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 7482;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum NCBEIOCBEMI {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 7358;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 ljemjfinpph = 8;
-	uint32 confirmEndTime = 9;
+	uint32 PunishEndTime = 6;
+	int32 Retcode = 10;
 }

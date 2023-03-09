@@ -1,22 +1,22 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "GachaInfo.proto";
 
 message GetGachaInfoRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 1555;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum GetGachaInfoRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 1555;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	int32 retcode = 14;
-	bool Unk3300_OHFMHIHJHPJ = 11;
-	uint32 dailyGachaTimes = 1;
-	uint32 gachaRandom = 6;
-	bool Unk3300_HBILIAEIHNK = 13;
-	repeated GachaInfo gachaInfoList = 3;
+	int32 Retcode = 14;
+	bool IsUnderGeneralRestrict = 11;
+	uint32 DailyGachaTimes = 1;
+	uint32 GachaRandom = 6;
+	bool IsUnderMinorsRestrict = 13;
+	repeated GachaInfo GachaInfoList = 3;
 }

@@ -1,11 +1,11 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "Uint32Pair.proto";
 
 message RogueDiaryRoomInfo {
-	repeated Uint32Pair Unk3300_EEBEOCMAIKN = 8;
-	bool isBoss = 4;
-	uint32 configId = 14;
+	repeated Uint32Pair MonsterList = 8;
+	bool IsBoss = 4;
+	uint32 ConfigId = 14;
 }

@@ -1,18 +1,19 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message HomeAvatarSummonEventReq {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 4880;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// 	IS_ALLOW_CLIENT = 1;
-	// }
+	enum HomeAvatarSummonEventReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4880;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
 
-	uint32 guid = 7;
-	uint32 avatarId = 11;
-	uint32 suitId = 2;
+	uint32 Guid = 7;
+	uint32 AvatarId = 11;
+	uint32 SuitId = 2;
 }

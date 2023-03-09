@@ -1,17 +1,17 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "ParentQuest.proto";
 
 message FinishedParentQuestUpdateNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 420;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum FinishedParentQuestUpdateNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 420;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	repeated ParentQuest parentQuestList = 15;
+	repeated ParentQuest ParentQuestList = 15;
 }

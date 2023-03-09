@@ -1,9 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "MistTrialLevelData.proto";
 
 message MistTrialActivityInfo {
-	repeated MistTrialLevelData trialLevelDataList = 7;
+	repeated MistTrialLevelData TrialLevelDataList = 7;
 }

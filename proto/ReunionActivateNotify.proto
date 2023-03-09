@@ -1,18 +1,18 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "ReunionBriefInfo.proto";
 
 message ReunionActivateNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 5060;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum ReunionActivateNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 5060;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	ReunionBriefInfo reunionBriefInfo = 7;
-	bool isActivate = 5;
+	ReunionBriefInfo ReunionBriefInfo = 7;
+	bool IsActivate = 5;
 }

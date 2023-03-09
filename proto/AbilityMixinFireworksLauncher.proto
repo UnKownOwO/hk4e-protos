@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message AbilityMixinFireworksLauncher {
+	uint32 FiredBulletCount = 13;
+	uint32 TurnIndex = 2;
+	uint32 InvokeType = 15;
+	uint32 Phase = 4;
+	uint32 StartCountDownTime = 6;
+	repeated uint32 FireworksConfig = 11;
+}

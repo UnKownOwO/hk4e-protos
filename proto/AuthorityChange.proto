@@ -1,11 +1,11 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "EntityAuthorityInfo.proto";
 
 message AuthorityChange {
-	uint32 authorityPeerId = 2;
-	EntityAuthorityInfo entityAuthorityInfo = 4;
-	uint32 entityId = 14;
+	uint32 AuthorityPeerId = 2;
+	EntityAuthorityInfo EntityAuthorityInfo = 4;
+	uint32 EntityId = 14;
 }

@@ -1,19 +1,19 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
-import "Vector.proto";
+import "Rotation.proto";
 
 message MarkEntityInMinMapNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 263;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum MarkEntityInMinMapNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 263;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 monsterId = 12;
-	uint32 entityId = 3;
-	Vector position = 13;
+	uint32 MonsterId = 12;
+	uint32 EntityId = 3;
+	Rotation Position = 13;
 }

@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "AbilityAttachedModifier.proto";
 import "AbilityString.proto";
@@ -8,18 +8,15 @@ import "ModifierAction.proto";
 import "ModifierProperty.proto";
 
 message AbilityMetaModifierChange {
-	uint32 applyEntityId = 8;
-	AbilityAttachedModifier attachedInstancedModifier = 7;
-	bool isMuteRemote = 1;
-	repeated ModifierProperty properties = 13;
-	AbilityString parentAbilityName = 10;
-	AbilityString parentAbilityOverride = 5;
-	bool isDurabilityZero = 11;
-	bool isAttachedParentAbility = 3;
-	uint32 serverBuffUid = 9;
-	int32 modifierLocalId = 6;
-	ModifierAction action = 2;
+	uint32 ApplyEntityId = 8;
+	AbilityAttachedModifier AttachedInstancedModifier = 7;
+	bool IsDurabilityZero = 1;
+	repeated ModifierProperty Properties = 13;
+	AbilityString ParentAbilityName = 10;
+	AbilityString ParentAbilityOverride = 5;
+	bool IsMuteRemote = 11;
+	bool IsAttachedParentAbility = 3;
+	uint32 ServerBuffUid = 9;
+	int32 ModifierLocalId = 6;
+	ModifierAction Action = 2;
 }
-
-
-

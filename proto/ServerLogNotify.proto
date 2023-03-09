@@ -1,20 +1,20 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "ServerLogLevel.proto";
 import "ServerLogType.proto";
 
 message ServerLogNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 24;
-	// 	ENET_CHANNEL_ID = 1;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum ServerLogNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 24;
+		EnetChannelId = 1;
+		EnetIsReliable = 1;
+	}
 
-	string serverLog = 10;
-	ServerLogLevel logLevel = 15;
-	ServerLogType logType = 9;
+	string ServerLog = 10;
+	ServerLogLevel LogLevel = 15;
+	ServerLogType LogType = 9;
 }

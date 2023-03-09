@@ -1,20 +1,21 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message AvatarUpgradeRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 1788;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum AvatarUpgradeRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 1788;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	map<uint32, float> curFightPropMap = 11;
-	uint64 avatarGuid = 8;
-	map<uint32, float> oldFightPropMap = 14;
-	uint32 oldLevel = 15;
-	int32 retcode = 13;
-	uint32 curLevel = 6;
+	map<uint32, float> CurFightPropMap = 11;
+	uint64 AvatarGuid = 8;
+	map<uint32, float> OldFightPropMap = 14;
+	uint32 OldLevel = 15;
+	int32 Retcode = 13;
+	uint32 CurLevel = 6;
 }

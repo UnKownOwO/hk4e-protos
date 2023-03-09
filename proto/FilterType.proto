@@ -1,9 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 enum FilterType {
-    All   = 0;
-    Air   = 1;
-    Water = 2;
+	FilterTypeAll = 0;
+	FilterTypeAir = 1;
+	FilterTypeWater = 2;
 }

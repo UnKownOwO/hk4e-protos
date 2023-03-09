@@ -1,17 +1,17 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "HuntingPair.proto";
 
 message HuntingFailNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 4302;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum HuntingFailNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4302;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	HuntingPair huntingPair = 9;
+	HuntingPair HuntingPair = 9;
 }

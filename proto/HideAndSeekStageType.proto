@@ -1,12 +1,12 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 enum HideAndSeekStageType {
-  HIDE_AND_SEEK_STAGE_PREPARE = 0;
-  HIDE_AND_SEEK_STAGE_PICK    = 1;
-  HIDE_AND_SEEK_STAGE_GAME    = 2;
-  HIDE_AND_SEEK_STAGE_HIDE    = 3;
-  HIDE_AND_SEEK_STAGE_SEEK    = 4;
-  HIDE_AND_SEEK_STAGE_SETTLE  = 5;
+	HideAndSeekStagePrepare = 0;
+	HideAndSeekStagePick = 1;
+	HideAndSeekStageGame = 2;
+	HideAndSeekStageHide = 3;
+	HideAndSeekStageSeek = 4;
+	HideAndSeekStageSettle = 5;
 }

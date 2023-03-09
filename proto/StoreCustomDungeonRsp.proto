@@ -1,15 +1,16 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message StoreCustomDungeonRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 6226;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum StoreCustomDungeonRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 6226;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	int32 retcode = 2;
+	int32 Retcode = 2;
 }

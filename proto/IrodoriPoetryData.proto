@@ -1,10 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "IrodoriPoetryThemeData.proto";
 
 message IrodoriPoetryData {
-	repeated IrodoriPoetryThemeData themeDataList = 10;
-	uint32 curThemeId = 2;
+	repeated IrodoriPoetryThemeData ThemeDataList = 10;
+	uint32 CurThemeId = 2;
 }

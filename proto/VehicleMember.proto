@@ -1,9 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message VehicleMember {
-	uint32 uid = 1;
-	uint64 avatarGuid = 2;
-	uint32 pos = 3;
+	uint32 Uid = 1;
+	uint64 AvatarGuid = 2;
+	uint32 Pos = 3;
 }

@@ -1,9 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message AbilityString {
-	oneof type {
+	oneof AbilityString_TypeOneofCase {
 		string str = 1;
 		uint32 hash = 2;
 	}

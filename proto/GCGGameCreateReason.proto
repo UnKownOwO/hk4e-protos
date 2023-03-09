@@ -1,11 +1,12 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 enum GCGGameCreateReason {
-    REASON_NONE                       = 0;
-    REASON_GAME_MAX                   = 1;
-    REASON_CLIENT_VERSION_NOT_LASTEST = 2;
-    REASON_RESOURCE_NOT_COMPLETE      = 3;
-    REASON_TIMEOUT                    = 4;
+	None = 0;
+	GameMax = 1;
+	ClientVersionNotLatest = 2;
+	ResourceNotComplete = 3;
+	Timeout = 4;
+	JBAKJAPPIEL = 5;
 }

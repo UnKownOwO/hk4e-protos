@@ -1,16 +1,17 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message GCGGrowthLevelTakeRewardReq {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 7327;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum BBHGHAMIGPI {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 7040;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
 
-	uint32 exp = 15;
-	uint32 level = 5;
+	uint32 Level = 8;
 }

@@ -1,13 +1,13 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
-import "Vector.proto";
+import "Rotation.proto";
 
 message HomeFurnitureSuiteData {
-	repeated int32 includedFurnitureIndexList = 7;
-	uint32 guid = 12;
-	uint32 suiteId = 15;
-	bool isAllowSummon = 14;
-	Vector spawnPos = 10;
+	repeated int32 IncludedFurnitureIndexList = 7;
+	uint32 Guid = 12;
+	uint32 SuiteId = 15;
+	bool IsAllowSummon = 14;
+	Rotation SpawnPos = 10;
 }

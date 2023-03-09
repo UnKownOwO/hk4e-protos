@@ -1,15 +1,16 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message GroupSuiteNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 3115;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum GroupSuiteNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 3115;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	map<uint32, uint32> groupMap = 12;
+	map<uint32, uint32> GroupMap = 12;
 }

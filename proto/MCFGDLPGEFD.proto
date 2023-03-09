@@ -1,7 +1,0 @@
-syntax = "proto3";
-
-option go_package = "./;proto";
-
-message MCFGDLPGEFD {
-	uint32 dnjogbbalgg = 15;
-}

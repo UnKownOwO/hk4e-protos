@@ -1,23 +1,23 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "UgcType.proto";
 import "MusicBriefInfo.proto";
 
 message GetUgcBriefInfoRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 6341;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum GetUgcBriefInfoRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 6341;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint64 ugcGuid = 15;
-	UgcType ugcType = 9;
-	int32 retcode = 1;
-	oneof brief {
+	uint64 UgcGuid = 15;
+	UgcType UgcType = 9;
+	int32 Retcode = 1;
+	oneof GetUgcBriefInfoRsp_BriefOneofCase {
 		MusicBriefInfo music_brief_info = 8;
 	}
 }

@@ -1,17 +1,18 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message ScenePlayGuestReplyInviteRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 4420;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum ScenePlayGuestReplyInviteRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4420;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	bool isAgree = 1;
-	int32 retcode = 7;
-	uint32 playId = 6;
+	bool IsAgree = 1;
+	int32 Retcode = 7;
+	uint32 PlayId = 6;
 }

@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+import "Rotation.proto";
+
+message AbilityActionDestroyTile {
+	Rotation Pos = 8;
+	Rotation Rot = 11;
+}

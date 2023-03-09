@@ -1,15 +1,15 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "ChessNormalCardInfo.proto";
 
 message ChessPlayerInfo {
-	uint32 buildingPoints = 13;
-	uint32 Unk3300_PPFPEAGBHLP = 12;
-	uint32 Unk3300_AOCJHOKCDDM = 2;
-	repeated ChessNormalCardInfo candidateCardInfoList = 6;
-	uint32 uid = 11;
-	uint32 Unk3300_PPFBGIDKCDJ = 8;
-	uint32 Unk3300_GPNDNCCLHKE = 3;
+	uint32 BuildingPoints = 13;
+	uint32 CandidateIndex = 12;
+	uint32 FreeRefreshLimit = 2;
+	repeated ChessNormalCardInfo CandidateCardInfoList = 6;
+	uint32 Uid = 11;
+	uint32 RefreshCost = 8;
+	uint32 FreeRefreshCount = 3;
 }

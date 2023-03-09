@@ -1,13 +1,14 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message FungusFighterTrainingInfo {
-	uint32 Unk3300_GMLIPFDMDOG = 5;
-	uint32 buffId = 15;
-	uint32 Unk3300_IOEELCAMDCK = 4;
-	uint32 maxMonsterCount = 1;
-	uint32 Unk3300_EKAMCPNGCGH = 10;
-	uint32 Unk3300_EDHANEGNMJM = 3;
-	uint32 Unk3300_HGPGNCMNDJN = 6;
+	uint32 RestSkillCount = 5;
+	uint32 BuffId = 15;
+	uint32 MaxSkillCount = 4;
+	uint32 MaxMonsterCount = 1;
+	uint32 KilledMonsterCount = 10;
+	uint32 BuffLastTime = 3;
+	uint32 BuffStartTime = 6;
 }

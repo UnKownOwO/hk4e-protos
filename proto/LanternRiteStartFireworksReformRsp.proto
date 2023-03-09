@@ -1,26 +1,26 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "LanternRiteFireworksReformFactorInfo.proto";
 import "LanternRiteFireworksReformSkillInfo.proto";
 
 message LanternRiteStartFireworksReformRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 8757;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum LanternRiteStartFireworksReformRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8757;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 Unk3300_LKOFBPDKEGG = 2;
-	uint32 Unk3300_OMHPIGGDCBO = 7;
-	repeated LanternRiteFireworksReformFactorInfo factorInfoList = 1;
-	uint32 challengeId = 12;
-	uint32 Unk3300_BJHGCFANMBI = 11;
-	uint32 Unk3300_LKKBPAJOCML = 14;
-	uint32 stageId = 4;
-	int32 retcode = 10;
-	repeated LanternRiteFireworksReformSkillInfo skillInfoList = 15;
+	uint32 FireElementValue = 2;
+	uint32 StaminaValue = 7;
+	repeated LanternRiteFireworksReformFactorInfo FactorInfoList = 1;
+	uint32 ChallengeId = 12;
+	uint32 FireElementAdditionRatio = 11;
+	uint32 ReformScore = 14;
+	uint32 StageId = 4;
+	int32 Retcode = 10;
+	repeated LanternRiteFireworksReformSkillInfo SkillInfoList = 15;
 }

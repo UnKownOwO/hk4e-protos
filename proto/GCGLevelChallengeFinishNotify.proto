@@ -1,20 +1,17 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message GCGLevelChallengeFinishNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 7127;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum JEGHNMNKFHL {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 7360;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 unlockWorldChallengeList = 9;
-	uint32 levelId = 10;
-	repeated uint32 finishedChallengeIdList = 15;
-	repeated uint32 exceededItemList = 13;
-	int32 retcode = 11;
-	uint32 configId = 8;
+	repeated uint32 FinishedChallengeIdList = 1;
+	uint32 LevelId = 7;
 }

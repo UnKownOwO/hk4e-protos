@@ -1,21 +1,21 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "ParentQuestRandomInfo.proto";
 import "ChildQuest.proto";
 import "InferencePageInfo.proto";
 
 message ParentQuest {
-	ParentQuestRandomInfo randomInfo = 7;
-	repeated int32 questVar = 8;
-	repeated ChildQuest childQuestList = 10;
-	bool isFinished = 9;
-	bool isRandom = 11;
-	uint32 parentQuestId = 1;
-	map<uint32, uint32> timeVarMap = 12;
-	uint32 parentQuestState = 15;
-	uint64 videoKey = 2;
-	repeated InferencePageInfo inferencePageList = 5;
-	uint32 questVarSeq = 4;
+	ParentQuestRandomInfo RandomInfo = 7;
+	repeated int32 QuestVar = 8;
+	repeated ChildQuest ChildQuestList = 10;
+	bool IsFinished = 9;
+	bool IsRandom = 11;
+	uint32 ParentQuestId = 1;
+	map<uint32, uint32> TimeVarMap = 12;
+	uint32 ParentQuestState = 15;
+	uint64 VideoKey = 2;
+	repeated InferencePageInfo InferencePageList = 5;
+	uint32 QuestVarSeq = 4;
 }

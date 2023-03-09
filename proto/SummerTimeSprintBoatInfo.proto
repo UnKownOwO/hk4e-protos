@@ -1,9 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "SummerTimeSprintBoatRecord.proto";
 
 message SummerTimeSprintBoatInfo {
-	repeated SummerTimeSprintBoatRecord recordList = 14;
+	repeated SummerTimeSprintBoatRecord RecordList = 14;
 }

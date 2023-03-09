@@ -1,9 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "IslandPartyStageData.proto";
 
 message IslandPartyInfo {
-	repeated IslandPartyStageData stageDataList = 5;
+	repeated IslandPartyStageData StageDataList = 5;
 }

@@ -1,24 +1,24 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "MultistageSettleWatcherInfo.proto";
 
 message InBattleMechanicusSettleNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 5369;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum InBattleMechanicusSettleNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 5369;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	repeated MultistageSettleWatcherInfo watcherList = 7;
-	bool isSuccess = 8;
-	uint32 Unk3300_NAMBBHMJJLN = 15;
-	uint32 Unk3300_HAEOPAOBBFE = 1;
-	uint32 playIndex = 12;
-	uint32 Unk3300_EKAIAPLNIPM = 13;
-	uint64 sceneTimeMs = 10;
-	uint32 groupId = 9;
+	repeated MultistageSettleWatcherInfo WatcherList = 7;
+	bool IsSuccess = 8;
+	uint32 RealToken = 15;
+	uint32 TotalToken = 1;
+	uint32 PlayIndex = 12;
+	uint32 DifficultyPercentage = 13;
+	uint64 SceneTimeMs = 10;
+	uint32 GroupId = 9;
 }

@@ -1,18 +1,19 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message EffigyChallengeResultNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 2145;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum EffigyChallengeResultNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 2145;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 challengeId = 14;
-	uint32 challengeMaxScore = 1;
-	uint32 challengeScore = 5;
-	bool isSuccess = 4;
+	uint32 ChallengeId = 14;
+	uint32 ChallengeMaxScore = 1;
+	uint32 ChallengeScore = 5;
+	bool IsSuccess = 4;
 }

@@ -1,10 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "ItemParam.proto";
 
 message SignInData {
-	uint32 dayCount = 3;
-	repeated ItemParam rewardItemList = 1;
+	uint32 DayCount = 3;
+	repeated ItemParam RewardItemList = 1;
 }

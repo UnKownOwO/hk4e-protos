@@ -1,9 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message BattlePassCycle {
-	uint32 cycleIdx = 8;
-	uint32 beginTime = 2;
-	uint32 endTime = 11;
+	uint32 CycleIdx = 8;
+	uint32 BeginTime = 2;
+	uint32 EndTime = 11;
 }

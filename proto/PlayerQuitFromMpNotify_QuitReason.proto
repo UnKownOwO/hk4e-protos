@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+enum PlayerQuitFromMpNotify_QuitReason {
+	Invalid = 0;
+	HostNoOtherPlayer = 1;
+	KickByHost = 2;
+	BackToMyWorld = 3;
+	KickByHostLogout = 4;
+	KickByHostBlock = 5;
+	BeBlocked = 6;
+	KickByHostEnterHome = 7;
+	HostSceneInvalid = 8;
+	KickByPlay = 9;
+	KickByIslandPartyGalleryStartFailed = 10;
+}

@@ -1,10 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
-import "Vector.proto";
+import "Rotation.proto";
 
 message EvtFaceToDirInfo {
-	Vector faceDir = 2;
-	uint32 entityId = 5;
+	Rotation FaceDir = 2;
+	uint32 EntityId = 5;
 }

@@ -1,9 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "Uint32Pair.proto";
 
 message GCGMsgUpdateController {
-	repeated Uint32Pair allowControllerMap = 3;
+	repeated Uint32Pair AllowControllerMap = 3;
 }

@@ -1,9 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message ShareCDInfo {
-	uint32 shareCdId = 13;
-	uint64 cdStartTime = 1;
-	uint32 index = 11;
+	uint32 ShareCdId = 13;
+	uint64 CdStartTime = 1;
+	uint32 Index = 11;
 }

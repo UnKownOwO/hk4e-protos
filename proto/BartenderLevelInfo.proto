@@ -1,9 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message BartenderLevelInfo {
-	bool isFinish = 13;
-	uint32 maxScore = 12;
-	uint32 id = 10;
+	bool IsFinish = 13;
+	uint32 MaxScore = 12;
+	uint32 Id = 10;
 }

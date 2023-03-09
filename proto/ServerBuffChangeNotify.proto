@@ -1,26 +1,22 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
+import "ServerBuffChangeNotify_ServerBuffChangeType.proto";
 import "ServerBuff.proto";
 
 message ServerBuffChangeNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 315;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum ServerBuffChangeNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 315;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	enum ServerBuffChangeType {
-    ADD_SERVER_BUFF = 0;
-    DEL_SERVER_BUFF = 1;
-    }
-
-	repeated ServerBuff serverBuffList = 12;
-	repeated uint64 avatarGuidList = 10;
-	ServerBuffChangeType serverBuffChangeType = 4;
-	repeated uint32 entityIdList = 1;
-	bool isCreatureBuff = 5;
+	repeated ServerBuff ServerBuffList = 12;
+	repeated uint64 AvatarGuidList = 10;
+	ServerBuffChangeNotify_ServerBuffChangeType ServerBuffChangeType = 4;
+	repeated uint32 EntityIdList = 1;
+	bool IsCreatureBuff = 5;
 }

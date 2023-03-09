@@ -1,17 +1,17 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "MultistagePlayInfo.proto";
 
 message MultistagePlayInfoNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 5305;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum MultistagePlayInfoNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 5305;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	MultistagePlayInfo info = 5;
+	MultistagePlayInfo Info = 5;
 }

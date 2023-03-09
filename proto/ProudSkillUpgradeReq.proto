@@ -1,18 +1,19 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message ProudSkillUpgradeReq {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 1062;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// 	IS_ALLOW_CLIENT = 1;
-	// }
+	enum ProudSkillUpgradeReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 1062;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
 
-	uint64 avatarGuid = 2;
-	uint32 proudSkillId = 8;
-	uint32 oldProudSkillLevel = 6;
+	uint64 AvatarGuid = 2;
+	uint32 ProudSkillId = 8;
+	uint32 OldProudSkillLevel = 6;
 }

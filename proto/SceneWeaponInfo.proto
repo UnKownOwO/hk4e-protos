@@ -1,18 +1,18 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "AbilitySyncStateInfo.proto";
 import "EntityRendererChangedInfo.proto";
 
 message SceneWeaponInfo {
-	uint32 entityId = 1;
-	uint32 gadgetId = 2;
-	uint32 itemId = 3;
-	uint64 guid = 4;
-	uint32 level = 5;
-	uint32 promoteLevel = 6;
-	AbilitySyncStateInfo abilityInfo = 7;
-	map<uint32, uint32> affixMap = 8;
-	EntityRendererChangedInfo rendererChangedInfo = 9;
+	uint32 EntityId = 1;
+	uint32 GadgetId = 2;
+	uint32 ItemId = 3;
+	uint64 Guid = 4;
+	uint32 Level = 5;
+	uint32 PromoteLevel = 6;
+	AbilitySyncStateInfo AbilityInfo = 7;
+	map<uint32, uint32> AffixMap = 8;
+	EntityRendererChangedInfo RendererChangedInfo = 9;
 }

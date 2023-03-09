@@ -1,19 +1,19 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "DynamicNodes.proto";
 
 message ToTheMoonAddObstacleRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 6180;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum FAJPJAOONHC {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 6180;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	int32 retcode = 11;
-	int32 queryId = 8;
-	DynamicNodes dynamicNodes = 4;
+	int32 Retcode = 11;
+	int32 QueryId = 8;
+	DynamicNodes DynamicNodes = 4;
 }

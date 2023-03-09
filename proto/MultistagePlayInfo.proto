@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "MechanicusInfo.proto";
 import "FleurFairInfo.proto";
@@ -13,14 +13,14 @@ import "CoinCollectInfo.proto";
 import "LanV3BoatInfo.proto";
 
 message MultistagePlayInfo {
-	uint32 stageIndex = 13;
-	uint32 beginTime = 8;
-	uint32 duration = 15;
-	uint32 playIndex = 3;
-	uint32 stageType = 9;
-	uint32 groupId = 12;
-	uint32 playType = 10;
-	oneof detail {
+	uint32 StageIndex = 13;
+	uint32 BeginTime = 8;
+	uint32 Duration = 15;
+	uint32 PlayIndex = 3;
+	uint32 StageType = 9;
+	uint32 GroupId = 12;
+	uint32 PlayType = 10;
+	oneof MultistagePlayInfo_DetailOneofCase {
 		MechanicusInfo mechanicus_info = 1387;
 		FleurFairInfo fleur_fair_info = 2006;
 		HideAndSeekInfo hide_and_seek_info = 1418;

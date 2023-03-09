@@ -1,9 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 enum MonsterBornType {
-  MONSTER_BORN_NONE    = 0;
-  MONSTER_BORN_DEFAULT = 1;
-  MONSTER_BORN_RANDOM  = 2;
+	MonsterBornNone = 0;
+	MonsterBornDefault = 1;
+	MonsterBornRandom = 2;
 }

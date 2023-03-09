@@ -1,9 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message HomeModuleComfortInfo {
-	repeated uint32 worldSceneBlockComfortValueList = 3;
-	uint32 moduleId = 13;
-	uint32 roomSceneComfortValue = 2;
+	repeated uint32 WorldSceneBlockComfortValueList = 3;
+	uint32 ModuleId = 13;
+	uint32 RoomSceneComfortValue = 2;
 }

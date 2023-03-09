@@ -1,12 +1,12 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "ProfilePicture.proto";
 
 message PlantFlowerFriendFlowerWishData {
-	ProfilePicture profilePicture = 15;
-	string nickname = 3;
-	uint32 uid = 6;
-	map<uint32, uint32> flowerNumMap = 7;
+	ProfilePicture ProfilePicture = 15;
+	string Nickname = 3;
+	uint32 Uid = 6;
+	map<uint32, uint32> FlowerNumMap = 7;
 }

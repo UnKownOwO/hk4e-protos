@@ -1,21 +1,21 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
-import "State.proto";
+import "CoopChapter_State.proto";
 import "CoopCg.proto";
 import "CoopReward.proto";
 import "CoopPoint.proto";
 
 message CoopChapter {
-	map<uint32, uint32> seenEndingMap = 12;
-	repeated uint32 finishDialogList = 5;
-	repeated CoopCg coopCgList = 11;
-	repeated CoopReward coopRewardList = 9;
-	repeated uint32 lockReasonList = 4;
-	uint32 finishedEndCount = 8;
-	repeated CoopPoint coopPointList = 7;
-	State state = 15;
-	uint32 id = 6;
-	uint32 totalEndCount = 14;
+	map<uint32, uint32> SeenEndingMap = 12;
+	repeated uint32 FinishDialogList = 5;
+	repeated CoopCg CoopCgList = 11;
+	repeated CoopReward CoopRewardList = 9;
+	repeated uint32 LockReasonList = 4;
+	uint32 FinishedEndCount = 8;
+	repeated CoopPoint CoopPointList = 7;
+	CoopChapter_State State = 15;
+	uint32 Id = 6;
+	uint32 TotalEndCount = 14;
 }

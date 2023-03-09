@@ -1,23 +1,23 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "GalleryStopReason.proto";
 import "IslandPartyGallerySettleInfo.proto";
 import "ExhibitionDisplayInfo.proto";
 
 message IslandPartySettleNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 22820;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum IslandPartySettleNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 22820;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	repeated IslandPartyGallerySettleInfo settleInfoList = 9;
-	repeated ExhibitionDisplayInfo scoreList = 8;
-	bool isNewRecord = 14;
-	uint32 timeRemain = 2;
-	GalleryStopReason reason = 13;
+	repeated IslandPartyGallerySettleInfo SettleInfoList = 9;
+	repeated ExhibitionDisplayInfo ScoreList = 8;
+	bool IsNewRecord = 14;
+	uint32 TimeRemain = 2;
+	GalleryStopReason Reason = 13;
 }

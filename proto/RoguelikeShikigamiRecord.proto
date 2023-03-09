@@ -1,8 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message RoguelikeShikigamiRecord {
-	uint32 id = 8;
-	uint32 level = 4;
+	uint32 Id = 8;
+	uint32 Level = 4;
 }

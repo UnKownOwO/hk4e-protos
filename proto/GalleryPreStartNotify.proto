@@ -1,16 +1,17 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message GalleryPreStartNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 5514;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum GalleryPreStartNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 5514;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 preStartEndTime = 6;
-	uint32 galleryId = 7;
+	uint32 PreStartEndTime = 6;
+	uint32 GalleryId = 7;
 }

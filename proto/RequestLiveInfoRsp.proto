@@ -1,18 +1,19 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message RequestLiveInfoRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 828;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum RequestLiveInfoRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 828;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	string Unk3300_DNGGIOIKLHC = 3;
-	int32 retcode = 15;
-	uint32 liveId = 11;
-	string Unk3300_BDOGCPKPLOK = 1;
+	string LiveUrl = 3;
+	int32 Retcode = 15;
+	uint32 LiveId = 11;
+	string SpareLiveUrl = 1;
 }

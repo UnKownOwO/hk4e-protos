@@ -1,20 +1,21 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message GalleryBalloonShootNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 5555;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum GalleryBalloonShootNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 5555;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 galleryId = 8;
-	uint32 triggerEntityId = 2;
-	int32 addScore = 5;
-	uint32 curScore = 14;
-	uint32 combo = 7;
-	uint64 comboDisableTime = 6;
+	uint32 GalleryId = 8;
+	uint32 TriggerEntityId = 2;
+	int32 AddScore = 5;
+	uint32 CurScore = 14;
+	uint32 Combo = 7;
+	uint64 ComboDisableTime = 6;
 }

@@ -1,17 +1,18 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message QuestProgressUpdateNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 406;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum QuestProgressUpdateNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 406;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 questId = 9;
-	repeated uint32 failProgressList = 11;
-	repeated uint32 finishProgressList = 1;
+	uint32 QuestId = 9;
+	repeated uint32 FailProgressList = 11;
+	repeated uint32 FinishProgressList = 1;
 }

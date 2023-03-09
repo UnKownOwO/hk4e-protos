@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+enum InBattleMechanicusStageType {
+	InBattleMechanicusStageNone = 0;
+	InBattleMechanicusStageBuild = 1;
+	InBattleMechanicusStageCardFlip = 2;
+	InBattleMechanicusStageKill = 3;
+}

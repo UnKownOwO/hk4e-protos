@@ -1,8 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message AiSkillCdInfo {
-	map<uint32, uint32> skillCdMap = 14;
-	map<uint32, uint32> skillGroupCdMap = 3;
+	map<uint32, uint32> SkillCdMap = 14;
+	map<uint32, uint32> SkillGroupCdMap = 3;
 }

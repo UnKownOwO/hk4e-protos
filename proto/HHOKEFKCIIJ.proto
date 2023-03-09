@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message HHOKEFKCIIJ {
+	enum KEDDPOIOGKM {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 24914;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	int32 Retcode = 2;
+}

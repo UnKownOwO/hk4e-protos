@@ -1,12 +1,13 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message PotionDungeonResultInfo {
-	uint32 modeId = 12;
-	uint32 difficultyLevel = 1;
-	uint32 leftTime = 6;
-	uint32 levelId = 2;
-	uint32 finalScore = 10;
-	uint32 stageId = 9;
+	uint32 ModeId = 12;
+	uint32 DifficultyLevel = 1;
+	uint32 LeftTime = 6;
+	uint32 LevelId = 2;
+	uint32 FinalScore = 10;
+	uint32 StageId = 9;
 }

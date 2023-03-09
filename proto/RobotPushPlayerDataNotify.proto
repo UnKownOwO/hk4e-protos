@@ -1,15 +1,17 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
+
 
 message RobotPushPlayerDataNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 16;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum RobotPushPlayerDataNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 16;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	bytes bin = 6;
+	bytes Bin = 6;
 }

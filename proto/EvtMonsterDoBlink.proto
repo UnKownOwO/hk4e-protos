@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package Proto;
+
+import "Rotation.proto";
+
+message EvtMonsterDoBlink {
+	Rotation TargetPos = 7;
+	uint32 EntityId = 13;
+	Rotation TargetRot = 9;
+}

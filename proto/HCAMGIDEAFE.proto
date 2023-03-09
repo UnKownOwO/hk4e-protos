@@ -1,9 +1,0 @@
-syntax = "proto3";
-
-option go_package = "./;proto";
-
-message HCAMGIDEAFE {
-	uint32 bestScore = 6;
-	bool isOpen = 1;
-	uint32 stageId = 2;
-}

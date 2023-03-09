@@ -1,17 +1,18 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message GetPlayerMpModeAvailabilityRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 1825;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum GetPlayerMpModeAvailabilityRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 1825;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	int32 mpRet = 12;
-	int32 retcode = 3;
-	repeated uint32 paramList = 7;
+	int32 MpRet = 12;
+	int32 Retcode = 3;
+	repeated uint32 ParamList = 7;
 }

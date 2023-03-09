@@ -1,11 +1,11 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "AttackResult.proto";
 
 message EvtBeingHitInfo {
-	AttackResult attackResult = 5;
-	uint32 peerId = 7;
-	uint32 frameNum = 10;
+	AttackResult AttackResult = 5;
+	uint32 PeerId = 7;
+	uint32 FrameNum = 10;
 }

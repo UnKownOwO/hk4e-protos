@@ -1,9 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "GCGMsgPVEIntention.proto";
 
 message PveIntentionInfo {
-	map<uint32, GCGMsgPVEIntention> intentionMap = 15;
+	map<uint32, GCGMsgPVEIntention> IntentionMap = 15;
 }

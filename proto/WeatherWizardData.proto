@@ -1,7 +1,8 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message WeatherWizardData {
-	uint32 shieldValue = 14;
+	uint32 ShieldValue = 14;
 }

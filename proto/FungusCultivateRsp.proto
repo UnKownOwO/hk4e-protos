@@ -1,17 +1,18 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message FungusCultivateRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 23930;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum FLGGLCPECFO {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 23930;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 cultivateId = 13;
-	int32 retcode = 12;
-	bool isNewRecord = 2;
+	uint32 CultivateId = 13;
+	int32 Retcode = 12;
+	bool IsNewRecord = 2;
 }

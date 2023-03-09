@@ -1,17 +1,17 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message GCGInviteBattleNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 7254;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// 	IS_ALLOW_CLIENT = 1;
-	// }
+	enum BBKBNGLJNAL {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 7482;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 uid = 11;
-	uint32 ljemjfinpph = 12;
+	uint32 ljemjfinpph = 8;
+	uint32 ConfirmEndTime = 9;
 }

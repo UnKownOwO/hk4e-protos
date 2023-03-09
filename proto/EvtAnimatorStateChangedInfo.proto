@@ -1,17 +1,17 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
-import "Vector.proto";
+import "Rotation.proto";
 
 message EvtAnimatorStateChangedInfo {
-	uint32 normalizedTimeCompact = 9;
-	float fadeDuration = 8;
-	uint32 entityId = 11;
-	bool Unk3300_KLMEKMGFGPD = 13;
-	bool Unk3300_MEOPKEDJCIN = 12;
-	int32 faceAngleCompact = 3;
-	uint32 toStateHash = 4;
-	uint32 layer = 5;
-	Vector pos = 7;
+	uint32 NormalizedTimeCompact = 9;
+	float FadeDuration = 8;
+	uint32 EntityId = 11;
+	bool ForceSync = 13;
+	bool HandleAnimatorStateImmediately = 12;
+	int32 FaceAngleCompact = 3;
+	uint32 ToStateHash = 4;
+	uint32 Layer = 5;
+	Rotation Pos = 7;
 }

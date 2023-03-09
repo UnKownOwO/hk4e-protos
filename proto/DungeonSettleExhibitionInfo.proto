@@ -1,11 +1,11 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "OnlinePlayerInfo.proto";
 import "ExhibitionDisplayInfo.proto";
 
 message DungeonSettleExhibitionInfo {
-	repeated ExhibitionDisplayInfo cardList = 2;
-	OnlinePlayerInfo playerInfo = 13;
+	repeated ExhibitionDisplayInfo CardList = 2;
+	OnlinePlayerInfo PlayerInfo = 13;
 }

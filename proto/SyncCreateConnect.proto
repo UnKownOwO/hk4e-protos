@@ -1,9 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "BreakoutSyncConnectUidInfo.proto";
 
 message SyncCreateConnect {
-	repeated BreakoutSyncConnectUidInfo uidInfoList = 6;
+	repeated BreakoutSyncConnectUidInfo UidInfoList = 6;
 }

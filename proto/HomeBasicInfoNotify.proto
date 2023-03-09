@@ -1,17 +1,17 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "HomeBasicInfo.proto";
 
 message HomeBasicInfoNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 4607;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum HomeBasicInfoNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4607;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	HomeBasicInfo basicInfo = 7;
+	HomeBasicInfo BasicInfo = 7;
 }

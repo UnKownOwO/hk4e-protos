@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message AbilityMetaLoseHp {
+	uint32 LoseHpConfigIdx = 4;
+}

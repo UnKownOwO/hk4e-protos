@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+import "BalloonInfo.proto";
+import "FallInfo.proto";
+import "MusicInfo.proto";
+
+message FleurFairMinigameInfo {
+	uint32 MinigameId = 14;
+	bool IsOpen = 3;
+	uint32 OpenTime = 6;
+	oneof FleurFairMinigameInfo_DetailOneofCase {
+		BalloonInfo balloon_info = 13;
+		FallInfo fall_info = 11;
+		MusicInfo music_info = 9;
+	}
+}

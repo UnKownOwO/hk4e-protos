@@ -1,16 +1,17 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message DraftOwnerTwiceConfirmNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 5414;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum DraftOwnerTwiceConfirmNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 5414;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 draftId = 15;
-	uint32 twiceConfirmDeadlineTime = 7;
+	uint32 DraftId = 15;
+	uint32 TwiceConfirmDeadlineTime = 7;
 }

@@ -1,18 +1,18 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "ChatEmojiCollectionData.proto";
 
 message GetChatEmojiCollectionRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 4091;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum GetChatEmojiCollectionRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4091;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	int32 retcode = 4;
-	ChatEmojiCollectionData chatEmojiCollectionData = 12;
+	int32 Retcode = 4;
+	ChatEmojiCollectionData ChatEmojiCollectionData = 12;
 }

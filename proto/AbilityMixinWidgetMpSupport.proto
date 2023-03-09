@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message AbilityMixinWidgetMpSupport {
+	uint32 TargetEntityId = 7;
+}

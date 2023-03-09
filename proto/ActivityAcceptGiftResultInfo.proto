@@ -1,9 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message ActivityAcceptGiftResultInfo {
-	map<uint32, uint32> Unk3300_JFHLEBLOFMA = 14;
-	uint32 uid = 11;
-	map<uint32, uint32> Unk3300_COCFNBJCFGP = 4;
+	map<uint32, uint32> AcceptGiftNumMap = 14;
+	uint32 Uid = 11;
+	map<uint32, uint32> UnacceptGiftNumMap = 4;
 }

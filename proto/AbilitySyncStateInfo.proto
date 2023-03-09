@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "AbilityScalarValueEntry.proto";
 import "AbilityAppliedAbility.proto";
@@ -8,10 +8,10 @@ import "AbilityAppliedModifier.proto";
 import "AbilityMixinRecoverInfo.proto";
 
 message AbilitySyncStateInfo {
-	bool isInited = 1;
-	repeated AbilityScalarValueEntry dynamicValueMap = 2;
-	repeated AbilityAppliedAbility appliedAbilities = 3;
-	repeated AbilityAppliedModifier appliedModifiers = 4;
-	repeated AbilityMixinRecoverInfo mixinRecoverInfos = 5;
-	repeated AbilityScalarValueEntry sgvDynamicValueMap = 6;
+	bool IsInited = 1;
+	repeated AbilityScalarValueEntry DynamicValueMap = 2;
+	repeated AbilityAppliedAbility AppliedAbilities = 3;
+	repeated AbilityAppliedModifier AppliedModifiers = 4;
+	repeated AbilityMixinRecoverInfo MixinRecoverInfos = 5;
+	repeated AbilityScalarValueEntry SgvDynamicValueMap = 6;
 }

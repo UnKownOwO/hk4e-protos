@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package Proto;
+
+import "AbilityScalarValueEntry.proto";
+
+message AbilityMetaReInitOverrideMap {
+	repeated AbilityScalarValueEntry OverrideMap = 2;
+}

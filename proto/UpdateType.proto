@@ -1,9 +1,0 @@
-syntax = "proto3";
-
-option go_package = "./;proto";
-
-enum UpdateType {
-    INVALUE = 0;
-    ADD     = 1;
-    SET     = 2;
-}

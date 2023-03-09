@@ -1,8 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message NpcData {
-	uint32 avatarId = 1;
-	uint32 costumeId = 2;
+	uint32 AvatarId = 1;
+	uint32 CostumeId = 2;
 }

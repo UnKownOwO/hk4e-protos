@@ -1,13 +1,13 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "InBattleMechanicusBuildingInfo.proto";
 
 message InBattleMechanicusPlayerInfo {
-	repeated InBattleMechanicusBuildingInfo buildingList = 12;
-	uint32 uid = 6;
-	uint32 gdinnaencko = 15;
-	bool kjckjdpeflc = 9;
-	uint32 buildingPoints = 3;
+	repeated InBattleMechanicusBuildingInfo BuildingList = 12;
+	uint32 Uid = 6;
+	uint32 PickCardId = 15;
+	bool IsCardConfirmed = 9;
+	uint32 BuildingPoints = 3;
 }

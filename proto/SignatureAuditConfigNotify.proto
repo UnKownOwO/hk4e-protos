@@ -1,16 +1,17 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message SignatureAuditConfigNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 4034;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum SignatureAuditConfigNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4034;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	bool isOpen = 11;
-	uint32 submitLimit = 13;
+	bool IsOpen = 11;
+	uint32 SubmitLimit = 13;
 }

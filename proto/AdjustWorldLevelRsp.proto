@@ -1,17 +1,18 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message AdjustWorldLevelRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 140;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum AdjustWorldLevelRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 140;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 cdOverTime = 7;
-	uint32 afterWorldLevel = 15;
-	int32 retcode = 14;
+	uint32 CdOverTime = 7;
+	uint32 AfterWorldLevel = 15;
+	int32 Retcode = 14;
 }

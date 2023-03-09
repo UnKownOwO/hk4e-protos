@@ -1,9 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 enum FishEscapeReason {
-  FISN_ESCAPE_NONE    = 0;
-  FISH_ESCAPE_SHOCKED = 1;
-  FISH_ESCAPE_UNHOOK  = 2;
+	FisnEscapeNone = 0;
+	FishEscapeShocked = 1;
+	FishEscapeUnhook = 2;
 }

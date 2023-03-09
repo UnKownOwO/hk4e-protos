@@ -1,10 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 enum AsterLittleStageState {
-  ASTER_LITTLE_STAGE_NONE      = 0;
-  ASTER_LITTLE_STAGE_UNSTARTED = 1;
-  ASTER_LITTLE_STAGE_STARTED   = 2;
-  ASTER_LITTLE_STAGE_FINISHED  = 3;
+	AsterLittleStageNone = 0;
+	AsterLittleStageUnstarted = 1;
+	AsterLittleStageStarted = 2;
+	AsterLittleStageFinished = 3;
 }

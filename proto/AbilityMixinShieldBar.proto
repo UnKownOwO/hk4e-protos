@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message AbilityMixinShieldBar {
+	float Shield = 8;
+	float MaxShield = 11;
+	uint32 ElementType = 1;
+	uint32 PlayerNum = 7;
+}

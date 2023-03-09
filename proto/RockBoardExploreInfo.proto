@@ -1,9 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "RockBoardExploreStageData.proto";
 
 message RockBoardExploreInfo {
-	repeated RockBoardExploreStageData stageDataList = 10;
+	repeated RockBoardExploreStageData StageDataList = 10;
 }

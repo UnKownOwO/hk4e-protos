@@ -1,10 +1,11 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message Npc {
-	uint32 npcId = 1;
-	uint32 roomId = 2;
-	uint32 parentQuestId = 3;
-	uint32 blockId = 4;
+	uint32 NpcId = 1;
+	uint32 RoomId = 2;
+	uint32 ParentQuestId = 3;
+	uint32 BlockId = 4;
 }

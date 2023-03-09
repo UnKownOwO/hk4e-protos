@@ -1,8 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message GCGMsgCharDie {
-	uint32 cardGuid = 10;
-	uint32 controllerId = 9;
+	uint32 CardGuid = 10;
+	uint32 ControllerId = 9;
 }

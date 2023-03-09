@@ -1,8 +1,8 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 enum TransmitReason {
-  TRANSMIT_NONE  = 0;
-  TRANSMIT_QUEST = 1;
+	TransmitNone = 0;
+	TransmitQuest = 1;
 }

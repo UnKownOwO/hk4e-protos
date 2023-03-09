@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "IrodoriFlowerData.proto";
 import "IrodoriPoetryData.proto";
@@ -8,8 +8,8 @@ import "IrodoriChessData.proto";
 import "IrodoriMasterLevelInfo.proto";
 
 message IrodoriInfo {
-	IrodoriFlowerData flowerData = 6;
-	IrodoriPoetryData poetryData = 14;
-	IrodoriChessData chessData = 10;
-	repeated IrodoriMasterLevelInfo masterLevelList = 15;
+	IrodoriFlowerData FlowerData = 6;
+	IrodoriPoetryData PoetryData = 14;
+	IrodoriChessData ChessData = 10;
+	repeated IrodoriMasterLevelInfo MasterLevelList = 15;
 }

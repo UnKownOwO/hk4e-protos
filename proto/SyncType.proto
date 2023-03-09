@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package Proto;
+
+enum SyncType {
+	None = 0;
+	CreateConnect = 1;
+	StartGame = 2;
+	Ping = 3;
+	FinishGame = 4;
+	SnapShot = 5;
+	Action = 6;
+}

@@ -1,15 +1,16 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message ChessEscapedMonstersNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 5312;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum ChessEscapedMonstersNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 5312;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 escapedMonsters = 10;
+	uint32 ExcapedMonsters = 10;
 }

@@ -1,9 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "HomeLimitedShopGoods.proto";
 
 message HomeLimitedShop {
-	repeated HomeLimitedShopGoods goodsList = 9;
+	repeated HomeLimitedShopGoods GoodsList = 9;
 }

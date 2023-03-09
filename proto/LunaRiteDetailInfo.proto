@@ -1,11 +1,11 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "LunaRiteHintPoint.proto";
 import "LunaRiteAreaInfo.proto";
 
 message LunaRiteDetailInfo {
-	repeated LunaRiteHintPoint hintPoint = 8;
-	repeated LunaRiteAreaInfo areaInfoList = 9;
+	repeated LunaRiteHintPoint HintPoint = 8;
+	repeated LunaRiteAreaInfo AreaInfoList = 9;
 }

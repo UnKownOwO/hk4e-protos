@@ -1,21 +1,21 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "GearColumnInfo.proto";
 
 message GearActivityFinishPlayGearReq {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 20920;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// 	IS_ALLOW_CLIENT = 1;
-	// }
+	enum GearActivityFinishPlayGearReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 20920;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
 
-	bool isSuccess = 15;
-	repeated GearColumnInfo gearColumnInfoList = 9;
-	bool useClue = 13;
-	uint32 levelId = 2;
+	bool IsSuccess = 15;
+	repeated GearColumnInfo GearColumnInfoList = 9;
+	bool UseClue = 13;
+	uint32 LevelId = 2;
 }

@@ -1,7 +1,8 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message DuelDataChange {
-	uint32 round = 8;
+	uint32 Round = 8;
 }

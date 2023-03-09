@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "SkyCrystalDetectorData.proto";
 import "WeatherWizardData.proto";
@@ -12,23 +12,23 @@ import "ClientCollectorData.proto";
 import "DetectorData.proto";
 
 message AllWidgetDataNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 4286;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum AllWidgetDataNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4286;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	SkyCrystalDetectorData skyCrystalDetectorData = 2;
-	repeated WidgetCoolDownData normalCoolDownDataList = 4;
-	repeated WidgetSlotData slotList = 14;
-	repeated uint32 backgroundActiveWidgetList = 5;
-	repeated AnchorPointData anchorPointList = 11;
-	WeatherWizardData weatherWizardData = 13;
-	uint32 nextAnchorPointUsableTime = 15;
-	repeated ClientCollectorData clientCollectorDataList = 7;
-	repeated WidgetCoolDownData coolDownGroupDataList = 6;
-	repeated DetectorData oneoffGatherPointDetectorDataList = 8;
-	LunchBoxData lunchBoxData = 1;
+	SkyCrystalDetectorData SkyCrystalDetectorData = 2;
+	repeated WidgetCoolDownData NormalCoolDownDataList = 4;
+	repeated WidgetSlotData SlotList = 14;
+	repeated uint32 BackgroundActiveWidgetList = 5;
+	repeated AnchorPointData AnchorPointList = 11;
+	WeatherWizardData WeatherWizardData = 13;
+	uint32 NextAnchorPointUsableTime = 15;
+	repeated ClientCollectorData ClientCollectorDataList = 7;
+	repeated WidgetCoolDownData CoolDownGroupDataList = 6;
+	repeated DetectorData OneoffGatherPointDetectorDataList = 8;
+	LunchBoxData LunchBoxData = 1;
 }

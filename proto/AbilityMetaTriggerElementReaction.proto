@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message AbilityMetaTriggerElementReaction {
+	int32 HitIndex = 5;
+	uint32 ElementReactionType = 6;
+	uint32 ElementSourceType = 11;
+	uint32 TriggerEntityId = 10;
+	uint32 ElementReactorType = 15;
+}

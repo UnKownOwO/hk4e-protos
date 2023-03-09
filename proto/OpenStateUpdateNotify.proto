@@ -1,15 +1,16 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message OpenStateUpdateNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 158;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum OpenStateUpdateNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 158;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	map<uint32, uint32> openStateMap = 9;
+	map<uint32, uint32> OpenStateMap = 9;
 }

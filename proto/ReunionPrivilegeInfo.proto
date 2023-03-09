@@ -1,9 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message ReunionPrivilegeInfo {
-	uint32 Unk3300_ALOLACFGMHI = 7;
-	uint32 privilegeId = 12;
-	uint32 Unk3300_GJBEAFPMFAA = 8;
+	uint32 TotalCount = 7;
+	uint32 PrivilegeId = 12;
+	uint32 CurDayCount = 8;
 }

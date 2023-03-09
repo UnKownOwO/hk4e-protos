@@ -1,16 +1,17 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message EchoNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 88;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum EchoNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 88;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	string content = 4;
-	uint32 seqId = 3;
+	string Content = 4;
+	uint32 SeqId = 3;
 }

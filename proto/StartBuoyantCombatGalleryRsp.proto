@@ -1,17 +1,18 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message StartBuoyantCombatGalleryRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 8895;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum StartBuoyantCombatGalleryRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8895;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	int32 retcode = 10;
-	uint32 galleryLevel = 8;
-	uint32 galleryId = 7;
+	int32 Retcode = 10;
+	uint32 GalleryLevel = 8;
+	uint32 GalleryId = 7;
 }

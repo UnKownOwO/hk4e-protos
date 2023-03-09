@@ -1,9 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
-import "Vector.proto";
+import "Rotation.proto";
 
 message EntityClientExtraInfo {
-	Vector skillAnchorPosition = 1;
+	Rotation SkillAnchorPosition = 1;
 }

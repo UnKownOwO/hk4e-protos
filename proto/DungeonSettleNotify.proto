@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "TowerLevelEndNotify.proto";
 import "TrialAvatarFirstPassDungeonNotify.proto";
@@ -18,25 +18,25 @@ import "ParamList.proto";
 import "StrengthenPointData.proto";
 
 message DungeonSettleNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 914;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum DungeonSettleNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 914;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	repeated DungeonSettleExhibitionInfo exhibitionInfoList = 12;
-	map<uint32, ParamList> settleShow = 14;
-	map<uint32, StrengthenPointData> strengthenPointDataMap = 1;
-	uint32 result = 15;
-	uint32 useTime = 2;
-	uint32 dungeonId = 7;
-	repeated uint32 failCondList = 8;
-	uint32 createPlayerUid = 9;
-	bool isSuccess = 4;
-	uint32 closeTime = 6;
-	oneof detail {
+	repeated DungeonSettleExhibitionInfo ExhibitionInfoList = 12;
+	map<uint32, ParamList> SettleShow = 14;
+	map<uint32, StrengthenPointData> StrengthenPointDataMap = 1;
+	uint32 Result = 15;
+	uint32 UseTime = 2;
+	uint32 DungeonId = 7;
+	repeated uint32 FailCondList = 8;
+	uint32 CreatePlayerUid = 9;
+	bool IsSuccess = 4;
+	uint32 CloseTime = 6;
+	oneof DungeonSettleNotify_DetailOneofCase {
 		TowerLevelEndNotify tower_level_end_notify = 281;
 		TrialAvatarFirstPassDungeonNotify trial_avatar_first_pass_dungeon_notify = 1737;
 		ChannellerSlabLoopDungeonResultInfo channeller_slab_loop_dungeon_result_info = 1045;

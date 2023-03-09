@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package Proto;
+
+import "SeaLampV3RaceLevelInfo.proto";
+
+message SeaLampV3RaceInfo {
+	repeated SeaLampV3RaceLevelInfo LevelInfoList = 6;
+}

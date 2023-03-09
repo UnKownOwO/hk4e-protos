@@ -1,13 +1,13 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
-import "Vector.proto";
+import "Rotation.proto";
 
 message AnchorPointData {
-	uint32 sceneId = 15;
-	Vector rot = 13;
-	uint32 endTime = 10;
-	Vector pos = 12;
-	uint32 anchorPointId = 11;
+	uint32 SceneId = 15;
+	Rotation Rot = 13;
+	uint32 EndTime = 10;
+	Rotation Pos = 12;
+	uint32 AnchorPointId = 11;
 }

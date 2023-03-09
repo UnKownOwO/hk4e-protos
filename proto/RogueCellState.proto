@@ -1,11 +1,11 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 enum RogueCellState {
-  ROGUE_CELL_NONE        = 0;
-  ROGUE_CELL_BATTLE      = 1;
-  ROGUE_CELL_SUCCESS     = 2;
-  ROGUE_CELL_FINISH      = 3;
-  ROGUE_CELL_TAKEN_CHEST = 4;
+	RogueCellNone = 0;
+	RogueCellBattle = 1;
+	RogueCellSuccess = 2;
+	RogueCellFinish = 3;
+	RogueCellTakenChest = 4;
 }

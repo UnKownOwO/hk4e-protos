@@ -1,8 +1,0 @@
-syntax = "proto3";
-
-option go_package = "./;proto";
-
-message CBNIFFCNOEC {
-	uint64 dungeonGuid = 1;
-	uint32 minCostTime = 2;
-}

@@ -1,21 +1,22 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message ReliquaryUpgradeRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 658;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum ReliquaryUpgradeRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 658;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	repeated uint32 oldAppendPropList = 14;
-	int32 retcode = 8;
-	uint32 powerUpRate = 9;
-	uint64 targetReliquaryGuid = 12;
-	repeated uint32 curAppendPropList = 4;
-	uint32 oldLevel = 15;
-	uint32 curLevel = 13;
+	repeated uint32 OldAppendPropList = 14;
+	int32 Retcode = 8;
+	uint32 PowerUpRate = 9;
+	uint64 TargetReliquaryGuid = 12;
+	repeated uint32 CurAppendPropList = 4;
+	uint32 OldLevel = 15;
+	uint32 CurLevel = 13;
 }

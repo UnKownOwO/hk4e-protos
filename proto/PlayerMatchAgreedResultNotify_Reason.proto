@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package Proto;
+
+enum PlayerMatchAgreedResultNotify_Reason {
+	Succ = 0;
+	TargetSceneCannotEnter = 1;
+	SelfMpUnavailable = 2;
+	OtherDataVersionNotLatest = 3;
+	DataVersionNotLatest = 4;
+}

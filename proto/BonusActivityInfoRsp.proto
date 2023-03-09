@@ -1,18 +1,18 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "BonusActivityInfo.proto";
 
 message BonusActivityInfoRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 2516;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum BonusActivityInfoRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 2516;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	repeated BonusActivityInfo bonusActivityInfoList = 13;
-	int32 retcode = 12;
+	repeated BonusActivityInfo BonusActivityInfoList = 13;
+	int32 Retcode = 12;
 }

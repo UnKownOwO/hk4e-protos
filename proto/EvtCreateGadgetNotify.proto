@@ -1,37 +1,37 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
-import "Vector.proto";
+import "Rotation.proto";
 import "ForwardType.proto";
 
 message EvtCreateGadgetNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 320;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// 	IS_ALLOW_CLIENT = 1;
-	// }
+	enum EvtCreateGadgetNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 320;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
 
-	uint32 targetLockPointIndex = 6;
-	bool is_async_load = 137; //guessed
-	uint32 ownerEntityId = 3;
-	Vector initEulerAngles = 11;
-	uint32 propOwnerEntityId = 1;
-	uint32 roomId = 15;
-	ForwardType forwardType = 7;
-	uint32 campId = 14;
-	uint32 configId = 13;
-	uint32 targetEntityId = 10;
-	uint64 guid = 5;
-	bool Unk3300_DLBIJFOONBA = 2;
-	Vector initPos = 9;
-	uint32 entityId = 4;
-	bool isPeerIdFromPlayer = 771;
-	repeated uint32 targetLockPointIndexList = 1252;
-	bool Unk3300_EJNBIGLGMII = 8;
-	uint32 campType = 12;
-	repeated uint32 targetEntityIdList = 1591;
+	uint32 TargetLockPointIndex = 6;
+	bool IsTrueLifeTimeByOwner = 137;
+	uint32 OwnerEntityId = 3;
+	Rotation InitEulerAngles = 11;
+	uint32 PropOwnerEntityId = 1;
+	uint32 RoomId = 15;
+	ForwardType ForwardType = 7;
+	uint32 CampId = 14;
+	uint32 ConfigId = 13;
+	uint32 TargetEntityId = 10;
+	uint64 Guid = 5;
+	bool SightGroupWithOwner = 2;
+	Rotation InitPos = 9;
+	uint32 EntityId = 4;
+	bool IsPeerIdFromPlayer = 771;
+	repeated uint32 TargetLockPointIndexList = 1252;
+	bool IsAsyncLoad = 8;
+	uint32 CampType = 12;
+	repeated uint32 TargetEntityIdList = 1591;
 }

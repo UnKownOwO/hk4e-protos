@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message AbilityApplyLevelModifier {
+	uint32 ApplyEntityId = 6;
+}

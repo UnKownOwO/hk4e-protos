@@ -1,11 +1,11 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "FishingScore.proto";
 import "FishInfo.proto";
 
 message FishingGallerySettleInfo {
-	repeated FishingScore fishingScoreList = 4;
-	map<uint32, FishInfo> fishMap = 9;
+	repeated FishingScore FishingScoreList = 4;
+	map<uint32, FishInfo> FishMap = 9;
 }

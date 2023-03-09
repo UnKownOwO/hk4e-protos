@@ -1,8 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message ModifierDurability {
-	float reduceRatio = 1;
-	float remainingDurability = 2;
+	float ReduceRatio = 1;
+	float RemainingDurability = 2;
 }

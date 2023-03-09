@@ -1,10 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "OnlinePlayerInfo.proto";
 
 message MatchPlayerInfo {
-	bool isAgreed = 11;
-	OnlinePlayerInfo playerInfo = 4;
+	bool IsAgreed = 11;
+	OnlinePlayerInfo PlayerInfo = 4;
 }

@@ -1,17 +1,17 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "PlayerWorldSceneInfo.proto";
 
 message PlayerWorldSceneInfoListNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 3198;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum PlayerWorldSceneInfoListNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 3198;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	repeated PlayerWorldSceneInfo infoList = 5;
+	repeated PlayerWorldSceneInfo InfoList = 5;
 }

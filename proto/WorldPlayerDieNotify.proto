@@ -1,21 +1,21 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "PlayerDieType.proto";
 
 message WorldPlayerDieNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 202;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum WorldPlayerDieNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 202;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	PlayerDieType dieType = 10;
-	uint32 murdererEntityId = 8;
-	oneof entity {
+	PlayerDieType DieType = 10;
+	uint32 MurdererEntityId = 8;
+	oneof WorldPlayerDieNotify_EntityOneofCase {
 		uint32 monster_id = 1;
 		uint32 gadget_id = 4;
 	}

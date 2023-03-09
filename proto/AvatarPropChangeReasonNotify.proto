@@ -1,21 +1,21 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "PropChangeReason.proto";
 
 message AvatarPropChangeReasonNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 1262;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum AvatarPropChangeReasonNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 1262;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	float curValue = 2;
-	uint32 propType = 10;
-	float oldValue = 4;
-	PropChangeReason reason = 5;
-	uint64 avatarGuid = 12;
+	float CurValue = 2;
+	uint32 PropType = 10;
+	float OldValue = 4;
+	PropChangeReason Reason = 5;
+	uint64 AvatarGuid = 12;
 }

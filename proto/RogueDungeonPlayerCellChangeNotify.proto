@@ -1,16 +1,17 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message RogueDungeonPlayerCellChangeNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 8954;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum RogueDungeonPlayerCellChangeNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8954;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 cellId = 9;
-	uint32 oldCellId = 1;
+	uint32 CellId = 9;
+	uint32 OldCellId = 1;
 }

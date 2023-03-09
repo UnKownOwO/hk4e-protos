@@ -1,48 +1,49 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 import "StopServer.proto";
 
 message GetPlayerTokenRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 155;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum GetPlayerTokenRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 155;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 subChannelId = 891;
-	string token = 6;
-	uint32 uid = 1;
-	string secretKey = 12;
-	uint32 accountType = 3;
-	string msg = 10;
-	bool Unk3300_AJBBIPFMBEL = 661;
-	bytes securityCmdBuffer = 13;
-	int32 retcode = 15;
-	bytes extraBinData = 14;
-	string clientVersionRandomKey = 1558;
-	string countryCode = 1960;
-	uint32 keyId = 2003;
-	string birthday = 1459;
-	uint32 gmUid = 5;
-	uint64 secretKeySeed = 8;
-	uint32 blackUidEndTime = 2;
-	uint32 channelId = 1356;
-	uint32 regPlatform = 1614;
-	uint32 platformType = 11;
-	bool isGuest = 4;
-	repeated uint32 finishCollectionIdList = 1846;
-	uint32 tag = 1344;
-	string accountUid = 9;
-	bool isProficientPlayer = 7;
-	string sign = 1993;
-	StopServer stopServer = 347;
-	string psnId = 1285;
-	uint32 cloudClientIp = 1481;
-	string clientIpStr = 64;
-	string serverRandKey = 1420;
-	bool Unk3300_CFBHAHOHDKC = 1663;
+	uint32 SubChannelId = 891;
+	string Token = 6;
+	uint32 Uid = 1;
+	string SecretKey = 12;
+	uint32 AccountType = 3;
+	string Msg = 10;
+	bool IsWatchdogUid = 661;
+	bytes SecurityCmdBuffer = 13;
+	int32 Retcode = 15;
+	bytes ExtraBinData = 14;
+	string ClientVersionRandomKey = 1558;
+	string CountryCode = 1960;
+	uint32 KeyId = 2003;
+	string Birthday = 1459;
+	uint32 GmUid = 5;
+	uint64 SecretKeySeed = 8;
+	uint32 BlackUidEndTime = 2;
+	uint32 ChannelId = 1356;
+	uint32 RegPlatform = 1614;
+	uint32 PlatformType = 11;
+	bool IsGuest = 4;
+	repeated uint32 FinishCollectionIdList = 1846;
+	uint32 Tag = 1344;
+	string AccountUid = 9;
+	bool IsProficientPlayer = 7;
+	string Sign = 1993;
+	StopServer StopServer = 347;
+	string PsnId = 1285;
+	uint32 MinorsRegMinAge = 1481;
+	string ClientIpStr = 64;
+	string ServerRandKey = 1420;
+	bool IsLoginWhiteList = 1663;
 }

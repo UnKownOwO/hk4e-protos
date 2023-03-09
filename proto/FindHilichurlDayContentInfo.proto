@@ -1,7 +1,8 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message FindHilichurlDayContentInfo {
-	uint32 startTime = 5;
+	uint32 StartTime = 5;
 }

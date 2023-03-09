@@ -1,19 +1,19 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "PlantFlowerAcceptFlowerResultInfo.proto";
 
 message PlantFlowerAcceptGiveFlowerRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 8039;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum PlantFlowerAcceptGiveFlowerRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8039;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 scheduleId = 4;
-	int32 retcode = 12;
-	PlantFlowerAcceptFlowerResultInfo acceptFlowerResultInfo = 14;
+	uint32 ScheduleId = 4;
+	int32 Retcode = 12;
+	PlantFlowerAcceptFlowerResultInfo AcceptFlowerResultInfo = 14;
 }

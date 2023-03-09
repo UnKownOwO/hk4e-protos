@@ -1,20 +1,20 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "AranaraCollectionState.proto";
 
 message AddAranaraCollectionNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 6395;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum DCJEFDEAHBE {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 6395;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	AranaraCollectionState Unk3300_AFBIBLNKCOD = 10;
-	AranaraCollectionState Unk3300_NJLJBBMJLBK = 15;
-	uint32 collectionId = 1;
-	uint32 collectionType = 5;
+	AranaraCollectionState FromState = 10;
+	AranaraCollectionState TargetState = 15;
+	uint32 CollectionId = 1;
+	uint32 CollectionType = 5;
 }

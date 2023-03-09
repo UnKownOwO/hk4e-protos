@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+import "CustomDungeonSettingMuipData.proto";
+import "CustomDungeonAbstractMuipData.proto";
+import "CustomDungeonSocialMuipData.proto";
+
+message CustomDungeonBriefMuipData {
+	uint64 DungeonGuid = 1;
+	uint32 DungeonId = 2;
+	string CreatorNickname = 3;
+	repeated uint32 TagList = 4;
+	CustomDungeonSettingMuipData Setting = 5;
+	CustomDungeonAbstractMuipData Abstract = 6;
+	CustomDungeonSocialMuipData Social = 7;
+}

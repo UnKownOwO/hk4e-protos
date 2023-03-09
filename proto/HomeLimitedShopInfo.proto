@@ -1,14 +1,14 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
-import "Vector.proto";
+import "Rotation.proto";
 
 message HomeLimitedShopInfo {
-	fixed32 nextGuestOpenTime = 14;
-	uint32 uid = 4;
-	Vector djinnRot = 12;
-	fixed32 nextCloseTime = 2;
-	Vector djinnPos = 6;
-	fixed32 nextOpenTime = 15;
+	uint32 NextGuestOpenTime = 14;
+	uint32 Uid = 4;
+	Rotation DjinnRot = 12;
+	uint32 NextCloseTime = 2;
+	Rotation DjinnPos = 6;
+	uint32 NextOpenTime = 15;
 }

@@ -1,18 +1,19 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message BartenderGetFormulaRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 8550;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum BartenderGetFormulaRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8550;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	bool isNew = 12;
-	uint32 formulaId = 15;
-	repeated uint32 affixList = 9;
-	int32 retcode = 3;
+	bool IsNew = 12;
+	uint32 FormulaId = 15;
+	repeated uint32 AffixList = 9;
+	int32 Retcode = 3;
 }

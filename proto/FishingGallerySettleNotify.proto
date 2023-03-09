@@ -1,19 +1,19 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "FishingGallerySettleInfo.proto";
 
 message FishingGallerySettleNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 8356;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum FishingGallerySettleNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8356;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	FishingGallerySettleInfo settleInfo = 3;
-	uint32 galleryId = 7;
-	uint32 levelId = 6;
+	FishingGallerySettleInfo SettleInfo = 3;
+	uint32 GalleryId = 7;
+	uint32 LevelId = 6;
 }

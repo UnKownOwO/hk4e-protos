@@ -1,9 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message PlayerWorldSceneInfo {
-	repeated uint32 sceneTagIdList = 13;
-	bool isLocked = 5;
-	uint32 sceneId = 11;
+	repeated uint32 SceneTagIdList = 13;
+	bool IsLocked = 5;
+	uint32 SceneId = 11;
 }

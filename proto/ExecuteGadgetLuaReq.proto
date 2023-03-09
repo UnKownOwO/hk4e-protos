@@ -1,19 +1,20 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message ExecuteGadgetLuaReq {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 210;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// 	IS_ALLOW_CLIENT = 1;
-	// }
+	enum ExecuteGadgetLuaReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 210;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
 
-	int32 param2 = 15;
-	int32 param3 = 8;
-	uint32 sourceEntityId = 6;
-	int32 param1 = 14;
+	int32 Param2 = 15;
+	int32 Param3 = 8;
+	uint32 SourceEntityId = 6;
+	int32 Param1 = 14;
 }

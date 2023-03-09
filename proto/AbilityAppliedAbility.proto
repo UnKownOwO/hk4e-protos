@@ -1,13 +1,13 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "AbilityString.proto";
 import "AbilityScalarValueEntry.proto";
 
 message AbilityAppliedAbility {
-	AbilityString abilityName = 1;
-	AbilityString abilityOverride = 2;
-	repeated AbilityScalarValueEntry overrideMap = 3;
-	uint32 instancedAbilityId = 4;
+	AbilityString AbilityName = 1;
+	AbilityString AbilityOverride = 2;
+	repeated AbilityScalarValueEntry OverrideMap = 3;
+	uint32 InstancedAbilityId = 4;
 }

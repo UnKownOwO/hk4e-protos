@@ -1,13 +1,13 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "OnlinePlayerInfo.proto";
 
 message BalloonSettleInfo {
-	uint32 shootCount = 3;
-	uint32 maxCombo = 14;
-	uint32 finalScore = 1;
-	uint32 uid = 11;
-	OnlinePlayerInfo playerInfo = 15;
+	uint32 ShootCount = 3;
+	uint32 MaxCombo = 14;
+	uint32 FinalScore = 1;
+	uint32 Uid = 11;
+	OnlinePlayerInfo PlayerInfo = 15;
 }

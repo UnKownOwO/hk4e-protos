@@ -1,18 +1,19 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message ChannellerSlabTakeoffBuffRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 8646;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum ChannellerSlabTakeoffBuffRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8646;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 slotId = 2;
-	bool fhableimdgl = 6;
-	uint32 buffId = 14;
-	int32 retcode = 3;
+	uint32 SlotId = 2;
+	bool IsMp = 6;
+	uint32 BuffId = 14;
+	int32 Retcode = 3;
 }

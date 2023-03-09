@@ -1,8 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message CataLogGlobalWatcherFinishedData {
-	uint32 catalogType = 5;
-	repeated uint32 finishedGlobalWatcherList = 2;
+	uint32 CatalogType = 5;
+	repeated uint32 FinishedGlobalWatcherList = 2;
 }

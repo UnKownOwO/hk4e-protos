@@ -1,17 +1,18 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message RogueHealAvatarsRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 8803;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum RogueHealAvatarsRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8803;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	int32 retcode = 14;
-	uint32 cellId = 12;
-	uint32 dungeonId = 11;
+	int32 Retcode = 14;
+	uint32 CellId = 12;
+	uint32 DungeonId = 11;
 }

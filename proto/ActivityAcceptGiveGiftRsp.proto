@@ -1,19 +1,19 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "ActivityAcceptGiftResultInfo.proto";
 
 message ActivityAcceptGiveGiftRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 8235;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum ActivityAcceptGiveGiftRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8235;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 scheduleId = 4;
-	ActivityAcceptGiftResultInfo acceptGiftResultInfo = 9;
-	int32 retcode = 6;
+	uint32 ScheduleId = 4;
+	ActivityAcceptGiftResultInfo AcceptGiftResultInfo = 9;
+	int32 Retcode = 6;
 }

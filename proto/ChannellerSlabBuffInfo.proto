@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package Proto;
+
+import "ChannellerSlabBuffSchemeInfo.proto";
+import "ChannellerSlabAssistInfo.proto";
+
+message ChannellerSlabBuffInfo {
+	ChannellerSlabBuffSchemeInfo SingleBuffSchemeInfo = 6;
+	repeated uint32 BuffIdList = 10;
+	ChannellerSlabBuffSchemeInfo MpBuffSchemeInfo = 9;
+	repeated ChannellerSlabAssistInfo AssistInfoList = 14;
+}

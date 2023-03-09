@@ -1,9 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message ExpeditionChallengeInfo {
-	uint32 openTime = 11;
-	uint32 id = 13;
-	bool isFinished = 15;
+	uint32 OpenTime = 11;
+	uint32 Id = 13;
+	bool IsFinished = 15;
 }

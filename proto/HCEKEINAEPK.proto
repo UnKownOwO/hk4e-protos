@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message HCEKEINAEPK {
+	enum LCMGICGLAFM {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 21856;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	bool gocbaipjdlk = 11;
+}

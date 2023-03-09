@@ -1,14 +1,14 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
-import "Duel.proto";
+import "GCGDuel.proto";
 
 message NJAPCNDDMBH {
-	uint32 opSeq = 13;
-	uint32 controllerId = 14;
-	oneof detail {
+	uint32 OpSeq = 13;
+	uint32 ControllerId = 14;
+	oneof EEBALNLJINH {
 		string gm_msg = 12;
-		Duel duel = 5;
+		GCGDuel duel = 5;
 	}
 }

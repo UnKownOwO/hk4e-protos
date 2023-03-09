@@ -1,15 +1,15 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "ProfilePicture.proto";
 import "ExhibitionDisplayInfo.proto";
 
 message HideAndSeekSettleInfo {
-	uint32 uid = 1;
-	repeated ExhibitionDisplayInfo cardList = 2;
-	uint32 headImage = 3;
-	string onlineId = 10;
-	string nickname = 9;
-	ProfilePicture profilePicture = 5;
+	uint32 Uid = 1;
+	repeated ExhibitionDisplayInfo CardList = 2;
+	uint32 HeadImage = 3;
+	string OnlineId = 10;
+	string Nickname = 9;
+	ProfilePicture ProfilePicture = 5;
 }

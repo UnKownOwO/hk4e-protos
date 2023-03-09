@@ -1,18 +1,19 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message AvatarPromoteGetRewardRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 1718;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum AvatarPromoteGetRewardRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 1718;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 rewardId = 8;
-	uint32 promoteLevel = 5;
-	int32 retcode = 12;
-	uint64 avatarGuid = 14;
+	uint32 RewardId = 8;
+	uint32 PromoteLevel = 5;
+	int32 Retcode = 12;
+	uint64 AvatarGuid = 14;
 }

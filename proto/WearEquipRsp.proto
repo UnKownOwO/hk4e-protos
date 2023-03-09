@@ -1,17 +1,18 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message WearEquipRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 613;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum WearEquipRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 613;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	int32 retcode = 9;
-	uint64 avatarGuid = 6;
-	uint64 equipGuid = 13;
+	int32 Retcode = 9;
+	uint64 AvatarGuid = 6;
+	uint64 EquipGuid = 13;
 }

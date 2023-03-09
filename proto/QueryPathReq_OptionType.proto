@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package Proto;
+
+enum QueryPathReq_OptionType {
+	OptionNone = 0;
+	OptionNormal = 1;
+	OptionFirstCanGo = 2;
+}

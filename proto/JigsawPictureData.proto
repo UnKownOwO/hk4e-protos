@@ -1,10 +1,11 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message JigsawPictureData {
-	uint32 Unk3300_DFGHKDBENED = 12;
-	uint32 Unk3300_FIKPLGJIBGP = 11;
-	bool isOpen = 4;
-	bool isFinished = 8;
+	uint32 ShortestTime = 12;
+	uint32 LastDuration = 11;
+	bool IsOpen = 4;
+	bool IsFinished = 8;
 }

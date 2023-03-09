@@ -1,14 +1,14 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
-import "Vector.proto";
+import "Rotation.proto";
 
 message GroupLinkBundle {
-	bool isActivated = 7;
-	Vector center = 6;
-	uint32 sceneId = 8;
-	uint32 radius = 13;
-	bool isShowMark = 12;
-	uint32 bundleId = 9;
+	bool IsActivated = 7;
+	Rotation Center = 6;
+	uint32 SceneId = 8;
+	uint32 Radius = 13;
+	bool IsShowMark = 12;
+	uint32 BundleId = 9;
 }

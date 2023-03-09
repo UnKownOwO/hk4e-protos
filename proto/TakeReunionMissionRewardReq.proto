@@ -1,18 +1,19 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message TakeReunionMissionRewardReq {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 5064;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// 	IS_ALLOW_CLIENT = 1;
-	// }
+	enum TakeReunionMissionRewardReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 5064;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
 
-	uint32 missionId = 8;
-	uint32 rewardIndex = 15;
-	uint32 rewardId = 7;
+	uint32 MissionId = 8;
+	uint32 RewardIndex = 15;
+	uint32 RewardId = 7;
 }

@@ -1,9 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "FurnitureMakeData.proto";
 
 message FurnitureMakeSlot {
-	repeated FurnitureMakeData furnitureMakeDataList = 4;
+	repeated FurnitureMakeData FurnitureMakeDataList = 4;
 }

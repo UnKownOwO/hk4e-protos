@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package Proto;
+
+import "SyncType.proto";
+import "SyncCreateConnect.proto";
+import "SyncPing.proto";
+import "SyncFinishGame.proto";
+import "SyncSnapShot.proto";
+import "SyncAction.proto";
+
+message AbilityMixinBreakout {
+	int32 Retcode = 13;
+	SyncType SyncType = 3;
+	oneof Sync {
+		SyncCreateConnect sync_create_connect = 14;
+		SyncPing sync_ping = 4;
+		SyncFinishGame sync_finish_game = 7;
+		SyncSnapShot sync_snap_shot = 10;
+		SyncAction sync_action = 12;
+	}
+}

@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message SeaLampV3CampStageInfo {
+	bool IsFinished = 2;
+	bool IsOpen = 4;
+	uint32 StageId = 12;
+	uint32 LevelId = 5;
+}

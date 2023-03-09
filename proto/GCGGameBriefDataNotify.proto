@@ -1,18 +1,18 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "GCGGameBriefData.proto";
 
 message GCGGameBriefDataNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 7654;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum BKKLKPMDKMP {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 7654;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	GCGGameBriefData gcgBriefData = 4;
-	bool isNewGame = 12;
+	GCGGameBriefData GcgBriefData = 4;
+	bool IsNewGame = 12;
 }

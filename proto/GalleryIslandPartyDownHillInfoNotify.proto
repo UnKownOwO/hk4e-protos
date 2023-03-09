@@ -1,17 +1,18 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message GalleryIslandPartyDownHillInfoNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 5592;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum GalleryIslandPartyDownHillInfoNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 5592;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 galleryId = 7;
-	uint32 totalKillMonsterCount = 15;
-	uint32 coin = 12;
+	uint32 GalleryId = 7;
+	uint32 TotalKillMonsterCount = 15;
+	uint32 Coin = 12;
 }

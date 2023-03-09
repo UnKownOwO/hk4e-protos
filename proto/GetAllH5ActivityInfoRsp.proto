@@ -1,19 +1,19 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "H5ActivityInfo.proto";
 
 message GetAllH5ActivityInfoRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 5688;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum GetAllH5ActivityInfoRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 5688;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 clientRedDotTimestamp = 5;
-	repeated H5ActivityInfo h5ActivityInfoList = 6;
-	int32 retcode = 14;
+	uint32 ClientRedDotTimestamp = 5;
+	repeated H5ActivityInfo H5ActivityInfoList = 6;
+	int32 Retcode = 14;
 }

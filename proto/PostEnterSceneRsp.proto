@@ -1,16 +1,17 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message PostEnterSceneRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 3303;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum PostEnterSceneRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 3303;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 enterSceneToken = 3;
-	int32 retcode = 13;
+	uint32 EnterSceneToken = 3;
+	int32 Retcode = 13;
 }

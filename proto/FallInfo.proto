@@ -1,10 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "FallPlayerInfo.proto";
 
 message FallInfo {
-	uint32 endTime = 6;
-	map<uint32, FallPlayerInfo> scenePlayerFallInfoMap = 9;
+	uint32 EndTime = 6;
+	map<uint32, FallPlayerInfo> ScenePlayerFallInfoMap = 9;
 }

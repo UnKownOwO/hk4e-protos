@@ -1,16 +1,16 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "ProfilePicture.proto";
 
 message GCGPlayerBriefData {
-	string psnId = 7;
-	map<uint32, uint32> cardFaceMap = 4;
-	ProfilePicture profilePicture = 14;
-	uint32 uid = 3;
-	string nickName = 2;
-	string onlineId = 10;
-	uint32 controllerId = 11;
-	repeated uint32 cardIdList = 13;
+	string PsnId = 7;
+	map<uint32, uint32> CardFaceMap = 4;
+	ProfilePicture ProfilePicture = 14;
+	uint32 Uid = 3;
+	string NickName = 2;
+	string OnlineId = 10;
+	uint32 ControllerId = 11;
+	repeated uint32 CardIdList = 13;
 }

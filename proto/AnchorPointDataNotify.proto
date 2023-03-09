@@ -1,18 +1,18 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "AnchorPointData.proto";
 
 message AnchorPointDataNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 4288;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum AnchorPointDataNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4288;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 nextUsableTime = 10;
-	repeated AnchorPointData anchorPointList = 11;
+	uint32 NextUsableTime = 10;
+	repeated AnchorPointData AnchorPointList = 11;
 }

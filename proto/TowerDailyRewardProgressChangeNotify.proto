@@ -1,16 +1,17 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message TowerDailyRewardProgressChangeNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 2498;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum TowerDailyRewardProgressChangeNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 2498;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 Unk3300_OHCHCJGJIDK = 4;
-	uint32 Unk3300_JBACKENDHDG = 3;
+	uint32 DailyLevelIndex = 4;
+	uint32 DailyFloorId = 3;
 }

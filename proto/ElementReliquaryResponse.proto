@@ -1,11 +1,11 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "GameplayRecommendationReliquaryMainPropData.proto";
 
 message ElementReliquaryResponse {
-	uint32 elementType = 4;
-	repeated GameplayRecommendationReliquaryMainPropData nbbpegfkpac = 3;
-	uint32 equipType = 7;
+	uint32 ElementType = 4;
+	repeated GameplayRecommendationReliquaryMainPropData MainPropDataList = 3;
+	uint32 EquipType = 7;
 }

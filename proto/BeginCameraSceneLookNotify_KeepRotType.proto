@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+package Proto;
+
+enum BeginCameraSceneLookNotify_KeepRotType {
+	KeepRotX = 0;
+	KeepRotXy = 1;
+}

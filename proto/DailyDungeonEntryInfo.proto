@@ -1,12 +1,12 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "DungeonEntryInfo.proto";
 
 message DailyDungeonEntryInfo {
-	uint32 recommendDungeonId = 13;
-	uint32 dungeonEntryId = 8;
-	uint32 dungeonEntryConfigId = 2;
-	DungeonEntryInfo recommendDungeonEntryInfo = 14;
+	uint32 RecommendDungeonId = 13;
+	uint32 DungeonEntryId = 8;
+	uint32 DungeonEntryConfigId = 2;
+	DungeonEntryInfo RecommendDungeonEntryInfo = 14;
 }

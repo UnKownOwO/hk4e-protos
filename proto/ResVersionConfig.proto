@@ -1,13 +1,14 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message ResVersionConfig {
-	uint32 version = 1;
-	bool relogin = 2;
-	string md5 = 3;
-	string releaseTotalSize = 4;
-	string versionSuffix = 5;
-	string branch = 6;
-	string nextScriptVersion = 7;
+	uint32 Version = 1;
+	bool Relogin = 2;
+	string Md5 = 3;
+	string ReleaseTotalSize = 4;
+	string VersionSuffix = 5;
+	string Branch = 6;
+	string NextScriptVersion = 7;
 }

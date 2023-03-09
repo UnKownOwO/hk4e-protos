@@ -1,11 +1,12 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message FlightDailyRecord {
-	uint32 groupId = 14;
-	uint32 startTime = 15;
-	repeated uint32 watcherIdList = 6;
-	bool isTouched = 8;
-	uint32 bestScore = 3;
+	uint32 GroupId = 14;
+	uint32 StartTime = 15;
+	repeated uint32 WatcherIdList = 6;
+	bool IsTouched = 8;
+	uint32 BestScore = 3;
 }

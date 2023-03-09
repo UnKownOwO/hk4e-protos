@@ -1,11 +1,11 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "LanternRiteFireworksChallengeInfo.proto";
 
 message LanternRiteFireworksStageInfo {
-	bool isOpen = 7;
-	repeated LanternRiteFireworksChallengeInfo exceededItemTypeList = 9;
-	uint32 stageId = 15;
+	bool IsOpen = 7;
+	repeated LanternRiteFireworksChallengeInfo ChallengeInfoList = 9;
+	uint32 StageId = 15;
 }

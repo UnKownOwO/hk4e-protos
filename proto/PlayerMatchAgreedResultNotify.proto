@@ -1,20 +1,20 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
-import "Reason.proto";
+import "PlayerMatchAgreedResultNotify_Reason.proto";
 import "MatchType.proto";
 
 message PlayerMatchAgreedResultNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 4152;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum PlayerMatchAgreedResultNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4152;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	Reason reason = 5;
-	MatchType matchType = 12;
-	uint32 targetUid = 7;
+	PlayerMatchAgreedResultNotify_Reason Reason = 5;
+	MatchType MatchType = 12;
+	uint32 TargetUid = 7;
 }

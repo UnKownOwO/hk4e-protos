@@ -1,18 +1,18 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 enum EnterType {
-  ENTER_NONE           = 0;
-  ENTER_SELF           = 1;
-  ENTER_GOTO           = 2;
-  ENTER_JUMP           = 3;
-  ENTER_OTHER          = 4;
-  ENTER_BACK           = 5;
-  ENTER_DUNGEON        = 6;
-  ENTER_DUNGEON_REPLAY = 7;
-  ENTER_GOTO_BY_PORTAL = 8;
-  ENTER_SELF_HOME      = 9;
-  ENTER_OTHER_HOME     = 10;
-  ENTER_GOTO_RECREATE  = 11;
+	EnterNone = 0;
+	EnterSelf = 1;
+	EnterGoto = 2;
+	EnterJump = 3;
+	EnterOther = 4;
+	EnterBack = 5;
+	EnterDungeon = 6;
+	EnterDungeonReplay = 7;
+	EnterGotoByPortal = 8;
+	EnterSelfHome = 9;
+	EnterOtherHome = 10;
+	EnterGotoRecreate = 11;
 }

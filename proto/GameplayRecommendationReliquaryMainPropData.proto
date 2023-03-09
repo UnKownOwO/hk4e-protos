@@ -1,8 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message GameplayRecommendationReliquaryMainPropData {
-	uint32 mainPropId = 6;
-	uint32 khfnbgnaclh = 9;
+	uint32 MainPropId = 6;
+	uint32 Permillage = 9;
 }

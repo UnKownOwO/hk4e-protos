@@ -1,11 +1,11 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 enum ServerLogType {
-  SERVER_LOG_NONE    = 0;
-  SERVER_LOG_ABILITY = 1;
-  SERVER_LOG_LEVEL   = 2;
-  SERVER_LOG_ENTITY  = 3;
-  SERVER_LOG_LUA     = 4;
+	ServerLogTypeNone = 0;
+	ServerLogTypeAbility = 1;
+	ServerLogTypeLevel = 2;
+	ServerLogTypeEntity = 3;
+	ServerLogTypeLua = 4;
 }

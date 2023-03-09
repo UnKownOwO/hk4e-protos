@@ -1,18 +1,18 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "CustomGadgetTreeInfo.proto";
 
 message GadgetCustomTreeInfoNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 842;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum GadgetCustomTreeInfoNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 842;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 gadgetEntityId = 2;
-	CustomGadgetTreeInfo customGadgetTreeInfo = 9;
+	uint32 GadgetEntityId = 2;
+	CustomGadgetTreeInfo CustomGadgetTreeInfo = 9;
 }

@@ -1,8 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message ChessCardInfo {
-	uint32 cardId = 11;
-	uint32 effectStack = 12;
+	uint32 CardId = 11;
+	uint32 EffectStack = 12;
 }

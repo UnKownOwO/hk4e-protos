@@ -1,17 +1,17 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "FungusTrainingProgressDetail.proto";
 
 message FungusFighterRuntimeDataNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 22858;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum OGHEKMNGNAM {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 22858;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	FungusTrainingProgressDetail progressDetail = 14;
+	FungusTrainingProgressDetail ProgressDetail = 14;
 }

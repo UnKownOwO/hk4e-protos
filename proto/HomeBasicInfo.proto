@@ -1,16 +1,16 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "HomeLimitedShopInfo.proto";
 
 message HomeBasicInfo {
-	uint32 homeOwnerUid = 11;
-	uint32 curModuleId = 2;
-	HomeLimitedShopInfo limitedShopInfo = 15;
-	uint32 level = 9;
-	string ownerNickName = 3;
-	bool isInEditMode = 14;
-	uint32 curRoomSceneId = 7;
-	uint64 exp = 13;
+	uint32 HomeOwnerUid = 11;
+	uint32 CurModuleId = 2;
+	HomeLimitedShopInfo LimitedShopInfo = 15;
+	uint32 Level = 9;
+	string OwnerNickName = 3;
+	bool IsInEditMode = 14;
+	uint32 CurRoomSceneId = 7;
+	uint64 Exp = 13;
 }

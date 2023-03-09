@@ -1,12 +1,12 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
-import "Vector.proto";
+import "Rotation.proto";
 
 message ChannelerSlabCamp {
-	Vector pos = 14;
-	uint32 rewardId = 11;
-	uint32 groupId = 5;
-	uint32 bfgophiannc = 15;
+	Rotation Pos = 14;
+	uint32 RewardId = 11;
+	uint32 GroupId = 5;
+	uint32 BuffNum = 15;
 }

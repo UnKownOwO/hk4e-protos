@@ -1,20 +1,21 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message SumoDungeonSettleNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 8830;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum SumoDungeonSettleNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8830;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 killEliteMonsterNum = 13;
-	uint32 stageId = 3;
-	bool isNewRecord = 15;
-	uint32 killMonsterNum = 4;
-	uint32 difficultyId = 2;
-	uint32 finalScore = 11;
+	uint32 KillEliteMonsterNum = 13;
+	uint32 StageId = 3;
+	bool IsNewRecord = 15;
+	uint32 KillMonsterNum = 4;
+	uint32 DifficultyId = 2;
+	uint32 FinalScore = 11;
 }

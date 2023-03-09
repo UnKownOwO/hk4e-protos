@@ -1,17 +1,18 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message ActivityGetCanGiveFriendGiftRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 8965;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum ActivityGetCanGiveFriendGiftRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8965;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 scheduleId = 10;
-	map<uint32, uint32> giftNumMap = 4;
-	int32 retcode = 12;
+	uint32 ScheduleId = 10;
+	map<uint32, uint32> GiftNumMap = 4;
+	int32 Retcode = 12;
 }

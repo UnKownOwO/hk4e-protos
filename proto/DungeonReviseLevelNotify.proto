@@ -1,18 +1,19 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message DungeonReviseLevelNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 991;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// 	IS_ALLOW_CLIENT = 1;
-	// }
+	enum DungeonReviseLevelNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 991;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
 
-	uint32 reviseLevel = 11;
-	uint32 sceneLevel = 13;
-	uint32 dungeonId = 12;
+	uint32 ReviseLevel = 11;
+	uint32 SceneLevel = 13;
+	uint32 DungeonId = 12;
 }

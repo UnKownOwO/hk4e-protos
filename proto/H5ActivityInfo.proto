@@ -1,14 +1,15 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message H5ActivityInfo {
-	string prefabPath = 13;
-	uint32 contentCloseTime = 1;
-	bool isEntranceOpen = 6;
-	uint32 endTime = 11;
-	uint32 Unk3300_DMBNFECAKBH = 4;
-	uint32 beginTime = 8;
-	string url = 3;
-	uint32 Unk3300_OBKEBDCKHJF = 9;
+	string PrefabPath = 13;
+	uint32 ContentCloseTime = 1;
+	bool IsEntranceOpen = 6;
+	uint32 EndTime = 11;
+	uint32 H5ActivityId = 4;
+	uint32 BeginTime = 8;
+	string Url = 3;
+	uint32 H5ScheduleId = 9;
 }

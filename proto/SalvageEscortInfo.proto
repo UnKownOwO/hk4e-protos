@@ -1,10 +1,11 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message SalvageEscortInfo {
-	uint32 Unk3300_FGDPFNPENNC = 6;
-	uint32 Unk3300_HDMPOAJLPED = 2;
-	uint32 maxMonsterCount = 4;
-	uint32 monsterCount = 1;
+	uint32 MaxBoxCount = 6;
+	uint32 BoxCount = 2;
+	uint32 MaxMonsterCount = 4;
+	uint32 MonsterCount = 1;
 }

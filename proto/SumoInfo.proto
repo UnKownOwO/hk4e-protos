@@ -1,9 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message SumoInfo {
-	uint32 killEliteMonsterNum = 3;
-	uint32 killNormalMonsterNum = 5;
-	uint32 score = 4;
+	uint32 KillEliteMonsterNum = 3;
+	uint32 KillNormalMosnterNum = 5;
+	uint32 Score = 4;
 }

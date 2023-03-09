@@ -1,9 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message GCGMsgSelectOnStageByEffect {
-	uint32 skillId = 4;
-	uint32 cardGuid = 2;
-	uint32 controllerId = 13;
+	uint32 SkillId = 4;
+	uint32 CardGuid = 2;
+	uint32 ControllerId = 13;
 }

@@ -1,10 +1,11 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message LuminanceStoneChallengeActivityDetailInfo {
-	uint32 bestScore = 10;
-	bool gnelkoiilec = 12;
-	bool leftMonsters = 4;
-	uint32 bkcaehmieec = 11;
+	uint32 BestScore = 10;
+	bool IsFinalGalleryComplete = 12;
+	bool IsContentClosed = 4;
+	uint32 CurrentStageId = 11;
 }

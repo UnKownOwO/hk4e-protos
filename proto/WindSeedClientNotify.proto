@@ -1,35 +1,36 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
-import "Vector.proto";
+import "Rotation.proto";
+
 
 message WindSeedClientNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 1114;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
-
-	message RefreshNotify {
-		uint32 refreshNum = 13;
-	}
-	message AddWindBulletNotify {
-		uint32 Unk3300_CKIKKCAFJBC = 1;
-		Vector seedPos = 10;
-		uint32 Unk3300_MPDFAPBDJAH = 13;
-	}
-	message AreaNotify {
-		uint32 areaType = 5;
-		uint32 areaId = 12;
-		bytes areaCode = 1;
+	enum WindSeedClientNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 1114;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
 	}
 
-	oneof notify {
-		RefreshNotify refresh_notify = 11;
-		AddWindBulletNotify add_wind_bullet_notify = 8;
-		AreaNotify area_notify = 2;
+	message WindSeedClientNotify_RefreshNotify {
+		uint32 RefreshNum = 13;
+	}
+	message WindSeedClientNotify_AddWindBulletNotify {
+		uint32 SeedEntityId = 1;
+		Rotation SeedPos = 10;
+		uint32 CatchPlayerUid = 13;
+	}
+	message WindSeedClientNotify_AreaNotify {
+		uint32 AreaType = 5;
+		uint32 AreaId = 12;
+		bytes AreaCode = 1;
+	}
+
+	oneof WindSeedClientNotify_NotifyOneofCase {
+		WindSeedClientNotify_RefreshNotify refresh_notify = 11;
+		WindSeedClientNotify_AddWindBulletNotify add_wind_bullet_notify = 8;
+		WindSeedClientNotify_AreaNotify area_notify = 2;
 	}
 }

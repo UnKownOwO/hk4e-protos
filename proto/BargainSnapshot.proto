@@ -1,10 +1,11 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message BargainSnapshot {
-	uint32 Unk3300_MHFDEBOBFNE = 10;
-	uint32 bargainId = 7;
-	int32 curMood = 13;
-	uint32 Unk3300_KOCJELACJLM = 6;
+	uint32 PriceLowLimit = 10;
+	uint32 BargainId = 7;
+	int32 CurMood = 13;
+	uint32 ExpectedPrice = 6;
 }

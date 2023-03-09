@@ -1,11 +1,11 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "SalvageChallengeInfo.proto";
 
 message SalvageStageInfo {
-	bool isOpen = 10;
-	uint32 stageId = 15;
-	repeated SalvageChallengeInfo exceededItemTypeList = 6;
+	bool IsOpen = 10;
+	uint32 StageId = 15;
+	repeated SalvageChallengeInfo ChallengeInfoList = 6;
 }

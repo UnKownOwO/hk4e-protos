@@ -1,20 +1,20 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
-import "Reason.proto";
+import "PlayerApplyEnterHomeResultNotify_Reason.proto";
 
 message PlayerApplyEnterHomeResultNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 4642;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum PlayerApplyEnterHomeResultNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4642;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 targetUid = 2;
-	Reason reason = 3;
-	bool isAgreed = 10;
-	string targetNickname = 9;
+	uint32 TargetUid = 2;
+	PlayerApplyEnterHomeResultNotify_Reason Reason = 3;
+	bool IsAgreed = 10;
+	string TargetNickname = 9;
 }

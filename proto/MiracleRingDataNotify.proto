@@ -1,19 +1,20 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message MiracleRingDataNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 5246;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum MiracleRingDataNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 5246;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	bool isGadgetCreated = 2;
-	uint32 miracleRingCd = 8;
-	uint32 lastDeliverItemTime = 4;
-	uint32 lastTakeRewardTime = 13;
-	uint32 gadgetEntityId = 6;
+	bool IsGadgetCreated = 2;
+	uint32 MiracleRingCd = 8;
+	uint32 LastDeliverItemTime = 4;
+	uint32 LastTakeRewardTime = 13;
+	uint32 GadgetEntityId = 6;
 }

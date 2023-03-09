@@ -1,21 +1,21 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "QuestVarOp.proto";
 
 message QuestUpdateQuestVarReq {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 439;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// 	IS_ALLOW_CLIENT = 1;
-	// }
+	enum QuestUpdateQuestVarReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 439;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
 
-	uint32 parentQuestVarSeq = 9;
-	uint32 parentQuestId = 12;
-	repeated QuestVarOp questVarOpList = 4;
-	uint32 questId = 3;
+	uint32 ParentQuestVarSeq = 9;
+	uint32 ParentQuestId = 12;
+	repeated QuestVarOp QuestVarOpList = 4;
+	uint32 QuestId = 3;
 }

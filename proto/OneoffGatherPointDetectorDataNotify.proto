@@ -1,17 +1,17 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "DetectorData.proto";
 
 message OneoffGatherPointDetectorDataNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 4257;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum OneoffGatherPointDetectorDataNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4257;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	repeated DetectorData oneoffGatherPointDetectorDataList = 10;
+	repeated DetectorData OneoffGatherPointDetectorDataList = 10;
 }

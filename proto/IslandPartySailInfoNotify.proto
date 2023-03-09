@@ -1,20 +1,20 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "IslandPartySailStage.proto";
 
 message IslandPartySailInfoNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 5525;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum IslandPartySailInfoNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 5525;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 progress = 5;
-	uint32 coin = 1;
-	uint32 killMonsterCount = 9;
-	IslandPartySailStage stage = 2;
+	uint32 Progress = 5;
+	uint32 Coin = 1;
+	uint32 KillMonsterCount = 9;
+	IslandPartySailStage Stage = 2;
 }

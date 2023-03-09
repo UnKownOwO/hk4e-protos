@@ -1,17 +1,18 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message GetAreaExplorePointRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 252;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum GetAreaExplorePointRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 252;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	repeated uint32 areaIdList = 13;
-	int32 retcode = 14;
-	repeated uint32 explorePointList = 3;
+	repeated uint32 AreaIdList = 13;
+	int32 Retcode = 14;
+	repeated uint32 ExplorePointList = 3;
 }

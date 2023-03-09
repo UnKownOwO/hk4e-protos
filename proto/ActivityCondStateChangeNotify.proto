@@ -1,22 +1,22 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "Uint32Pair.proto";
 
 message ActivityCondStateChangeNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 2089;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum ActivityCondStateChangeNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 2089;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	repeated uint32 expireCondList = 2;
-	repeated uint32 activatedSaleIdList = 1;
-	uint32 scheduleId = 15;
-	uint32 activityId = 3;
-	repeated Uint32Pair disableTransferPointInteractionList = 8;
-	repeated uint32 meetCondList = 13;
+	repeated uint32 ExpireCondList = 2;
+	repeated uint32 ActivatedSaleIdList = 1;
+	uint32 ScheduleId = 15;
+	uint32 ActivityId = 3;
+	repeated Uint32Pair DisableTransferPointInteractionList = 8;
+	repeated uint32 MeetCondList = 13;
 }

@@ -1,25 +1,26 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message MaterialDeleteInfo {
-	message CountDownDelete {
-		map<uint32, uint32> deleteTimeNumMap = 1;
-		uint32 configCountDownTime = 2;
+	message MaterialDeleteInfo_CountDownDelete {
+		map<uint32, uint32> DeleteTimeNumMap = 1;
+		uint32 ConfigCountDownTime = 2;
 	}
-	message DateTimeDelete {
-		uint32 deleteTime = 1;
+	message MaterialDeleteInfo_DateTimeDelete {
+		uint32 DeleteTime = 1;
 	}
-	message DelayWeekCountDownDelete {
-		map<uint32, uint32> deleteTimeNumMap = 1;
-		uint32 configDelayWeek = 2;
-		uint32 configCountDownTime = 3;
+	message MaterialDeleteInfo_DelayWeekCountDownDelete {
+		map<uint32, uint32> DeleteTimeNumMap = 1;
+		uint32 ConfigDelayWeek = 2;
+		uint32 ConfigCountDownTime = 3;
 	}
 
-	bool hasDeleteConfig = 1;
-	oneof delete_info {
-		CountDownDelete count_down_delete = 2;
-		DateTimeDelete date_delete = 3;
-		DelayWeekCountDownDelete delay_week_count_down_delete = 4;
+	bool HasDeleteConfig = 1;
+	oneof MaterialDeleteInfo_DeleteInfoOneofCase {
+		MaterialDeleteInfo_CountDownDelete count_down_delete = 2;
+		MaterialDeleteInfo_DateTimeDelete date_delete = 3;
+		MaterialDeleteInfo_DelayWeekCountDownDelete delay_week_count_down_delete = 4;
 	}
 }

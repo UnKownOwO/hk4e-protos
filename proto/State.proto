@@ -1,9 +1,0 @@
-syntax = "proto3";
-
-option go_package = "./;proto";
-
-enum State {
-    STATE_UNSTARTED = 0;
-    STATE_STARTED   = 1;
-    STATE_FINISHED  = 2;
-}

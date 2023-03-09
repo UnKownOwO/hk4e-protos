@@ -1,10 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "IrodoriMasterLevelDetailInfo.proto";
 
 message IrodoriMasterLevelInfo {
-	uint32 levelId = 1;
-	repeated IrodoriMasterLevelDetailInfo detailInfo = 14;
+	uint32 LevelId = 1;
+	repeated IrodoriMasterLevelDetailInfo DetailInfo = 14;
 }

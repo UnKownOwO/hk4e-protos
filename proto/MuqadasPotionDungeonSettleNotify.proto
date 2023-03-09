@@ -1,19 +1,20 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message MuqadasPotionDungeonSettleNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 23665;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum CCBLHNEEDDL {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 23665;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 levelId = 11;
-	uint32 captureWeaknessCount = 7;
-	uint32 finalScore = 14;
-	bool isSuccess = 3;
-	bool isNewRecord = 2;
+	uint32 LevelId = 11;
+	uint32 CaptureWeaknessCount = 7;
+	uint32 FinalScore = 14;
+	bool IsSuccess = 3;
+	bool IsNewRecord = 2;
 }

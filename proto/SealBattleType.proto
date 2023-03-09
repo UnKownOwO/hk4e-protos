@@ -1,9 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 enum SealBattleType {
-  SEAL_BATTLE_KEEP_ALIVE    = 0;
-  SEAL_BATTLE_KILL_MONSTER  = 1;
-  SEAL_BATTLE_ENERGY_CHARGE = 2;
+	SealBattleKeepAlive = 0;
+	SealBattleKillMonster = 1;
+	SealBattleEnergyCharge = 2;
 }

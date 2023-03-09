@@ -1,8 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message ScreenInfo {
-	uint32 liveId = 1;
-	uint32 projectorEntityId = 2;
+	uint32 LiveId = 1;
+	uint32 ProjectorEntityId = 2;
 }

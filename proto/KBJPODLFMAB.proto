@@ -1,7 +1,0 @@
-syntax = "proto3";
-
-option go_package = "./;proto";
-
-message KBJPODLFMAB {
-	bool mlonppbojpp = 13;
-}

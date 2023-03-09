@@ -1,20 +1,20 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "ItemParam.proto";
 
 message TakeOfferingLevelRewardRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 2907;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum TakeOfferingLevelRewardRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 2907;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	int32 retcode = 7;
-	uint32 offeringId = 14;
-	uint32 takeLevel = 1;
-	repeated ItemParam itemList = 10;
+	int32 Retcode = 7;
+	uint32 OfferingId = 14;
+	uint32 TakeLevel = 1;
+	repeated ItemParam ItemList = 10;
 }

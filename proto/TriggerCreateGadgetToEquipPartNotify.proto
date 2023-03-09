@@ -1,18 +1,19 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message TriggerCreateGadgetToEquipPartNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 342;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum TriggerCreateGadgetToEquipPartNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 342;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 entityId = 3;
-	uint32 gadgetId = 5;
-	uint32 gadgetEntityId = 4;
-	string equipPart = 7;
+	uint32 EntityId = 3;
+	uint32 GadgetId = 5;
+	uint32 GadgetEntityId = 4;
+	string EquipPart = 7;
 }

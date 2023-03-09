@@ -1,21 +1,21 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
-import "Vector.proto";
+import "Rotation.proto";
 import "ForwardType.proto";
 
 message EvtBulletDeactiveNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 316;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// 	IS_ALLOW_CLIENT = 1;
-	// }
+	enum EvtBulletDeactiveNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 316;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
 
-	uint32 entityId = 4;
-	Vector disappearPos = 5;
-	ForwardType forwardType = 12;
+	uint32 EntityId = 4;
+	Rotation DisappearPos = 5;
+	ForwardType ForwardType = 12;
 }

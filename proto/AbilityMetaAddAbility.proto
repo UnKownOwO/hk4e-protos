@@ -1,18 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "AbilityAppliedAbility.proto";
 
 message AbilityMetaAddAbility {
-	AbilityAppliedAbility ability = 4;
+	AbilityAppliedAbility Ability = 4;
 }
-
-
-
-
-
-
-
-
-

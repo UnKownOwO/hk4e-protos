@@ -1,17 +1,18 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message ActivityTakeScoreRewardRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 8946;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum ActivityTakeScoreRewardRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8946;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 rewardConfigId = 13;
-	uint32 activityId = 14;
-	int32 retcode = 15;
+	uint32 RewardConfigId = 13;
+	uint32 ActivityId = 14;
+	int32 Retcode = 15;
 }

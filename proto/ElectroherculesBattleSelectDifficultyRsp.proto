@@ -1,16 +1,19 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message ElectroherculesBattleSelectDifficultyRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 23974;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// 	IS_ALLOW_CLIENT = 1;
-	// }
+	enum AOIIIGEEGIA {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 24683;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	repeated uint64 meclfjmmlmh = 2;
+	int32 Retcode = 14;
+	uint32 GalleryId = 7;
+	uint32 Diffculty = 1;
+	uint32 StageId = 10;
 }

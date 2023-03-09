@@ -1,13 +1,13 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
-import "BDKPJAMLNCL.proto";
-import "MEIDIANHEDD.proto";
-import "FKJCFGLHNPM.proto";
+import "SeaLampV3RaceInfo.proto";
+import "SeaLampV3CampInfo.proto";
+import "SeaLampV3ShadowInfo.proto";
 
 message SeaLampV3Info {
-	BDKPJAMLNCL raceInfo = 4;
-	MEIDIANHEDD campInfo = 11;
-	FKJCFGLHNPM jpegcngalgi = 3;
+	SeaLampV3RaceInfo RaceInfo = 4;
+	SeaLampV3CampInfo CampInfo = 11;
+	SeaLampV3ShadowInfo ShadowInfo = 3;
 }

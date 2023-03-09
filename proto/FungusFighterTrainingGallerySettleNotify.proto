@@ -1,24 +1,24 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "GalleryStopReason.proto";
 
 message FungusFighterTrainingGallerySettleNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 23677;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum PCMLJAAPJMF {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 23677;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 finalScore = 6;
-	uint32 Unk3300_KKFBMHLOLFC = 14;
-	GalleryStopReason reason = 3;
-	uint32 Unk3300_BHOMHPHLOHL = 11;
-	uint32 Unk3300_POCDEGBHJEA = 12;
-	uint32 totalUsedTime = 9;
-	bool isFinalSettle = 7;
-	bool isNewRecord = 5;
+	uint32 FinalScore = 6;
+	uint32 GadgetLifePercentage = 14;
+	GalleryStopReason Reason = 3;
+	uint32 SettleRound = 11;
+	uint32 DeadFungusNum = 12;
+	uint32 TotalUsedTime = 9;
+	bool IsFinalSettle = 7;
+	bool IsNewRecord = 5;
 }

@@ -1,9 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message FallPlayerBrief {
-	uint32 uid = 12;
-	bool isGround = 8;
-	uint32 score = 13;
+	uint32 Uid = 12;
+	bool IsGround = 8;
+	uint32 Score = 13;
 }

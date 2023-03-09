@@ -1,7 +1,0 @@
-syntax = "proto3";
-
-option go_package = "./;proto";
-
-message OILIHLEJJGP {
-	uint32 targetEntityId = 10;
-}

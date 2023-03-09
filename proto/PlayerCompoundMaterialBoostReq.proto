@@ -1,22 +1,20 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
-import "CompoundBoostTakeStatusType.proto";
-import "CompoundQueueData.proto";
-import "ItemParam.proto";
 
 message PlayerCompoundMaterialBoostReq {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 119;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum OKPDCPFCLNP {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 102;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
 
-	repeated CompoundQueueData compoundQueueDataList = 6;
-	int32 retcode = 15;
-	repeated ItemParam ikceidbkdla = 14;
-	CompoundBoostTakeStatusType obkcgkalonf = 8;
+	uint32 ConsumeMaterialId = 13;
+	bool IsBoostAll = 8;
+	uint32 ConsumeMaterialCount = 9;
+	uint32 TargetCompoundGroupId = 3;
 }

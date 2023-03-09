@@ -1,16 +1,16 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message TeamChainTakeCostumeRewardReq {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 20331;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum MFCBBKLDHAP {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 22700;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
 
-	repeated uint32 ehbfihcdoli = 12;
-	uint32 stageId = 11;
 }

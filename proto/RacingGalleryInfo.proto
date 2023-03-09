@@ -1,9 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "HomeRacingGalleryRecord.proto";
 
 message RacingGalleryInfo {
-	repeated HomeRacingGalleryRecord recordList = 2;
+	repeated HomeRacingGalleryRecord RecordList = 2;
 }

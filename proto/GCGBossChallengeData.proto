@@ -1,8 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message GCGBossChallengeData {
-	repeated uint32 lidokiohkmh = 1;
-	uint32 id = 5;
+	repeated uint32 UnlockLevelIdList = 1;
+	uint32 Id = 5;
 }

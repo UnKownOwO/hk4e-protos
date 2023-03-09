@@ -1,9 +1,8 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 enum OptionType {
-    OPTION_NONE         = 0;
-    OPTION_NORMAL       = 1;
-    OPTION_FIRST_CAN_GO = 2;
+	OptionNone = 0;
+	OptionNormal = 1;
 }

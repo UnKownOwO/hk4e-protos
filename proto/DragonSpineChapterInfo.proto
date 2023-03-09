@@ -1,11 +1,12 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message DragonSpineChapterInfo {
-	uint32 finishedMissionNum = 7;
-	uint32 chapterId = 4;
-	bool isOpen = 6;
-	uint32 progress = 8;
-	uint32 openTime = 3;
+	uint32 FinishedMissionNum = 7;
+	uint32 ChapterId = 4;
+	bool IsOpen = 6;
+	uint32 Progress = 8;
+	uint32 OpenTime = 3;
 }

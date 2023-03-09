@@ -1,19 +1,19 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
-import "Vector.proto";
+import "Rotation.proto";
 
 message SummerTimeFloatSignalPositionNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 8322;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum SummerTimeFloatSignalPositionNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8322;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	bool isTransferAnchor = 11;
-	uint32 floatSignalId = 3;
-	Vector position = 10;
+	bool IsTransferAnchor = 11;
+	uint32 FloatSignalId = 3;
+	Rotation Position = 10;
 }

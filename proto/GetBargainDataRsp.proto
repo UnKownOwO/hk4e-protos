@@ -1,19 +1,19 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "BargainSnapshot.proto";
 
 message GetBargainDataRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 473;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum GetBargainDataRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 473;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	int32 retcode = 14;
-	BargainSnapshot snapshot = 13;
-	uint32 bargainId = 8;
+	int32 Retcode = 14;
+	BargainSnapshot Snapshot = 13;
+	uint32 BargainId = 8;
 }

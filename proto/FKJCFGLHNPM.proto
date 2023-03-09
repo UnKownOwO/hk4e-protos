@@ -1,9 +1,0 @@
-syntax = "proto3";
-
-option go_package = "./;proto";
-
-import "DMMAGIEOPDG.proto";
-
-message FKJCFGLHNPM {
-	repeated DMMAGIEOPDG stageInfoList = 9;
-}

@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+package Proto;
+
+enum DebugNotify_Retcode {
+	SUCC = 0;
+	FAIL = 1;
+}

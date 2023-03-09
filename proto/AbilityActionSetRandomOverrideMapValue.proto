@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message AbilityActionSetRandomOverrideMapValue {
+	float RandomValue = 9;
+}

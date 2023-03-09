@@ -1,17 +1,18 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message MechanicusUnlockGearRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 3970;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum MechanicusUnlockGearRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 3970;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	int32 retcode = 2;
-	uint32 gearId = 9;
-	uint32 mechanicusId = 13;
+	int32 Retcode = 2;
+	uint32 GearId = 9;
+	uint32 MechanicusId = 13;
 }

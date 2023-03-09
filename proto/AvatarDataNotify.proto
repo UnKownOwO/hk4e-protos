@@ -1,27 +1,27 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "AvatarInfo.proto";
 import "AvatarTeam.proto";
 import "AvatarRenameInfo.proto";
 
 message AvatarDataNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 1645;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum AvatarDataNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 1645;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint64 chooseAvatarGuid = 4;
-	repeated uint32 ownedCostumeList = 15;
-	repeated AvatarInfo avatarList = 8;
-	uint32 curAvatarTeamId = 5;
-	map<uint32, AvatarTeam> avatarTeamMap = 6;
-	repeated uint32 ownedFlycloakList = 2;
-	repeated AvatarRenameInfo avatarRenameList = 7;
-	repeated uint32 backupAvatarTeamOrderList = 12;
-	repeated uint64 tempAvatarGuidList = 14;
+	uint64 ChooseAvatarGuid = 4;
+	repeated uint32 OwnedCostumeList = 15;
+	repeated AvatarInfo AvatarList = 8;
+	uint32 CurAvatarTeamId = 5;
+	map<uint32, AvatarTeam> AvatarTeamMap = 6;
+	repeated uint32 OwnedFlycloakList = 2;
+	repeated AvatarRenameInfo AvatarRenameList = 7;
+	repeated uint32 BackupAvatarTeamOrderList = 12;
+	repeated uint64 TempAvatarGuidList = 14;
 }

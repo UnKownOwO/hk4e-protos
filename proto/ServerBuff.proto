@@ -1,11 +1,12 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message ServerBuff {
-	uint32 serverBuffUid = 1;
-	uint32 serverBuffId = 2;
-	uint32 serverBuffType = 3;
-	uint32 instancedModifierId = 4;
-	bool isModifierAdded = 5;
+	uint32 ServerBuffUid = 1;
+	uint32 ServerBuffId = 2;
+	uint32 ServerBuffType = 3;
+	uint32 InstancedModifierId = 4;
+	bool IsModifierAdded = 5;
 }

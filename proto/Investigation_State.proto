@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+enum Investigation_State {
+	InvestigationStateInvalid = 0;
+	InvestigationStateInProgress = 1;
+	InvestigationStateComplete = 2;
+	InvestigationStateRewardTaken = 3;
+}

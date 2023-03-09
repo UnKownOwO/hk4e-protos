@@ -1,12 +1,12 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "AnimatorParameterValueInfo.proto";
 
 message EvtAnimatorParameterInfo {
-	uint32 entityId = 14;
-	int32 nameId = 2;
-	AnimatorParameterValueInfo value = 12;
-	bool isServerCache = 9;
+	uint32 EntityId = 14;
+	int32 NameId = 2;
+	AnimatorParameterValueInfo Value = 12;
+	bool IsServerCache = 9;
 }

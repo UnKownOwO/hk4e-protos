@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message CCNDOELOPOF {
+	enum JAKDACJEGNP {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 7884;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	string egefalocknh = 2;
+	bool IsSuccess = 8;
+	string elmhkhmffnh = 4;
+}

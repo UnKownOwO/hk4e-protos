@@ -1,9 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "InstableSprayStageInfo.proto";
 
 message InstableSprayDetailInfo {
-	repeated InstableSprayStageInfo stageInfoList = 9;
+	repeated InstableSprayStageInfo StageInfoList = 9;
 }

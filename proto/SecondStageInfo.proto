@@ -1,9 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message SecondStageInfo {
-	map<uint32, uint32> animalCountMap = 7;
-	uint32 totalNum = 14;
-	uint32 captureAnimalNum = 1;
+	map<uint32, uint32> AnimalCountMap = 7;
+	uint32 TotalNum = 14;
+	uint32 CaptureAnimalNum = 1;
 }

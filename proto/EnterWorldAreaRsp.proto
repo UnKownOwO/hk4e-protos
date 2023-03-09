@@ -1,17 +1,18 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message EnterWorldAreaRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 250;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum EnterWorldAreaRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 250;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 areaType = 3;
-	int32 retcode = 12;
-	uint32 areaId = 6;
+	uint32 AreaType = 3;
+	int32 Retcode = 12;
+	uint32 AreaId = 6;
 }

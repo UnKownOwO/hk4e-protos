@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message GCGReplayControllerData {
+	uint32 ControllerId = 7;
+	repeated uint32 CardIdList = 9;
+}

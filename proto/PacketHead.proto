@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message PacketHead {
+	uint32 PacketId = 1;
+	uint32 RpcId = 2;
+	uint32 ClientSequenceId = 3;
+	uint32 EnetChannelId = 4;
+	uint32 EnetIsReliable = 5;
+	uint64 SentMs = 6;
+	uint32 UserId = 11;
+	uint32 UserIp = 12;
+	uint32 UserSessionId = 13;
+	uint64 RecvTimeMs = 21;
+	uint32 RpcBeginTimeMs = 22;
+	map<uint32, uint32> ExtMap = 23;
+	uint32 SenderAppId = 24;
+	uint32 SourceService = 31;
+	uint32 TargetService = 32;
+	map<uint32, uint32> ServiceAppIdMap = 33;
+	bool IsSetGameThread = 34;
+	uint32 GameThreadIndex = 35;
+}

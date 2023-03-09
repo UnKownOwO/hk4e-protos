@@ -1,10 +1,11 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message HomeBlueprintSearchInfo {
-	uint32 sceneId = 9;
-	string shareCode = 15;
-	uint32 blockId = 2;
-	uint32 moduleId = 13;
+	uint32 SceneId = 9;
+	string ShareCode = 15;
+	uint32 BlockId = 2;
+	uint32 ModuleId = 13;
 }

@@ -1,10 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 enum RogueDiaryAvatarDisableStatus {
-  ROGUE_DIARY_AVATAR_DISABLE_NONE       = 0;
-  ROGUE_DIARY_AVATAR_DISABLE_DEATH      = 1;
-  ROGUE_DIARY_AVATAR_DISABLE_TIRED      = 2;
-  ROGUE_DIARY_AVATAR_DISABLE_DUPLICATED = 3;
+	RogueDiaryAvatarDisableNone = 0;
+	RogueDiaryAvatarDisableDeath = 1;
+	RogueDiaryAvatarDisableTired = 2;
+	RogueDiaryAvatarDisableDuplicated = 3;
 }

@@ -1,10 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "CustomCommonNodeInfo.proto";
 
 message HomeCustomFurnitureInfo {
-	uint32 guid = 8;
-	repeated CustomCommonNodeInfo subFurnitureList = 5;
+	uint32 Guid = 8;
+	repeated CustomCommonNodeInfo SubFurnitureList = 5;
 }

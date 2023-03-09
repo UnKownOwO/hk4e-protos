@@ -1,18 +1,18 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "TowerMonthlyDetail.proto";
 
 message TowerRecordHandbookRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 2450;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum TowerRecordHandbookRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 2450;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	repeated TowerMonthlyDetail monthlyDetailList = 8;
-	int32 retcode = 12;
+	repeated TowerMonthlyDetail MonthlyDetailList = 8;
+	int32 Retcode = 12;
 }

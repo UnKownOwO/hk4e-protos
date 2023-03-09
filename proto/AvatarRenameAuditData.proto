@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+import "AvatarRenameContentAuditField.proto";
+import "ContentAuditAuxiliaryField.proto";
+
+message AvatarRenameAuditData {
+	string Aid = 1;
+	string EntityId = 2;
+	string Lang = 3;
+	string QueueKey = 4;
+	string Region = 5;
+	uint32 Uid = 6;
+	repeated AvatarRenameContentAuditField AuditFieldList = 7;
+	repeated ContentAuditAuxiliaryField AuxFieldList = 8;
+}

@@ -1,18 +1,19 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message PlantFlowerGiveFriendFlowerReq {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 8176;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// 	IS_ALLOW_CLIENT = 1;
-	// }
+	enum PlantFlowerGiveFriendFlowerReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8176;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
 
-	uint32 uid = 1;
-	map<uint32, uint32> flowerNumMap = 14;
-	uint32 scheduleId = 5;
+	uint32 Uid = 1;
+	map<uint32, uint32> FlowerNumMap = 14;
+	uint32 ScheduleId = 5;
 }

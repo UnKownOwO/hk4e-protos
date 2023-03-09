@@ -1,9 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message AbilityGadget {
-	uint32 campId = 1;
-	uint32 olefgkameoj = 2;
-	uint32 targetEntityId = 3;
+	uint32 CampId = 1;
+	uint32 CampTargetType = 2;
+	uint32 TargetEntityId = 3;
 }

@@ -1,9 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message EntityClientData {
-	uint32 windChangeSceneTime = 1;
-	float windmillSyncAngle = 2;
-	int32 windChangeTargetLevel = 3;
+	uint32 WindChangeSceneTime = 1;
+	float WindmillSyncAngle = 2;
+	int32 WindChangeTargetLevel = 3;
 }

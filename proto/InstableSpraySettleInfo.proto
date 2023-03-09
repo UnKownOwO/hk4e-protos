@@ -1,10 +1,11 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message InstableSpraySettleInfo {
-	bool isNewRecord = 5;
-	uint32 stageId = 4;
-	uint32 difficulty = 15;
-	repeated uint32 scoreList = 10;
+	bool IsNewRecord = 5;
+	uint32 StageId = 4;
+	uint32 Difficulty = 15;
+	repeated uint32 ScoreList = 10;
 }

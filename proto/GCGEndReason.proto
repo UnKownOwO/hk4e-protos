@@ -1,24 +1,17 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 enum GCGEndReason {
-  GCG_END_REASON_DEFAULT      = 0;
-  GCG_END_REASON_DIE          = 1;
-  GCG_END_REASON_SURRENDER    = 2;
-  GCG_END_REASON_DISCONNECTED = 3;
-  GCG_END_REASON_ROUND_LIMIT  = 4;
-  GCG_END_REASON_GM           = 5;
-  GCG_END_REASON_NO_PLAYER    = 6;
-  GCG_END_REASON_GIVE_UP      = 7;
-  GCG_END_REASON_INIT_TIMEOUT = 8;
-  GCG_END_REASON_EFFECT       = 9;
+  GCGEndReasonDefault = 0;
+  GCGEndReasonDie = 1;
+  GCGEndReasonSurrender = 2;
+  GCGEndReasonDisconnected = 3;
+  GCGEndReasonRoundLimit = 4;
+  GCGEndReasonGM = 5;
+  GCGEndReasonNoPlayer = 6;
+  GCGEndReasonGiveUp = 7;
+  GCGEndReasonIintTimeout = 8;
+  GCGEndReasonEffect = 9;
+	GHGBOGNDAJF = 10;
 }
-
-
-
-
-
-
-
-

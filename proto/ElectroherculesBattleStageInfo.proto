@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package Proto;
+
+import "ElectroherculesBattleLevelInfo.proto";
+
+message ElectroherculesBattleStageInfo {
+	repeated ElectroherculesBattleLevelInfo LevelInfoList = 10;
+	uint32 StageId = 1;
+	bool IsStageOpen = 3;
+}

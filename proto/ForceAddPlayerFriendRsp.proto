@@ -1,19 +1,19 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "FriendBrief.proto";
 
 message ForceAddPlayerFriendRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 4054;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum ForceAddPlayerFriendRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4054;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	FriendBrief targetFriendBrief = 12;
-	uint32 targetUid = 14;
-	int32 retcode = 11;
+	FriendBrief TargetFriendBrief = 12;
+	uint32 TargetUid = 14;
+	int32 Retcode = 11;
 }

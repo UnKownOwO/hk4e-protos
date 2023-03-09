@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "GCGSkillPreviewExtraInfo.proto";
 import "GCGSkillPreviewTokenChangeInfo.proto";
@@ -10,12 +10,12 @@ import "GCGSkillPreviewElementReactionInfo.proto";
 import "GCGSkillPreviewCardInfo.proto";
 
 message GCGSkillPreviewInfo {
-	map<uint32, GCGSkillPreviewTokenChangeInfo> cardTokenChangeMap = 12;
-	repeated GCGSkillPreviewOnstageChangeInfo changeOnstageCharacterList = 14;
-	GCGSkillPreviewExtraInfo extraInfo = 6;
-	map<uint32, GCGSkillPreviewHpInfo> hpInfoMap = 1;
-	map<uint32, GCGSkillPreviewElementReactionInfo> reactionInfoMap = 9;
-	repeated GCGSkillPreviewCardInfo Unk3300_AGNONGELFGC = 11;
-	uint32 skillId = 2;
-	repeated GCGSkillPreviewCardInfo Unk3300_DAJFJEDNLKK = 15;
+	map<uint32, GCGSkillPreviewTokenChangeInfo> CardTokenChangeMap = 12;
+	repeated GCGSkillPreviewOnstageChangeInfo ChangeOnstageCharacterList = 14;
+	GCGSkillPreviewExtraInfo ExtraInfo = 6;
+	map<uint32, GCGSkillPreviewHpInfo> HpInfoMap = 1;
+	map<uint32, GCGSkillPreviewElementReactionInfo> ReactionInfoMap = 9;
+	repeated GCGSkillPreviewCardInfo AddCardList = 11;
+	uint32 SkillId = 2;
+	repeated GCGSkillPreviewCardInfo RmCardList = 15;
 }

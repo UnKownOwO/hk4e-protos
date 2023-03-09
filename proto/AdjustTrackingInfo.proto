@@ -1,12 +1,13 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message AdjustTrackingInfo {
-	string Unk3300_GAMLJPFKCGC = 5;
-	string Unk3300_CHCOHLGBHLB = 8;
-	string Unk3300_INAIEOMCIEM = 15;
-	string Unk3300_ONNMBNODPIA = 3;
-	string Unk3300_KLKFLIIOFKK = 7;
-	string Unk3300_MHDOPAMDMPL = 13;
+	string AppToken = 5;
+	string GpsAdid = 8;
+	string FireAdid = 15;
+	string Adid = 3;
+	string Idfa = 7;
+	string EventToken = 13;
 }

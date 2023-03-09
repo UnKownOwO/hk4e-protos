@@ -1,20 +1,21 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message GadgetPlayUidOpNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 829;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum GadgetPlayUidOpNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 829;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	repeated uint32 uidList = 12;
-	uint32 playType = 14;
-	uint32 op = 9;
-	string paramStr = 2;
-	repeated uint32 paramList = 11;
-	uint32 entityId = 7;
+	repeated uint32 UidList = 12;
+	uint32 PlayType = 14;
+	uint32 Op = 9;
+	string ParamStr = 2;
+	repeated uint32 ParamList = 11;
+	uint32 EntityId = 7;
 }

@@ -1,17 +1,18 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message GadgetStateNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 887;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum GadgetStateNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 887;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 gadgetState = 9;
-	uint32 gadgetEntityId = 7;
-	bool isEnableInteract = 15;
+	uint32 GadgetState = 9;
+	uint32 GadgetEntityId = 7;
+	bool IsEnableInteract = 15;
 }

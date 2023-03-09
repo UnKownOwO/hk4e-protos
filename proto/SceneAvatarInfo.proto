@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "SceneWeaponInfo.proto";
 import "CurVehicleInfo.proto";
@@ -9,25 +9,25 @@ import "SceneReliquaryInfo.proto";
 import "ServerBuff.proto";
 
 message SceneAvatarInfo {
-	uint32 uid = 1;
-	uint32 avatarId = 2;
-	uint64 guid = 3;
-	uint32 peerId = 4;
-	repeated uint32 equipIdList = 5;
-	uint32 skillDepotId = 6;
-	repeated uint32 talentIdList = 7;
-	SceneWeaponInfo weapon = 8;
-	repeated SceneReliquaryInfo reliquaryList = 9;
-	uint32 coreProudSkillLevel = 11;
-	repeated uint32 inherentProudSkillList = 12;
-	map<uint32, uint32> skillLevelMap = 13;
-	map<uint32, uint32> proudSkillExtraLevelMap = 14;
-	repeated ServerBuff serverBuffList = 15;
-	repeated uint32 teamResonanceList = 16;
-	uint32 wearingFlycloakId = 17;
-	uint32 bornTime = 18;
-	uint32 costumeId = 19;
-	CurVehicleInfo curVehicleInfo = 20;
-	AvatarExcelInfo excelInfo = 21;
-	uint32 animHash = 22;
+	uint32 Uid = 1;
+	uint32 AvatarId = 2;
+	uint64 Guid = 3;
+	uint32 PeerId = 4;
+	repeated uint32 EquipIdList = 5;
+	uint32 SkillDepotId = 6;
+	repeated uint32 TalentIdList = 7;
+	SceneWeaponInfo Weapon = 8;
+	repeated SceneReliquaryInfo ReliquaryList = 9;
+	uint32 CoreProudSkillLevel = 11;
+	repeated uint32 InherentProudSkillList = 12;
+	map<uint32, uint32> SkillLevelMap = 13;
+	map<uint32, uint32> ProudSkillExtraLevelMap = 14;
+	repeated ServerBuff ServerBuffList = 15;
+	repeated uint32 TeamResonanceList = 16;
+	uint32 WearingFlycloakId = 17;
+	uint32 BornTime = 18;
+	uint32 CostumeId = 19;
+	CurVehicleInfo CurVehicleInfo = 20;
+	AvatarExcelInfo ExcelInfo = 21;
+	uint32 AnimHash = 22;
 }

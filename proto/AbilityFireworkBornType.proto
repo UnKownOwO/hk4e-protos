@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package Proto;
+
+import "Rotation.proto";
+
+message AbilityFireworkBornType {
+	Rotation Pos = 8;
+	Rotation MoveDir = 1;
+	uint32 EffectIndex = 2;
+	Rotation Rot = 12;
+}

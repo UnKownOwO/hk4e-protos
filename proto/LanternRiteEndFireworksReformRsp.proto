@@ -1,23 +1,24 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message LanternRiteEndFireworksReformRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 8114;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum LanternRiteEndFireworksReformRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8114;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 finalScore = 8;
-	uint32 challengeId = 10;
-	uint32 stageId = 9;
-	bool Unk3300_ALMNEGCIILA = 6;
-	bool isFullScore = 4;
-	int32 retcode = 13;
-	bool Unk3300_FPEFIADFBNI = 7;
-	bool Unk3300_CGJNBGAKFAD = 11;
-	bool isNewRecord = 12;
+	uint32 FinalScore = 8;
+	uint32 ChallengeId = 10;
+	uint32 StageId = 9;
+	bool IsUnlockFireworks = 6;
+	bool IsFullScore = 4;
+	int32 Retcode = 13;
+	bool IsStaminaUp = 7;
+	bool IsUnlockNewSkill = 11;
+	bool IsNewRecord = 12;
 }

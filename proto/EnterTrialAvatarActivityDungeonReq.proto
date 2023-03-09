@@ -1,18 +1,19 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message EnterTrialAvatarActivityDungeonReq {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 2167;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// 	IS_ALLOW_CLIENT = 1;
-	// }
+	enum EnterTrialAvatarActivityDungeonReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 2167;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
 
-	uint32 activityId = 3;
-	uint32 enterPointId = 13;
-	uint32 trialAvatarIndexId = 4;
+	uint32 ActivityId = 3;
+	uint32 EnterPointId = 13;
+	uint32 TrialAvatarIndexId = 4;
 }

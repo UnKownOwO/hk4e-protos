@@ -1,8 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message HomeAvatarTalkFinishInfo {
-	uint32 avatarId = 11;
-	repeated uint32 finishTalkIdList = 7;
+	uint32 AvatarId = 11;
+	repeated uint32 FinishTalkIdList = 7;
 }

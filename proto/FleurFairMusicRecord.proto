@@ -1,9 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message FleurFairMusicRecord {
-	uint32 maxCombo = 1;
-	bool isUnlock = 7;
-	uint32 maxScore = 8;
+	uint32 MaxCombo = 1;
+	bool IsUnlock = 7;
+	uint32 MaxScore = 8;
 }

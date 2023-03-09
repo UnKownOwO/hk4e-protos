@@ -1,8 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message VectorPlane {
-	float x = 1;
-	float y = 2;
+	float X = 1;
+	float Y = 2;
 }

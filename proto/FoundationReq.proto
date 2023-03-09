@@ -1,21 +1,21 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "FoundationOpType.proto";
 
 message FoundationReq {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 869;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// 	IS_ALLOW_CLIENT = 1;
-	// }
+	enum FoundationReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 869;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
 
-	uint32 pointConfigId = 2;
-	FoundationOpType opType = 10;
-	uint32 buildingId = 13;
-	uint32 gadgetEntityId = 4;
+	uint32 PointConfigId = 2;
+	FoundationOpType OpType = 10;
+	uint32 BuildingId = 13;
+	uint32 GadgetEntityId = 4;
 }

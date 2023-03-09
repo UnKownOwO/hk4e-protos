@@ -1,17 +1,17 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
-import "Vector.proto";
+import "Rotation.proto";
 import "MapMarkPointType.proto";
 import "MapMarkFromType.proto";
 
 message MapMarkPoint {
-	uint32 sceneId = 1;
-	string name = 2;
-	Vector pos = 3;
-	MapMarkPointType pointType = 4;
-	uint32 monsterId = 5;
-	MapMarkFromType fromType = 6;
-	uint32 questId = 7;
+	uint32 SceneId = 1;
+	string Name = 2;
+	Rotation Pos = 3;
+	MapMarkPointType PointType = 4;
+	uint32 MonsterId = 5;
+	MapMarkFromType FromType = 6;
+	uint32 QuestId = 7;
 }

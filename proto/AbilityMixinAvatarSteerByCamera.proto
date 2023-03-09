@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+import "Rotation.proto";
+
+message AbilityMixinAvatarSteerByCamera {
+	Rotation TargetDir = 2;
+	Rotation TargetPos = 4;
+}

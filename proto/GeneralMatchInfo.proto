@@ -1,11 +1,11 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "MatchPlayerInfo.proto";
 
 message GeneralMatchInfo {
-	uint32 matchParam = 6;
-	uint32 matchId = 8;
-	repeated MatchPlayerInfo playerList = 13;
+	uint32 MatchParam = 6;
+	uint32 MatchId = 8;
+	repeated MatchPlayerInfo PlayerList = 13;
 }

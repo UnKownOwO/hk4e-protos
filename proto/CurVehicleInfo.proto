@@ -1,8 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message CurVehicleInfo {
-	uint32 entityId = 1;
-	uint32 pos = 2;
+	uint32 EntityId = 1;
+	uint32 Pos = 2;
 }

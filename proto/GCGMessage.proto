@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "TokenChange.proto";
 import "PhaseChange.proto";
@@ -38,7 +38,7 @@ import "ReactionBegin.proto";
 import "ReactionEnd.proto";
 
 message GCGMessage {
-	oneof message {
+	oneof Message {
 		TokenChange token_change = 10;
 		PhaseChange phase_change = 15;
 		AddCards add_cards = 11;

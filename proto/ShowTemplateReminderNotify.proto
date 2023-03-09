@@ -1,19 +1,20 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message ShowTemplateReminderNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 3353;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum ShowTemplateReminderNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 3353;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	bool Unk3300_AENIIBBBPJC = 13;
-	bool Unk3300_LABCNBEGCED = 11;
-	repeated uint32 paramUidList = 6;
-	repeated int32 paramList = 12;
-	uint32 templateReminderId = 9;
+	bool IsRevoke = 13;
+	bool IsNeedCache = 11;
+	repeated uint32 ParamUidList = 6;
+	repeated int32 ParamList = 12;
+	uint32 TemplateReminderId = 9;
 }

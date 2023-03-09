@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message AISnapshotEntitySkillCycle {
+	bool Selected = 4;
+	bool Trydoskill = 12;
+	bool Failed = 3;
+	uint32 SkillId = 15;
+	bool Success = 9;
+}

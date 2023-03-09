@@ -1,20 +1,21 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message UseItemReq {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 670;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// 	IS_ALLOW_CLIENT = 1;
-	// }
+	enum UseItemReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 670;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
 
-	uint64 guid = 8;
-	uint32 optionIdx = 14;
-	uint32 count = 12;
-	bool isEnterMpDungeonTeam = 13;
-	uint64 targetGuid = 6;
+	uint64 Guid = 8;
+	uint32 OptionIdx = 14;
+	uint32 Count = 12;
+	bool IsEnterMpDungeonTeam = 13;
+	uint64 TargetGuid = 6;
 }

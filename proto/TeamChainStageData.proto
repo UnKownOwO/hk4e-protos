@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message TeamChainStageData {
+	uint32 BestScore = 6;
+	bool IsOpen = 1;
+	uint32 StageId = 2;
+}

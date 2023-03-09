@@ -1,10 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "FungusTrainingMonsterPreviewDetail.proto";
 
 message FungusTrainingPoolPreviewDetail {
-	uint32 poolId = 10;
-	repeated FungusTrainingMonsterPreviewDetail monsterPreviewDetailList = 5;
+	uint32 PoolId = 10;
+	repeated FungusTrainingMonsterPreviewDetail MonsterPreviewDetailList = 5;
 }

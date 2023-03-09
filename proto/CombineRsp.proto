@@ -1,25 +1,25 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "ItemParam.proto";
 
 message CombineRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 630;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum CombineRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 630;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 combineCount = 10;
-	repeated ItemParam resultItemList = 13;
-	uint64 avatarGuid = 7;
-	repeated ItemParam totalExtraItemList = 1;
-	int32 retcode = 12;
-	repeated ItemParam totalRandomItemList = 3;
-	uint32 combineId = 5;
-	repeated ItemParam costItemList = 2;
-	repeated ItemParam totalReturnItemList = 4;
+	uint32 CombineCount = 10;
+	repeated ItemParam ResultItemList = 13;
+	uint64 AvatarGuid = 7;
+	repeated ItemParam TotalExtraItemList = 1;
+	int32 Retcode = 12;
+	repeated ItemParam TotalRandomItemList = 3;
+	uint32 CombineId = 5;
+	repeated ItemParam CostItemList = 2;
+	repeated ItemParam TotalReturnItemList = 4;
 }

@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+enum InvestigationTarget_State {
+	Invalid = 0;
+	InProgress = 1;
+	Complete = 2;
+	RewardTaken = 3;
+}

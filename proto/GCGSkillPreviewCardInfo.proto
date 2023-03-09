@@ -1,14 +1,14 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "GCGZoneType.proto";
 
 message GCGSkillPreviewCardInfo {
-	GCGZoneType zoneType = 13;
-	uint32 controllerId = 1;
-	uint32 ownerCardGuid = 7;
-	uint32 cardGuid = 12;
-	uint32 retcode = 10;
-	uint32 cardId = 5;
+	GCGZoneType ZoneType = 13;
+	uint32 ControllerId = 1;
+	uint32 OwnerCardGuid = 7;
+	uint32 CardGuid = 12;
+	uint32 FaceType = 10;
+	uint32 CardId = 5;
 }

@@ -1,16 +1,16 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message GCGDSCurDeckChangeNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 7372;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// 	IS_ALLOW_CLIENT = 1;
-	// }
+	enum DNLIPHOHIFO {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 7023;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 rewardIndex = 11;
+	uint32 DeckId = 7;
 }

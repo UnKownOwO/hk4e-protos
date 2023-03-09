@@ -1,7 +1,8 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message ShellInfo {
-	uint32 shellId = 1;
+	uint32 ShellId = 1;
 }

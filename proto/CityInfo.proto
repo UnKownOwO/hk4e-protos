@@ -1,9 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message CityInfo {
-	uint32 crystalNum = 15;
-	uint32 cityId = 6;
-	uint32 level = 11;
+	uint32 CrystalNum = 15;
+	uint32 CityId = 6;
+	uint32 Level = 11;
 }

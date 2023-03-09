@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "AsterLargeDetailInfo.proto";
 import "AsterLittleDetailInfo.proto";
@@ -8,13 +8,13 @@ import "AsterMidDetailInfo.proto";
 import "AsterProgressDetailInfo.proto";
 
 message AsterInfo {
-	AsterLargeDetailInfo asterLarge = 2;
-	uint32 Unk3300_KFDGFFPJGJC = 8;
-	bool isSpecialRewardTaken = 9;
-	AsterLittleDetailInfo asterLittle = 3;
-	uint32 contentCloseTime = 14;
-	uint32 Unk3300_DCHBFEJNBHP = 10;
-	AsterMidDetailInfo asterMid = 4;
-	AsterProgressDetailInfo asterProgress = 7;
-	bool leftMonsters = 15;
+	AsterLargeDetailInfo AsterLarge = 2;
+	uint32 AsterToken = 8;
+	bool IsSpecialRewardTaken = 9;
+	AsterLittleDetailInfo AsterLittle = 3;
+	uint32 ContentCloseTime = 14;
+	uint32 AsterCredit = 10;
+	AsterMidDetailInfo AsterMid = 4;
+	AsterProgressDetailInfo AsterProgress = 7;
+	bool IsContentClosed = 15;
 }

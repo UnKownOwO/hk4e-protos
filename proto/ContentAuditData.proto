@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message ContentAuditData {
+	string Type = 1;
+	string Content = 2;
+	uint32 AutoPassTime = 3;
+}

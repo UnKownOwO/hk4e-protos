@@ -1,8 +1,0 @@
-syntax = "proto3";
-
-option go_package = "./;proto";
-
-message FurnitureMakeInfo {
-	uint32 makeCount = 9;
-	uint32 furnitureId = 7;
-}

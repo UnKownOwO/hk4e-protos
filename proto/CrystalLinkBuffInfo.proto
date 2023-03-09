@@ -1,8 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message CrystalLinkBuffInfo {
-	uint32 Unk3300_BGKLAFCBNOA = 8;
-	uint32 Unk3300_PFLAOCMEFIL = 7;
+	uint32 EffectBuffId = 8;
+	uint32 CondBuffId = 7;
 }

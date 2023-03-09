@@ -1,16 +1,17 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message MultistagePlayStageEndNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 5341;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum MultistagePlayStageEndNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 5341;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 groupId = 9;
-	uint32 playIndex = 14;
+	uint32 GroupId = 9;
+	uint32 PlayIndex = 14;
 }

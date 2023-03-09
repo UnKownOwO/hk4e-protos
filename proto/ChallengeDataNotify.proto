@@ -1,17 +1,18 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message ChallengeDataNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 1000;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum ChallengeDataNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 1000;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 paramIndex = 1;
-	uint32 value = 11;
-	uint32 challengeIndex = 8;
+	uint32 ParamIndex = 1;
+	uint32 Value = 11;
+	uint32 ChallengeIndex = 8;
 }

@@ -1,9 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "BreakoutAction.proto";
 
 message SyncAction {
-	BreakoutAction henpegmkbie = 9;
+	BreakoutAction Action = 9;
 }

@@ -1,12 +1,12 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "CrystalLinkTeamInfo.proto";
 
 message CrystalLinkLevelInfo {
-	uint32 levelId = 3;
-	uint32 bestScore = 6;
-	bool isOpen = 7;
-	repeated CrystalLinkTeamInfo teamInfoList = 8;
+	uint32 LevelId = 3;
+	uint32 BestScore = 6;
+	bool IsOpen = 7;
+	repeated CrystalLinkTeamInfo TeamInfoList = 8;
 }

@@ -1,12 +1,12 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "ProfilePicture.proto";
 
 message WinterCampFriendWishData {
-	uint32 uid = 8;
-	repeated uint32 itemIdList = 14;
-	string nickname = 7;
-	ProfilePicture profilePicture = 9;
+	uint32 Uid = 8;
+	repeated uint32 ItemIdList = 14;
+	string Nickname = 7;
+	ProfilePicture ProfilePicture = 9;
 }

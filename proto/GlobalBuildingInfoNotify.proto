@@ -1,19 +1,19 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "BuildingInfo.proto";
 
 message GlobalBuildingInfoNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 5389;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum GlobalBuildingInfoNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 5389;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 maxNum = 4;
-	uint32 currentNum = 8;
-	repeated BuildingInfo buildingList = 3;
+	uint32 MaxNum = 4;
+	uint32 CurrentNum = 8;
+	repeated BuildingInfo BuildingList = 3;
 }

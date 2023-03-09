@@ -1,15 +1,16 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message ExpeditionChallengeFinishedNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 2094;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum ExpeditionChallengeFinishedNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 2094;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 id = 8;
+	uint32 Id = 8;
 }

@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message LJOGNLOKCLI {
+	enum CPDJJMDIKDO {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 23974;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	repeated uint64 meclfjmmlmh = 2;
+}

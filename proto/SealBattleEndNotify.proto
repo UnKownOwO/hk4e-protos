@@ -1,16 +1,17 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message SealBattleEndNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 265;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum SealBattleEndNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 265;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 sealEntityId = 3;
-	bool isWin = 13;
+	uint32 SealEntityId = 3;
+	bool IsWin = 13;
 }

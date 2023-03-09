@@ -1,10 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "GCGSkillHpChangeType.proto";
 
 message GCGSkillPreviewHpInfo {
-	uint32 hpChangeValue = 1;
-	GCGSkillHpChangeType changeType = 9;
+	uint32 HpChangeValue = 1;
+	GCGSkillHpChangeType ChangeType = 9;
 }

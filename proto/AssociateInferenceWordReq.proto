@@ -1,18 +1,19 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message AssociateInferenceWordReq {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 456;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// 	IS_ALLOW_CLIENT = 1;
-	// }
+	enum NCOBIJLLDLL {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 456;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
 
-	uint32 Unk3300_EPMGHELECNH = 11;
-	uint32 pageId = 3;
-	uint32 Unk3300_FDGLBLJOKOK = 13;
+	uint32 BaseWordId = 11;
+	uint32 PageId = 3;
+	uint32 AssociateWordId = 13;
 }

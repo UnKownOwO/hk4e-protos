@@ -1,13 +1,13 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
-import "Vector.proto";
+import "Rotation.proto";
 
 message ShapeBox {
-	Vector center = 1;
-	Vector axis0 = 2;
-	Vector axis1 = 3;
-	Vector axis2 = 4;
-	Vector extents = 5;
+	Rotation Center = 1;
+	Rotation Axis0 = 2;
+	Rotation Axis1 = 3;
+	Rotation Axis2 = 4;
+	Rotation Extents = 5;
 }

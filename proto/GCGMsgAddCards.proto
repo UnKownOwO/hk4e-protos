@@ -1,14 +1,14 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "GCGReason.proto";
 import "GCGZoneType.proto";
 
 message GCGMsgAddCards {
-	uint32 controllerId = 11;
-	GCGReason reason = 1;
-	uint32 pos = 6;
-	GCGZoneType zone = 9;
-	repeated uint32 cardGuidList = 5;
+	uint32 ControllerId = 11;
+	GCGReason Reason = 1;
+	uint32 Pos = 6;
+	GCGZoneType Zone = 9;
+	repeated uint32 CardGuidList = 5;
 }

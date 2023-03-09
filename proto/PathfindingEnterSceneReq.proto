@@ -1,24 +1,24 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "ObstacleInfo.proto";
 
 message PathfindingEnterSceneReq {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 2320;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// 	IS_ALLOW_CLIENT = 1;
-	// }
+	enum PathfindingEnterSceneReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 2320;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
 
-	repeated uint32 activityId = 8;
-	uint32 Unk3300_JHLKDOHPIFB = 1;
-	uint32 sceneId = 11;
-	bool isEditor = 13;
-	uint32 version = 6;
-	uint32 Unk3300_MGGFOILELKH = 3;
-	repeated ObstacleInfo obstacles = 10;
+	repeated uint32 ActivityId = 8;
+	uint32 SceneTagHash = 1;
+	uint32 SceneId = 11;
+	bool IsEditor = 13;
+	uint32 Version = 6;
+	uint32 PolygonId = 3;
+	repeated ObstacleInfo Obstacles = 10;
 }

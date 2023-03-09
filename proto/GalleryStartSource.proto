@@ -1,9 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 enum GalleryStartSource {
-  GALLERY_START_BY_NONE  = 0;
-  GALLERY_START_BY_MATCH = 1;
-  GALLERY_START_BY_DRAFT = 2;
+	GalleryStartByNone = 0;
+	GalleryStartByMatch = 1;
+	GalleryStartByDraft = 2;
 }

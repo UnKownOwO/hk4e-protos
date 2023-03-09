@@ -1,18 +1,19 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message TowerEnterLevelRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 2429;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum TowerEnterLevelRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 2429;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 levelIndex = 15;
-	repeated uint32 towerBuffIdList = 6;
-	int32 retcode = 3;
-	uint32 floorId = 11;
+	uint32 LevelIndex = 15;
+	repeated uint32 TowerBuffIdList = 6;
+	int32 Retcode = 3;
+	uint32 FloorId = 11;
 }

@@ -1,16 +1,17 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message UpdatePlayerShowNameCardListRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 4023;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum UpdatePlayerShowNameCardListRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4023;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	repeated uint32 showNameCardIdList = 10;
-	int32 retcode = 9;
+	repeated uint32 ShowNameCardIdList = 10;
+	int32 Retcode = 9;
 }

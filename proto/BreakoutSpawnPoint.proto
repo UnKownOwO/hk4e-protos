@@ -1,11 +1,11 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "BreakoutPhysicalObject.proto";
 
 message BreakoutSpawnPoint {
-	uint32 id = 1;
-	uint32 jkjacakbdch = 2;
-	repeated BreakoutPhysicalObject clnllfklpjc = 3;
+	uint32 Id = 1;
+	uint32 BrickSuiteId = 2;
+	repeated BreakoutPhysicalObject SpawnedBrickList = 3;
 }

@@ -1,8 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message DungeonEnterPosInfo {
-	uint32 questId = 15;
-	uint32 pointId = 7;
+	uint32 QuestId = 15;
+	uint32 PointId = 7;
 }

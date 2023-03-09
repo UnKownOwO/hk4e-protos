@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "SamLampInfo.proto";
 import "CrucibleInfo.proto";
@@ -32,7 +32,7 @@ import "SumoInfo.proto";
 import "MoonfinTrialInfo.proto";
 import "LunaRiteInfo.proto";
 import "PlantFlowerInfo.proto";
-import "MusicGameActivityDetailInfo.proto";
+import "MusicGameInfo.proto";
 import "RoguelikeDungoenInfo.proto";
 import "DigInfo.proto";
 import "HachiInfo.proto";
@@ -74,31 +74,31 @@ import "ActivityPushTipsData.proto";
 import "ActivityWatcherInfo.proto";
 
 message ActivityInfo {
-	map<uint32, uint32> activityCoinMap = 406;
-	uint32 scoreLimit = 1497;
-	repeated uint32 takenRewardList = 644;
-	bool Unk3300_MDBDPIBEGGH = 7;
-	bool Unk3300_MJNPGEKLOCG = 754;
-	uint32 endTime = 12;
-	uint32 activityType = 10;
-	uint32 selectedAvatarRewardId = 519;
-	repeated uint32 meetCondList = 2;
-	uint32 activityId = 15;
-	bool Unk3300_ABJKLALKLDG = 537;
-	bool isFinished = 3;
-	repeated ActivityPushTipsData activityPushTipsDataList = 336;
-	repeated ActivityWatcherInfo watcherInfoList = 14;
-	bool Unk3300_CBCEHLJJOGI = 1126;
-	uint32 scheduleId = 6;
-	repeated uint32 expireCondList = 9;
+	map<uint32, uint32> ActivityCoinMap = 406;
+	uint32 ScoreLimit = 1497;
+	repeated uint32 TakenRewardList = 644;
+	bool IsPlayOpenAnim = 7;
+	bool IsCommonContentClosed = 754;
+	uint32 EndTime = 12;
+	uint32 ActivityType = 10;
+	uint32 SelectedAvatarRewardId = 519;
+	repeated uint32 MeetCondList = 2;
+	uint32 ActivityId = 15;
+	bool IsBannerCleared = 537;
+	bool IsFinished = 3;
+	repeated ActivityPushTipsData ActivityPushTipsDataList = 336;
+	repeated ActivityWatcherInfo WatcherInfoList = 14;
+	bool IsHidden = 1126;
+	uint32 ScheduleId = 6;
+	repeated uint32 ExpireCondList = 9;
 	repeated uint32 fdjefldhela = 2021;
-	bool Unk3300_ICNJJKDHPCH = 11;
-	uint32 firstDayStartTime = 598;
-	uint32 curScore = 396;
-	map<uint32, uint32> wishGiftNumMap = 1052;
-	bool Unk3300_NEPKLLBJFKK = 1637;
-	uint32 beginTime = 5;
-	oneof detail {
+	bool IsStarting = 11;
+	uint32 FirstDayStartTime = 598;
+	uint32 CurScore = 396;
+	map<uint32, uint32> WishGiftNumMap = 1052;
+	bool IsQuickOpen = 1637;
+	uint32 BeginTime = 5;
+	oneof ActivityInfo_DetailOneofCase {
 		SamLampInfo sam_lamp_info = 4;
 		CrucibleInfo crucible_info = 13;
 		SalesmanInfo salesman_info = 1;
@@ -129,7 +129,7 @@ message ActivityInfo {
 		MoonfinTrialInfo moonfin_trial_info = 1122;
 		LunaRiteInfo luna_rite_info = 82;
 		PlantFlowerInfo plant_flower_info = 1864;
-		MusicGameActivityDetailInfo music_game_info = 1220;
+		MusicGameInfo music_game_info = 1220;
 		RoguelikeDungoenInfo roguelike_dungoen_info = 1817;
 		DigInfo dig_info = 168;
 		HachiInfo hachi_info = 1663;

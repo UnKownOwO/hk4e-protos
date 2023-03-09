@@ -1,18 +1,18 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "DungeonEntryCond.proto";
 
 message GetDungeonEntryExploreConditionRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 3355;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum GetDungeonEntryExploreConditionRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 3355;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	int32 retcode = 14;
-	DungeonEntryCond dungeonEntryCond = 7;
+	int32 Retcode = 14;
+	DungeonEntryCond DungeonEntryCond = 7;
 }

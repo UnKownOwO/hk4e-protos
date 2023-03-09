@@ -1,11 +1,12 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message SummerTimeSprintBoatRecord {
-	repeated uint32 watcherIdList = 5;
-	uint32 startTime = 3;
-	bool isTouched = 9;
-	uint32 bestScore = 2;
-	uint32 groupId = 14;
+	repeated uint32 WatcherIdList = 5;
+	uint32 StartTime = 3;
+	bool IsTouched = 9;
+	uint32 BestScore = 2;
+	uint32 GroupId = 14;
 }

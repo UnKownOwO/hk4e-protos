@@ -1,13 +1,13 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
-import "Vector.proto";
+import "Rotation.proto";
 
 message TreasureMapDetectorData {
-	repeated Vector spotList = 15;
-	uint32 regionId = 6;
-	uint32 radius = 7;
-	Vector centerPos = 8;
-	bool isRegionDetected = 12;
+	repeated Rotation SpotList = 15;
+	uint32 RegionId = 6;
+	uint32 Radius = 7;
+	Rotation CenterPos = 8;
+	bool IsRegionDetected = 12;
 }

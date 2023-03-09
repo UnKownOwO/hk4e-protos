@@ -1,15 +1,20 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
+import "TeamChainChooseTeamInfo.proto";
 
 message TeamChainEnterDungeonReq {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 21856;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum DLBLCLBKJFH {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 21568;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
 
-	bool gocbaipjdlk = 11;
+	repeated TeamChainChooseTeamInfo TeamInfoList = 11;
+	uint32 StageId = 13;
+	uint32 Difficulty = 2;
 }

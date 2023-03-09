@@ -1,19 +1,19 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "HuntingPair.proto";
 
 message GetHuntingOfferRewardReq {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 4319;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// 	IS_ALLOW_CLIENT = 1;
-	// }
+	enum GetHuntingOfferRewardReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4319;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
 
-	HuntingPair huntingPair = 14;
-	uint32 cityId = 13;
+	HuntingPair HuntingPair = 14;
+	uint32 CityId = 13;
 }

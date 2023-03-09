@@ -1,8 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message OpAttack {
-	uint32 skillId = 8;
-	repeated uint32 costDiceIndexList = 11;
+	uint32 SkillId = 8;
+	repeated uint32 CostDiceIndexList = 11;
 }

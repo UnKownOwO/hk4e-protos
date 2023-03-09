@@ -1,9 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message RoguelikeSettleCoinInfo {
-	uint32 Unk3300_MFKOIMONCLA = 12;
-	uint32 coinC = 7;
-	uint32 Unk3300_LFEKGBBAMHE = 15;
+	uint32 CellNum = 12;
+	uint32 CoinC = 7;
+	uint32 CoinB = 15;
 }

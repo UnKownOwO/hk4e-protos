@@ -1,9 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 enum GetUgcType {
-  GET_UGC_NONE         = 0;
-  GET_UGC_TYPE_MINE    = 1;
-  GET_UGC_TYPE_PUBLISH = 2;
+	GetUgcNone = 0;
+	Mine = 1;
+	Publish = 2;
 }

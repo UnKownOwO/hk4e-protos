@@ -1,23 +1,23 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "ScenePlayBattleSettleRewardInfo.proto";
 import "ScenePlayBattleSettlePlayerInfo.proto";
 
 message ScenePlayBattleResultNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 4428;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum ScenePlayBattleResultNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4428;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	repeated ScenePlayBattleSettleRewardInfo settleRewardInfoList = 9;
-	uint32 playId = 2;
-	repeated ScenePlayBattleSettlePlayerInfo settlePlayerInfoList = 4;
-	uint32 costTime = 8;
-	uint32 playType = 13;
-	bool isWin = 12;
+	repeated ScenePlayBattleSettleRewardInfo SettleRewardInfoList = 9;
+	uint32 PlayId = 2;
+	repeated ScenePlayBattleSettlePlayerInfo SettlePlayerInfoList = 4;
+	uint32 CostTime = 8;
+	uint32 PlayType = 13;
+	bool IsWin = 12;
 }

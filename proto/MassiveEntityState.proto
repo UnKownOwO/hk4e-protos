@@ -1,9 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message MassiveEntityState {
-	uint32 entityType = 1;
-	int64 objId = 2;
-	uint32 elementState = 3;
+	uint32 EntityType = 1;
+	int64 ObjId = 2;
+	uint32 ElementState = 3;
 }

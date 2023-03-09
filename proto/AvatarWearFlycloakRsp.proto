@@ -1,17 +1,18 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message AvatarWearFlycloakRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 1704;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum AvatarWearFlycloakRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 1704;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint64 avatarGuid = 3;
-	uint32 flycloakId = 1;
-	int32 retcode = 14;
+	uint64 AvatarGuid = 3;
+	uint32 FlycloakId = 1;
+	int32 Retcode = 14;
 }

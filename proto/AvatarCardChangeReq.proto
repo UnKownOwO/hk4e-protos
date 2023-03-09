@@ -1,18 +1,19 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message AvatarCardChangeReq {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 628;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// 	IS_ALLOW_CLIENT = 1;
-	// }
+	enum AvatarCardChangeReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 628;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
 
-	uint32 itemId = 11;
-	uint64 avatarGuid = 1;
-	uint32 count = 6;
+	uint32 ItemId = 11;
+	uint64 AvatarGuid = 1;
+	uint32 Count = 6;
 }

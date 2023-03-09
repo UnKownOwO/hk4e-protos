@@ -1,8 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message ProductPriceTier {
-	string productId = 10;
-	string priceTier = 6;
+	string ProductId = 10;
+	string PriceTier = 6;
 }

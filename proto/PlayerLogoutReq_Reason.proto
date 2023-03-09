@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package Proto;
+
+enum PlayerLogoutReq_Reason {
+	Disconnect = 0;
+	ClientReq = 1;
+	Timeout = 2;
+	AdminReq = 3;
+	ServerClose = 4;
+	GmClear = 5;
+	PlayerTransfer = 6;
+	ClientChecksumInvalid = 7;
+	NHMKGJGLHPO = 8;
+}

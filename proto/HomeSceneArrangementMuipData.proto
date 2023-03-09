@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package Proto;
+
+import "HomeBlockArrangementMuipData.proto";
+
+message HomeSceneArrangementMuipData {
+	uint32 ModuleId = 1;
+	uint32 SceneId = 2;
+	bool IsRoom = 3;
+	repeated HomeBlockArrangementMuipData BlockDataList = 4;
+}

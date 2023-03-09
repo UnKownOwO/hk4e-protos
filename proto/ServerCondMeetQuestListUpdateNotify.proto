@@ -1,16 +1,17 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message ServerCondMeetQuestListUpdateNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 485;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum ServerCondMeetQuestListUpdateNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 485;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	repeated uint32 addQuestIdList = 2;
-	repeated uint32 delQuestIdList = 7;
+	repeated uint32 AddQuestIdList = 2;
+	repeated uint32 DelQuestIdList = 7;
 }

@@ -1,10 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "BalloonSettleInfo.proto";
 
 message FleurFairBalloonSettleInfo {
-	BalloonSettleInfo settleInfo = 13;
-	bool isNewRecord = 8;
+	BalloonSettleInfo SettleInfo = 13;
+	bool IsNewRecord = 8;
 }

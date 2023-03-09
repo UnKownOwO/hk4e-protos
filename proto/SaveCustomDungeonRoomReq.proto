@@ -1,21 +1,21 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "CustomDungeonSetting.proto";
 import "CustomDungeonRoom.proto";
 
 message SaveCustomDungeonRoomReq {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 6246;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// 	IS_ALLOW_CLIENT = 1;
-	// }
+	enum SaveCustomDungeonRoomReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 6246;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
 
-	CustomDungeonSetting setting = 14;
-	CustomDungeonRoom customDungeonRoom = 15;
-	bool isUpdateSetting = 3;
+	CustomDungeonSetting Setting = 14;
+	CustomDungeonRoom CustomDungeonRoom = 15;
+	bool IsUpdateSetting = 3;
 }

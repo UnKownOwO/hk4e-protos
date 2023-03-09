@@ -1,10 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "GCGEndReason.proto";
 
 message GCGMsgGameOver {
-	GCGEndReason endReason = 4;
-	uint32 winControllerId = 10;
+	GCGEndReason EndReason = 4;
+	uint32 WinControllerId = 10;
 }

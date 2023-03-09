@@ -1,22 +1,23 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message LanV3RaceSettleNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 23477;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum PCKFCBDIILI {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 23477;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	bool isNewRecord = 3;
-	uint32 score = 8;
-	uint32 galleryId = 9;
-	uint32 Unk3300_OHAHHKNAJKL = 15;
-	bool isSuccess = 7;
-	uint32 levelId = 14;
-	uint32 Unk3300_IPGJKKFDPJJ = 11;
-	uint32 remainTime = 5;
+	bool IsNewRecord = 3;
+	uint32 Score = 8;
+	uint32 GalleryId = 9;
+	uint32 TotalCointCount = 15;
+	bool IsSuccess = 7;
+	uint32 LevelId = 14;
+	uint32 CoinCount = 11;
+	uint32 RemainTime = 5;
 }

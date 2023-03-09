@@ -1,17 +1,18 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message EffigyChallengeV2ChooseSkillRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 21025;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum NPHDEAPKFJD {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 21025;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	int32 retcode = 9;
-	uint32 levelId = 14;
-	uint32 challengeModeSkillNo = 13;
+	int32 Retcode = 9;
+	uint32 LevelId = 14;
+	uint32 ChallengeModeSkillNo = 13;
 }

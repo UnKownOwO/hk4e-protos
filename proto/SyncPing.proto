@@ -1,8 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message SyncPing {
-	uint64 clientGameTime = 12;
-	uint64 serverGameTime = 7;
+	uint64 ClientGameTime = 12;
+	uint64 ServerGameTime = 7;
 }

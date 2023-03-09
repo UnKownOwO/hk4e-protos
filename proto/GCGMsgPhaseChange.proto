@@ -1,12 +1,12 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "GCGPhaseType.proto";
 import "Uint32Pair.proto";
 
 message GCGMsgPhaseChange {
-	repeated Uint32Pair allowControllerMap = 7;
-	GCGPhaseType afterPhase = 13;
-	GCGPhaseType beforePhase = 8;
+	repeated Uint32Pair AllowControllerMap = 7;
+	GCGPhaseType AfterPhase = 13;
+	GCGPhaseType BeforePhase = 8;
 }

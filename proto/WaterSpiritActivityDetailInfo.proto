@@ -1,9 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message WaterSpiritActivityDetailInfo {
-	uint32 mpPlayId = 13;
-	map<uint32, uint32> searchTimeMap = 3;
-	uint32 regionSearchId = 4;
+	uint32 MpPlayId = 13;
+	map<uint32, uint32> SearchTimeMap = 3;
+	uint32 RegionSearchId = 4;
 }

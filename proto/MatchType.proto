@@ -1,12 +1,12 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 enum MatchType {
-  MATCH_TYPE_NONE       = 0;
-  MATCH_TYPE_DUNGEON    = 1;
-  MATCH_TYPE_MP_PLAY    = 2;
-  MATCH_TYPE_MECHANICUS = 3;
-  MATCH_TYPE_GENERAL    = 4;
-  MATCH_TYPE_GCG        = 5;
+	None = 0;
+	Dungeon = 1;
+	MpPlay = 2;
+	Mechanicus = 3;
+	General = 4;
+	Gcg = 5;
 }

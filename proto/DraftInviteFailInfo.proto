@@ -1,10 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "DraftInviteFailReason.proto";
 
 message DraftInviteFailInfo {
-	DraftInviteFailReason reason = 9;
-	uint32 uid = 1;
+	DraftInviteFailReason Reason = 9;
+	uint32 Uid = 1;
 }

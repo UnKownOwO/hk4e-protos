@@ -1,20 +1,21 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message RogueSwitchAvatarRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 8548;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum RogueSwitchAvatarRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8548;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	repeated uint64 backstageAvatarGuidList = 2;
-	repeated uint64 onstageAvatarGuidList = 13;
-	uint32 cellId = 12;
-	uint64 curAvatarGuid = 3;
-	int32 retcode = 15;
-	uint32 dungeonId = 7;
+	repeated uint64 BackstageAvatarGuidList = 2;
+	repeated uint64 OnstageAvatarGuidList = 13;
+	uint32 CellId = 12;
+	uint64 CurAvatarGuid = 3;
+	int32 Retcode = 15;
+	uint32 DungeonId = 7;
 }

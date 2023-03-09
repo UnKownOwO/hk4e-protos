@@ -1,11 +1,11 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "GravenInnocenceCarveStageInfo.proto";
 
 message GravenInnocenceCarveInfo {
-	repeated uint32 hasEditConfigIdList = 12;
-	uint32 canEditCount = 15;
-	repeated GravenInnocenceCarveStageInfo stageInfoList = 4;
+	repeated uint32 HasEditConfigIdList = 12;
+	uint32 CanEditCount = 15;
+	repeated GravenInnocenceCarveStageInfo StageInfoList = 4;
 }

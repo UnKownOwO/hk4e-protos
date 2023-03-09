@@ -1,18 +1,18 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "FireworksLaunchSchemeData.proto";
 
 message FireworksLaunchDataNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 5979;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum FireworksLaunchDataNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 5979;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 lastUseSchemeId = 6;
-	repeated FireworksLaunchSchemeData schemeDataList = 2;
+	uint32 LastUseSchemeId = 6;
+	repeated FireworksLaunchSchemeData SchemeDataList = 2;
 }

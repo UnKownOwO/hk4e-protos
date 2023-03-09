@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message AbilityMixinGlobalShield {
+	bool IsCreateEffect = 13;
+	float SubShield = 2;
+	float HeightOffset = 6;
+	uint32 AvatarId = 7;
+	string ShieldEffectName = 5;
+	float MaxShield = 3;
+}

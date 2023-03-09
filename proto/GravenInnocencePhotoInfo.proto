@@ -1,11 +1,11 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "GravenInnocencePhotoObjectInfo.proto";
 import "GravenInnocencePhotoStageInfo.proto";
 
 message GravenInnocencePhotoInfo {
-	repeated GravenInnocencePhotoObjectInfo objectInfoList = 10;
-	repeated GravenInnocencePhotoStageInfo stageInfoList = 3;
+	repeated GravenInnocencePhotoObjectInfo ObjectInfoList = 10;
+	repeated GravenInnocencePhotoStageInfo StageInfoList = 3;
 }

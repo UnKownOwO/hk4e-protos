@@ -1,9 +1,16 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
-message GCGLevelType {
-	uint32 levelId = 3;
-	uint32 scenePointId = 2;
-	uint32 id = 6;
+enum GCGLevelType {
+	GCGLevelNone = 0;
+	GCGLevelConst = 1;
+	GCGLevelWeek = 2;
+	GCGLevelWorld = 3;
+	GCGLevelBoss = 4;
+	GCGLevelCharacter = 5;
+	GCGLevelBreak = 6;
+	GCGLevelQuest = 7;
+	GCGLevelGuideGroup = 8;
+	HLFDBCIJMHL = 9;
 }

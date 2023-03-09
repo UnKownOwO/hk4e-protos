@@ -1,17 +1,17 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "ProfilePicture.proto";
 import "ExhibitionDisplayInfo.proto";
 
 message ScenePlayBattleSettlePlayerInfo {
-	string nickname = 9;
-	string onlineId = 11;
-	uint32 statisticId = 3;
-	repeated ExhibitionDisplayInfo cardList = 1;
-	uint32 uid = 6;
-	ProfilePicture profilePicture = 13;
-	uint32 headImage = 4;
-	int64 param = 12;
+	string Nickname = 9;
+	string OnlineId = 11;
+	uint32 StatisticId = 3;
+	repeated ExhibitionDisplayInfo CardList = 1;
+	uint32 Uid = 6;
+	ProfilePicture ProfilePicture = 13;
+	uint32 HeadImage = 4;
+	int64 Param = 12;
 }

@@ -1,20 +1,12 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 enum FishBattleResult {
-  FISH_BATTLE_RESULT_NONE    = 0;
-  FISH_BATTLE_RESULT_SUCC    = 1;
-  FISH_BATTLE_RESULT_FAIL    = 2;
-  FISH_BATTLE_RESULT_TIMEOUT = 3;
-  FISH_BATTLE_RESULT_CANCEL  = 4;
-  FISH_BATTLE_RESULT_EXIT    = 5;
+	None = 0;
+	Succ = 1;
+	Fail = 2;
+	Timeout = 3;
+	Cancel = 4;
+	Exit = 5;
 }
-
-
-
-
-
-
-
-

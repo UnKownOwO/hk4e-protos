@@ -1,7 +1,8 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message BundleInfo {
-	repeated uint32 famklmmklpj = 10;
+	repeated uint32 FinishedBundleList = 10;
 }

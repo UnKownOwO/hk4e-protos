@@ -1,8 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message AvatarRenameInfo {
-	uint32 avatarId = 1;
-	string avatarName = 8;
+	uint32 AvatarId = 1;
+	string AvatarName = 8;
 }

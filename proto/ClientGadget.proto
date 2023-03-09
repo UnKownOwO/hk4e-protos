@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message ClientGadget {
+	uint32 CampId = 1;
+	uint32 CampType = 2;
+	uint64 Guid = 3;
+	uint32 OwnerEntityId = 4;
+	uint32 TargetEntityId = 5;
+	bool AsyncLoad = 6;
+	bool IsPeerIdFromPlayer = 7;
+	repeated uint32 TargetEntityIdList = 8;
+}

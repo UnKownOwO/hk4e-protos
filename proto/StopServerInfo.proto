@@ -1,10 +1,11 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message StopServerInfo {
-	uint32 stopBeginTime = 1;
-	uint32 stopEndTime = 2;
-	string url = 3;
-	string contentMsg = 4;
+	uint32 StopBeginTime = 1;
+	uint32 StopEndTime = 2;
+	string Url = 3;
+	string ContentMsg = 4;
 }

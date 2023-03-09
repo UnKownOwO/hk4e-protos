@@ -1,17 +1,18 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message EntityTagChangeNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 3442;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum EntityTagChangeNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 3442;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	string tag = 14;
-	uint32 entityId = 11;
-	bool isAdd = 1;
+	string Tag = 14;
+	uint32 EntityId = 11;
+	bool IsAdd = 1;
 }

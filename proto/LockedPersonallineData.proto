@@ -1,13 +1,13 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
-import "LockReason.proto";
+import "LockedPersonallineData_LockReason.proto";
 
 message LockedPersonallineData {
-	uint32 personalLineId = 6;
-	LockReason lockReason = 4;
-	oneof param {
+	uint32 PersonalLineId = 6;
+	LockedPersonallineData_LockReason LockReason = 4;
+	oneof LockedPersonallineData_ParamOneofCase {
 		uint32 chapter_id = 5;
 		uint32 level = 13;
 	}

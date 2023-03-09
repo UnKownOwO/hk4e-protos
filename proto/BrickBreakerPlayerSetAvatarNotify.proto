@@ -1,17 +1,18 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message BrickBreakerPlayerSetAvatarNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 5368;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum KLPPMKBNEHC {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 5368;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	repeated uint32 costumeIdList = 6;
-	uint32 uid = 3;
-	repeated uint32 avatarIdList = 13;
+	repeated uint32 CostumeIdList = 6;
+	uint32 Uid = 3;
+	repeated uint32 AvatarIdList = 13;
 }

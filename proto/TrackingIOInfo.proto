@@ -1,13 +1,14 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message TrackingIOInfo {
-	string rydevicetype = 2;
-	string clientTz = 6;
-	string Unk3300_CCOGBICMHKG = 15;
-	string Unk3300_NMDNLHLAKAM = 11;
-	string Unk3300_PIBFPDAMJLE = 5;
-	string Unk3300_DJHKHEFPCDK = 9;
-	string Unk3300_CNPIGDOEJPB = 3;
+	string Rydevicetype = 2;
+	string ClientTz = 6;
+	string CurrentCaid = 15;
+	string CachedCaid = 11;
+	string Deviceid = 5;
+	string Mac = 9;
+	string Appid = 3;
 }

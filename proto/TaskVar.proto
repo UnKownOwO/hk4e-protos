@@ -1,8 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message TaskVar {
-	repeated int32 valueList = 15;
-	uint32 key = 8;
+	repeated int32 ValueList = 15;
+	uint32 Key = 8;
 }

@@ -1,17 +1,18 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message HomeExchangeWoodReq {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 4672;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// 	IS_ALLOW_CLIENT = 1;
-	// }
+	enum NIIPNNDOJGL {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4672;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
 
-	map<uint32, uint32> materialCountMap = 1;
-	uint32 woodId = 8;
+	map<uint32, uint32> MaterialCountMap = 1;
+	uint32 WoodId = 8;
 }

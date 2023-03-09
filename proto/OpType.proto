@@ -1,9 +1,0 @@
-syntax = "proto3";
-
-option go_package = "./;proto";
-
-enum OpType {
-    OP_NONE       = 0;
-    OP_ACTIVATE   = 1;
-    OP_DEACTIVATE = 2;
-}

@@ -1,21 +1,22 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message TowerBriefDataNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 2405;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum TowerBriefDataNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 2405;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	bool isFinishedEntranceFloor = 2;
-	uint32 totalStarNum = 5;
-	uint32 towerScheduleId = 3;
-	uint32 lastLevelIndex = 4;
-	uint32 scheduleStartTime = 13;
-	uint32 nextScheduleChangeTime = 12;
-	uint32 lastFloorIndex = 14;
+	bool IsFinishedEntranceFloor = 2;
+	uint32 TotalStarNum = 5;
+	uint32 TowerScheduleId = 3;
+	uint32 LastFloorIndex = 4;
+	uint32 ScheduleStartTime = 13;
+	uint32 NextScheduleChangeTime = 12;
+	uint32 LastLevelIndex = 14;
 }

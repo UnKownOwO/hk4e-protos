@@ -1,8 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message BreakoutBrickInfo {
-	uint32 cpoenmafigh = 1;
-	uint32 elementType = 2;
+	uint32 Hp = 1;
+	uint32 ElementType = 2;
 }

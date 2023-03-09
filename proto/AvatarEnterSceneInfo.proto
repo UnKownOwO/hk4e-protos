@@ -1,17 +1,17 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "AbilitySyncStateInfo.proto";
 import "ServerBuff.proto";
 
 message AvatarEnterSceneInfo {
-	uint64 avatarGuid = 8;
-	uint32 weaponEntityId = 13;
-	AbilitySyncStateInfo avatarAbilityInfo = 1;
-	repeated uint32 buffIdList = 7;
-	uint32 avatarEntityId = 10;
-	repeated ServerBuff serverBuffList = 4;
-	AbilitySyncStateInfo weaponAbilityInfo = 11;
-	uint64 weaponGuid = 14;
+	uint64 AvatarGuid = 8;
+	uint32 WeaponEntityId = 13;
+	AbilitySyncStateInfo AvatarAbilityInfo = 1;
+	repeated uint32 BuffIdList = 7;
+	uint32 AvatarEntityId = 10;
+	repeated ServerBuff ServerBuffList = 4;
+	AbilitySyncStateInfo WeaponAbilityInfo = 11;
+	uint64 WeaponGuid = 14;
 }

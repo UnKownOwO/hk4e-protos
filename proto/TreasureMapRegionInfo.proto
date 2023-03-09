@@ -1,17 +1,17 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
-import "Vector.proto";
+import "Rotation.proto";
 
 message TreasureMapRegionInfo {
-	uint32 Unk3300_LKEMEDPMIGM = 5;
-	uint32 Unk3300_MNEKJILFHOA = 12;
-	uint32 startTime = 6;
-	uint32 sceneId = 1;
-	uint32 regionId = 14;
-	uint32 regionRadius = 8;
-	bool Unk3300_HHBHLPHLHIL = 15;
-	bool Unk3300_NIBJOAJLCJI = 2;
-	Vector regionCenterPos = 13;
+	uint32 CurrentProgress = 5;
+	uint32 GoalPoints = 12;
+	uint32 StartTime = 6;
+	uint32 SceneId = 1;
+	uint32 RegionId = 14;
+	uint32 RegionRadius = 8;
+	bool IsFindMpSpot = 15;
+	bool IsDoneMpSpot = 2;
+	Rotation RegionCenterPos = 13;
 }

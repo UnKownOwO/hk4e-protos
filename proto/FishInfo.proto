@@ -1,8 +1,13 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
+import "Rotation.proto";
 
 message FishInfo {
-	uint32 pjkdcbfhaoo = 4;
-	uint32 defebhbifge = 6;
+	uint32 FishId = 1;
+	uint32 FishPoolEntityId = 2;
+	Rotation FishPoolPos = 3;
+	uint32 FishPoolGadgetId = 4;
+	uint32 LastShockTime = 5;
 }

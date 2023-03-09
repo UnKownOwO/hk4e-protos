@@ -1,23 +1,23 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "CookRecipeData.proto";
 import "ItemParam.proto";
 
 message PlayerCookRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 128;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum PlayerCookRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 128;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	int32 retcode = 7;
-	repeated ItemParam extraItemList = 13;
-	repeated ItemParam itemList = 9;
-	CookRecipeData recipeData = 5;
-	uint32 cookCount = 12;
-	uint32 qteQuality = 4;
+	int32 Retcode = 7;
+	repeated ItemParam ExtralItemList = 13;
+	repeated ItemParam ItemList = 9;
+	CookRecipeData RecipeData = 5;
+	uint32 CookCount = 12;
+	uint32 QteQuality = 4;
 }

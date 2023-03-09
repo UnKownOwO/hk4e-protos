@@ -1,10 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "AnimatorParameterValueInfo.proto";
 
 message AnimatorParameterValueInfoPair {
-	int32 nameId = 1;
-	AnimatorParameterValueInfo animatorPara = 2;
+	int32 NameId = 1;
+	AnimatorParameterValueInfo AnimatorPara = 2;
 }

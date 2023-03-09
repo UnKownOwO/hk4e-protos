@@ -1,14 +1,14 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "GCGReason.proto";
 import "GCGDiceSideType.proto";
 
 message AddDice {
-	map<uint32, GCGDiceSideType> Unk3300_PCMPCCLFEIM = 15;
-	map<uint32, GCGDiceSideType> Unk3300_KFKOGOKPIFN = 5;
-	uint32 controllerId = 3;
-	GCGReason reason = 9;
-	int32 changeCount = 10;
+	map<uint32, GCGDiceSideType> DiceMap = 15;
+	map<uint32, GCGDiceSideType> BeforeDiceMap = 5;
+	uint32 ControllerId = 3;
+	GCGReason Reason = 9;
+	int32 ChangeCount = 10;
 }

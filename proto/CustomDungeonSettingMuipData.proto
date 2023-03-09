@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message CustomDungeonSettingMuipData {
+	bool IsArriveFinish = 1;
+	uint32 CoinLimit = 2;
+	uint32 TimeLimit = 3;
+	bool IsForbidSkill = 4;
+	uint32 LifeNum = 5;
+}

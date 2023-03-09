@@ -1,20 +1,21 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message BartenderCompleteOrderRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 8192;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum BartenderCompleteOrderRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8192;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	repeated uint32 affixList = 11;
-	int32 retcode = 15;
-	uint32 questId = 6;
-	uint32 finishOrderId = 7;
-	bool isNew = 14;
-	uint32 formulaId = 3;
+	repeated uint32 AffixList = 11;
+	int32 Retcode = 15;
+	uint32 QuestId = 6;
+	uint32 FinishOrderId = 7;
+	bool IsNew = 14;
+	uint32 FormulaId = 3;
 }

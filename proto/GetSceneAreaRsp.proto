@@ -1,20 +1,20 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "CityInfo.proto";
 
 message GetSceneAreaRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 225;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum GetSceneAreaRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 225;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	repeated uint32 areaIdList = 11;
-	int32 retcode = 6;
-	repeated CityInfo cityInfoList = 14;
-	uint32 sceneId = 2;
+	repeated uint32 AreaIdList = 11;
+	int32 Retcode = 6;
+	repeated CityInfo CityInfoList = 14;
+	uint32 SceneId = 2;
 }

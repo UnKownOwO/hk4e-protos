@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package Proto;
+
+import "Rotation.proto";
+
+message EvtCombatForceSetPosInfo {
+	uint32 ColliderEntityId = 13;
+	uint32 EntityId = 1;
+	uint32 IceId = 15;
+	Rotation TargetPos = 14;
+}

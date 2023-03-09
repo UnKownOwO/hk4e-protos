@@ -1,8 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message GCGSkillPreviewOnstageChangeInfo {
-	uint32 Unk3300_EHHDPPFDIFB = 5;
-	uint32 Unk3300_BALADGFAPKL = 3;
+	uint32 SourceOnstageCardGuid = 5;
+	uint32 TargetOnstageCardGuid = 3;
 }

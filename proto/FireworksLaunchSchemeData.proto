@@ -1,11 +1,11 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "FireworksLaunchParam.proto";
 
 message FireworksLaunchSchemeData {
-	uint32 schemeId = 2;
-	repeated FireworksLaunchParam launchParamList = 13;
-	repeated uint32 fireworksIdList = 1;
+	uint32 SchemeId = 2;
+	repeated FireworksLaunchParam LaunchParamList = 13;
+	repeated uint32 FireworksIdList = 1;
 }

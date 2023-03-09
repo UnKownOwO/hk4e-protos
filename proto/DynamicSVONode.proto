@@ -1,11 +1,11 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
-import "Vector.proto";
+import "Rotation.proto";
 
 message DynamicSVONode {
-	int32 area = 13;
-	int64 index = 11;
-	Vector referPos = 9;
+	int32 Area = 13;
+	int64 Index = 11;
+	Rotation ReferPos = 9;
 }

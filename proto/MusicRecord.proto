@@ -1,10 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "UgcMusicTrack.proto";
 
 message MusicRecord {
-	repeated UgcMusicTrack musicTrackList = 3;
-	uint32 musicId = 2;
+	repeated UgcMusicTrack MusicTrackList = 3;
+	uint32 MusicId = 2;
 }

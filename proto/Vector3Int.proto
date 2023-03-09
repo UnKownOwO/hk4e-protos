@@ -1,9 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message Vector3Int {
-	int32 x = 1;
-	int32 y = 2;
-	int32 z = 3;
+	int32 X = 1;
+	int32 Y = 2;
+	int32 Z = 3;
 }

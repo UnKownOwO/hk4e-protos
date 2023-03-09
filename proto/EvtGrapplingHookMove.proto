@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+import "Rotation.proto";
+
+message EvtGrapplingHookMove {
+	uint32 EntityId = 2;
+	float MaxSpeed = 14;
+	float Speed = 10;
+	repeated uint32 AnimatorStateIdList = 7;
+	string OverrideCollider = 12;
+	float Acceleration = 5;
+	bool NeedSetIsInAir = 4;
+	Rotation TargetPos = 3;
+	bool CheckAnimatorStateOnExitOnly = 13;
+}

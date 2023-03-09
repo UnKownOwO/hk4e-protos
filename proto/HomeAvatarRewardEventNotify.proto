@@ -1,19 +1,19 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "HomeAvatarRewardEventInfo.proto";
 
 message HomeAvatarRewardEventNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 4461;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum HomeAvatarRewardEventNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4461;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	bool isEventTrigger = 1;
-	HomeAvatarRewardEventInfo rewardEvent = 12;
-	repeated HomeAvatarRewardEventInfo pendingList = 15;
+	bool IsEventTrigger = 1;
+	HomeAvatarRewardEventInfo RewardEvent = 12;
+	repeated HomeAvatarRewardEventInfo PendingList = 15;
 }

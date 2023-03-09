@@ -1,17 +1,17 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "ChatChannelInfo.proto";
 
 message ChatChannelInfoNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 4963;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum HDDAKDGMNMB {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4963;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	ChatChannelInfo channelInfo = 15;
+	ChatChannelInfo ChannelInfo = 15;
 }

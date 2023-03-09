@@ -1,12 +1,13 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message GCGDSCardData {
-	uint32 cardId = 7;
-	repeated uint32 cnmaiaajihc = 15;
-	uint32 retcode = 2;
-	uint32 num = 4;
-	uint32 proficiency = 12;
-	repeated uint32 mdmigcefmmd = 10;
+	uint32 CardId = 7;
+	repeated uint32 ProficiencyRewardTakenIdxList = 15;
+	uint32 FaceType = 2;
+	uint32 Num = 4;
+	uint32 Proficiency = 12;
+	repeated uint32 UnlockFaceTypeList = 10;
 }

@@ -1,16 +1,17 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message UseMiracleRingRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 5245;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum UseMiracleRingRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 5245;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 miracleRingOpType = 9;
-	int32 retcode = 8;
+	uint32 MiracleRingOpType = 9;
+	int32 Retcode = 8;
 }

@@ -1,8 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message GCGLevelData {
-	uint32 levelId = 13;
-	repeated uint32 adobcdcfbpn = 4;
+	uint32 LevelId = 13;
+	repeated uint32 FinishedChallengeIdList = 4;
 }

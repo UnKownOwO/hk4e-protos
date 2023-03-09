@@ -1,22 +1,23 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message AvatarSkillDepotChangeNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 1098;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum AvatarSkillDepotChangeNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 1098;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	repeated uint32 talentIdList = 14;
-	repeated uint32 proudSkillList = 11;
-	uint32 skillDepotId = 8;
-	uint32 entityId = 3;
-	map<uint32, uint32> proudSkillExtraLevelMap = 4;
-	uint32 coreProudSkillLevel = 10;
-	map<uint32, uint32> skillLevelMap = 13;
-	uint64 avatarGuid = 12;
+	repeated uint32 TalentIdList = 14;
+	repeated uint32 ProudSkillList = 11;
+	uint32 SkillDepotId = 8;
+	uint32 EntityId = 3;
+	map<uint32, uint32> ProudSkillExtraLevelMap = 4;
+	uint32 CoreProudSkillLevel = 10;
+	map<uint32, uint32> SkillLevelMap = 13;
+	uint64 AvatarGuid = 12;
 }

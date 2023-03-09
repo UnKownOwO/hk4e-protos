@@ -1,9 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message BuoyantCombatInfo {
-	uint32 killMonsterCount = 3;
-	uint32 killSpecialMonsterCount = 15;
-	uint32 score = 12;
+	uint32 KillMonsterCount = 3;
+	uint32 KillSpecialMonsterCount = 15;
+	uint32 Score = 12;
 }

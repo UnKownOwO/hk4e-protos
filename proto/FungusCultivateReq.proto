@@ -1,23 +1,24 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message FungusCultivateReq {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 22123;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// 	IS_ALLOW_CLIENT = 1;
-	// }
+	enum NIMDMBGIEOP {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 22123;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
 
-	uint32 cultivateId = 15;
-	uint32 time = 12;
-	uint32 Unk3300_MBPLICBFAGL = 5;
-	uint32 Unk3300_PGJKEICFKLL = 3;
-	uint32 Unk3300_DJEGJDACDEF = 7;
-	uint32 Unk3300_AEGCNHLOPEP = 8;
-	uint32 Unk3300_IMEGFNOLDCE = 13;
-	uint32 Unk3300_IOANLJBMBAI = 2;
+	uint32 CultivateId = 15;
+	uint32 Time = 12;
+	uint32 PlaceStep = 5;
+	uint32 UndoStep = 3;
+	uint32 CopyStep = 7;
+	uint32 RotateStep = 8;
+	uint32 ExchangeStep = 13;
+	uint32 CultivateStep = 2;
 }

@@ -1,14 +1,14 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "GalleryStopReason.proto";
 
 message LuminanceStoneChallengeGallerySettleInfo {
-	uint32 cleanMudCount = 15;
-	uint32 galleryId = 11;
-	GalleryStopReason reason = 9;
-	uint32 killMonsterCount = 6;
-	uint32 killSpecialMonsterCount = 4;
-	uint32 finalScore = 5;
+	uint32 CleanMudCount = 15;
+	uint32 GalleryId = 11;
+	GalleryStopReason Reason = 9;
+	uint32 KillMonsterCount = 6;
+	uint32 KillSpecialMonsterCount = 4;
+	uint32 FinalScore = 5;
 }

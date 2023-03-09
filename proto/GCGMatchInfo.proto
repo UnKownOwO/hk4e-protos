@@ -1,9 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "MatchPlayerInfo.proto";
 
 message GCGMatchInfo {
-	repeated MatchPlayerInfo playerList = 5;
+	repeated MatchPlayerInfo PlayerList = 5;
 }

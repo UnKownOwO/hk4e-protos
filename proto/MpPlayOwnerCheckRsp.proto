@@ -1,18 +1,19 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message MpPlayOwnerCheckRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 1807;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum MpPlayOwnerCheckRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 1807;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	int32 retcode = 13;
-	bool isSkipMatch = 14;
-	uint32 wrongUid = 15;
-	uint32 mpPlayId = 4;
+	int32 Retcode = 13;
+	bool IsSkipMatch = 14;
+	uint32 WrongUid = 15;
+	uint32 MpPlayId = 4;
 }

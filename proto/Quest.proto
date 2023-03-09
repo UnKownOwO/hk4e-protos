@@ -1,20 +1,21 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message Quest {
-	uint32 questId = 1;
-	uint32 state = 2;
-	uint32 startTime = 4;
-	bool isRandom = 5;
-	uint32 parentQuestId = 6;
-	uint32 questConfigId = 7;
-	uint32 startGameTime = 8;
-	uint32 acceptTime = 9;
-	repeated uint32 lackedNpcList = 10;
-	repeated uint32 finishProgressList = 11;
-	repeated uint32 failProgressList = 12;
-	map<uint32, uint32> lackedNpcMap = 13;
-	repeated uint32 lackedPlaceList = 14;
-	map<uint32, uint32> lackedPlaceMap = 15;
+	uint32 QuestId = 1;
+	uint32 State = 2;
+	uint32 StartTime = 4;
+	bool IsRandom = 5;
+	uint32 ParentQuestId = 6;
+	uint32 QuestConfigId = 7;
+	uint32 StartGameTime = 8;
+	uint32 AcceptTime = 9;
+	repeated uint32 LackedNpcList = 10;
+	repeated uint32 FinishProgressList = 11;
+	repeated uint32 FailProgressList = 12;
+	map<uint32, uint32> LackedNpcMap = 13;
+	repeated uint32 LackedPlaceList = 14;
+	map<uint32, uint32> LackedPlaceMap = 15;
 }

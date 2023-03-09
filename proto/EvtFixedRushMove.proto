@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package Proto;
+
+import "Rotation.proto";
+
+message EvtFixedRushMove {
+	repeated uint32 AnimatorStateIdList = 14;
+	bool CheckAnimatorStateOnExitOnly = 9;
+	float Speed = 11;
+	string OverrideCollider = 13;
+	uint32 EntityId = 1;
+	bool NeedSetIsInAir = 15;
+	Rotation TargetPos = 7;
+}

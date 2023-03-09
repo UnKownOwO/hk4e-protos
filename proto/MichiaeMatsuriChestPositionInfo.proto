@@ -1,11 +1,11 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
-import "Vector.proto";
+import "Rotation.proto";
 
 message MichiaeMatsuriChestPositionInfo {
-	uint32 groupId = 4;
-	Vector pos = 13;
-	uint32 configId = 2;
+	uint32 GroupId = 4;
+	Rotation Pos = 13;
+	uint32 ConfigId = 2;
 }

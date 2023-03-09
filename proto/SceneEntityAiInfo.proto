@@ -1,16 +1,16 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
-import "Vector.proto";
+import "Rotation.proto";
 import "ServantInfo.proto";
 
 message SceneEntityAiInfo {
-	bool isAiOpen = 1;
-	Vector bornPos = 2;
-	map<uint32, uint32> skillCdMap = 3;
-	ServantInfo servantInfo = 4;
-	map<uint32, uint32> aiThreatMap = 5;
-	map<uint32, uint32> skillGroupCdMap = 6;
-	uint32 curTactic = 7;
+	bool IsAiOpen = 1;
+	Rotation BornPos = 2;
+	map<uint32, uint32> SkillCdMap = 3;
+	ServantInfo ServantInfo = 4;
+	map<uint32, uint32> AiThreatMap = 5;
+	map<uint32, uint32> SkillGroupCdMap = 6;
+	uint32 CurTactic = 7;
 }

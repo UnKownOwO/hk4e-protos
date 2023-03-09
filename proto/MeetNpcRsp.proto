@@ -1,16 +1,17 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message MeetNpcRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 570;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum MeetNpcRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 570;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 npcFirstMetId = 12;
-	int32 retcode = 14;
+	uint32 NpcFirstMetId = 12;
+	int32 Retcode = 14;
 }

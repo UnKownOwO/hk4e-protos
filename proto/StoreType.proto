@@ -1,9 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 enum StoreType {
-  STORE_NONE  = 0;
-  STORE_PACK  = 1;
-  STORE_DEPOT = 2;
+	StoreNone = 0;
+	StorePack = 1;
+	StoreDepot = 2;
 }

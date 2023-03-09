@@ -1,25 +1,25 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
-import "Vector.proto";
+import "Rotation.proto";
 import "ItemHint.proto";
 
 message ItemAddHintNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 620;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum ItemAddHintNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 620;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 questId = 7;
-	repeated ItemHint overflowTransformedItemList = 1;
-	bool Unk3300_NIJLGEHNBNC = 14;
-	bool Unk3300_FLIKEBJINCL = 12;
-	uint32 reason = 3;
-	Vector position = 9;
-	repeated ItemHint itemList = 8;
-	bool Unk3300_KIOMJNHFMDE = 11;
+	uint32 QuestId = 7;
+	repeated ItemHint OverflowTransformedItemList = 1;
+	bool IsPositionValid = 14;
+	bool IsTransferedFromAvatarCard = 12;
+	uint32 Reason = 3;
+	Rotation Position = 9;
+	repeated ItemHint ItemList = 8;
+	bool IsGeneralRewardHiden = 11;
 }

@@ -1,10 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 enum LuaShellType {
-  LUASHELL_NONE       = 0;
-  LUASHELL_NORMAL     = 1;
-  LUASHELL_SECURITY   = 2;
-  LUASHELL_SHELL_CODE = 3;
+	LuashellNone = 0;
+	LuashellNormal = 1;
+	LuashellSecurity = 2;
+	LuashellShellCode = 3;
 }

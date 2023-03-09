@@ -1,18 +1,19 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message SalesmanTakeRewardRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 2034;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum SalesmanTakeRewardRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 2034;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 rewardId = 14;
-	uint32 scheduleId = 5;
-	int32 retcode = 7;
-	uint32 position = 6;
+	uint32 RewardId = 14;
+	uint32 ScheduleId = 5;
+	int32 Retcode = 7;
+	uint32 Position = 6;
 }

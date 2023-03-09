@@ -1,8 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message AsterProgressDetailInfo {
-	uint32 lastAutoAddTime = 14;
-	uint32 count = 8;
+	uint32 LastAutoAddTime = 14;
+	uint32 Count = 8;
 }

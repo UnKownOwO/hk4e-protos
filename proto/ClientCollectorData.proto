@@ -1,9 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message ClientCollectorData {
-	uint32 maxPoints = 8;
-	uint32 currPoints = 2;
-	uint32 materialId = 13;
+	uint32 MaxPoints = 8;
+	uint32 CurrPoints = 2;
+	uint32 MaterialId = 13;
 }

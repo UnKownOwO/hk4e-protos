@@ -1,17 +1,17 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "InvestigationMonster.proto";
 
 message InvestigationMonsterUpdateNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 1919;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum InvestigationMonsterUpdateNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 1919;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	InvestigationMonster investigationMonster = 15;
+	InvestigationMonster InvestigationMonster = 15;
 }

@@ -1,22 +1,22 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "MotionInfo.proto";
 
 message ForceDragAvatarNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 3071;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum ForceDragAvatarNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 3071;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint64 Unk3300_AFLCLLFDPBD = 14;
-	uint32 entityId = 8;
-	MotionInfo motionInfo = 11;
-	uint64 Unk3300_IMFNNPGHKJJ = 1;
-	bool isFirstValid = 5;
-	uint32 sceneTime = 4;
+	uint64 LastMoveTimeMs = 14;
+	uint32 EntityId = 8;
+	MotionInfo MotionInfo = 11;
+	uint64 DeltaTimeMs = 1;
+	bool IsFirstValid = 5;
+	uint32 SceneTime = 4;
 }

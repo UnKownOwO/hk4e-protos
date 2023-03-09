@@ -1,15 +1,16 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message HideAndSeekPlayerCapturedNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 5551;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum AKLNMHDJEAB {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 5551;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 ghostSkillId = 13;
+	uint32 GhostSkillId = 13;
 }

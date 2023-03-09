@@ -1,15 +1,16 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message MechanicusCloseNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 3974;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum MechanicusCloseNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 3974;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 mechanicusId = 12;
+	uint32 MechanicusId = 12;
 }

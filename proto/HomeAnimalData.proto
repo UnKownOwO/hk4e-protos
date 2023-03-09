@@ -1,11 +1,11 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
-import "Vector.proto";
+import "Rotation.proto";
 
 message HomeAnimalData {
-	Vector spawnRot = 13;
-	uint32 furnitureId = 10;
-	Vector spawnPos = 4;
+	Rotation SpawnRot = 13;
+	uint32 FurnitureId = 10;
+	Rotation SpawnPos = 4;
 }

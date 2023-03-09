@@ -1,18 +1,19 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message WeaponPromoteRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 688;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum WeaponPromoteRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 688;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 curPromoteLevel = 13;
-	uint64 targetWeaponGuid = 2;
-	int32 retcode = 14;
-	uint32 oldPromoteLevel = 10;
+	uint32 CurPromoteLevel = 13;
+	uint64 TargetWeaponGuid = 2;
+	int32 Retcode = 14;
+	uint32 OldPromoteLevel = 10;
 }

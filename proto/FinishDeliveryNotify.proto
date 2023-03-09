@@ -1,17 +1,18 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message FinishDeliveryNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 2044;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum FinishDeliveryNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 2044;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 dayIndex = 2;
-	uint32 finishedQuestIndex = 4;
-	uint32 scheduleId = 8;
+	uint32 DayIndex = 2;
+	uint32 FinishedQuestIndex = 4;
+	uint32 ScheduleId = 8;
 }

@@ -1,9 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message CityReputationHuntInfo {
-	uint32 curWeekFinishNum = 1;
-	bool hasReward = 4;
-	bool isOpen = 10;
+	uint32 CurWeekFinishNum = 1;
+	bool HasReward = 4;
+	bool IsOpen = 10;
 }

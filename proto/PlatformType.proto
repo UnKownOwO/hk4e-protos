@@ -1,21 +1,21 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 enum PlatformType {
-  EDITOR                   = 0;
-  IOS                      = 1;
-  ANDROID                  = 2;
-  PC                       = 3;
-  PS4                      = 4;
-  SERVER                   = 5;
-  CLOUD_ANDROID            = 6;
-  CLOUD_IOS                = 7;
-  PS5                      = 8;
-  CLOUD_WEB                = 9;
-  CLOUD_TV                 = 10;
-  CLOUD_MAC                = 11;
-  CLOUD_PC                 = 12;
-  CLOUD_THIRD_PARTY_MOBILE = 13;
-  CLOUD_THIRD_PARTY_PC     = 14;
+	Editor = 0;
+	Ios = 1;
+	Android = 2;
+	Pc = 3;
+	Ps4 = 4;
+	Server = 5;
+	CloudAndroid = 6;
+	CloudIos = 7;
+	Ps5 = 8;
+	CloudWeb = 9;
+	CloudTv = 10;
+	CloudMac = 11;
+	CloudPc = 12;
+	CloudThirdPartyMobile = 13;
+	CloudThirdPartyPc = 14;
 }

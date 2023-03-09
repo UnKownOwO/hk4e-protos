@@ -1,18 +1,18 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "HuntingPair.proto";
 
 message HuntingGiveUpRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 4314;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum HuntingGiveUpRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4314;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	HuntingPair huntingPair = 4;
-	int32 retcode = 14;
+	HuntingPair HuntingPair = 4;
+	int32 Retcode = 14;
 }

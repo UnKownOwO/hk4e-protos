@@ -1,10 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "VectorPlane.proto";
 
 message PolygonSize {
-	float height = 13;
-	repeated VectorPlane pointList = 15;
+	float Height = 13;
+	repeated VectorPlane PointList = 15;
 }

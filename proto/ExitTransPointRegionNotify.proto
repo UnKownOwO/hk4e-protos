@@ -1,17 +1,18 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message ExitTransPointRegionNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 206;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// 	IS_ALLOW_CLIENT = 1;
-	// }
+	enum ExitTransPointRegionNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 206;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
 
-	uint32 pointId = 2;
-	uint32 sceneId = 8;
+	uint32 PointId = 2;
+	uint32 SceneId = 8;
 }

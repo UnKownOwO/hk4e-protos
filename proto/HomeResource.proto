@@ -1,9 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message HomeResource {
-	uint32 storeLimit = 15;
-	uint32 storeValue = 10;
-	uint32 nextRefreshTime = 1;
+	uint32 StoreLimit = 15;
+	uint32 StoreValue = 10;
+	uint32 NextRefreshTime = 1;
 }

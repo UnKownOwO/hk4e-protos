@@ -1,25 +1,25 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "FlowerStartParam.proto";
 import "ElectroherculesStartParam.proto";
 
 message GalleryStartNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 5505;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum GalleryStartNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 5505;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 startTime = 3;
-	uint32 ownerUid = 14;
-	uint32 playerCount = 4;
-	uint32 galleryId = 12;
-	uint32 endTime = 1;
-	oneof detail {
+	uint32 StartTime = 3;
+	uint32 OwnerUid = 14;
+	uint32 PlayerCount = 4;
+	uint32 GalleryId = 12;
+	uint32 EndTime = 1;
+	oneof GalleryStartNotify_DetailOneofCase {
 		FlowerStartParam flower_start_param = 10;
 		ElectroherculesStartParam electrohercules_start_param = 7;
 	}

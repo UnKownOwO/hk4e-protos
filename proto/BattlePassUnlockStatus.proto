@@ -1,9 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 enum BattlePassUnlockStatus {
-  BATTLE_PASS_UNLOCK_INVALID = 0;
-  BATTLE_PASS_UNLOCK_FREE    = 1;
-  BATTLE_PASS_UNLOCK_PAID    = 2;
+	BattlePassUnlockInvalid = 0;
+	BattlePassUnlockFree = 1;
+	BattlePassUnlockPaid = 2;
 }

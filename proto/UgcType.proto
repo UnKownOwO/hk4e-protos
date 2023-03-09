@@ -1,8 +1,8 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 enum UgcType {
-  UGC_TYPE_NONE       = 0;
-  UGC_TYPE_MUSIC_GAME = 1;
+	None = 0;
+	MusicGame = 1;
 }

@@ -1,11 +1,11 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "GCGReason.proto";
 
 message SelectOnStage {
-	GCGReason reason = 13;
-	uint32 cardGuid = 5;
-	uint32 controllerId = 2;
+	GCGReason Reason = 13;
+	uint32 CardGuid = 5;
+	uint32 ControllerId = 2;
 }

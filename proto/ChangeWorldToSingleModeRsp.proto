@@ -1,16 +1,17 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message ChangeWorldToSingleModeRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 3197;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum ChangeWorldToSingleModeRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 3197;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 quitMpValidTime = 13;
-	int32 retcode = 3;
+	uint32 QuitMpValidTime = 13;
+	int32 Retcode = 3;
 }

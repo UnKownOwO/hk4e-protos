@@ -1,17 +1,17 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "BonusActivityInfo.proto";
 
 message BonusActivityUpdateNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 2529;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum BonusActivityUpdateNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 2529;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	repeated BonusActivityInfo bonusActivityInfoList = 8;
+	repeated BonusActivityInfo BonusActivityInfoList = 8;
 }

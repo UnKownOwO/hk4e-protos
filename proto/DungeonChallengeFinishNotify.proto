@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "ChallengeFinishType.proto";
 import "ChannellerSlabLoopDungeonResultInfo.proto";
@@ -10,23 +10,23 @@ import "CustomDungeonResultInfo.proto";
 import "StrengthenPointData.proto";
 
 message DungeonChallengeFinishNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 946;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum DungeonChallengeFinishNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 946;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 challengeIndex = 8;
-	ChallengeFinishType finishType = 13;
-	bool isSuccess = 6;
-	uint32 challengeRecordType = 5;
-	bool isNewRecord = 3;
-	uint32 currentValue = 9;
-	uint32 timeCost = 11;
-	map<uint32, StrengthenPointData> strengthenPointDataMap = 7;
-	oneof detail {
+	uint32 ChallengeIndex = 8;
+	ChallengeFinishType FinishType = 13;
+	bool IsSuccess = 6;
+	uint32 ChallengeRecordType = 5;
+	bool IsNewRecord = 3;
+	uint32 CurrentValue = 9;
+	uint32 TimeCost = 11;
+	map<uint32, StrengthenPointData> StrengthenPointDataMap = 7;
+	oneof DungeonChallengeFinishNotify_DetailOneofCase {
 		ChannellerSlabLoopDungeonResultInfo channeller_slab_loop_dungeon_result_info = 1867;
 		EffigyChallengeDungeonResultInfo effigy_challenge_dungeon_result_info = 942;
 		PotionDungeonResultInfo potion_dungeon_result_info = 709;

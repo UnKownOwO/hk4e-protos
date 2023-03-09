@@ -1,15 +1,16 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message GadgetChainLevelChangeNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 892;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum GadgetChainLevelChangeNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 892;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	map<uint32, uint32> gadgetChainLevelMap = 14;
+	map<uint32, uint32> GadgetChainLevelMap = 14;
 }

@@ -1,15 +1,15 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "ExpeditionChallengeInfo.proto";
 import "ExpeditionPathInfo.proto";
 
 message ExpeditionInfo {
-	repeated ExpeditionChallengeInfo exceededItemTypeList = 2;
-	bool leftMonsters = 12;
-	uint32 Unk3300_MNPBCNEDKAJ = 3;
-	uint32 contentCloseTime = 9;
-	uint32 Unk3300_GJLCAJOFCKL = 4;
-	repeated ExpeditionPathInfo pathInfoList = 13;
+	repeated ExpeditionChallengeInfo ChallengeInfoList = 2;
+	bool IsContentClosed = 12;
+	uint32 CurChallengeId = 3;
+	uint32 ContentCloseTime = 9;
+	uint32 ExpeditionCount = 4;
+	repeated ExpeditionPathInfo PathInfoList = 13;
 }

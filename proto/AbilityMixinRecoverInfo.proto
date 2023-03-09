@@ -1,18 +1,18 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "BreakoutSnapShot.proto";
 import "MassivePropSyncInfo.proto";
 
 message AbilityMixinRecoverInfo {
-	oneof source {
+	oneof AbilityMixinRecoverInfo_SourceOneofCase {
 		uint32 instanced_ability_id = 1;
 		uint32 instanced_modifier_id = 2;
 	}
-	uint32 localId = 3;
-	repeated uint32 dataList = 4;
-	bool isServerbuffModifier = 5;
-	repeated MassivePropSyncInfo massivePropList = 6;
-	BreakoutSnapShot breakoutSnapShot = 7;
+	uint32 LocalId = 3;
+	repeated uint32 DataList = 4;
+	bool IsServerbuffModifier = 5;
+	repeated MassivePropSyncInfo MassivePropList = 6;
+	BreakoutSnapShot BreakoutSnapShot = 7;
 }

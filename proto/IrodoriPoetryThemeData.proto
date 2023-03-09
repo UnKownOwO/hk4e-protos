@@ -1,13 +1,14 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message IrodoriPoetryThemeData {
-	repeated uint32 Unk3300_CNNMEHOGGLL = 6;
-	repeated uint32 Unk3300_HODJKKDBJDJ = 4;
-	uint32 progress = 14;
-	uint32 maxProgress = 13;
-	uint32 Unk3300_NJHMNLIAGIK = 7;
-	uint32 themeId = 1;
-	uint32 Unk3300_HFMKPNOBPDK = 15;
+	repeated uint32 ScannedIndexList = 6;
+	repeated uint32 LineIdList = 4;
+	uint32 Progress = 14;
+	uint32 MaxProgress = 13;
+	uint32 SelectedLineId = 7;
+	uint32 ThemeId = 1;
+	uint32 MinProgress = 15;
 }

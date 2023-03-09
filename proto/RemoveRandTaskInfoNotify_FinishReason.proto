@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+enum RemoveRandTaskInfoNotify_FinishReason {
+	Default = 0;
+	Clear = 1;
+	Distance = 2;
+	Finish = 3;
+}

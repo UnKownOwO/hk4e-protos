@@ -1,15 +1,16 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message ReliquaryFilterStateNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 631;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum OEOHONEIBDO {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 631;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	map<uint32, uint32> reliquaryFilterStateMap = 11;
+	map<uint32, uint32> ReliquaryFilterStateMap = 11;
 }

@@ -1,17 +1,17 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "Uint32Pair.proto";
 
 message FurnitureCurModuleArrangeCountNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 4851;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum FurnitureCurModuleArrangeCountNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4851;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	repeated Uint32Pair furnitureArrangeCountList = 13;
+	repeated Uint32Pair FurnitureArrangeCountList = 13;
 }

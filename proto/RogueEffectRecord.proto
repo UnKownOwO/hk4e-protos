@@ -1,10 +1,11 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message RogueEffectRecord {
-	bool isNew = 3;
-	uint32 sourceId = 5;
-	uint32 count = 1;
-	repeated uint32 extraParamList = 9;
+	bool IsNew = 3;
+	uint32 SourceId = 5;
+	uint32 Count = 1;
+	repeated uint32 ExtraParamList = 9;
 }

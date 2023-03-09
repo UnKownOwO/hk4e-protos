@@ -1,12 +1,12 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "BrickBreakerStageType.proto";
 import "BrickBreakerPlayerBattleInfo.proto";
 
 message BrickBreakerStageInfo {
-	uint32 levelId = 12;
-	BrickBreakerStageType stageType = 7;
-	repeated BrickBreakerPlayerBattleInfo battleInfoList = 2;
+	uint32 LevelId = 12;
+	BrickBreakerStageType StageType = 7;
+	repeated BrickBreakerPlayerBattleInfo BattleInfoList = 2;
 }

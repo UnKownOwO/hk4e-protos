@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message CustomDungeonAbstractMuipData {
+	uint32 FirstPublishTime = 1;
+	uint32 LastPublishTime = 2;
+	map<uint32, uint32> BrickStatisticsMap = 3;
+}

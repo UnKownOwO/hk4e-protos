@@ -1,9 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message BreakoutSyncConnectUidInfo {
-	uint32 uid = 1;
-	repeated uint32 skillIdList = 2;
-	repeated uint32 namghchjljl = 3;
+	uint32 Uid = 1;
+	repeated uint32 SkillIdList = 2;
+	repeated uint32 SkillLevelList = 3;
 }

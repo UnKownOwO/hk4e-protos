@@ -1,11 +1,11 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "GCGDiceSideType.proto";
 
 message DiceRoll {
-	uint32 controllerId = 8;
-	uint32 diceNum = 11;
-	repeated GCGDiceSideType diceSideList = 7;
+	uint32 ControllerId = 8;
+	uint32 DiceNum = 11;
+	repeated GCGDiceSideType DiceSideList = 7;
 }

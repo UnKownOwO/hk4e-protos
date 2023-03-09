@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+enum GCGSettleOption {
+	GCGSettleOptNone = 0;
+	GCGSettleOptExit = 1;
+	GCGSettleOptContinue = 2;
+	GCGSettleOptRestart = 3;
+}

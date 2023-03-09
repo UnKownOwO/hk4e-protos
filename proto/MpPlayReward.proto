@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message MpPlayReward {
+	uint32 Resin = 1;
+	repeated uint32 RemainUidList = 2;
+	repeated uint32 QualifyUidList = 3;
+}

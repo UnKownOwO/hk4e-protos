@@ -1,8 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message BreakoutElementReactionCounter {
-	uint32 aknhdghiblg = 1;
-	uint32 count = 2;
+	uint32 ElementReaction = 1;
+	uint32 Count = 2;
 }

@@ -1,11 +1,11 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "JigsawPictureData.proto";
 import "GearLevelData.proto";
 
 message GearInfo {
-	repeated GearLevelData gearLevelDataList = 9;
-	JigsawPictureData jigsawPictureData = 13;
+	repeated GearLevelData GearLevelDataList = 9;
+	JigsawPictureData JigsawPictureData = 13;
 }

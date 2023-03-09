@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package Proto;
+
+import "DuelHeartLevelDifficultyInfo.proto";
+
+message DuelHeartLevelInfo {
+	bool IsCgViewed = 1;
+	uint32 LevelId = 11;
+	repeated DuelHeartLevelDifficultyInfo DifficultyInfoList = 8;
+	bool IsOpen = 12;
+}

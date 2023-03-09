@@ -1,18 +1,18 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "GCGToken.proto";
 import "GCGSkillLimitsInfo.proto";
 
 message GCGCard {
-	repeated uint32 skillIdList = 11;
-	repeated GCGToken tokenList = 3;
-	uint32 controllerId = 2;
-	repeated uint32 tagList = 9;
-	uint32 retcode = 1;
-	uint32 guid = 8;
-	uint32 id = 14;
-	bool isShow = 13;
-	repeated GCGSkillLimitsInfo skillLimitsList = 12;
+	repeated uint32 SkillIdList = 11;
+	repeated GCGToken TokenList = 3;
+	uint32 ControllerId = 2;
+	repeated uint32 TagList = 9;
+	uint32 FaceType = 1;
+	uint32 Guid = 8;
+	uint32 Id = 14;
+	bool IsShow = 13;
+	repeated GCGSkillLimitsInfo SkillLimitsList = 12;
 }

@@ -1,11 +1,12 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message ArenaChallengeChildChallengeInfo {
-	bool isSuccess = 15;
-	bool isSettled = 4;
-	uint32 challengeType = 5;
-	uint32 challengeIndex = 8;
-	uint32 challengeId = 14;
+	bool IsSuccess = 15;
+	bool IsSettled = 4;
+	uint32 ChallengeType = 5;
+	uint32 ChallengeIndex = 8;
+	uint32 ChallengeId = 14;
 }

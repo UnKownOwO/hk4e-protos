@@ -1,13 +1,13 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "CustomDungeonSetting.proto";
 import "CustomDungeonRoom.proto";
 
 message CustomDungeon {
-	uint64 dungeonGuid = 8;
-	repeated CustomDungeonRoom roomList = 3;
-	CustomDungeonSetting setting = 1;
-	uint32 dungeonId = 4;
+	uint64 DungeonGuid = 8;
+	repeated CustomDungeonRoom RoomList = 3;
+	CustomDungeonSetting Setting = 1;
+	uint32 DungeonId = 4;
 }

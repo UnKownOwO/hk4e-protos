@@ -1,9 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message SummerTimeStageInfo {
-	uint32 openTime = 6;
-	bool isOpen = 3;
-	uint32 stageId = 4;
+	uint32 OpenTime = 6;
+	bool IsOpen = 3;
+	uint32 StageId = 4;
 }

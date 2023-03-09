@@ -1,23 +1,23 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "MatchType.proto";
 
 message PlayerStartMatchReq {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 4188;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// 	IS_ALLOW_CLIENT = 1;
-	// }
+	enum PlayerStartMatchReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4188;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
 
-	uint32 mechanicusDifficultLevel = 10;
-	repeated uint32 matchParamList = 15;
-	uint32 mpPlayId = 5;
-	uint32 dungeonId = 12;
-	uint32 matchId = 11;
-	MatchType matchType = 13;
+	uint32 MechanicusDifficultLevel = 10;
+	repeated uint32 MatchParamList = 15;
+	uint32 MpPlayId = 5;
+	uint32 DungeonId = 12;
+	uint32 MatchId = 11;
+	MatchType MatchType = 13;
 }

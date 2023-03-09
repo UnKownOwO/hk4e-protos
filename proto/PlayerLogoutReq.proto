@@ -1,18 +1,18 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
-import "Reason.proto";
+import "PlayerLogoutReq_Reason.proto";
 
 message PlayerLogoutReq {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 120;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// 	IS_ALLOW_CLIENT = 1;
-	// }
+	enum PlayerLogoutReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 120;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
 
-	Reason reason = 1;
+	PlayerLogoutReq_Reason Reason = 1;
 }

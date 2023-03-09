@@ -1,17 +1,17 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "OpActivityInfo.proto";
 
 message OpActivityDataNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 5187;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum OpActivityDataNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 5187;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	repeated OpActivityInfo opActivityInfoList = 13;
+	repeated OpActivityInfo OpActivityInfoList = 13;
 }

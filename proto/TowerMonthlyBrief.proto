@@ -1,10 +1,11 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message TowerMonthlyBrief {
-	uint32 bestLevelIndex = 11;
-	uint32 towerScheduleId = 7;
-	uint32 totalStarCount = 14;
-	uint32 bestFloorIndex = 8;
+	uint32 BestLevelIndex = 11;
+	uint32 TowerScheduleId = 7;
+	uint32 TotalStarCount = 14;
+	uint32 BestFloorIndex = 8;
 }

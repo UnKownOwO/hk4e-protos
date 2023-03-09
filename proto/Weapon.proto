@@ -1,10 +1,11 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message Weapon {
-	uint32 level = 1;
-	uint32 exp = 2;
-	uint32 promoteLevel = 3;
-	map<uint32, uint32> affixMap = 4;
+	uint32 Level = 1;
+	uint32 Exp = 2;
+	uint32 PromoteLevel = 3;
+	map<uint32, uint32> AffixMap = 4;
 }

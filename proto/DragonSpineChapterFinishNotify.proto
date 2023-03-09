@@ -1,17 +1,18 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message DragonSpineChapterFinishNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 2132;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum DragonSpineChapterFinishNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 2132;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 scheduleId = 5;
-	uint32 weaponEnhanceLevel = 2;
-	uint32 chapterId = 9;
+	uint32 ScheduleId = 5;
+	uint32 WeaponEnhanceLevel = 2;
+	uint32 ChapterId = 9;
 }

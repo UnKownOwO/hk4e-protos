@@ -1,8 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message MoonfinTrialLevelInfo {
-	uint32 bestRecord = 11;
-	uint32 openTime = 3;
+	uint32 BestRecord = 11;
+	uint32 OpenTime = 3;
 }

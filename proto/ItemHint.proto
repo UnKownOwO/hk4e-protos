@@ -1,10 +1,11 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message ItemHint {
-	uint32 count = 12;
-	uint64 guid = 8;
-	uint32 itemId = 13;
-	bool isNew = 14;
+	uint32 Count = 12;
+	uint64 Guid = 8;
+	uint32 ItemId = 13;
+	bool IsNew = 14;
 }

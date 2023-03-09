@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+import "SceneSurfaceMaterial.proto";
+
+message CellInfo {
+	SceneSurfaceMaterial Type = 1;
+	int32 Y = 2;
+}

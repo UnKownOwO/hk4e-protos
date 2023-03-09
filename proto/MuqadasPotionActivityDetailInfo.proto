@@ -1,9 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "MuqadasPotionLevelData.proto";
 
 message MuqadasPotionActivityDetailInfo {
-	repeated MuqadasPotionLevelData kmhabponajo = 10;
+	repeated MuqadasPotionLevelData MuqadasPotionLevelDataList = 10;
 }

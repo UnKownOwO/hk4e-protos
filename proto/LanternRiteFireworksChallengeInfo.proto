@@ -1,9 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message LanternRiteFireworksChallengeInfo {
-	bool isFullScore = 11;
-	uint32 bestScore = 14;
-	uint32 challengeId = 15;
+	bool IsFullScore = 11;
+	uint32 BestScore = 14;
+	uint32 ChallengeId = 15;
 }

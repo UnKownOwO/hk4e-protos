@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message FurnitureMakeMakeInfo {
+	uint32 MakeCount = 9;
+	uint32 FurnitureId = 7;
+}

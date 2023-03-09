@@ -1,9 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "UgcMusicNote.proto";
 
 message UgcMusicTrack {
-	repeated UgcMusicNote musicNoteList = 13;
+	repeated UgcMusicNote MusicNoteList = 13;
 }

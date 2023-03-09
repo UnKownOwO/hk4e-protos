@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message AbilityMetaSpecialFloatArgument {
+	bool IsOn = 9;
+	float ArgumentValue = 2;
+}

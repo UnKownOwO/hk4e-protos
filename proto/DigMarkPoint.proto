@@ -1,11 +1,11 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
-import "Vector.proto";
+import "Rotation.proto";
 
 message DigMarkPoint {
-	Vector rot = 14;
-	Vector pos = 2;
-	uint32 bundleId = 3;
+	Rotation Rot = 14;
+	Rotation Pos = 2;
+	uint32 BundleId = 3;
 }

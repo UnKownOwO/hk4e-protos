@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message AbilityActionServerMonsterLog {
+	repeated int32 ParamList = 5;
+}

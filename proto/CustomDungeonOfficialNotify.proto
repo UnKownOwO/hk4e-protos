@@ -1,20 +1,20 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "TryCustomDungeonType.proto";
 import "EnterCustomDungeonType.proto";
 
 message CustomDungeonOfficialNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 6236;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum CustomDungeonOfficialNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 6236;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	TryCustomDungeonType tryType = 7;
-	repeated uint32 officialBlackCoinList = 12;
-	EnterCustomDungeonType enterType = 11;
+	TryCustomDungeonType TryType = 7;
+	repeated uint32 OfficialBlackCoinList = 12;
+	EnterCustomDungeonType EnterType = 11;
 }

@@ -1,11 +1,11 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "WorldRoutineInfo.proto";
 
 message WorldRoutineTypeInfo {
-	uint32 routineType = 13;
-	uint32 nextRefreshTime = 15;
-	repeated WorldRoutineInfo worldRoutineInfoList = 6;
+	uint32 RoutineType = 13;
+	uint32 NextRefreshTime = 15;
+	repeated WorldRoutineInfo WorldRoutineInfoList = 6;
 }

@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message AbilityMetaElementReactionVisual {
+	uint32 ElementSourceType = 3;
+	int32 HitIndex = 12;
+	uint32 ElementReactorType = 2;
+	uint32 ElementReactionType = 7;
+}

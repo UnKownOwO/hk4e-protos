@@ -1,8 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message FeatureBlockInfo {
-	uint32 featureType = 1;
-	uint32 endTime = 2;
+	uint32 FeatureType = 1;
+	uint32 EndTime = 2;
 }

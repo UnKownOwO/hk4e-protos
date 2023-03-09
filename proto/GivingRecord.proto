@@ -1,13 +1,14 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message GivingRecord {
-	bool isGadgetGiving = 6;
-	uint32 groupId = 14;
-	uint32 givingId = 4;
-	uint32 configId = 7;
-	uint32 lastGroupId = 8;
-	bool isFinished = 1;
-	map<uint32, uint32> materialCountMap = 10;
+	bool IsGadgetGiving = 6;
+	uint32 GroupId = 14;
+	uint32 GivingId = 4;
+	uint32 ConfigId = 7;
+	uint32 LastGroupId = 8;
+	bool IsFinished = 1;
+	map<uint32, uint32> MaterialCntMap = 10;
 }

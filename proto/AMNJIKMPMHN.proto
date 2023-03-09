@@ -1,9 +1,0 @@
-syntax = "proto3";
-
-option go_package = "./;proto";
-
-import "BreakoutAction.proto";
-
-message AMNJIKMPMHN {
-	BreakoutAction henpegmkbie = 9;
-}

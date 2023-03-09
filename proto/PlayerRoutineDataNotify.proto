@@ -1,17 +1,17 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "PlayerRoutineInfo.proto";
 
 message PlayerRoutineDataNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 3538;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum PlayerRoutineDataNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 3538;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	repeated PlayerRoutineInfo routineInfoList = 12;
+	repeated PlayerRoutineInfo RoutineInfoList = 12;
 }

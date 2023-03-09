@@ -1,26 +1,27 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message MistTrialSelectAvatarAndEnterDungeonReq {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 8537;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// 	IS_ALLOW_CLIENT = 1;
-	// }
+	enum MistTrialSelectAvatarAndEnterDungeonReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8537;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
 
 	message SelectAvatarIndex {
-		oneof GBMFCGPBJHH {
+		oneof Detail {
 			uint32 mist_trial_avatar_id = 13;
 			uint64 formal_avatar_guid = 15;
 		}
 	}
 
-	uint32 trialId = 14;
-	uint32 enterPointId = 5;
-	repeated SelectAvatarIndex selectAvatarIndexList = 6;
-	repeated uint32 selectTrialAvatarIdList = 9;
+	uint32 TrialId = 14;
+	uint32 EnterPointId = 5;
+	repeated SelectAvatarIndex SelectAvatarIndexList = 6;
+	repeated uint32 SelectTrialAvatarIdList = 9;
 }

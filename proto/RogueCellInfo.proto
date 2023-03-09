@@ -1,13 +1,13 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "RogueCellState.proto";
 
 message RogueCellInfo {
-	uint32 cellConfigId = 8;
-	RogueCellState state = 2;
-	uint32 cellId = 4;
-	uint32 cellType = 3;
-	uint32 dungeonId = 1;
+	uint32 CellConfigId = 8;
+	RogueCellState State = 2;
+	uint32 CellId = 4;
+	uint32 CellType = 3;
+	uint32 DungeonId = 1;
 }

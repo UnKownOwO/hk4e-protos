@@ -1,29 +1,29 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "ChapterState.proto";
 
 message ChapterStateNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 469;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
-
-	message NeedPlayerLevel {
-		uint32 configNeedPlayerLevel = 4;
-		bool isLimit = 14;
-	}
-	message NeedBeginTime {
-		uint32 configNeedBeginTime = 5;
-		bool isLimit = 4;
+	enum ChapterStateNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 469;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
 	}
 
-	NeedPlayerLevel needPlayerLevel = 2;
-	NeedBeginTime needBeginTime = 9;
-	ChapterState chapterState = 13;
-	uint32 chapterId = 15;
+	message ChapterStateNotify_NeedPlayerLevel {
+		uint32 ConfigNeedPlayerLevel = 4;
+		bool IsLimit = 14;
+	}
+	message ChapterStateNotify_NeedBeginTime {
+		uint32 ConfigNeedBeginTime = 5;
+		bool IsLimit = 4;
+	}
+
+	ChapterStateNotify_NeedPlayerLevel NeedPlayerLevel = 2;
+	ChapterStateNotify_NeedBeginTime NeedBeginTime = 9;
+	ChapterState ChapterState = 13;
+	uint32 ChapterId = 15;
 }

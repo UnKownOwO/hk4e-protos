@@ -1,20 +1,20 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "BattlePassSchedule.proto";
 import "BattlePassMission.proto";
 
 message BattlePassAllDataNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 2638;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum BattlePassAllDataNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 2638;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	bool haveCurSchedule = 6;
-	BattlePassSchedule curSchedule = 15;
-	repeated BattlePassMission missionList = 3;
+	bool HaveCurSchedule = 6;
+	BattlePassSchedule CurSchedule = 15;
+	repeated BattlePassMission MissionList = 3;
 }

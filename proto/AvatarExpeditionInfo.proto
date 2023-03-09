@@ -1,13 +1,13 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "AvatarExpeditionState.proto";
 
 message AvatarExpeditionInfo {
-	AvatarExpeditionState state = 1;
-	uint32 expId = 2;
-	uint32 hourTime = 3;
-	uint32 startTime = 4;
-	float shortenRatio = 5;
+	AvatarExpeditionState State = 1;
+	uint32 ExpId = 2;
+	uint32 HourTime = 3;
+	uint32 StartTime = 4;
+	float ShortenRatio = 5;
 }

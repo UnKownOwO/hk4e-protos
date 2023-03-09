@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message ChannellerSlabLoopDungeonInfo {
+	uint32 DungeonIndex = 7;
+	uint32 Score = 4;
+	bool IsOpen = 2;
+	bool IsFirstPassRewardTaken = 11;
+	uint32 OpenTime = 3;
+	repeated uint32 LastConditionIdList = 1;
+}

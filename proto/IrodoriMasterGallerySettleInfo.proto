@@ -1,13 +1,13 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "GalleryStopReason.proto";
 
 message IrodoriMasterGallerySettleInfo {
-	bool isFinish = 14;
-	GalleryStopReason reason = 6;
-	uint32 difficult = 10;
-	uint32 finishTime = 15;
-	uint32 levelId = 7;
+	bool IsFinish = 14;
+	GalleryStopReason Reason = 6;
+	uint32 Difficult = 10;
+	uint32 FinishTime = 15;
+	uint32 LevelId = 7;
 }

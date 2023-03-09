@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+package Proto;
+
+enum LuaSetOptionNotify_LuaOptionType {
+	LuaOptionNone = 0;
+	LuaOptionPlayerInput = 1;
+}

@@ -1,11 +1,12 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message ChannellerSlabLoopDungeonResultInfo {
-	uint32 challengeMaxScore = 5;
-	bool isSuccess = 13;
-	bool isInTimeLimit = 6;
-	uint32 challengeScore = 1;
-	uint32 dungeonIndex = 3;
+	uint32 ChallengeMaxScore = 5;
+	bool IsSuccess = 13;
+	bool IsInTimeLimit = 6;
+	uint32 ChallengeScore = 1;
+	uint32 DungeonIndex = 3;
 }

@@ -1,7 +1,8 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message CrystalLinkInfo {
-	uint32 score = 6;
+	uint32 Score = 6;
 }

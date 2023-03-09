@@ -1,18 +1,19 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message RogueDiaryDungeonSettleNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 8224;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// 	IS_ALLOW_CLIENT = 1;
-	// }
+	enum RogueDiaryDungeonSettleNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8224;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
 
-	bool isFinish = 2;
-	uint32 exploreTime = 3;
-	uint32 curRound = 12;
+	bool IsFinish = 2;
+	uint32 ExploreTime = 3;
+	uint32 CurRound = 12;
 }

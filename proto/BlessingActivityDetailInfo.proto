@@ -1,14 +1,15 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message BlessingActivityDetailInfo {
-	bool leftMonsters = 5;
-	uint32 contentCloseTime = 11;
-	uint32 curDayScanNum = 12;
-	uint32 Unk3300_INOHLELBOAM = 15;
-	uint32 Unk3300_JLADHEKJPBP = 9;
-	map<uint32, uint32> picNumMap = 7;
-	uint32 nextRefreshTime = 14;
-	bool isActivated = 8;
+	bool IsContentClosed = 5;
+	uint32 ContentCloseTime = 11;
+	uint32 CurDayScanNum = 12;
+	uint32 CurDayScanType = 15;
+	uint32 RedeemRewardNum = 9;
+	map<uint32, uint32> PicNumMap = 7;
+	uint32 NextRefreshTime = 14;
+	bool IsActivated = 8;
 }

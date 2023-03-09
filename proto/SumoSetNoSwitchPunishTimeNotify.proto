@@ -1,22 +1,22 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "SumoDungeonTeam.proto";
 
 message SumoSetNoSwitchPunishTimeNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 8554;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum SumoSetNoSwitchPunishTimeNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8554;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 Unk3300_BNJBIGHIJOC = 11;
-	repeated SumoDungeonTeam dungeonTeamList = 3;
-	uint32 Unk3300_CBAMLHDMKJF = 14;
-	uint32 stageId = 1;
-	uint32 activityId = 7;
-	uint32 Unk3300_DJBJACGHGDM = 2;
+	uint32 NextValidSwitchTime = 11;
+	repeated SumoDungeonTeam DungeonTeamList = 3;
+	uint32 NoSwitchPunishTime = 14;
+	uint32 StageId = 1;
+	uint32 ActivityId = 7;
+	uint32 CurTeamIndex = 2;
 }

@@ -1,17 +1,18 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message DKMDNEAEGDF {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 166;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum HGNBEDAOKOC {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 166;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 clientGameTime = 14;
-	uint32 gameTime = 15;
-	int32 retcode = 12;
+	uint32 ClientGameTime = 14;
+	uint32 GameTime = 15;
+	int32 Retcode = 12;
 }

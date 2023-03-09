@@ -1,22 +1,22 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "ForwardType.proto";
-import "Vector.proto";
+import "Rotation.proto";
 
 message EvtDoSkillSuccNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 398;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// 	IS_ALLOW_CLIENT = 1;
-	// }
+	enum EvtDoSkillSuccNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 398;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
 
-	uint32 skillId = 13;
-	ForwardType forwardType = 5;
-	uint32 casterId = 2;
-	Vector forward = 14;
+	uint32 SkillId = 13;
+	ForwardType ForwardType = 5;
+	uint32 CasterId = 2;
+	Rotation Forward = 14;
 }

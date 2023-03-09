@@ -1,17 +1,18 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message AvatarChangeAnimHashRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 1700;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum AvatarChangeAnimHashRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 1700;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	int32 retcode = 15;
-	uint32 animHash = 9;
-	uint64 avatarGuid = 11;
+	int32 Retcode = 15;
+	uint32 AnimHash = 9;
+	uint64 AvatarGuid = 11;
 }

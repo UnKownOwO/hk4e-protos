@@ -1,20 +1,20 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
-import "Vector.proto";
+import "Rotation.proto";
 
 message EvtAvatarLockChairRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 384;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum EvtAvatarLockChairRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 384;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	Vector position = 3;
-	uint64 chairId = 15;
-	int32 retcode = 12;
-	uint32 entityId = 4;
+	Rotation Position = 3;
+	uint64 ChairId = 15;
+	int32 Retcode = 12;
+	uint32 EntityId = 4;
 }

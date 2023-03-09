@@ -1,17 +1,18 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message PlayerGetForceQuitBanInfoRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 4157;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum PlayerGetForceQuitBanInfoRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4157;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	int32 retcode = 7;
-	uint32 expireTime = 9;
-	uint32 matchId = 10;
+	int32 Retcode = 7;
+	uint32 ExpireTime = 9;
+	uint32 MatchId = 10;
 }

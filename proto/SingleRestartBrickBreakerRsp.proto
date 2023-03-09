@@ -1,17 +1,18 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message SingleRestartBrickBreakerRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 22641;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum KBGKBIPOJLC {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 22641;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	bool isDungeon = 4;
-	int32 retcode = 6;
-	uint32 levelId = 10;
+	bool IsDungeon = 4;
+	int32 Retcode = 6;
+	uint32 LevelId = 10;
 }

@@ -1,9 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "HomeSeekFurnitureOneRecord.proto";
 
 message HomeSeekFurnitureAllRecord {
-	repeated HomeSeekFurnitureOneRecord recordList = 5;
+	repeated HomeSeekFurnitureOneRecord RecordList = 5;
 }

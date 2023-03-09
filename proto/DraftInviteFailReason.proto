@@ -1,12 +1,12 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 enum DraftInviteFailReason {
-  DRAFT_FAIL_UNKNOWN           = 0;
-  DRAFT_ACTIVITY_NOT_OPEN      = 1;
-  DRAFT_ACTIVITY_PLAY_NOT_OPEN = 2;
-  DRAFT_SCENE_NOT_MEET         = 3;
-  DRAFT_WORLD_NOT_MEET         = 4;
-  DRAFT_PLAY_LIMIT_NOT_MEET    = 5;
+	DraftFailUnknown = 0;
+	DraftActivityNotOpen = 1;
+	DraftActivityPlayNotOpen = 2;
+	DraftSceneNotMeet = 3;
+	DraftWorldNotMeet = 4;
+	DraftPlayLimitNotMeet = 5;
 }

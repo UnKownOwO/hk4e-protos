@@ -1,9 +1,0 @@
-syntax = "proto3";
-
-option go_package = "./;proto";
-
-enum CLMDHLAENEJ {
-	HIHDNJGDBML = 0;
-	DPMMMOJKBIL = 1;
-	LJODKMGEFHL = 2;
-}

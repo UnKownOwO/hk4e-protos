@@ -1,11 +1,11 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
-import "State.proto";
+import "CoopPoint_State.proto";
 
 message CoopPoint {
-	uint32 id = 10;
-	State state = 5;
-	uint32 selfConfidence = 15;
+	uint32 Id = 10;
+	CoopPoint_State State = 5;
+	uint32 SelfConfidence = 15;
 }

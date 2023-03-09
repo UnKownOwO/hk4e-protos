@@ -1,10 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "HomeSeekFurniturePlayerScore.proto";
 
 message HomeSeekFurnitureOneRecord {
-	repeated HomeSeekFurniturePlayerScore engagedPlayerScoreList = 6;
-	uint32 timestamp = 3;
+	repeated HomeSeekFurniturePlayerScore EngagedPlayerScoreList = 6;
+	uint32 Timestamp = 3;
 }

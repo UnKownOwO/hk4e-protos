@@ -1,17 +1,17 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "ClientCollectorData.proto";
 
 message ClientCollectorDataNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 4292;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum ClientCollectorDataNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4292;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	repeated ClientCollectorData clientCollectorDataList = 9;
+	repeated ClientCollectorData ClientCollectorDataList = 9;
 }

@@ -1,19 +1,19 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "AiSyncInfo.proto";
 
 message EntityAiSyncNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 354;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// 	IS_ALLOW_CLIENT = 1;
-	// }
+	enum EntityAiSyncNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 354;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
 
-	repeated uint32 localAvatarAlertedMonsterList = 8;
-	repeated AiSyncInfo infoList = 10;
+	repeated uint32 LocalAvatarAlertedMonsterList = 8;
+	repeated AiSyncInfo InfoList = 10;
 }

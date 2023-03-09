@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package Proto;
+
+import "ItemParam.proto";
+
+message GeneralReward {
+	uint32 Resin = 1;
+	uint32 DeadTime = 2;
+	repeated uint32 RemainUidList = 3;
+	repeated uint32 QualifyUidList = 4;
+	ItemParam ItemParam = 5;
+}

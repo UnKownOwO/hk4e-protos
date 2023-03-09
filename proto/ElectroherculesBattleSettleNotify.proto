@@ -1,15 +1,22 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message ElectroherculesBattleSettleNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 24914;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum KFDMEIHCMLP {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 21217;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	int32 retcode = 2;
+	uint32 GalleryId = 6;
+	bool hkhgjjepeio = 1;
+	uint32 StageId = 5;
+	uint32 FinishTime = 15;
+	bool IsNewRecord = 11;
+	uint32 Diffculty = 9;
+	bool IsSucc = 7;
 }

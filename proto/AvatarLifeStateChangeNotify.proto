@@ -1,24 +1,24 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "PlayerDieType.proto";
 import "ServerBuff.proto";
 
 message AvatarLifeStateChangeNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 1270;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum AvatarLifeStateChangeNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 1270;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 lifeState = 8;
-	uint32 moveReliableSeq = 10;
-	PlayerDieType dieType = 1;
-	string attackTag = 6;
-	uint64 avatarGuid = 3;
-	uint32 sourceEntityId = 5;
-	repeated ServerBuff serverBuffList = 4;
+	uint32 LifeState = 8;
+	uint32 MoveReliableSeq = 10;
+	PlayerDieType DieType = 1;
+	string AttackTag = 6;
+	uint64 AvatarGuid = 3;
+	uint32 SourceEntityId = 5;
+	repeated ServerBuff ServerBuffList = 4;
 }

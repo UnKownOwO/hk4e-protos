@@ -1,9 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message ChessNormalCardInfo {
-	uint32 cardId = 6;
-	bool isAttachCurse = 9;
-	uint32 costPoints = 2;
+	uint32 CardId = 6;
+	bool IsAttachCurse = 9;
+	uint32 CostPoints = 2;
 }

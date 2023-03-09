@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message ContentAuditAuxiliaryField {
+	string Name = 1;
+	string Value = 2;
+}

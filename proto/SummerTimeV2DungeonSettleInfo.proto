@@ -1,9 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message SummerTimeV2DungeonSettleInfo {
-	uint32 Unk3300_JHBCHFHAGFO = 12;
-	uint32 Unk3300_BNNMNCKEHHO = 9;
-	bool isSuccess = 10;
+	uint32 TakenRewardCount = 12;
+	uint32 CurDungeonRewardLimit = 9;
+	bool IsSuccess = 10;
 }

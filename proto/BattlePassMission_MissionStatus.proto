@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+enum BattlePassMission_MissionStatus {
+	MissionInvalid = 0;
+	MissionUnfinished = 1;
+	MissionFinished = 2;
+	MissionPointTaken = 3;
+}

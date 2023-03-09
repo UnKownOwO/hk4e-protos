@@ -1,20 +1,21 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message DungeonChallengeBeginNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 939;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum DungeonChallengeBeginNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 939;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 challengeId = 3;
-	uint32 challengeIndex = 2;
-	uint32 groupId = 6;
-	uint32 fatherIndex = 7;
-	repeated uint32 uidList = 12;
-	repeated uint32 paramList = 14;
+	uint32 ChallengeId = 3;
+	uint32 ChallengeIndex = 2;
+	uint32 GroupId = 6;
+	uint32 FatherIndex = 7;
+	repeated uint32 UidList = 12;
+	repeated uint32 ParamList = 14;
 }

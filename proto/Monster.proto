@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "MonsterBornType.proto";
 import "MonsterRoute.proto";
@@ -9,30 +9,30 @@ import "FishtankFishInfo.proto";
 import "SceneWeaponInfo.proto";
 
 message Monster {
-	uint32 monsterId = 1;
-	uint32 groupId = 2;
-	uint32 configId = 3;
-	repeated SceneWeaponInfo weaponList = 4;
-	uint32 authorityPeerId = 5;
-	repeated uint32 affixList = 6;
-	bool isElite = 7;
-	uint32 ownerEntityId = 8;
-	uint32 summonedTag = 9;
-	map<uint32, uint32> summonTagMap = 10;
-	uint32 poseId = 11;
-	MonsterBornType bornType = 12;
-	uint32 blockId = 13;
-	uint32 markFlag = 14;
-	uint32 titleId = 15;
-	uint32 specialNameId = 16;
-	uint32 attackTargetId = 17;
-	MonsterRoute monsterRoute = 18;
-	uint32 aiConfigId = 19;
-	uint32 levelRouteId = 20;
-	uint32 initPoseId = 21;
-	bool isLight = 22;
-	uint32 killNum = 23;
-	oneof content {
+	uint32 MonsterId = 1;
+	uint32 GroupId = 2;
+	uint32 ConfigId = 3;
+	repeated SceneWeaponInfo WeaponList = 4;
+	uint32 AuthorityPeerId = 5;
+	repeated uint32 AffixList = 6;
+	bool IsElite = 7;
+	uint32 OwnerEntityId = 8;
+	uint32 SummonedTag = 9;
+	map<uint32, uint32> SummonTagMap = 10;
+	uint32 PoseId = 11;
+	MonsterBornType BornType = 12;
+	uint32 BlockId = 13;
+	uint32 MarkFlag = 14;
+	uint32 TitleId = 15;
+	uint32 SpecialNameId = 16;
+	uint32 AttackTargetId = 17;
+	MonsterRoute MonsterRoute = 18;
+	uint32 AiConfigId = 19;
+	uint32 LevelRouteId = 20;
+	uint32 InitPoseId = 21;
+	bool IsLight = 22;
+	uint32 KillNum = 23;
+	oneof SceneMonsterInfo_ContentOneofCase {
 		FishInfo fish_info = 50;
 		FishtankFishInfo fishtank_fish_info = 51;
 	}

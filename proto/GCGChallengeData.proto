@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message GCGChallengeData {
+	uint32 ChallengeId = 1;
+	uint32 ChallengeType = 2;
+	repeated uint32 ParamList = 3;
+	uint32 Progress = 4;
+}

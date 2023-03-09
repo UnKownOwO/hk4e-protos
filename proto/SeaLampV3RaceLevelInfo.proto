@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message SeaLampV3RaceLevelInfo {
+	bool IsOpen = 13;
+	uint32 LevelId = 5;
+	uint32 MaxScore = 14;
+}

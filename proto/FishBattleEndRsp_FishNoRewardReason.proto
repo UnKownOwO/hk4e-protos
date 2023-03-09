@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+enum FishBattleEndRsp_FishNoRewardReason {
+	FishNoRewardNone = 0;
+	FishNoRewardActivityLimit = 1;
+	FishNoRewardBagLimit = 2;
+	FishNoRewardPoolLimit = 3;
+}

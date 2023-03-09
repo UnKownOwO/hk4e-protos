@@ -1,9 +1,0 @@
-syntax = "proto3";
-
-option go_package = "./;proto";
-
-enum Type {
-    NULL    = 0;
-    ACTIVE  = 1;
-    PASSIVE = 2;
-}

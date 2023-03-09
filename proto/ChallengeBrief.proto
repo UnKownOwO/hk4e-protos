@@ -1,10 +1,11 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message ChallengeBrief {
-	uint32 curProgress = 9;
-	bool isSuccess = 5;
-	uint32 challengeIndex = 15;
-	uint32 challengeId = 2;
+	uint32 CurProgress = 9;
+	bool IsSuccess = 5;
+	uint32 ChallengeIndex = 15;
+	uint32 ChallengeId = 2;
 }

@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "CityReputationHuntInfo.proto";
 import "CityReputationExploreInfo.proto";
@@ -8,13 +8,13 @@ import "CityReputationQuestInfo.proto";
 import "CityReputationRequestInfo.proto";
 
 message CityReputationInfo {
-	uint32 totalAcceptRequestNum = 11;
-	CityReputationHuntInfo huntInfo = 9;
-	uint32 exp = 8;
-	CityReputationExploreInfo exploreInfo = 5;
-	uint32 level = 13;
-	repeated uint32 takenLevelRewardList = 4;
-	CityReputationQuestInfo questInfo = 7;
-	CityReputationRequestInfo requestInfo = 2;
-	uint32 nextRefreshTime = 14;
+	uint32 TotalAcceptRequestNum = 11;
+	CityReputationHuntInfo HuntInfo = 9;
+	uint32 Exp = 8;
+	CityReputationExploreInfo ExploreInfo = 5;
+	uint32 Level = 13;
+	repeated uint32 TakenLevelRewardList = 4;
+	CityReputationQuestInfo QuestInfo = 7;
+	CityReputationRequestInfo RequestInfo = 2;
+	uint32 NextRefreshTime = 14;
 }

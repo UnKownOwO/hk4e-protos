@@ -1,19 +1,19 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "PlatformInfo.proto";
 
 message PlatformStopRouteNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 284;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum PlatformStopRouteNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 284;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 entityId = 12;
-	PlatformInfo platform = 6;
-	uint32 sceneTime = 3;
+	uint32 EntityId = 12;
+	PlatformInfo Platform = 6;
+	uint32 SceneTime = 3;
 }

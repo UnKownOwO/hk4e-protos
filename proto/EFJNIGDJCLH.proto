@@ -1,9 +1,0 @@
-syntax = "proto3";
-
-option go_package = "./;proto";
-
-message EFJNIGDJCLH {
-	string type = 1;
-	string content = 2;
-	uint32 iofedkimpfp = 3;
-}

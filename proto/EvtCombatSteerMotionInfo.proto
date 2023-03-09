@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package Proto;
+
+import "Rotation.proto";
+
+message EvtCombatSteerMotionInfo {
+	Rotation FaceDir = 3;
+	Rotation Velocity = 7;
+	uint32 EntityId = 6;
+	Rotation Pos = 4;
+}

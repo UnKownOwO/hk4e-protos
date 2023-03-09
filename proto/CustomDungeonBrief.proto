@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "CustomDungeonSetting.proto";
 import "CustomDungeonAbstract.proto";
@@ -8,14 +8,14 @@ import "CustomDungeonState.proto";
 import "CustomDungeonSocial.proto";
 
 message CustomDungeonBrief {
-	CustomDungeonSetting setting = 7;
-	bool isPsnPlatform = 4;
-	CustomDungeonAbstract abstract = 13;
-	CustomDungeonState state = 9;
-	uint64 dungeonGuid = 5;
-	repeated uint32 tagList = 15;
-	uint32 lastSaveTime = 10;
-	CustomDungeonSocial social = 8;
-	uint32 battleMinCostTime = 2;
-	uint32 dungeonId = 6;
+	CustomDungeonSetting Setting = 7;
+	bool IsPsnPlatform = 4;
+	CustomDungeonAbstract Abstract = 13;
+	CustomDungeonState State = 9;
+	uint64 DungeonGuid = 5;
+	repeated uint32 TagList = 15;
+	uint32 LastSaveTime = 10;
+	CustomDungeonSocial Social = 8;
+	uint32 BattleMinCostTime = 2;
+	uint32 DungeonId = 6;
 }

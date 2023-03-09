@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "BalloonInfo.proto";
 import "FallInfo.proto";
@@ -40,9 +40,9 @@ import "GalleryStageType.proto";
 import "SceneGalleryProgressInfo.proto";
 
 message SceneGalleryInfo {
-	uint32 endTime = 15;
-	uint32 startTime = 5;
-	oneof info {
+	uint32 EndTime = 15;
+	uint32 StartTime = 5;
+	oneof SceneGalleryInfo_InfoOneofCase {
 		BalloonInfo balloon_info = 14;
 		FallInfo fall_info = 1;
 		FlowerInfo flower_info = 6;
@@ -78,10 +78,10 @@ message SceneGalleryInfo {
 		DuelHeartInfo duel_heart_info = 789;
 		BoatMultiInfo boat_multi_info = 1222;
 	}
-	GalleryStageType stage = 2;
-	uint32 ownerUid = 7;
-	uint32 galleryId = 3;
-	uint32 preStartEndTime = 8;
-	uint32 playerCount = 11;
-	repeated SceneGalleryProgressInfo progressInfoList = 12;
+	GalleryStageType Stage = 2;
+	uint32 OwnerUid = 7;
+	uint32 GalleryId = 3;
+	uint32 PreStartEndTime = 8;
+	uint32 PlayerCount = 11;
+	repeated SceneGalleryProgressInfo ProgressInfoList = 12;
 }

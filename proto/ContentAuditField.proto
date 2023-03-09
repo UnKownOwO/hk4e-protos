@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+import "ContentAuditData.proto";
+
+message ContentAuditField {
+	repeated ContentAuditData SegmentList = 1;
+	string Name = 2;
+}

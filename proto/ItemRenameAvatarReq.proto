@@ -1,17 +1,18 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message ItemRenameAvatarReq {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 1747;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// 	IS_ALLOW_CLIENT = 1;
-	// }
+	enum GGOKOJMMCDI {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 1747;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
 
-	string avatarName = 4;
-	uint32 renameId = 14;
+	string AvatarName = 4;
+	uint32 RenameId = 14;
 }

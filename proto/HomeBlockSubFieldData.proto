@@ -1,10 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
-import "Vector.proto";
+import "Rotation.proto";
 
 message HomeBlockSubFieldData {
-	Vector rot = 6;
-	Vector pos = 11;
+	Rotation Rot = 6;
+	Rotation Pos = 11;
 }

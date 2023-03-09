@@ -1,13 +1,13 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "ProfilePicture.proto";
 
 message FurnitureMakeBeHelpedData {
-	uint32 uid = 7;
-	ProfilePicture profilePicture = 10;
-	uint32 icon = 13;
-	fixed32 time = 4;
-	string playerName = 6;
+	uint32 Uid = 7;
+	ProfilePicture ProfilePicture = 10;
+	uint32 Icon = 13;
+	uint32 Time = 4;
+	string PlayerName = 6;
 }

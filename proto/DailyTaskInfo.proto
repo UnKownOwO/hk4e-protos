@@ -1,11 +1,12 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message DailyTaskInfo {
-	uint32 finishProgress = 9;
-	bool isFinished = 3;
-	uint32 progress = 7;
-	uint32 dailyTaskId = 5;
-	uint32 rewardId = 14;
+	uint32 FinishProgress = 9;
+	bool IsFinished = 3;
+	uint32 Progress = 7;
+	uint32 DailyTaskId = 5;
+	uint32 RewardId = 14;
 }

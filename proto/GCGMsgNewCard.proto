@@ -1,9 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "GCGCard.proto";
 
 message GCGMsgNewCard {
-	GCGCard card = 5;
+	GCGCard Card = 5;
 }

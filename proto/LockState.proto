@@ -1,8 +1,0 @@
-syntax = "proto3";
-
-option go_package = "./;proto";
-
-enum LockState {
-    LOCK_NONE  = 0;
-    LOCK_QUEST = 1;
-}

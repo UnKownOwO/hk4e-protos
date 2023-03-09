@@ -1,12 +1,12 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "GalleryStopReason.proto";
 
 message BalloonGallerySettleInfo {
-	uint32 ownerUid = 5;
-	uint32 hitCount = 3;
-	GalleryStopReason reason = 15;
-	uint32 score = 6;
+	uint32 OwnerUid = 5;
+	uint32 HitCount = 3;
+	GalleryStopReason Reason = 15;
+	uint32 Score = 6;
 }

@@ -1,18 +1,19 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
+import "GCGWeekChallengeInfo.proto";
 
 message GCGWeekChallengeInfoNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 7857;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// 	IS_ALLOW_CLIENT = 1;
-	// }
+	enum BPPOMFBCIKL {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 7890;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 configId = 15;
-	uint32 unlockWorldChallengeList = 11;
-	uint32 levelId = 10;
+	bool IsNotifyNpcChange = 7;
+	uint32 NextRefreshTime = 9;
+	repeated GCGWeekChallengeInfo ChallengeInfoList = 8;
 }

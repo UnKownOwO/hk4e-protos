@@ -1,17 +1,17 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "ClientReconnectReason.proto";
 
 message ClientReconnectNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 29;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum ClientReconnectNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 29;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	ClientReconnectReason reason = 1;
+	ClientReconnectReason Reason = 1;
 }

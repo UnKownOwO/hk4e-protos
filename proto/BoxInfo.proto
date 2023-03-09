@@ -1,15 +1,15 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
-import "Vector.proto";
+import "Rotation.proto";
 
 message BoxInfo {
-	int32 id = 1;
-	uint32 configId = 2;
-	Vector center = 3;
-	Vector extents = 4;
-	Vector up = 5;
-	Vector forward = 6;
-	Vector right = 7;
+	int32 Id = 1;
+	uint32 ConfigId = 2;
+	Rotation Center = 3;
+	Rotation Extents = 4;
+	Rotation Up = 5;
+	Rotation Forward = 6;
+	Rotation Right = 7;
 }

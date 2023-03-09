@@ -1,13 +1,13 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "MotionInfo.proto";
 
 message EntityMoveFailInfo {
-	MotionInfo failMotion = 2;
-	uint32 sceneTime = 7;
-	int32 retcode = 3;
-	uint32 entityId = 6;
-	uint32 reliableSeq = 4;
+	MotionInfo FailMotion = 2;
+	uint32 SceneTime = 7;
+	int32 Retcode = 3;
+	uint32 EntityId = 6;
+	uint32 ReliableSeq = 4;
 }

@@ -1,11 +1,12 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message InBattleFleurFairInfo {
-	uint32 emdkpmhihmp = 11;
-	uint32 galleryStageIndex = 4;
-	repeated uint32 defdlkbmipk = 10;
-	uint32 enokedgdhfb = 9;
-	repeated uint32 fieibhkablj = 15;
+	uint32 PreviewStageIndex = 11;
+	uint32 GalleryStageIndex = 4;
+	repeated uint32 GalleryIdList = 10;
+	uint32 PreviewDisplayDuration = 9;
+	repeated uint32 AbilityGroupIdList = 15;
 }

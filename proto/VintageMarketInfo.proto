@@ -1,31 +1,31 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "VintageMarketDealInfo.proto";
 import "VintageMarketStoreInfo.proto";
 
 message VintageMarketInfo {
-	repeated uint32 unlockStrategyList = 15;
-	uint32 storeRound = 2;
-	repeated uint32 Unk3300_COKBOKAOCNJ = 1216;
-	map<uint32, bool> bargainInfoMap = 9;
-	repeated uint32 Unk3300_ABHHACBDCFI = 3;
-	repeated uint32 Unk3300_EDBJLBICEJF = 1;
-	bool Unk3300_KJDEFIBKBPE = 5;
-	bool Unk3300_NMHHGNPKBEL = 1164;
-	uint32 Unk3300_FOPKAIIAMFM = 255;
-	uint32 Unk3300_LMNLHHPMAMN = 12;
-	bool Unk3300_ALHLENELIEO = 1035;
-	bool Unk3300_PAMKPAOCJJJ = 4;
-	bool Unk3300_ICJOCDGLFFD = 10;
-	VintageMarketDealInfo dealInfo = 14;
-	bool Unk3300_NDFHAGHBCFN = 6;
-	repeated VintageMarketStoreInfo openStoreList = 7;
-	repeated uint32 Unk3300_AIAMBBODLBO = 13;
-	uint32 helpSkillId = 1222;
-	bool Unk3300_FJDIMCJEAOB = 8;
-	uint32 Unk3300_HHKKEDDIGLA = 11;
-	uint32 Unk3300_ACJLANLBCGK = 458;
-	bool Unk3300_NBNOJJBNJPB = 1190;
+	repeated uint32 UnlockStrategyList = 15;
+	uint32 StoreRound = 2;
+	repeated uint32 StoreRoundIncomeList = 1216;
+	map<uint32, bool> BargainInfoMap = 9;
+	repeated uint32 CurNpcEventList = 3;
+	repeated uint32 CurEnvEventList = 1;
+	bool IsRoundTipsView = 5;
+	bool IsStrategyModuleOpen = 1164;
+	uint32 DividendRewardCount = 255;
+	uint32 PrevCoinCNum = 12;
+	bool IsHelpModuleOpen = 1035;
+	bool IsMarketContentOpen = 4;
+	bool IsStoreContentInterrupt = 10;
+	VintageMarketDealInfo DealInfo = 14;
+	bool IsMarketContentFinish = 6;
+	repeated VintageMarketStoreInfo OpenStoreList = 7;
+	repeated uint32 ViewedStrategyList = 13;
+	uint32 HelpSkillId = 1222;
+	bool IsStoreContentFinish = 8;
+	uint32 PrevCoinBNum = 11;
+	uint32 NextCanUseHelpRound = 458;
+	bool IsHelpInCd = 1190;
 }

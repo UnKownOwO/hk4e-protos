@@ -1,10 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "GCGSkillPreviewCardInfo.proto";
 
 message GCGSkillPreviewExtraInfo {
-	repeated GCGSkillPreviewCardInfo Unk3300_KIFFJGFDNKA = 6;
-	repeated GCGSkillPreviewCardInfo Unk3300_GMEMMDJKCGN = 11;
+	repeated GCGSkillPreviewCardInfo RefreshCardWhenExistList = 6;
+	repeated GCGSkillPreviewCardInfo FailAddedWhenFullList = 11;
 }

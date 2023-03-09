@@ -1,9 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 enum WidgetCreatorOpType {
-  WIDGET_CREATOR_TYPE_NONE               = 0;
-  WIDGET_CREATOR_TYPE_RETRACT            = 1;
-  WIDGET_CREATOR_TYPE_RETRACT_AND_CREATE = 2;
+	WidgetCreatorTypeNone = 0;
+	WidgetCreatorTypeRetract = 1;
+	WidgetCreatorTypeRetractAndCreate = 2;
 }

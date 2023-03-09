@@ -1,9 +1,0 @@
-syntax = "proto3";
-
-option go_package = "./;proto";
-
-import "MLBFNDKNIEM.proto";
-
-message BDKPJAMLNCL {
-	repeated MLBFNDKNIEM levelInfoList = 6;
-}

@@ -1,12 +1,13 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message FurnitureMakeData {
-	uint32 durTime = 5;
-	uint32 makeId = 6;
-	fixed32 beginTime = 13;
-	fixed32 accelerateTime = 9;
-	uint32 index = 10;
-	uint32 avatarId = 1;
+	uint32 DurTime = 5;
+	uint32 MakeId = 6;
+	uint32 BeginTime = 13;
+	uint32 AccelerateTime = 9;
+	uint32 Index = 10;
+	uint32 AvatarId = 1;
 }

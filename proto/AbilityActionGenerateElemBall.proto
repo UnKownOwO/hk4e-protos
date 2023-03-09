@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package Proto;
+
+import "Rotation.proto";
+
+message AbilityActionGenerateElemBall {
+	Rotation Pos = 7;
+	uint32 RoomId = 6;
+	Rotation Rot = 15;
+}

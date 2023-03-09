@@ -1,9 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message RoguelikeRuneRecord {
-	uint32 Unk3300_JLOLMLFAPHH = 7;
-	uint32 Unk3300_IGBOJLPPKON = 12;
-	uint32 runeId = 6;
+	uint32 MaxCount = 7;
+	uint32 LeftCount = 12;
+	uint32 RuneId = 6;
 }

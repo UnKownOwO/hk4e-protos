@@ -1,9 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message ChessMonsterInfo {
-	uint32 monsterId = 9;
-	uint32 level = 2;
-	repeated uint32 affixList = 3;
+	uint32 MonsterId = 9;
+	uint32 Level = 2;
+	repeated uint32 AffixList = 3;
 }

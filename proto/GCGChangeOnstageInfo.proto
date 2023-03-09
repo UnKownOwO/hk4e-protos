@@ -1,11 +1,11 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "GCGSkillPreviewInfo.proto";
 
 message GCGChangeOnstageInfo {
-	uint32 cardGuid = 4;
-	GCGSkillPreviewInfo changeOnstagePreviewInfo = 8;
-	bool isQuick = 5;
+	uint32 CardGuid = 4;
+	GCGSkillPreviewInfo ChangeOnstagePreviewInfo = 8;
+	bool IsQuick = 5;
 }

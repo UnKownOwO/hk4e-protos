@@ -1,19 +1,19 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
-import "State.proto";
+import "PlayerPreEnterMpNotify_State.proto";
 
 message PlayerPreEnterMpNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 1835;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum PlayerPreEnterMpNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 1835;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	State state = 7;
-	uint32 uid = 10;
-	string nickname = 15;
+	PlayerPreEnterMpNotify_State State = 7;
+	uint32 Uid = 10;
+	string Nickname = 15;
 }

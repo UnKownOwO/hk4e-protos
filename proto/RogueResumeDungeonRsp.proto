@@ -1,16 +1,17 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message RogueResumeDungeonRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 8241;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum RogueResumeDungeonRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8241;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 stageId = 1;
-	int32 retcode = 11;
+	uint32 StageId = 1;
+	int32 Retcode = 11;
 }

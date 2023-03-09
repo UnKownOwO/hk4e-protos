@@ -1,8 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message ChatChannelInfo {
-	uint32 channelId = 4;
-	bool isShield = 2;
+	uint32 ChannelId = 4;
+	bool IsShield = 2;
 }

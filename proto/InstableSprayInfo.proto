@@ -1,10 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "SceneGalleryInstableSprayBuffInfo.proto";
 
 message InstableSprayInfo {
-	uint32 score = 13;
-	repeated SceneGalleryInstableSprayBuffInfo buffInfoList = 6;
+	uint32 Score = 13;
+	repeated SceneGalleryInstableSprayBuffInfo BuffInfoList = 6;
 }

@@ -1,12 +1,12 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
-import "Vector.proto";
+import "Rotation.proto";
 
 message SkyCrystalDetectorData {
-	Vector hintCenterPos = 6;
-	uint32 groupId = 14;
-	uint32 configId = 8;
-	bool isHintValid = 3;
+	Rotation HintCenterPos = 6;
+	uint32 GroupId = 14;
+	uint32 ConfigId = 8;
+	bool IsHintValid = 3;
 }

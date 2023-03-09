@@ -1,20 +1,21 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message GalleryFallCatchNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 5520;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum GalleryFallCatchNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 5520;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 timeCost = 1;
-	uint32 addScore = 4;
-	uint32 galleryId = 2;
-	uint32 curScore = 5;
-	bool isGround = 3;
-	map<uint32, uint32> ballCatchCountMap = 15;
+	uint32 TimeCost = 1;
+	uint32 AddScore = 4;
+	uint32 GalleryId = 2;
+	uint32 CurScore = 5;
+	bool IsGround = 3;
+	map<uint32, uint32> BallCatchCountMap = 15;
 }

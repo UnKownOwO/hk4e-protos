@@ -1,19 +1,19 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "OnlinePlayerInfo.proto";
 
 message PlayerApplyEnterMpNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 1838;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum PlayerApplyEnterMpNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 1838;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 srcThreadIndex = 14;
-	OnlinePlayerInfo srcPlayerInfo = 11;
-	uint32 srcAppId = 12;
+	uint32 SrcThreadIndex = 14;
+	OnlinePlayerInfo SrcPlayerInfo = 11;
+	uint32 SrcAppId = 12;
 }

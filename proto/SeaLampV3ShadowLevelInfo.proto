@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message SeaLampV3ShadowLevelInfo {
+	uint32 LevelId = 2;
+	bool IsOpen = 7;
+	uint32 MinFinishTime = 12;
+}

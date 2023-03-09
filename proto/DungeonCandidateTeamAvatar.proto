@@ -1,10 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "AvatarInfo.proto";
 
 message DungeonCandidateTeamAvatar {
-	uint32 playerUid = 5;
-	AvatarInfo avatarInfo = 8;
+	uint32 PlayerUid = 5;
+	AvatarInfo AvatarInfo = 8;
 }

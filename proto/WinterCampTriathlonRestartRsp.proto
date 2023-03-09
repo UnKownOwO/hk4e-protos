@@ -1,16 +1,17 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message WinterCampTriathlonRestartRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 8323;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum WinterCampTriathlonRestartRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8323;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	int32 retcode = 14;
-	uint32 galleryId = 13;
+	int32 Retcode = 14;
+	uint32 GalleryId = 13;
 }

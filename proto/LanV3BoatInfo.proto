@@ -1,10 +1,11 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message LanV3BoatInfo {
-	repeated uint32 playerUidList = 4;
-	uint32 matchId = 11;
-	uint32 mapId = 15;
-	bool mdpgfcplekf = 8;
+	repeated uint32 PlayerUidList = 4;
+	uint32 MatchId = 11;
+	uint32 MapId = 15;
+	bool IsSingle = 8;
 }

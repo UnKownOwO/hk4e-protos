@@ -1,10 +1,11 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message TrialAvatarActivityRewardDetailInfo {
-	uint32 trialAvatarIndexId = 5;
-	bool opecleddeom = 2;
-	uint32 rewardId = 7;
-	bool jbghkencdaj = 14;
+	uint32 TrialAvatarIndexId = 5;
+	bool ReceivedReward = 2;
+	uint32 RewardId = 7;
+	bool PassedDungeon = 14;
 }

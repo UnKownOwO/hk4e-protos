@@ -1,8 +1,8 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 enum ModifierAction {
-  ADDED   = 0;
-  REMOVED = 1;
+	Added = 0;
+	Removed = 1;
 }

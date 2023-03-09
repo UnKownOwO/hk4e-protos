@@ -1,9 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message CityReputationExploreInfo {
-	repeated uint32 takenExploreRewardList = 9;
-	bool isOpen = 1;
-	uint32 explorePercent = 11;
+	repeated uint32 TakenExploreRewardList = 9;
+	bool IsOpen = 1;
+	uint32 ExplorePercent = 11;
 }

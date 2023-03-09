@@ -1,15 +1,17 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message GCGDSCardNumChangeNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 7075;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum ILMHAKGOCAK {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 7605;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 ccdlgbcdpbp = 8;
+	uint32 CardId = 6;
+	uint32 Num = 3;
 }

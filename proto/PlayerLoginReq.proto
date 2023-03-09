@@ -1,60 +1,61 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 import "TrackingIOInfo.proto";
 import "AdjustTrackingInfo.proto";
 
 message PlayerLoginReq {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 187;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// 	IS_ALLOW_CLIENT = 1;
-	// }
+	enum PlayerLoginReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 187;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
 
-	string token = 6;
-	uint32 Unk3300_NDLANBEIGEG = 323;
-	uint32 targetUid = 4;
-	string checksumClientVersion = 1738;
-	string accountUid = 9;
-	bool isEditor = 13;
-	string birthday = 1280;
-	bytes extraBinData = 78;
-	uint32 regPlatform = 119;
-	uint32 gmUid = 246;
-	string checksum = 1715;
-	uint32 platformType = 12;
-	TrackingIOInfo trackingIoInfo = 710;
-	uint32 Unk3300_OFFHPAFIFGD = 1762;
-	string deviceInfo = 14;
-	uint32 targetHomeOwnerUid = 216;
-	string platform = 2;
-	uint32 channelId = 324;
-	string countryCode = 1616;
-	uint64 loginRand = 8;
-	string onlineId = 54;
-	uint32 subChannelId = 1709;
-	string deviceUuid = 15;
-	uint32 Unk3300_OOBHAIIIPHH = 2024;
-	string clientVerisonHash = 1765;
-	AdjustTrackingInfo adjustTrackingInfo = 442;
-	uint32 accountType = 7;
-	string psnId = 1568;
-	uint32 tag = 1223;
-	uint32 Unk3300_PMGFBMJNNCL = 1394;
-	string systemVersion = 3;
-	bool isGuest = 10;
-	string clientVersion = 11;
-	bool isTransfer = 2037;
-	bytes environmentErrorCode = 1015;
-	string deviceName = 1;
-	string securityLibraryMd5 = 378;
-	uint32 languageType = 5;
-	bytes securityCmdReply = 907;
-	string securityLibraryVersion = 684;
-	uint32 clientDataVersion = 426;
-	string cps = 821;
+	string Token = 6;
+	uint32 TargetHomeParam = 323;
+	uint32 TargetUid = 4;
+	string ChecksumClientVersion = 1738;
+	string AccountUid = 9;
+	bool IsEditor = 13;
+	string Birthday = 1280;
+	bytes ExtraBinData = 78;
+	uint32 RegPlatform = 119;
+	uint32 GmUid = 246;
+	string Checksum = 1715;
+	uint32 PlatformType = 12;
+	TrackingIOInfo TrackingIoInfo = 710;
+	uint32 ClientToken = 1762;
+	string DeviceInfo = 14;
+	uint32 TargetHomeOwnerUid = 216;
+	string Platform = 2;
+	uint32 ChannelId = 324;
+	string CountryCode = 1616;
+	uint64 LoginRand = 8;
+	string OnlineId = 54;
+	uint32 SubChannelId = 1709;
+	string DeviceUuid = 15;
+	uint32 ClientPort = 2024;
+	string ClientVerisonHash = 1765;
+	AdjustTrackingInfo AdjustTrackingInfo = 442;
+	uint32 AccountType = 7;
+	string PsnId = 1568;
+	uint32 Tag = 1223;
+	uint32 CloudClientIp = 1394;
+	string SystemVersion = 3;
+	bool IsGuest = 10;
+	string ClientVersion = 11;
+	bool IsTransfer = 2037;
+	bytes EnvironmentErrorCode = 1015;
+	string DeviceName = 1;
+	string SecurityLibraryMd5 = 378;
+	uint32 LanguageType = 5;
+	bytes SecurityCmdReply = 907;
+	string SecurityLibraryVersion = 684;
+	uint32 ClientDataVersion = 426;
+	string Cps = 821;
 }

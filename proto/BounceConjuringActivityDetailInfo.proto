@@ -1,11 +1,11 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "BounceConjuringChapterInfo.proto";
 
 message BounceConjuringActivityDetailInfo {
-	uint32 contentCloseTime = 1;
-	bool leftMonsters = 6;
-	repeated BounceConjuringChapterInfo chapterInfoList = 7;
+	uint32 ContentCloseTime = 1;
+	bool IsContentClosed = 6;
+	repeated BounceConjuringChapterInfo ChapterInfoList = 7;
 }

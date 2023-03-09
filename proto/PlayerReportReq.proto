@@ -1,22 +1,22 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "ReportReasonType.proto";
 
 message PlayerReportReq {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 4053;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// 	IS_ALLOW_CLIENT = 1;
-	// }
+	enum PlayerReportReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4053;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
 
-	string content = 10;
-	ReportReasonType reason = 8;
-	uint32 targetUid = 6;
-	uint32 targetHomeModuleId = 12;
-	string targetHomeModuleName = 2;
+	string Content = 10;
+	ReportReasonType Reason = 8;
+	uint32 TargetUid = 6;
+	uint32 TargetHomeModuleId = 12;
+	string TargetHomeModuleName = 2;
 }

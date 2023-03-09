@@ -1,10 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "ShopGoods.proto";
 
 message BuyGoodsParam {
-	ShopGoods goods = 8;
-	uint32 buyCount = 3;
+	ShopGoods Goods = 8;
+	uint32 BuyCount = 3;
 }

@@ -1,16 +1,17 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message AvatarFightPropUpdateNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 1274;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum AvatarFightPropUpdateNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 1274;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint64 avatarGuid = 8;
-	map<uint32, float> fightPropMap = 10;
+	uint64 AvatarGuid = 8;
+	map<uint32, float> FightPropMap = 10;
 }

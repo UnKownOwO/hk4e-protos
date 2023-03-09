@@ -1,18 +1,19 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message IrodoriChessEquipCardRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 8312;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum IrodoriChessEquipCardRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8312;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 levelId = 15;
-	bool isHardMap = 8;
-	int32 retcode = 9;
-	uint32 cardId = 14;
+	uint32 LevelId = 15;
+	bool IsHardMap = 8;
+	int32 Retcode = 9;
+	uint32 CardId = 14;
 }

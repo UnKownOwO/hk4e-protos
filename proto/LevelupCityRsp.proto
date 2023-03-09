@@ -1,20 +1,20 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "CityInfo.proto";
 
 message LevelupCityRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 267;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum LevelupCityRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 267;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	int32 retcode = 2;
-	CityInfo cityInfo = 15;
-	uint32 areaId = 12;
-	uint32 sceneId = 3;
+	int32 Retcode = 2;
+	CityInfo CityInfo = 15;
+	uint32 AreaId = 12;
+	uint32 SceneId = 3;
 }

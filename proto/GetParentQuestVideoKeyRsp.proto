@@ -1,17 +1,18 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message GetParentQuestVideoKeyRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 427;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum GetParentQuestVideoKeyRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 427;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint64 videoKey = 2;
-	int32 retcode = 9;
-	uint32 parentQuestId = 11;
+	uint64 VideoKey = 2;
+	int32 Retcode = 9;
+	uint32 ParentQuestId = 11;
 }

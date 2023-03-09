@@ -1,10 +1,11 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message PbNavMeshStatsInfo {
-	int32 Unk3300_DHJKKJLKDHB = 1;
-	int32 Unk3300_EEONKADBJME = 11;
-	int32 Unk3300_IMLHLJAOBLF = 12;
-	int32 Unk3300_MOKPJBIPHNI = 2;
+	int32 TotalNoAuthorityAi = 1;
+	int32 NoAuthorityAiInCombat = 11;
+	int32 TotalAuthorityAi = 12;
+	int32 AuthorityAiInCombat = 2;
 }

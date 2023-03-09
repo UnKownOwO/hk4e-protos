@@ -1,15 +1,16 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message CanUseSkillNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 1069;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum CanUseSkillNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 1069;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	bool isCanUseSkill = 2;
+	bool IsCanUseSkill = 2;
 }

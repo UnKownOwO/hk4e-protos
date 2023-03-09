@@ -1,12 +1,12 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 enum FireworksLaunchParamType {
-  FIREWORKS_LAUNCH_PARAM_NONE          = 0;
-  FIREWORKS_LAUNCH_PARAM_REPEAT        = 1;
-  FIREWORKS_LAUNCH_PARAM_INTEVAL       = 2;
-  FIREWORKS_LAUNCH_PARAM_DELAY         = 3;
-  FIREWORKS_LAUNCH_PARAM_ROUND_INTEVAL = 4;
-  FIREWORKS_LAUNCH_PARAM_MAX           = 5;
+	FireworksLaunchParamNone = 0;
+	FireworksLaunchParamRepeat = 1;
+	FireworksLaunchParamInteval = 2;
+	FireworksLaunchParamDelay = 3;
+	FireworksLaunchParamRoundInteval = 4;
+	FireworksLaunchParamMax = 5;
 }

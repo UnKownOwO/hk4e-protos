@@ -1,18 +1,17 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message GCGDSChangeCurDeckRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 7791;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum BAHGDHIPKGL {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 7565;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 createTime = 8;
-	uint32 rewardIndex = 1;
-	bool pofiiedegjn = 11;
-	int32 retcode = 3;
+	int32 Retcode = 9;
+	uint32 DeckId = 12;
 }

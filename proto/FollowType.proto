@@ -1,9 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 enum FollowType {
-    FOLLOW_TYPE_INIT_FOLLOW_POS    = 0;
-    FOLLOW_TYPE_SET_FOLLOW_POS     = 1;
-    FOLLOW_TYPE_SET_ABS_FOLLOW_POS = 2;
+	FollowTypeInitFollowPos = 0;
+	FollowTypeSetFollowPos = 1;
+	FollowTypeSetAbsFollowPos = 2;
 }

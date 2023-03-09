@@ -1,21 +1,21 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "SumoTeamData.proto";
 
 message SumoSaveTeamRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 8017;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum SumoSaveTeamRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8017;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 stageId = 9;
-	uint32 difficultyId = 14;
-	int32 retcode = 12;
-	uint32 activityId = 3;
-	repeated SumoTeamData teamList = 8;
+	uint32 StageId = 9;
+	uint32 DifficultyId = 14;
+	int32 Retcode = 12;
+	uint32 ActivityId = 3;
+	repeated SumoTeamData TeamList = 8;
 }

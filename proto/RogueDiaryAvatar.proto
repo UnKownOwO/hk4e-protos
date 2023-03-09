@@ -1,13 +1,13 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "ActivityDungeonAvatar.proto";
 import "RogueDiaryAvatarDisableStatus.proto";
 
 message RogueDiaryAvatar {
-	repeated RogueDiaryAvatarDisableStatus disableStatusList = 4;
-	uint32 level = 2;
-	uint32 tiredRound = 9;
-	ActivityDungeonAvatar avatar = 6;
+	repeated RogueDiaryAvatarDisableStatus DisableStatusList = 4;
+	uint32 Level = 2;
+	uint32 TiredRound = 9;
+	ActivityDungeonAvatar Avatar = 6;
 }

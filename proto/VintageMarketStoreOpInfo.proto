@@ -1,11 +1,12 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message VintageMarketStoreOpInfo {
-	uint32 helpUid = 14;
-	uint32 helpSkillId = 13;
-	repeated uint32 addAttrList = 3;
-	uint32 storeId = 2;
-	repeated uint32 strategyList = 4;
+	uint32 HelpUid = 14;
+	uint32 HelpSkillId = 13;
+	repeated uint32 AddAttrList = 3;
+	uint32 StoreId = 2;
+	repeated uint32 StrategyList = 4;
 }

@@ -1,10 +1,11 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message RogueDiaryDungeonRecord {
-	uint32 finishTime = 9;
-	uint32 maxRound = 12;
-	bool isFinish = 7;
-	uint32 difficulty = 13;
+	uint32 FinishTime = 9;
+	uint32 MaxRound = 12;
+	bool IsFinish = 7;
+	uint32 Difficulty = 13;
 }

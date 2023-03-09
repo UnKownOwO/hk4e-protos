@@ -1,20 +1,21 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message GachaWishRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 1574;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum GachaWishRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 1574;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 wishProgress = 3;
-	uint32 wishMaxProgress = 7;
-	uint32 gachaType = 6;
-	uint32 gachaScheduleId = 11;
-	int32 retcode = 9;
-	uint32 wishItemId = 5;
+	uint32 WishProgress = 3;
+	uint32 WishMaxProgress = 7;
+	uint32 GachaType = 6;
+	uint32 GachaScheduleId = 11;
+	int32 Retcode = 9;
+	uint32 WishItemId = 5;
 }

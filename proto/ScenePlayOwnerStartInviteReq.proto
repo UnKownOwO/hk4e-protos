@@ -1,17 +1,18 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message ScenePlayOwnerStartInviteReq {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 4448;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// 	IS_ALLOW_CLIENT = 1;
-	// }
+	enum ScenePlayOwnerStartInviteReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4448;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
 
-	bool isSkipMatch = 11;
-	uint32 playId = 7;
+	bool IsSkipMatch = 11;
+	uint32 PlayId = 7;
 }

@@ -1,10 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 enum CompoundBoostTakeStatusType {
-  COMPOUND_BOOST_TAKE_STATUS_NONE           = 0;
-  COMPOUND_BOOST_TAKE_STATUS_BOOST_ONLY     = 1;
-  COMPOUND_BOOST_TAKE_STATUS_BOOST_AND_TAKE = 2;
-  COMPOUND_BOOST_TAKE_STATUS_BAG_FULL       = 3;
+	CompoundBoostTakeStatusNone = 0;
+	CompoundBoostTakeStatusBoostOnly = 1;
+	CompoundBoostTakeStatusBoostAndTake = 2;
+	CompoundBoostTakeStatusBagFull = 3;
 }

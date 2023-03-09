@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+import "TeamChainChooseAvatarInfo.proto";
+
+message TeamChainChooseTeamInfo {
+	repeated uint32 SkillNoList = 12;
+	repeated TeamChainChooseAvatarInfo AvatarInfoList = 6;
+}

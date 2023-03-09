@@ -1,11 +1,11 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "IrodoriChessEntranceDetailInfo.proto";
 
 message IrodoriChessMysteryInfo {
-	repeated uint32 mdilcblhnao = 5;
-	IrodoriChessEntranceDetailInfo ajcepcgbnfe = 8;
-	repeated uint32 fffmoldaadc = 2;
+	repeated uint32 ExitPointIdList = 5;
+	IrodoriChessEntranceDetailInfo EntranceDetailInfo = 8;
+	repeated uint32 EntrancePointIdList = 2;
 }

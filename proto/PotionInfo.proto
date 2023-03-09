@@ -1,9 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "PotionStageData.proto";
 
 message PotionInfo {
-	repeated PotionStageData stageList = 11;
+	repeated PotionStageData StageList = 11;
 }

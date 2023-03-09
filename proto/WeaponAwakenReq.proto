@@ -1,18 +1,19 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message WeaponAwakenReq {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 645;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// 	IS_ALLOW_CLIENT = 1;
-	// }
+	enum WeaponAwakenReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 645;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
 
-	map<uint32, uint32> affixLevelMap = 12;
-	uint64 itemGuid = 2;
-	uint64 targetWeaponGuid = 9;
+	map<uint32, uint32> AffixLevelMap = 12;
+	uint64 ItemGuid = 2;
+	uint64 TargetWeaponGuid = 9;
 }

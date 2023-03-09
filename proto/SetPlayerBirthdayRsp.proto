@@ -1,18 +1,18 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "Birthday.proto";
 
 message SetPlayerBirthdayRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 4016;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum SetPlayerBirthdayRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4016;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	Birthday birthday = 13;
-	int32 retcode = 7;
+	Birthday Birthday = 13;
+	int32 Retcode = 7;
 }

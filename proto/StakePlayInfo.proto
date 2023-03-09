@@ -1,9 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "HomeStakePlayRecord.proto";
 
 message StakePlayInfo {
-	repeated HomeStakePlayRecord recordList = 14;
+	repeated HomeStakePlayRecord RecordList = 14;
 }

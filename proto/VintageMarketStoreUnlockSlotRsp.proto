@@ -1,17 +1,18 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message VintageMarketStoreUnlockSlotRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 20112;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum LLKFACKMLJH {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 20112;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 storeId = 5;
-	int32 retcode = 8;
-	uint32 slotCount = 10;
+	uint32 StoreId = 5;
+	int32 Retcode = 8;
+	uint32 SlotCount = 10;
 }

@@ -1,9 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "RogueAvatarInfo.proto";
 
 message RogueShowAvatarTeamInfo {
-	repeated RogueAvatarInfo avatarList = 3;
+	repeated RogueAvatarInfo AvatarList = 3;
 }

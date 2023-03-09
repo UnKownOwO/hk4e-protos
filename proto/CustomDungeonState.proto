@@ -1,9 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 enum CustomDungeonState {
-  CUSTOM_DUNGEON_STATE_EDIT      = 0;
-  CUSTOM_DUNGEON_STATE_SELF_PASS = 1;
-  CUSTOM_DUNGEON_STATE_PUBLISHED = 2;
+	Edit = 0;
+	SelfPass = 1;
+	Published = 2;
 }

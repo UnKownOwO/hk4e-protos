@@ -1,19 +1,20 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message ExpeditionStartRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 2157;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum ExpeditionStartRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 2157;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	int32 retcode = 13;
-	uint32 Unk3300_AFGPGIIGAKA = 7;
-	uint32 Unk3300_AIEJKADFLKG = 9;
-	uint32 pathId = 4;
-	repeated uint32 avatarIdList = 12;
+	int32 Retcode = 13;
+	uint32 AssistUid = 7;
+	uint32 AssistAvatarId = 9;
+	uint32 PathId = 4;
+	repeated uint32 AvatarIdList = 12;
 }

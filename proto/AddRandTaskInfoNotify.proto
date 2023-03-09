@@ -1,18 +1,18 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
-import "Vector.proto";
+import "Rotation.proto";
 
 message AddRandTaskInfoNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 123;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum AddRandTaskInfoNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 123;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	Vector pos = 6;
-	uint32 randTaskId = 2;
+	Rotation Pos = 6;
+	uint32 RandTaskId = 2;
 }

@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+import "AttackResult.proto";
+
+message EvtHittingOtherInfo {
+	AttackResult AttackResult = 13;
+	uint32 PeerId = 3;
+}

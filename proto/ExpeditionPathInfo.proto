@@ -1,18 +1,18 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "ExpeditionState.proto";
 
 message ExpeditionPathInfo {
-	uint32 startTime = 15;
-	uint32 Unk3300_LFIFDGAGFDC = 7;
-	uint32 pathId = 11;
-	repeated uint32 avatarIdList = 2;
-	uint32 challengeId = 3;
-	ExpeditionState state = 9;
-	uint32 Unk3300_AIEJKADFLKG = 10;
-	uint32 Unk3300_LKAHOEBNBBI = 1;
-	uint32 Unk3300_AFGPGIIGAKA = 14;
-	float bonusProbability = 8;
+	uint32 StartTime = 15;
+	uint32 MarkId = 7;
+	uint32 PathId = 11;
+	repeated uint32 AvatarIdList = 2;
+	uint32 ChallengeId = 3;
+	ExpeditionState State = 9;
+	uint32 AssistAvatarId = 10;
+	uint32 AssistCostumeId = 1;
+	uint32 AssistUid = 14;
+	float BonusProbability = 8;
 }

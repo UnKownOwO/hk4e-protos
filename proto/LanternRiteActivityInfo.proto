@@ -1,16 +1,16 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "LanternRiteFireworksInfo.proto";
 import "LanternProjectionInfo.proto";
 import "SalvageStageInfo.proto";
 
 message LanternRiteActivityInfo {
-	LanternRiteFireworksInfo fireworksInfo = 6;
-	LanternProjectionInfo projectionInfo = 11;
-	bool leftMonsters = 9;
-	bool Unk3300_PDFJNCDGKGH = 3;
-	repeated SalvageStageInfo stageInfoList = 1;
-	bool Unk3300_DKBJLCIMBAL = 7;
+	LanternRiteFireworksInfo FireworksInfo = 6;
+	LanternProjectionInfo ProjectionInfo = 11;
+	bool IsContentClosed = 9;
+	bool IsTakenSkinReward = 3;
+	repeated SalvageStageInfo StageInfoList = 1;
+	bool IsMiniEldritchDungeonOpen = 7;
 }

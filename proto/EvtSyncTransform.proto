@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package Proto;
+
+import "Rotation.proto";
+
+message EvtSyncTransform {
+	uint32 EntityId = 10;
+	Rotation EntityRot = 5;
+	Rotation EntityPos = 9;
+}

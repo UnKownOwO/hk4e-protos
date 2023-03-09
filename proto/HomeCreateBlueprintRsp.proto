@@ -1,18 +1,18 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "HomeBlueprintSlotInfo.proto";
 
 message HomeCreateBlueprintRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 4765;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum FICBDNICILH {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4765;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	HomeBlueprintSlotInfo slotInfo = 4;
-	int32 retcode = 13;
+	HomeBlueprintSlotInfo SlotInfo = 4;
+	int32 Retcode = 13;
 }

@@ -1,19 +1,20 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message PlayerCookReq {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 175;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// 	IS_ALLOW_CLIENT = 1;
-	// }
+	enum PlayerCookReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 175;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
 
-	uint32 recipeId = 15;
-	uint32 assistAvatar = 6;
-	uint32 qteQuality = 13;
-	uint32 cookCount = 3;
+	uint32 RecipeId = 15;
+	uint32 AssistAvatar = 6;
+	uint32 QteQuality = 13;
+	uint32 CookCount = 3;
 }

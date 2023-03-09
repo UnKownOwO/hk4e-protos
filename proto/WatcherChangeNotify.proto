@@ -1,16 +1,17 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message WatcherChangeNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 2255;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum WatcherChangeNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 2255;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	repeated uint32 newWatcherList = 4;
-	repeated uint32 removedWatcherList = 3;
+	repeated uint32 NewWatcherList = 4;
+	repeated uint32 RemovedWatcherList = 3;
 }

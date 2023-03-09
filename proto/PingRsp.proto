@@ -1,17 +1,18 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message PingRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 74;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum PingRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 74;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 seq = 4;
-	int32 retcode = 11;
-	uint32 clientTime = 1;
+	uint32 Seq = 4;
+	int32 Retcode = 11;
+	uint32 ClientTime = 1;
 }

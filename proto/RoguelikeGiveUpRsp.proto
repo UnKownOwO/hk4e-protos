@@ -1,21 +1,21 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "RoguelikeDungeonSettleInfo.proto";
 
 message RoguelikeGiveUpRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 8799;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum RoguelikeGiveUpRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8799;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 stageId = 10;
-	int32 retcode = 14;
-	oneof info {
+	uint32 StageId = 10;
+	int32 Retcode = 14;
+	oneof RoguelikeGiveUpRsp_InfoOneofCase {
 		RoguelikeDungeonSettleInfo settle_info = 2;
 	}
 }

@@ -1,26 +1,16 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
-import "GCGEndReason.proto";
-import "GCGGameBusinessType.proto";
-import "ItemParam.proto";
 
 message GCGClientSettleReq {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 7773;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum PBAIAFJCCPL {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 7849;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
 
-	repeated uint32 forbidFinishChallengeList = 14;
-	GCGEndReason reason = 12;
-	bool isWin = 4;
-	repeated ItemParam rewardItemList = 9;
-	repeated uint32 adobcdcfbpn = 11;
-	uint32 winControllerId = 2;
-	uint32 gameId = 7;
-	GCGGameBusinessType businessType = 3;
 }

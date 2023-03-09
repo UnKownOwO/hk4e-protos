@@ -1,13 +1,13 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "PotionLevelData.proto";
 
 message PotionStageData {
-	repeated uint32 Unk3300_NLMEPPPMCKI = 9;
-	uint32 stageId = 14;
-	repeated uint32 Unk3300_BMEHJHFCPMA = 12;
-	repeated PotionLevelData levelList = 1;
-	bool isOpen = 15;
+	repeated uint32 CoolDownAvatarIdList = 9;
+	uint32 StageId = 14;
+	repeated uint32 CoolDownBuffIdList = 12;
+	repeated PotionLevelData LevelList = 1;
+	bool IsOpen = 15;
 }

@@ -1,10 +1,11 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message ActivityWatcherInfo {
-	uint32 curProgress = 8;
-	bool isTakenReward = 12;
-	uint32 totalProgress = 1;
-	uint32 watcherId = 10;
+	uint32 CurProgress = 8;
+	bool IsTakenReward = 12;
+	uint32 TotalProgress = 1;
+	uint32 WatcherId = 10;
 }

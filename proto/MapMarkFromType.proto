@@ -1,9 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 enum MapMarkFromType {
-  MAP_MARK_FROM_TYPE_NOE     = 0;
-  MAP_MARK_FROM_TYPE_MONSTER = 1;
-  MAP_MARK_FROM_TYPE_QUEST   = 2;
+	MapMarkFromTypeNone = 0;
+	MapMarkFromTypeMonster = 1;
+	MapMarkFromTypeQuest = 2;
 }

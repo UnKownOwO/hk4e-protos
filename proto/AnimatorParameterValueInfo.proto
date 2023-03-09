@@ -1,10 +1,11 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message AnimatorParameterValueInfo {
-	uint32 paraType = 1;
-	oneof para_val {
+	uint32 ParaType = 1;
+	oneof AnimatorParameterValueInfo_ParaValOneofCase {
 		int32 int_val = 2;
 		float float_val = 3;
 		bool bool_val = 4;

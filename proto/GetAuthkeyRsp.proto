@@ -1,20 +1,21 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message GetAuthkeyRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 1462;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum GetAuthkeyRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 1462;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	string gameBiz = 1;
-	uint32 signType = 3;
-	string authAppid = 11;
-	uint32 authkeyVer = 7;
-	int32 retcode = 14;
-	string authkey = 9;
+	string GameBiz = 1;
+	uint32 SignType = 3;
+	string AuthAppid = 11;
+	uint32 AuthkeyVer = 7;
+	int32 Retcode = 14;
+	string Authkey = 9;
 }

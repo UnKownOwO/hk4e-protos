@@ -1,18 +1,18 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
-import "BlossomChestInfo.proto";
+import "BlossomChest.proto";
 
 message BlossomChestInfoNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 870;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum BlossomChestInfoNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 870;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	BlossomChestInfo blossomChestInfo = 5;
-	uint32 entityId = 13;
+	BlossomChest BlossomChestInfo = 5;
+	uint32 EntityId = 13;
 }

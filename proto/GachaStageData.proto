@@ -1,9 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message GachaStageData {
-	map<uint32, uint32> targetNumMap = 11;
-	uint32 stageId = 15;
-	bool isOpen = 4;
+	map<uint32, uint32> TargetNumMap = 11;
+	uint32 StageId = 15;
+	bool IsOpen = 4;
 }

@@ -1,8 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message Birthday {
-	uint32 month = 1;
-	uint32 day = 2;
+	uint32 Month = 1;
+	uint32 Day = 2;
 }

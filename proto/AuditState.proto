@@ -1,9 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 enum AuditState {
-  AUDIT_NONE    = 0;
-  AUDIT_WAITING = 1;
-  AUDIT_FAILED  = 2;
+	AuditNone = 0;
+	AuditWaiting = 1;
+	AuditFailed = 2;
 }

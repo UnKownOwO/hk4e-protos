@@ -1,18 +1,18 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "AreaPlayType.proto";
 
 message AreaPlayInfoNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 3069;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum DOKMOHCABHF {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 3069;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 detailPlayType = 12;
-	AreaPlayType areaPlayType = 9;
+	uint32 DetailPlayType = 12;
+	AreaPlayType AreaPlayType = 9;
 }

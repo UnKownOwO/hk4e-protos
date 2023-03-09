@@ -1,16 +1,17 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message ChannelerSlabStageOneoffDungeonNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 8449;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum ChannelerSlabStageOneoffDungeonNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8449;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	bool isDone = 4;
-	uint32 stageId = 14;
+	bool IsDone = 4;
+	uint32 StageId = 14;
 }

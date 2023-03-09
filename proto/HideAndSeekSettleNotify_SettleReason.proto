@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package Proto;
+
+enum HideAndSeekSettleNotify_SettleReason {
+	TimeOut = 0;
+	SettlePlayEnd = 1;
+	SettlePlayerQuit = 2;
+}

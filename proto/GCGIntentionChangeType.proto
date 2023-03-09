@@ -1,8 +1,8 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 enum GCGIntentionChangeType {
-  GCG_INTENTION_CHANGE_NONE = 0;
-  GCG_INTENTION_CHANGE_RM   = 1;
+	GCGIntentionChangeNone = 0;
+	GCGIntentionChangeRm = 1;
 }

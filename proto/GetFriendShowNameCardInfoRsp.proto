@@ -1,17 +1,18 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message GetFriendShowNameCardInfoRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 4056;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum GetFriendShowNameCardInfoRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4056;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	int32 retcode = 3;
-	uint32 uid = 2;
-	repeated uint32 showNameCardIdList = 15;
+	int32 Retcode = 3;
+	uint32 Uid = 2;
+	repeated uint32 ShowNameCardIdList = 15;
 }

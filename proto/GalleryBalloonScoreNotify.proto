@@ -1,16 +1,17 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message GalleryBalloonScoreNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 5587;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum GalleryBalloonScoreNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 5587;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	map<uint32, uint32> uidScoreMap = 12;
-	uint32 galleryId = 2;
+	map<uint32, uint32> UidScoreMap = 12;
+	uint32 GalleryId = 2;
 }

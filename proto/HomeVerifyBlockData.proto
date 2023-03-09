@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message HomeVerifyBlockData {
+	uint32 BlockId = 14;
+	uint32 FurnitureCount = 13;
+}

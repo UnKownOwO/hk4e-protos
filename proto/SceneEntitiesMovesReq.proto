@@ -1,18 +1,18 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "EntityMoveInfo.proto";
 
 message SceneEntitiesMovesReq {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 241;
-	// 	ENET_CHANNEL_ID = 1;
-	// 	ENET_IS_RELIABLE = 0;
-	// 	IS_ALLOW_CLIENT = 1;
-	// }
+	enum SceneEntitiesMovesReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 241;
+		EnetChannelId = 1;
+		EnetIsReliable = 0;
+		IsAllowClient = 1;
+	}
 
-	repeated EntityMoveInfo entityMoveInfoList = 8;
+	repeated EntityMoveInfo EntityMoveInfoList = 8;
 }

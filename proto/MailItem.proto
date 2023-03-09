@@ -1,11 +1,11 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "EquipParam.proto";
 import "MaterialDeleteInfo.proto";
 
 message MailItem {
-	EquipParam equipParam = 1;
-	MaterialDeleteInfo deleteInfo = 2;
+	EquipParam EquipParam = 1;
+	MaterialDeleteInfo DeleteInfo = 2;
 }

@@ -1,9 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "GravenInnocenceRaceLevelInfo.proto";
 
 message GravenInnocenceRaceInfo {
-	repeated GravenInnocenceRaceLevelInfo levelInfoList = 7;
+	repeated GravenInnocenceRaceLevelInfo LevelInfoList = 7;
 }

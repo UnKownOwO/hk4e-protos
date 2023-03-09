@@ -1,9 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message BrickBreakerActivityStageInfo {
-	uint32 stageId = 1;
-	bool Unk3300_FFKIEDNGNGK = 12;
-	bool Unk3300_ALOGIKNHEIM = 5;
+	uint32 StageId = 1;
+	bool IsDungeonLevelUnlock = 12;
+	bool IsWorldLevelUnlock = 5;
 }

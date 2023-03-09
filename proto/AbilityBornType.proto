@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package Proto;
+
+import "Rotation.proto";
+
+message AbilityBornType {
+	Rotation Pos = 7;
+	Rotation MoveDir = 12;
+	Rotation Rot = 9;
+}

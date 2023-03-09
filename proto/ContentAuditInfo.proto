@@ -1,13 +1,13 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "AuditState.proto";
 
 message ContentAuditInfo {
-	bool isOpen = 1;
-	string content = 2;
-	uint32 submitCount = 3;
-	AuditState auditState = 4;
-	uint32 submitLimit = 5;
+	bool IsOpen = 1;
+	string Content = 2;
+	uint32 SubmitCount = 3;
+	AuditState AuditState = 4;
+	uint32 SubmitLimit = 5;
 }

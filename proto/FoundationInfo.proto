@@ -1,12 +1,12 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "FoundationStatus.proto";
 
 message FoundationInfo {
-	FoundationStatus status = 1;
-	repeated uint32 uidList = 2;
-	uint32 currentBuildingId = 3;
-	uint32 lockedByUid = 4;
+	FoundationStatus Status = 1;
+	repeated uint32 UidList = 2;
+	uint32 CurrentBuildingId = 3;
+	uint32 LockedByUid = 4;
 }

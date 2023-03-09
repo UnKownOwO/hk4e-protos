@@ -1,9 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message SyncFinishGame {
-	bool isWin = 1;
-	uint64 serverGameTime = 5;
-	bool chbjiolfkil = 8;
+	bool IsWin = 1;
+	uint64 ServerGameTime = 5;
+	bool IsStopGallery = 8;
 }

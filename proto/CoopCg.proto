@@ -1,8 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message CoopCg {
-	bool isUnlock = 15;
-	uint32 id = 5;
+	bool IsUnlock = 15;
+	uint32 Id = 5;
 }

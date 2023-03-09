@@ -1,8 +1,0 @@
-syntax = "proto3";
-
-option go_package = "./;proto";
-
-message HLNDKJKHGMG {
-	repeated uint32 lakkcmpceee = 4;
-	repeated uint32 cbdijkdcnie = 12;
-}

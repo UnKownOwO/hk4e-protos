@@ -1,13 +1,13 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "CoinCollectTeamAvatarInfo.proto";
 
 message CoinCollectPlayerInfo {
-	repeated CoinCollectTeamAvatarInfo avatarInfoList = 14;
-	bool ddbhiknpgnp = 8;
-	uint32 chooseSkillNo = 10;
-	string playerName = 4;
-	uint32 playerUid = 5;
+	repeated CoinCollectTeamAvatarInfo AvatarInfoList = 14;
+	bool IsPrepare = 8;
+	uint32 ChooseSkillNo = 10;
+	string PlayerName = 4;
+	uint32 PlayerUid = 5;
 }

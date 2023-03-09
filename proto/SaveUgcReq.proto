@@ -1,22 +1,27 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "UgcType.proto";
 import "MusicRecord.proto";
+import "UgcMusicBriefInfo.proto";
 
 message SaveUgcReq {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 6331;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// 	IS_ALLOW_CLIENT = 1;
-	// }
+	enum SaveUgcReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 6331;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
 
-	UgcType ugcType = 1;
-	oneof record {
+	UgcType UgcType = 1;
+	oneof SaveUgcReq_RecordOneofCase {
 		MusicRecord music_record = 15;
 	}
+
+  oneof SaveUgcReq_Brief {
+  	UgcMusicBriefInfo MusicBriefInfo = 160;
+  }
 }

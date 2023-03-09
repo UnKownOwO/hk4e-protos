@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package Proto;
+
+import "Rotation.proto";
+
+message HomeFurnitureArrangementMuipData {
+	uint32 FurnitureId = 1;
+	Rotation SpawnPos = 2;
+	Rotation SpawnRot = 3;
+}

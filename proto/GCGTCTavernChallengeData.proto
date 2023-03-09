@@ -1,8 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message GCGTCTavernChallengeData {
-	repeated uint32 lidokiohkmh = 13;
-	uint32 caaaccpgkff = 1;
+	repeated uint32 UnlockLevelIdList = 13;
+	uint32 CharacterId = 1;
 }

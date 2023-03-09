@@ -1,13 +1,13 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "ProfilePicture.proto";
 
 message GCGControllerShowInfo {
-	string onlineId = 5;
-	uint32 controllerId = 6;
-	string nickName = 1;
-	ProfilePicture profilePicture = 4;
-	string psnId = 10;
+	string OnlineId = 5;
+	uint32 ControllerId = 6;
+	string NickName = 1;
+	ProfilePicture ProfilePicture = 4;
+	string PsnId = 10;
 }

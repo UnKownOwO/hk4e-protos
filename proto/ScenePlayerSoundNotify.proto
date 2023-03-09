@@ -1,20 +1,20 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
-import "Vector.proto";
-import "PlaySoundType.proto";
+import "Rotation.proto";
+import "ScenePlayerSoundNotify_PlaySoundType.proto";
 
 message ScenePlayerSoundNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 291;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum ScenePlayerSoundNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 291;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	string soundName = 11;
-	Vector playPos = 6;
-	PlaySoundType playType = 10;
+	string SoundName = 11;
+	Rotation PlayPos = 6;
+	ScenePlayerSoundNotify_PlaySoundType PlayType = 10;
 }

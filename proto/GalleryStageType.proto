@@ -1,9 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 enum GalleryStageType {
-  GALLERY_NONE     = 0;
-  GALLERY_PRESTART = 1;
-  GALLERY_START    = 2;
+	GalleryNone = 0;
+	GalleryPrestart = 1;
+	GalleryStart = 2;
 }

@@ -1,12 +1,12 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
-import "Vector.proto";
+import "Rotation.proto";
 
 message ParkourLevelInfo {
-	uint32 openTime = 10;
-	Vector pos = 5;
-	uint32 bestRecord = 1;
-	bool isOpen = 12;
+	uint32 OpenTime = 10;
+	Rotation Pos = 5;
+	uint32 BestRecord = 1;
+	bool IsOpen = 12;
 }

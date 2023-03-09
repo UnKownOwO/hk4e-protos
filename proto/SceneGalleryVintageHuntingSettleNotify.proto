@@ -1,26 +1,26 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "FirstStageInfo.proto";
 import "SecondStageInfo.proto";
 import "ThirdStageInfo.proto";
 
 message SceneGalleryVintageHuntingSettleNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 21852;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum MPFAKBDJLDA {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 21852;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	bool hasNewWatcher = 1;
-	uint32 stageId = 2;
-	uint32 Unk3300_KOAKHMLFPGM = 9;
-	bool isNewRecord = 6;
-	uint32 Unk3300_EHGDIKOGLKL = 5;
-	oneof info {
+	bool HasNewWatcher = 1;
+	uint32 StageId = 2;
+	uint32 TotalWatcherNum = 9;
+	bool IsNewRecord = 6;
+	uint32 FinishedWatcherNum = 5;
+	oneof Info {
 		FirstStageInfo first_stage_info = 15;
 		SecondStageInfo second_stage_info = 8;
 		ThirdStageInfo third_stage_info = 4;

@@ -1,13 +1,13 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "GCGReason.proto";
 
 message GCGMsgModifyAdd {
-	uint32 pos = 11;
-	uint32 ownerCardGuid = 10;
-	uint32 controllerId = 7;
-	GCGReason reason = 14;
-	repeated uint32 cardGuidList = 4;
+	uint32 Pos = 11;
+	uint32 OwnerCardGuid = 10;
+	uint32 ControllerId = 7;
+	GCGReason Reason = 14;
+	repeated uint32 CardGuidList = 4;
 }

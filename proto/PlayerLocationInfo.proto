@@ -1,11 +1,11 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
-import "Vector.proto";
+import "Rotation.proto";
 
 message PlayerLocationInfo {
-	Vector rot = 7;
-	Vector pos = 4;
-	uint32 uid = 9;
+	Rotation Rot = 7;
+	Rotation Pos = 4;
+	uint32 Uid = 9;
 }

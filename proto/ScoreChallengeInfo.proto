@@ -1,8 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message ScoreChallengeInfo {
-	uint32 oichdaoampp = 13;
-	uint32 maxScore = 4;
+	uint32 SalvageChallengeId = 13;
+	uint32 MaxScore = 4;
 }

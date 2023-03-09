@@ -1,19 +1,19 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "AbilitySyncStateInfo.proto";
 import "EntityRendererChangedInfo.proto";
 import "SceneEntityAiInfo.proto";
-import "Vector.proto";
+import "Rotation.proto";
 import "EntityClientExtraInfo.proto";
 import "AnimatorParameterValueInfoPair.proto";
 
 message EntityAuthorityInfo {
-	AbilitySyncStateInfo abilityInfo = 1;
-	EntityRendererChangedInfo rendererChangedInfo = 2;
-	SceneEntityAiInfo aiInfo = 3;
-	Vector bornPos = 4;
-	repeated AnimatorParameterValueInfoPair poseParaList = 5;
-	EntityClientExtraInfo clientExtraInfo = 6;
+	AbilitySyncStateInfo AbilityInfo = 1;
+	EntityRendererChangedInfo RendererChangedInfo = 2;
+	SceneEntityAiInfo AiInfo = 3;
+	Rotation BornPos = 4;
+	repeated AnimatorParameterValueInfoPair PoseParaList = 5;
+	EntityClientExtraInfo ClientExtraInfo = 6;
 }

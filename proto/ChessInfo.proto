@@ -1,15 +1,16 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message ChessInfo {
-	uint32 punishOverTime = 4;
-	uint32 contentCloseTime = 10;
-	uint32 playerInfoMap = 5;
-	uint32 exp = 11;
-	bool escapedMonsters = 6;
-	uint32 selectedCardInfoList = 8;
-	uint32 level = 14;
-	repeated uint32 totalRound = 7;
-	bool leftMonsters = 15;
+	uint32 PunishOverTime = 4;
+	uint32 ContentCloseTime = 10;
+	uint32 AvailableExp = 5;
+	uint32 Exp = 11;
+	bool IsTeachDungeonFinished = 6;
+	uint32 ObtainedExp = 8;
+	uint32 Level = 14;
+	repeated uint32 FinishedMapIdList = 7;
+	bool IsContentClosed = 15;
 }

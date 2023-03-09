@@ -1,10 +1,11 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message LuminanceStoneChallengeInfo {
-	uint32 killSpecialMonsterCount = 7;
-	uint32 score = 15;
-	uint32 killMonsterCount = 4;
-	uint32 cleanMudCount = 13;
+	uint32 KillSpecialMonsterCount = 7;
+	uint32 Score = 15;
+	uint32 KillMonsterCount = 4;
+	uint32 CleanMudCount = 13;
 }

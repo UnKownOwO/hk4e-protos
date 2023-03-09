@@ -1,14 +1,14 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
-import "Vector.proto";
+import "Rotation.proto";
 import "HomeMarkPointFurnitureData.proto";
 
 message HomeMarkPointSceneData {
-	repeated HomeMarkPointFurnitureData furnitureList = 14;
-	uint32 moduleId = 5;
-	uint32 sceneId = 15;
-	Vector safePointPos = 10;
-	Vector teapotSpiritPos = 8;
+	repeated HomeMarkPointFurnitureData FurnitureList = 14;
+	uint32 ModuleId = 5;
+	uint32 SceneId = 15;
+	Rotation SafePointPos = 10;
+	Rotation TeapotSpiritPos = 8;
 }

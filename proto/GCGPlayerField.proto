@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "GCGZone.proto";
 import "GCGDiceSideType.proto";
@@ -8,21 +8,21 @@ import "GCGPVEIntention.proto";
 import "GCGWaitingCharacter.proto";
 
 message GCGPlayerField {
-	GCGZone Unk3300_EIHOMDLENMK = 4;
-	uint32 Unk3300_FDFPHNDOJML = 12;
-	repeated GCGDiceSideType diceSideList = 7;
-	uint32 Unk3300_GGHKFFADEAL = 181;
-	repeated GCGPVEIntention intentionList = 1273;
-	uint32 Unk3300_GLNIFLOKBPM = 14;
-	uint32 Unk3300_PBECINKKHND = 1;
-	uint32 Unk3300_IKJMGAHCFPM = 6;
-	uint32 controllerId = 3;
-	map<uint32, GCGZone> modifyZoneMap = 11;
-	GCGZone Unk3300_IPLMHKCNDLE = 10;
-	uint32 deckCardNum = 15;
-	GCGZone Unk3300_EFNAEFBECHD = 5;
-	GCGZone Unk3300_INDJNJJJNKL = 8;
-	GCGZone Unk3300_AOPJIOHMPOF = 9;
-	repeated GCGWaitingCharacter waitingList = 2;
-	bool isPassed = 13;
+	GCGZone SummonZone = 4;
+	uint32 DiceCount = 12;
+	repeated GCGDiceSideType DiceSideList = 7;
+	uint32 CurWaitingIndex = 181;
+	repeated GCGPVEIntention IntentionList = 1273;
+	uint32 CardBackShowId = 14;
+	uint32 FieldShowId = 1;
+	uint32 OnStageCharacterGuid = 6;
+	uint32 ControllerId = 3;
+	map<uint32, GCGZone> ModifyZoneMap = 11;
+	GCGZone OnStageZone = 10;
+	uint32 DeckCardNum = 15;
+	GCGZone AssistZone = 5;
+	GCGZone CharacterZone = 8;
+	GCGZone HandZone = 9;
+	repeated GCGWaitingCharacter WaitingList = 2;
+	bool IsPassed = 13;
 }

@@ -1,16 +1,17 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message CoinCollectCheckDoubleStartPlayRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 24464;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum FOBGPGMPJMO {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 24464;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	int32 retcode = 11;
-	uint32 levelId = 8;
+	int32 Retcode = 11;
+	uint32 LevelId = 8;
 }

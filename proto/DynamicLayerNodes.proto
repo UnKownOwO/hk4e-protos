@@ -1,10 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "DynamicSVONode.proto";
 
 message DynamicLayerNodes {
-	repeated DynamicSVONode nodes = 8;
-	int32 level = 12;
+	repeated DynamicSVONode Nodes = 8;
+	int32 Level = 12;
 }

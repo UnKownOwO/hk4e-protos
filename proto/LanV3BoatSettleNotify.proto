@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+package Proto;
+
+import "ExhibitionDisplayInfo.proto";
+import "LanV3BoatSettleInfo.proto";
+
+message LanV3BoatSettleNotify {
+	enum BMIDNGEDLLF {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 6566;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	repeated ExhibitionDisplayInfo ScoreList = 14;
+	uint32 Duration = 10;
+	uint32 BeginTime = 11;
+	uint32 StageType = 5;
+	repeated uint32 WinnerUidList = 9;
+	uint32 PlayIndex = 12;
+	bool IsSingle = 13;
+	repeated LanV3BoatSettleInfo SettleInfoList = 7;
+	bool IsGallerySucc = 3;
+}

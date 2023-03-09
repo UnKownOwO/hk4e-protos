@@ -1,9 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message SpiceStageData {
-	bool isOpen = 10;
-	uint32 successTimes = 3;
-	uint32 stageId = 9;
+	bool IsOpen = 10;
+	uint32 SuccessTimes = 3;
+	uint32 StageId = 9;
 }

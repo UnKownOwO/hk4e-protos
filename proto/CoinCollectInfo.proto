@@ -1,8 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message CoinCollectInfo {
-	uint32 Unk3300_CPLDPCMBHOE = 11;
-	uint32 Unk3300_DKBJMLJGLIB = 9;
+	uint32 CoinTotalNum = 11;
+	uint32 CoinCollectNum = 9;
 }

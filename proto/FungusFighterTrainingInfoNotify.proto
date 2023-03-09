@@ -1,21 +1,22 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message FungusFighterTrainingInfoNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 5545;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum JBHPHCENNEO {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 5545;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 Unk3300_EDHANEGNMJM = 15;
-	uint32 Unk3300_IOEELCAMDCK = 14;
-	uint32 Unk3300_EKAMCPNGCGH = 1;
-	uint32 Unk3300_GMLIPFDMDOG = 7;
-	uint32 maxMonsterCount = 3;
-	uint32 buffId = 6;
-	uint32 Unk3300_HGPGNCMNDJN = 13;
+	uint32 BuffLastTime = 15;
+	uint32 MaxSkillCount = 14;
+	uint32 KilledMonsterCount = 1;
+	uint32 RestSkillCount = 7;
+	uint32 MaxMonsterCount = 3;
+	uint32 BuffId = 6;
+	uint32 BuffStartTime = 13;
 }

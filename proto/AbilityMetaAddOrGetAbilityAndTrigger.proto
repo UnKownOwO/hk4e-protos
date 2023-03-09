@@ -1,11 +1,11 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "AbilityString.proto";
 
 message AbilityMetaAddOrGetAbilityAndTrigger {
-	AbilityString abilityOverride = 4;
-	float triggerArgument = 15;
-	AbilityString abilityName = 6;
+	AbilityString AbilityOverride = 4;
+	float TriggerArgument = 15;
+	AbilityString AbilityName = 6;
 }

@@ -1,11 +1,12 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message HomeAvatarRewardEventInfo {
-	uint32 avatarId = 6;
-	uint32 randomPosition = 4;
-	uint32 eventId = 14;
-	uint32 guid = 5;
-	uint32 suiteId = 2;
+	uint32 AvatarId = 6;
+	uint32 RandomPosition = 4;
+	uint32 EventId = 14;
+	uint32 Guid = 5;
+	uint32 SuiteId = 2;
 }

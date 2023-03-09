@@ -1,7 +1,8 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message LunchBoxData {
-	map<uint32, uint32> slotMaterialMap = 6;
+	map<uint32, uint32> SlotMaterialMap = 6;
 }

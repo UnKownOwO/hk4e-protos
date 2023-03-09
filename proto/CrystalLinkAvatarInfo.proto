@@ -1,8 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message CrystalLinkAvatarInfo {
-	bool isTrial = 9;
-	uint64 avatarId = 7;
+	bool IsTrial = 9;
+	uint64 AvatarId = 7;
 }

@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package Proto;
+
+import "Rotation.proto";
+
+message EvtLightCoreMove {
+	uint32 EntityId = 5;
+	float Acelerate = 2;
+	float MaxAbsorbTime = 14;
+	Rotation TargetPos = 12;
+	float Speed = 6;
+}

@@ -1,24 +1,24 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "MPLevelEntityInfo.proto";
 import "TeamEnterSceneInfo.proto";
 import "AvatarEnterSceneInfo.proto";
 
 message PlayerEnterSceneInfoNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 212;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// 	IS_ALLOW_CLIENT = 1;
-	// }
+	enum PlayerEnterSceneInfoNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 212;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
 
-	MPLevelEntityInfo mpLevelEntityInfo = 7;
-	TeamEnterSceneInfo teamEnterInfo = 5;
-	uint32 curAvatarEntityId = 8;
-	uint32 enterSceneToken = 13;
-	repeated AvatarEnterSceneInfo avatarEnterInfo = 12;
+	MPLevelEntityInfo MpLevelEntityInfo = 7;
+	TeamEnterSceneInfo TeamEnterInfo = 5;
+	uint32 CurAvatarEntityId = 8;
+	uint32 EnterSceneToken = 13;
+	repeated AvatarEnterSceneInfo AvatarEnterInfo = 12;
 }

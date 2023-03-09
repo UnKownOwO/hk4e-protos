@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package Proto;
+
+import "Rotation.proto";
+
+message EvtCompensatePosDiffInfo {
+	uint32 EntityId = 2;
+	Rotation CurPos = 7;
+	uint32 NormalizedTimeCompact = 15;
+	uint32 CurHash = 1;
+	int32 FaceAngleCompact = 10;
+}

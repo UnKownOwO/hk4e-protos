@@ -1,8 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message StrengthenPointData {
-	uint32 Unk3300_NNKPOLLBLDO = 8;
-	uint32 Unk3300_HIKDEKIPCPB = 3;
+	uint32 BasePoint = 8;
+	uint32 CurPoint = 3;
 }

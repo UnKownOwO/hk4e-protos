@@ -1,9 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "GravenInnocenceCampStageInfo.proto";
 
 message GravenInnocenceCampInfo {
-	repeated GravenInnocenceCampStageInfo stageInfoList = 4;
+	repeated GravenInnocenceCampStageInfo StageInfoList = 4;
 }

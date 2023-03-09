@@ -1,8 +1,8 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 enum FriendOnlineState {
-  FREIEND_DISCONNECT = 0;
-  FRIEND_ONLINE      = 1;
+	FreiendDisconnect = 0;
+	FriendOnline = 1;
 }

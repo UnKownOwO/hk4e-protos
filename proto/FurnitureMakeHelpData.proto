@@ -1,8 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message FurnitureMakeHelpData {
-	uint32 times = 2;
-	uint32 uid = 6;
+	uint32 Times = 2;
+	uint32 Uid = 6;
 }

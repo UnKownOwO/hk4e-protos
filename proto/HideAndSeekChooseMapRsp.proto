@@ -1,16 +1,17 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message HideAndSeekChooseMapRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 8321;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum BLGFBBFCKJP {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8321;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	int32 retcode = 3;
-	repeated uint32 mapList = 5;
+	int32 Retcode = 3;
+	repeated uint32 MapList = 5;
 }

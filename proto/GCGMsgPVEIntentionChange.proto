@@ -1,11 +1,11 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "GCGIntentionChangeType.proto";
 import "GCGMsgPVEIntention.proto";
 
 message GCGMsgPVEIntentionChange {
-	GCGIntentionChangeType changeType = 6;
-	repeated GCGMsgPVEIntention changeIntentionList = 2;
+	GCGIntentionChangeType ChangeType = 6;
+	repeated GCGMsgPVEIntention ChangeIntentionList = 2;
 }

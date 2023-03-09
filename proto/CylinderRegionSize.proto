@@ -1,8 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message CylinderRegionSize {
-	float height = 4;
-	float radius = 14;
+	float Height = 4;
+	float Radius = 14;
 }

@@ -1,21 +1,21 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "SumoTeamData.proto";
 
 message SumoSelectTeamAndEnterDungeonRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 8877;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum SumoSelectTeamAndEnterDungeonRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8877;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	int32 retcode = 5;
-	uint32 difficultyId = 14;
-	uint32 activityId = 13;
-	repeated SumoTeamData teamList = 2;
-	uint32 stageId = 10;
+	int32 Retcode = 5;
+	uint32 DifficultyId = 14;
+	uint32 ActivityId = 13;
+	repeated SumoTeamData TeamList = 2;
+	uint32 StageId = 10;
 }

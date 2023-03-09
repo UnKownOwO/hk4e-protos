@@ -1,19 +1,20 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message LunaRiteTakeSacrificeRewardRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 8806;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum LunaRiteTakeSacrificeRewardRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8806;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	int32 retcode = 15;
-	uint32 sacrificeRewardIndex = 13;
-	uint32 areaId = 8;
-	uint32 index = 2;
-	repeated uint32 sacrificeRewardList = 14;
+	int32 Retcode = 15;
+	uint32 SacrificeRewardIndex = 13;
+	uint32 AreaId = 8;
+	uint32 Index = 2;
+	repeated uint32 SacrificeRewardList = 14;
 }

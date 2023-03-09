@@ -1,11 +1,11 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "OnlinePlayerInfo.proto";
 import "ExhibitionDisplayInfo.proto";
 
 message IslandPartyGallerySettleInfo {
-	OnlinePlayerInfo playerInfo = 3;
-	repeated ExhibitionDisplayInfo cardList = 9;
+	OnlinePlayerInfo PlayerInfo = 3;
+	repeated ExhibitionDisplayInfo CardList = 9;
 }

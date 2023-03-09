@@ -1,18 +1,18 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "EntityAbilityInvokeEntry.proto";
 
 message ClientAbilitiesInitFinishCombineNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 1180;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// 	IS_ALLOW_CLIENT = 1;
-	// }
+	enum ClientAbilitiesInitFinishCombineNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 1180;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
 
-	repeated EntityAbilityInvokeEntry entityInvokeList = 4;
+	repeated EntityAbilityInvokeEntry EntityInvokeList = 4;
 }

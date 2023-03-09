@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+import "Rotation.proto";
+
+message AbilityActionCreateTile {
+	Rotation Pos = 2;
+	Rotation Rot = 7;
+}

@@ -1,20 +1,20 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "RogueEliteCellDifficultyType.proto";
 
 message StartRogueEliteCellChallengeReq {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 8981;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// 	IS_ALLOW_CLIENT = 1;
-	// }
+	enum StartRogueEliteCellChallengeReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8981;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
 
-	uint32 cellId = 12;
-	RogueEliteCellDifficultyType difficulty = 7;
-	uint32 dungeonId = 2;
+	uint32 CellId = 12;
+	RogueEliteCellDifficultyType Difficulty = 7;
+	uint32 DungeonId = 2;
 }

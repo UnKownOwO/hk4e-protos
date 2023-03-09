@@ -1,16 +1,17 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message MichiaeMatsuriRemoveChallengeMarkNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 8168;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum MichiaeMatsuriRemoveChallengeMarkNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8168;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 groupId = 12;
-	uint32 gadgetId = 8;
+	uint32 GroupId = 12;
+	uint32 GadgetId = 8;
 }

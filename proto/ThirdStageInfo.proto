@@ -1,8 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message ThirdStageInfo {
-	uint32 leftTime = 7;
-	bool isSuccess = 6;
+	uint32 LeftTime = 7;
+	bool IsSuccess = 6;
 }

@@ -1,16 +1,17 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message RemoveCustomDungeonRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 6202;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum RemoveCustomDungeonRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 6202;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint64 dungeonGuid = 9;
-	int32 retcode = 6;
+	uint64 DungeonGuid = 9;
+	int32 Retcode = 6;
 }

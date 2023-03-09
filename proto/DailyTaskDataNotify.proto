@@ -1,17 +1,18 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message DailyTaskDataNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 183;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum DailyTaskDataNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 183;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	bool isTakenScoreReward = 13;
-	uint32 finishedNum = 11;
-	uint32 scoreRewardId = 2;
+	bool IsTakenScoreReward = 13;
+	uint32 FinishedNum = 11;
+	uint32 ScoreRewardId = 2;
 }

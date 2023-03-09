@@ -1,18 +1,19 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message QuestUpdateQuestVarRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 446;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum QuestUpdateQuestVarRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 446;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	int32 retcode = 2;
-	uint32 parentQuestVarSeq = 15;
-	uint32 parentQuestId = 4;
-	uint32 questId = 9;
+	int32 Retcode = 2;
+	uint32 ParentQuestVarSeq = 15;
+	uint32 ParentQuestId = 4;
+	uint32 QuestId = 9;
 }

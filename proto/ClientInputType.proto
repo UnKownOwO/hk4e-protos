@@ -1,10 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 enum ClientInputType {
-  CLIENT_INPUT_NONE          = 0;
-  CLIENT_INPUT_KEYBORD_MOUSE = 1;
-  CLIENT_INPUT_GAMEPAD       = 2;
-  CLIENT_INPUT_TOUCH_PANEL   = 3;
+	ClientInputNone = 0;
+	ClientInputKeybordMouse = 1;
+	ClientInputGamepad = 2;
+	ClientInputTouchPanel = 3;
 }

@@ -1,9 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 enum ActivityPushTipsState {
-  ACTIVITY_PUSH_TIPS_STATE_NONE  = 0;
-  ACTIVITY_PUSH_TIPS_STATE_START = 1;
-  ACTIVITY_PUSH_TIPS_STATE_READ  = 2;
+  ActivityPushTipsStateNone = 0;
+  ActivityPushTipsStateStart = 1;
+  ActivityPushTipsStateRead = 2;
 }

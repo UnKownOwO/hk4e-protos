@@ -1,16 +1,17 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message WorktopOptionNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 898;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum WorktopOptionNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 898;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	repeated uint32 optionList = 9;
-	uint32 gadgetEntityId = 15;
+	repeated uint32 OptionList = 9;
+	uint32 GadgetEntityId = 15;
 }

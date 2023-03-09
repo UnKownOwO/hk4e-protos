@@ -1,17 +1,18 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message DungeonRestartInviteReplyRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 995;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum DungeonRestartInviteReplyRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 995;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	bool isTransPoint = 14;
-	bool isAccept = 9;
-	int32 retcode = 5;
+	bool IsTransPoint = 14;
+	bool IsAccept = 9;
+	int32 Retcode = 5;
 }

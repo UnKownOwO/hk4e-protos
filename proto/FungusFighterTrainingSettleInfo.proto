@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package Proto;
+
+import "GalleryStopReason.proto";
+
+message FungusFighterTrainingSettleInfo {
+	uint32 UsedTime = 6;
+	string Transaction = 5;
+	GalleryStopReason Reason = 13;
+}

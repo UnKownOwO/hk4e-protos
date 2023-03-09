@@ -1,10 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 enum SalesmanStatusType {
-  SALESMAN_STATUS_NONE      = 0;
-  SALESMAN_STATUS_UNSTARTED = 1;
-  SALESMAN_STATUS_STARTED   = 2;
-  SALESMAN_STATUS_DELIVERED = 3;
+	SalesmanStatusNone = 0;
+	SalesmanStatusUnstarted = 1;
+	SalesmanStatusStarted = 2;
+	SalesmanStatusDelivered = 3;
 }

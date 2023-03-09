@@ -1,17 +1,18 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message AvatarSkillMaxChargeCountNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 1080;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum AvatarSkillMaxChargeCountNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 1080;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 skillId = 3;
-	uint64 avatarGuid = 7;
-	uint32 maxChargeCount = 1;
+	uint32 SkillId = 3;
+	uint64 AvatarGuid = 7;
+	uint32 MaxChargeCount = 1;
 }

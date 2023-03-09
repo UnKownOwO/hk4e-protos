@@ -1,12 +1,12 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "MusicBriefInfo.proto";
 import "MusicGameRecord.proto";
 
 message MusicGameInfo {
-	repeated MusicBriefInfo Unk3300_AAGCDCOIPJM = 2;
-	repeated MusicBriefInfo Unk3300_OKHAACGHMAP = 6;
-	map<uint32, MusicGameRecord> musicGameRecordMap = 8;
+	repeated MusicBriefInfo UgcRecordList = 2;
+	repeated MusicBriefInfo UgcSearchList = 6;
+	map<uint32, MusicGameRecord> MusicGameRecordMap = 8;
 }

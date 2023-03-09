@@ -1,17 +1,18 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message BigTalentPointConvertReq {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 1020;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// 	IS_ALLOW_CLIENT = 1;
-	// }
+	enum BigTalentPointConvertReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 1020;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
 
-	repeated uint64 itemGuidList = 5;
-	uint64 avatarGuid = 3;
+	repeated uint64 ItemGuidList = 5;
+	uint64 AvatarGuid = 3;
 }

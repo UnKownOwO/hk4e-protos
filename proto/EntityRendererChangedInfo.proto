@@ -1,9 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message EntityRendererChangedInfo {
-	map<string, uint32> changedRenderers = 1;
-	uint32 visibilityCount = 2;
-	bool isCached = 3;
+	map<string, uint32> ChangedRenderers = 1;
+	uint32 VisibilityCount = 2;
+	bool IsCached = 3;
 }

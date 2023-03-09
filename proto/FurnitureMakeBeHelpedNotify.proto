@@ -1,19 +1,19 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "FurnitureMakeSlot.proto";
 import "FurnitureMakeBeHelpedData.proto";
 
 message FurnitureMakeBeHelpedNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 4522;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum FurnitureMakeBeHelpedNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4522;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	FurnitureMakeSlot furnitureMakeSlot = 2;
-	FurnitureMakeBeHelpedData furnitureMakeHelpedData = 12;
+	FurnitureMakeSlot FurnitureMakeSlot = 2;
+	FurnitureMakeBeHelpedData FurnitureMakeHelpedData = 12;
 }

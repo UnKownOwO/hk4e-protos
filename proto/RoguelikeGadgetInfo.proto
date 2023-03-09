@@ -1,10 +1,11 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message RoguelikeGadgetInfo {
-	uint32 cellConfigId = 1;
-	uint32 cellType = 2;
-	uint32 cellState = 3;
-	uint32 cellId = 4;
+	uint32 CellConfigId = 1;
+	uint32 CellType = 2;
+	uint32 CellState = 3;
+	uint32 CellId = 4;
 }

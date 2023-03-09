@@ -1,21 +1,15 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
-import "Vector.proto";
-import "MathQuaternion.proto";
+import "Rotation.proto";
+import "RotationSpeed.proto";
 import "ShapeType.proto";
 
 message ToTheMoonObstacleInfo {
-
-	enum ShapeType {
-    OBSTACLE_SHAPE_CAPSULE = 0;
-    OBSTACLE_SHAPE_BOX     = 1;
-    }
-
-	Vector center = 3;
-	int32 handleId = 5;
-	MathQuaternion rotation = 8;
-	Vector halfExtents = 9;
-	ShapeType type = 1;
+	Rotation Center = 3;
+	int32 HandleId = 5;
+	RotationSpeed Rotation = 8;
+	Rotation HalfExtents = 9;
+	ShapeType Type = 1;
 }

@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message AbilityActionHitEffect {
+	uint32 TriggerId = 14;
+}

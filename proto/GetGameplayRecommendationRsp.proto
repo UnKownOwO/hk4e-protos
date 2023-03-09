@@ -1,16 +1,25 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
+import "SkillResponse.proto";
+import "ReliquaryResponse.proto";
+import "ElementReliquaryResponse.proto";
 
 message GetGameplayRecommendationRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 144;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// 	IS_ALLOW_CLIENT = 1;
-	// }
+	enum GetGameplayRecommendationRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 196;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 givingId = 10;
+	uint32 AvatarId = 1;
+	int32 Retcode = 12;
+	oneof GetGameplayRecommendationRsp_DetailOneofCase {
+		SkillResponse skill_response = 223;
+		ReliquaryResponse reliquary_response = 1964;
+		ElementReliquaryResponse element_reliquary_response = 1912;
+	}
 }

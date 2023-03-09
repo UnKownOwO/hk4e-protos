@@ -1,8 +1,0 @@
-syntax = "proto3";
-
-option go_package = "./;proto";
-
-message KHIBIMBJOBK {
-	string createTime = 1;
-	string llbgpfoagln = 2;
-}

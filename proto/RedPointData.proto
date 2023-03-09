@@ -1,9 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message RedPointData {
-	uint32 redPointType = 1;
-	bool isShow = 2;
-	uint32 contentId = 3;
+	uint32 RedPointType = 1;
+	bool IsShow = 2;
+	uint32 ContentId = 3;
 }

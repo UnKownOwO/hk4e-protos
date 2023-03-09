@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message AbilityMetaSetModifierApplyEntityId {
+	uint32 ApplyEntityId = 6;
+}

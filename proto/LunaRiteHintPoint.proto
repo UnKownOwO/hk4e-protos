@@ -1,13 +1,13 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
-import "Vector.proto";
+import "Rotation.proto";
 import "LunaRiteHintPointType.proto";
 
 message LunaRiteHintPoint {
-	uint32 index = 4;
-	Vector pos = 11;
-	uint32 areaId = 2;
-	LunaRiteHintPointType type = 15;
+	uint32 Index = 4;
+	Rotation Pos = 11;
+	uint32 AreaId = 2;
+	LunaRiteHintPointType Type = 15;
 }

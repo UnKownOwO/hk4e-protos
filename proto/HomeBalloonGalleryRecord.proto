@@ -1,12 +1,12 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "HomeGroupPlayerInfo.proto";
 
 message HomeBalloonGalleryRecord {
-	uint32 hitCount = 2;
-	uint32 score = 12;
-	HomeGroupPlayerInfo playerInfo = 11;
-	uint32 timestamp = 13;
+	uint32 HitCount = 2;
+	uint32 Score = 12;
+	HomeGroupPlayerInfo PlayerInfo = 11;
+	uint32 Timestamp = 13;
 }

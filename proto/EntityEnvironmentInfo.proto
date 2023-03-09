@@ -1,8 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message EntityEnvironmentInfo {
-	uint32 jsonClimateType = 1;
-	uint32 climateAreaId = 2;
+	uint32 JsonClimateType = 1;
+	uint32 ClimateAreaId = 2;
 }

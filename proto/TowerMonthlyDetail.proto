@@ -1,11 +1,11 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "TowerMonthlyBrief.proto";
 import "TowerMonthlyCombatRecord.proto";
 
 message TowerMonthlyDetail {
-	TowerMonthlyBrief monthlyBrief = 5;
-	TowerMonthlyCombatRecord monthlyCombatRecord = 1;
+	TowerMonthlyBrief MonthlyBrief = 5;
+	TowerMonthlyCombatRecord MonthlyCombatRecord = 1;
 }

@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "BattlePassCycle.proto";
 import "BattlePassUnlockStatus.proto";
@@ -8,17 +8,17 @@ import "BattlePassProduct.proto";
 import "BattlePassRewardTag.proto";
 
 message BattlePassSchedule {
-	uint32 scheduleId = 11;
-	uint32 level = 10;
-	uint32 point = 7;
-	BattlePassCycle curCycle = 5;
-	uint32 beginTime = 8;
-	uint32 paidPlatformFlags = 2;
-	uint32 endTime = 14;
-	bool isExtraPaidRewardTaken = 12;
-	repeated BattlePassRewardTag rewardTakenList = 3;
-	uint32 curCyclePoints = 9;
-	bool isViewed = 4;
-	BattlePassUnlockStatus unlockStatus = 6;
-	BattlePassProduct productInfo = 15;
+	uint32 ScheduleId = 11;
+	uint32 Level = 10;
+	uint32 Point = 7;
+	BattlePassCycle CurCycle = 5;
+	uint32 BeginTime = 8;
+	uint32 PaidPlatformFlags = 2;
+	uint32 EndTime = 14;
+	bool IsExtraPaidRewardTaken = 12;
+	repeated BattlePassRewardTag RewardTakenList = 3;
+	uint32 CurCyclePoints = 9;
+	bool IsViewed = 4;
+	BattlePassUnlockStatus UnlockStatus = 6;
+	BattlePassProduct ProductInfo = 15;
 }

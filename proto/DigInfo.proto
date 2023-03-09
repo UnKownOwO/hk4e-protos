@@ -1,11 +1,11 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "DigMarkPoint.proto";
 
 message DigInfo {
-	repeated uint32 stageIdList = 14;
-	repeated DigMarkPoint digMarkPointList = 2;
-	uint32 stageId = 10;
+	repeated uint32 StageIdList = 14;
+	repeated DigMarkPoint DigMarkPointList = 2;
+	uint32 StageId = 10;
 }

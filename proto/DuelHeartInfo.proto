@@ -1,7 +1,8 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message DuelHeartInfo {
-	uint32 difficulty = 3;
+	uint32 Difficulty = 3;
 }

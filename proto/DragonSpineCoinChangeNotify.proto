@@ -1,18 +1,19 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message DragonSpineCoinChangeNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 2067;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum DragonSpineCoinChangeNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 2067;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 Unk3300_FOHJDGCAKEK = 7;
-	uint32 scheduleId = 14;
-	uint32 Unk3300_IMLKIJAOADF = 1;
-	uint32 Unk3300_NEOCMGJCEOJ = 5;
+	uint32 ShimmeringEssence = 7;
+	uint32 ScheduleId = 14;
+	uint32 WondrousEssence = 1;
+	uint32 WarmEssence = 5;
 }

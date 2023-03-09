@@ -1,18 +1,18 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "OnlinePlayerInfo.proto";
 import "ExhibitionDisplayInfo.proto";
 
 message BounceConjuringGallerySettleInfo {
-	uint32 Unk3300_NKGFKLGDFAC = 8;
-	float damage = 5;
-	uint32 Unk3300_PELHBJDMKAE = 9;
-	uint32 score = 7;
-	OnlinePlayerInfo playerInfo = 11;
-	repeated ExhibitionDisplayInfo cardList = 15;
-	uint32 Unk3300_CNGOBOFDEOE = 2;
-	map<uint32, uint32> gadgetCountMap = 3;
-	uint32 Unk3300_BJHCDKNFDFN = 4;
+	uint32 NormalHitCount = 8;
+	float Damage = 5;
+	uint32 FeverCount = 9;
+	uint32 Score = 7;
+	OnlinePlayerInfo PlayerInfo = 11;
+	repeated ExhibitionDisplayInfo CardList = 15;
+	uint32 PerfectHitCount = 2;
+	map<uint32, uint32> GadgetCountMap = 3;
+	uint32 DestroyedMachineCount = 4;
 }

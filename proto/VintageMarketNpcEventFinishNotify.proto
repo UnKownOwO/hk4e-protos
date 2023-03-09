@@ -1,17 +1,18 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message VintageMarketNpcEventFinishNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 21065;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum NLEDGJEHOFD {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 21065;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	repeated uint32 unlockStrategyList = 15;
-	uint32 coinA = 12;
-	uint32 coinC = 8;
+	repeated uint32 UnlockStrategyList = 15;
+	uint32 CoinA = 12;
+	uint32 CoinC = 8;
 }

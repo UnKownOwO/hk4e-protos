@@ -1,19 +1,20 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message InstableSprayLevelFinishNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 24172;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum EOIABCFNAIK {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 24172;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	bool Unk3300_DHKHBKLBIPA = 14;
-	uint32 round = 2;
-	uint32 stageId = 11;
-	uint32 levelId = 9;
-	bool Unk3300_AMEBAPIPLGL = 6;
+	bool IsSkipBlackScreen = 14;
+	uint32 Round = 2;
+	uint32 StageId = 11;
+	uint32 LevelId = 9;
+	bool IsNeedSwitchTeam = 6;
 }

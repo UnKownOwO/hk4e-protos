@@ -1,20 +1,21 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message WeaponAwakenRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 685;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum WeaponAwakenRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 685;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	int32 retcode = 11;
-	uint32 targetWeaponAwakenLevel = 3;
-	uint64 targetWeaponGuid = 2;
-	uint64 avatarGuid = 5;
-	map<uint32, uint32> oldAffixLevelMap = 6;
-	map<uint32, uint32> curAffixLevelMap = 12;
+	int32 Retcode = 11;
+	uint32 TargetWeaponAwakenLevel = 3;
+	uint64 TargetWeaponGuid = 2;
+	uint64 AvatarGuid = 5;
+	map<uint32, uint32> OldAffixLevelMap = 6;
+	map<uint32, uint32> CurAffixLevelMap = 12;
 }

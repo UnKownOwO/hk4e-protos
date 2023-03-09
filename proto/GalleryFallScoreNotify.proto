@@ -1,18 +1,18 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "FallPlayerBrief.proto";
 
 message GalleryFallScoreNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 5574;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum GalleryFallScoreNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 5574;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 galleryId = 8;
-	map<uint32, FallPlayerBrief> uidBriefMap = 4;
+	uint32 GalleryId = 8;
+	map<uint32, FallPlayerBrief> UidBriefMap = 4;
 }

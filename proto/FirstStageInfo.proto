@@ -1,10 +1,11 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message FirstStageInfo {
-	uint32 score = 13;
-	uint32 Unk3300_HIKADHBLPEB = 8;
-	uint32 Unk3300_IPAJLKOBDKC = 3;
-	uint32 Unk3300_NILGNHOPGLD = 1;
+	uint32 Score = 13;
+	uint32 EliteCnt = 8;
+	uint32 TimidCnt = 3;
+	uint32 BrutalCnt = 1;
 }

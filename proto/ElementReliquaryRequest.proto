@@ -1,8 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message ElementReliquaryRequest {
-	uint32 elementType = 12;
-	uint32 equipType = 7;
+	uint32 ElementType = 12;
+	uint32 EquipType = 7;
 }

@@ -1,22 +1,23 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message WindFieldGalleryInfoNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 5573;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum JOCNCDOAALP {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 5573;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 Unk3300_EKMHMHJDHIL = 9;
-	uint32 Unk3300_GLNHBJJJINK = 4;
-	uint32 Unk3300_FFODAKMKGEK = 13;
-	uint32 Unk3300_OJHJPBCAONA = 1;
-	uint32 Unk3300_NBIBKFKOCFK = 5;
-	uint32 Unk3300_MMONPDMIEBN = 15;
-	uint32 Unk3300_GNJKOCLJFNM = 11;
-	uint32 Unk3300_GNKCFHMDOHJ = 3;
+	uint32 ElementBallNum = 9;
+	uint32 ChallengeTimestamp = 4;
+	uint32 ShowId = 13;
+	uint32 CoinNum = 1;
+	uint32 ChallengeBallCurCount = 5;
+	uint32 ChallengeBallMaxCount = 15;
+	uint32 ChallengeTotalTime = 11;
+	uint32 KilledMonsterNum = 3;
 }

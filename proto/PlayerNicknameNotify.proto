@@ -1,16 +1,16 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message PlayerNicknameNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 186;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum PlayerNicknameNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 133;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 submitLimit = 7;
-	bool isOpen = 5;
+	string Nickname = 11;
 }

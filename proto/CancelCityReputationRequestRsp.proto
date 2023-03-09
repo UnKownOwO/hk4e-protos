@@ -1,17 +1,18 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message CancelCityReputationRequestRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 2824;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum CancelCityReputationRequestRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 2824;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 requestId = 9;
-	int32 retcode = 12;
-	uint32 cityId = 14;
+	uint32 RequestId = 9;
+	int32 Retcode = 12;
+	uint32 CityId = 14;
 }

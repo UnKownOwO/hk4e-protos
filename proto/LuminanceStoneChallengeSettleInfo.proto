@@ -1,10 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "LuminanceStoneChallengeGallerySettleInfo.proto";
 
 message LuminanceStoneChallengeSettleInfo {
-	bool isNewRecord = 8;
-	LuminanceStoneChallengeGallerySettleInfo settleInfo = 11;
+	bool IsNewRecord = 8;
+	LuminanceStoneChallengeGallerySettleInfo SettleInfo = 11;
 }

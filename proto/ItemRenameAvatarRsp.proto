@@ -1,17 +1,18 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message ItemRenameAvatarRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 1628;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum BDEOFMOFEEF {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 1628;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	int32 retcode = 15;
-	uint32 renameId = 8;
-	uint32 cdTime = 7;
+	int32 Retcode = 15;
+	uint32 RenameId = 8;
+	uint32 CdTime = 7;
 }

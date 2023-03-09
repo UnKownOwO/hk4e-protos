@@ -1,20 +1,20 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "EnterCustomDungeonType.proto";
 
 message EnterCustomDungeonReq {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 6238;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// 	IS_ALLOW_CLIENT = 1;
-	// }
+	enum EnterCustomDungeonReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 6238;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
 
-	EnterCustomDungeonType enterType = 2;
-	uint32 dungeonId = 13;
-	uint64 dungeonGuid = 3;
+	EnterCustomDungeonType EnterType = 2;
+	uint32 DungeonId = 13;
+	uint64 DungeonGuid = 3;
 }

@@ -1,17 +1,17 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "SkyCrystalDetectorData.proto";
 
 message SkyCrystalDetectorDataUpdateNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 4265;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum SkyCrystalDetectorDataUpdateNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4265;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	SkyCrystalDetectorData skyCrystalDetectorData = 12;
+	SkyCrystalDetectorData SkyCrystalDetectorData = 12;
 }

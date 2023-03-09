@@ -1,23 +1,23 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
-import "Vector.proto";
+import "Rotation.proto";
 import "FollowType.proto";
 
 message BeginCameraSceneLookWithTemplateNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 3201;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum KDFDCPCDOJA {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 3201;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 templateId = 9;
-	Vector Unk3300_FJDFGLNLMBN = 4;
-	FollowType followType = 3;
-	repeated string otherParams = 8;
-	uint32 entityId = 14;
-	Vector Unk3300_PPCIDICMIEN = 7;
+	uint32 TemplateId = 9;
+	Rotation LookPos = 4;
+	FollowType FollowType = 3;
+	repeated string OtherParams = 8;
+	uint32 EntityId = 14;
+	Rotation FollowPos = 7;
 }

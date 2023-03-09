@@ -1,22 +1,14 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
-import "MissionStatus.proto";
+import "BattlePassMission_MissionStatus.proto";
 
 message BattlePassMission {
-
-	enum MissionStatus {
-    MISSION_INVALID     = 0;
-    MISSION_UNFINISHED  = 1;
-    MISSION_FINISHED    = 2;
-    MISSION_POINT_TAKEN = 3;
-    }
-
-	uint32 missionId = 6;
-	uint32 missionType = 14;
-	MissionStatus missionStatus = 9;
-	uint32 curProgress = 11;
-	uint32 rewardBattlePassPoint = 10;
-	uint32 totalProgress = 13;
+	uint32 MissionId = 6;
+	uint32 MissionType = 14;
+	BattlePassMission_MissionStatus MissionStatus = 9;
+	uint32 CurProgress = 11;
+	uint32 RewardBattlePassPoint = 10;
+	uint32 TotalProgress = 13;
 }

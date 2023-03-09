@@ -1,18 +1,19 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message ChangeGameTimeReq {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 162;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// 	IS_ALLOW_CLIENT = 1;
-	// }
+	enum ChangeGameTimeReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 162;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
 
-	uint32 extraDays = 7;
-	bool isForceSet = 6;
-	uint32 gameTime = 9;
+	uint32 ExtraDays = 7;
+	bool IsForceSet = 6;
+	uint32 GameTime = 9;
 }

@@ -1,10 +1,11 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message ReunionSignInInfo {
-	uint32 Unk3300_NFNOKBNBLGE = 9;
-	uint32 configId = 13;
-	repeated uint32 rewardDayList = 5;
-	uint32 Unk3300_MNJELIDKMCF = 14;
+	uint32 LastSignInTime = 9;
+	uint32 ConfigId = 13;
+	repeated uint32 RewardDayList = 5;
+	uint32 SignInCount = 14;
 }

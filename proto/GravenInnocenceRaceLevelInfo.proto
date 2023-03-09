@@ -1,9 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message GravenInnocenceRaceLevelInfo {
-	uint32 levelId = 7;
-	bool isOpen = 13;
-	uint32 maxScore = 15;
+	uint32 LevelId = 7;
+	bool IsOpen = 13;
+	uint32 MaxScore = 15;
 }

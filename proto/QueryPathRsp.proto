@@ -1,26 +1,21 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
-import "Vector.proto";
+import "QueryPathRsp_PathStatusType.proto";
+import "Rotation.proto";
 
 message QueryPathRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 2355;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum QueryPathRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 2355;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	enum PathStatusType {
-    STATUS_FAIL    = 0;
-    STATUS_SUCC    = 1;
-    STATUS_PARTIAL = 2;
-  	}
-
-	int32 retcode = 13;
-	repeated Vector corners = 11;
-	PathStatusType queryStatus = 6;
-	int32 queryId = 15;
+	int32 Retcode = 13;
+	repeated Rotation Corners = 11;
+	QueryPathRsp_PathStatusType QueryStatus = 6;
+	int32 QueryId = 15;
 }

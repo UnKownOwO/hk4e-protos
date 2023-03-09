@@ -1,8 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message OpReboot {
-	repeated uint32 costCardGuidList = 9;
-	repeated uint32 diceIndexList = 10;
+	repeated uint32 CostCardGuidList = 9;
+	repeated uint32 DiceIndexList = 10;
 }

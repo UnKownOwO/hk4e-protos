@@ -1,16 +1,17 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message ClientNewMailNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 1414;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum ClientNewMailNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 1414;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 notReadNum = 3;
-	uint32 notGotAttachmentNum = 11;
+	uint32 NotReadNum = 3;
+	uint32 NotGotAttachmentNum = 11;
 }

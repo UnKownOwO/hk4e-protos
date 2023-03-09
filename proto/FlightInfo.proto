@@ -1,11 +1,11 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "FlightDailyRecord.proto";
 
 message FlightInfo {
-	repeated FlightDailyRecord dailyRecordList = 5;
-	uint32 minOpenPlayerLevel = 2;
-	uint32 previewRewardId = 7;
+	repeated FlightDailyRecord DailyRecordList = 5;
+	uint32 MinOpenPlayerLevel = 2;
+	uint32 PreviewRewardId = 7;
 }

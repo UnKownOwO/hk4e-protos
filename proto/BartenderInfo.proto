@@ -1,15 +1,15 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "BartenderTaskInfo.proto";
 import "BartenderLevelInfo.proto";
 
 message BartenderInfo {
-	repeated BartenderTaskInfo unlockTaskList = 15;
-	bool isDevelopModuleOpen = 10;
-	repeated uint32 unlockItemList = 8;
-	repeated uint32 unlockFormulaList = 14;
-	bool leftMonsters = 2;
-	repeated BartenderLevelInfo unlockLevelList = 4;
+	repeated BartenderTaskInfo UnlockTaskList = 15;
+	bool IsDevelopModuleOpen = 10;
+	repeated uint32 UnlockItemList = 8;
+	repeated uint32 UnlockFormulaList = 14;
+	bool IsContentClosed = 2;
+	repeated BartenderLevelInfo UnlockLevelList = 4;
 }

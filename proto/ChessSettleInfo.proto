@@ -1,15 +1,15 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "ExhibitionDisplayInfo.proto";
 
 message ChessSettleInfo {
-	uint32 Unk3300_NKHDFHAPNCN = 9;
-	uint64 sceneTimeMs = 11;
-	uint32 Unk3300_LPANFEBFJOJ = 15;
-	bool isSuccess = 2;
-	repeated ExhibitionDisplayInfo scoreList = 1;
-	uint32 Unk3300_IPGILJCBABK = 3;
-	uint32 Unk3300_EMNLLDJHMEI = 10;
+	uint32 OldChessExp = 9;
+	uint64 SceneTimeMs = 11;
+	uint32 OldChessLevel = 15;
+	bool IsSuccess = 2;
+	repeated ExhibitionDisplayInfo ScoreList = 1;
+	uint32 ChessExp = 3;
+	uint32 ChessLevel = 10;
 }

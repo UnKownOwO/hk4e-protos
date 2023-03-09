@@ -1,15 +1,15 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "MichiaeMatsuriChallengePositionInfo.proto";
 import "MichiaeMatsuriChestPositionInfo.proto";
 import "MichiaeMatsuriStage.proto";
 
 message MichiaeMatsuriInfo {
-	repeated MichiaeMatsuriChallengePositionInfo challengePosList = 8;
-	repeated uint32 unlockedCrystalSkillList = 4;
-	uint32 gainCrystalExp = 5;
-	repeated MichiaeMatsuriChestPositionInfo chestPosList = 11;
-	repeated MichiaeMatsuriStage stageList = 7;
+	repeated MichiaeMatsuriChallengePositionInfo ChallengePosList = 8;
+	repeated uint32 UnlockedCrystalSkillList = 4;
+	uint32 GainCrystalExp = 5;
+	repeated MichiaeMatsuriChestPositionInfo ChestPosList = 11;
+	repeated MichiaeMatsuriStage StageList = 7;
 }

@@ -1,20 +1,20 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
-import "WidgetExtraCdType.proto";
+import "WIDGET_EXTRA_CD_TYPE.proto";
 
 message WidgetUpdateExtraCDReq {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 5973;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// 	IS_ALLOW_CLIENT = 1;
-	// }
+	enum WidgetUpdateExtraCDReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 5973;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
 
-	WidgetExtraCdType extraCdType = 9;
-	uint32 materialId = 11;
-	uint32 cdGroup = 7;
+	WIDGET_EXTRA_CD_TYPE ExtraCdType = 9;
+	uint32 MaterialId = 11;
+	uint32 CdGroup = 7;
 }

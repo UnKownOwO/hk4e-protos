@@ -1,19 +1,19 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "CutSceneExtraParam.proto";
 
 message CutSceneBeginNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 217;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum CutSceneBeginNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 217;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	bool isWaitOthers = 3;
-	repeated CutSceneExtraParam extraParamList = 14;
-	uint32 cutsceneId = 2;
+	bool IsWaitOthers = 3;
+	repeated CutSceneExtraParam ExtraParamList = 14;
+	uint32 CutsceneId = 2;
 }

@@ -1,11 +1,12 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message AvatarExcelInfo {
-	uint64 prefabPathHash = 1;
-	uint64 prefabPathRemoteHash = 2;
-	uint64 controllerPathHash = 3;
-	uint64 controllerPathRemoteHash = 4;
-	uint64 combatConfigHash = 5;
+	uint64 PrefabPathHash = 1;
+	uint64 PrefabPathRemoteHash = 2;
+	uint64 ControllerPathHash = 3;
+	uint64 ControllerPathRemoteHash = 4;
+	uint64 CombatConfigHash = 5;
 }

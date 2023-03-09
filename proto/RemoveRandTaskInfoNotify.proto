@@ -1,19 +1,19 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
-import "FinishReason.proto";
+import "RemoveRandTaskInfoNotify_FinishReason.proto";
 
 message RemoveRandTaskInfoNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 115;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum RemoveRandTaskInfoNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 115;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 randTaskId = 9;
-	bool isSucc = 7;
-	FinishReason reason = 2;
+	uint32 RandTaskId = 9;
+	bool IsSucc = 7;
+	RemoveRandTaskInfoNotify_FinishReason Reason = 2;
 }

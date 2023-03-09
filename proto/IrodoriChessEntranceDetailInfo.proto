@@ -1,9 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "IrodoriChessEntranceInfo.proto";
 
 message IrodoriChessEntranceDetailInfo {
-	repeated IrodoriChessEntranceInfo infoList = 2;
+	repeated IrodoriChessEntranceInfo InfoList = 2;
 }

@@ -1,10 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
-import "HCAMGIDEAFE.proto";
+import "TeamChainStageData.proto";
 
 message TeamChainInfo {
-	repeated HCAMGIDEAFE stageDataList = 10;
-	bool jimipcpbhek = 11;
+	repeated TeamChainStageData StageDataList = 10;
+	bool IsTokenCostumeReward = 11;
 }

@@ -1,20 +1,20 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
-import "Vector.proto";
+import "Rotation.proto";
 
 message UseWidgetCreateGadgetReq {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 4300;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// 	IS_ALLOW_CLIENT = 1;
-	// }
+	enum UseWidgetCreateGadgetReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4300;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
 
-	Vector rot = 9;
-	uint32 materialId = 7;
-	Vector pos = 2;
+	Rotation Rot = 9;
+	uint32 MaterialId = 7;
+	Rotation Pos = 2;
 }

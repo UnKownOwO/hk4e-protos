@@ -1,17 +1,17 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "SeaLampSectionInfo.proto";
 
 message SeaLampInfo {
-	bool leftMonsters = 1;
-	bool Unk3300_BAJIGNGJALG = 3;
-	repeated SeaLampSectionInfo sectionInfoList = 2;
-	uint32 firstDayStartTime = 10;
-	uint32 popularity = 5;
-	bool Unk3300_JMPCJGJHPIH = 14;
-	uint32 dayIndex = 4;
-	uint32 mechanicusId = 12;
-	uint32 seaLampCoin = 6;
+	bool IsContentClosed = 1;
+	bool IsMechanicusOpen = 3;
+	repeated SeaLampSectionInfo SectionInfoList = 2;
+	uint32 FirstDayStartTime = 10;
+	uint32 Popularity = 5;
+	bool IsMechanicusFeatureClose = 14;
+	uint32 DayIndex = 4;
+	uint32 MechanicusId = 12;
+	uint32 SeaLampCoin = 6;
 }

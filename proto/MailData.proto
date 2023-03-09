@@ -1,21 +1,21 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "MailTextContent.proto";
 import "MailCollectState.proto";
 import "MailItem.proto";
 
 message MailData {
-	uint32 mailId = 1;
-	MailTextContent mailTextContent = 4;
-	repeated MailItem itemList = 7;
-	uint32 sendTime = 8;
-	uint32 expireTime = 9;
-	uint32 importance = 10;
-	bool isRead = 11;
-	bool isAttachmentGot = 12;
-	uint32 configId = 13;
-	repeated string argumentList = 14;
-	MailCollectState collectState = 15;
+	uint32 MailId = 1;
+	MailTextContent MailTextContent = 4;
+	repeated MailItem ItemList = 7;
+	uint32 SendTime = 8;
+	uint32 ExpireTime = 9;
+	uint32 Importance = 10;
+	bool IsRead = 11;
+	bool IsAttachmentGot = 12;
+	uint32 ConfigId = 13;
+	repeated string ArgumentList = 14;
+	MailCollectState CollectState = 15;
 }

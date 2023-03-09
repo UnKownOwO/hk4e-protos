@@ -1,11 +1,11 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "TanukiTravelLevelData.proto";
 
 message TanukiTravelActivityInfo {
-	uint32 finishedLevelIndex = 11;
-	bool leftMonsters = 2;
-	repeated TanukiTravelLevelData tanukiTravelLevelDataList = 6;
+	uint32 FinishedLevelIndex = 11;
+	bool IsContentClosed = 2;
+	repeated TanukiTravelLevelData TanukiTravelLevelDataList = 6;
 }

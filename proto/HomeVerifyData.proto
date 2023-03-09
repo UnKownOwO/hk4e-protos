@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+import "HomeVerifySceneData.proto";
+import "HomeSceneArrangementMuipData.proto";
+import "LanguageType.proto";
+
+message HomeVerifyData {
+	uint32 Uid = 10;
+	string Aid = 4;
+	string Token = 2;
+	string Region = 14;
+	HomeVerifySceneData HomeInfo = 11;
+	HomeSceneArrangementMuipData ArrangementData = 7;
+	LanguageType Lang = 1;
+	uint32 Timestamp = 13;
+}

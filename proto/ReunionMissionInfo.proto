@@ -1,16 +1,16 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "ReunionWatcherInfo.proto";
 
 message ReunionMissionInfo {
-	uint32 missionId = 7;
-	repeated bool isTakenRewardList = 15;
-	bool isTakenReward = 3;
-	uint32 curScore = 4;
-	bool isFinished = 2;
-	repeated ReunionWatcherInfo watcherList = 13;
-	repeated ReunionWatcherInfo curDayWatcherList = 1;
-	uint32 nextRefreshTime = 6;
+	uint32 MissionId = 7;
+	repeated bool IsTakenRewardList = 15;
+	bool IsTakenReward = 3;
+	uint32 CurScore = 4;
+	bool IsFinished = 2;
+	repeated ReunionWatcherInfo WatcherList = 13;
+	repeated ReunionWatcherInfo CurDayWatcherList = 1;
+	uint32 NextRefreshTime = 6;
 }

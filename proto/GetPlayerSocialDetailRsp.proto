@@ -1,18 +1,18 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "SocialDetail.proto";
 
 message GetPlayerSocialDetailRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 4014;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum GetPlayerSocialDetailRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4014;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	SocialDetail detailData = 15;
-	int32 retcode = 14;
+	SocialDetail DetailData = 15;
+	int32 Retcode = 14;
 }

@@ -1,11 +1,11 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "CoinCollectPlayerInfo.proto";
 
 message CoinCollectStageInfo {
-	uint32 levelId = 6;
-	uint32 playIndex = 12;
-	repeated CoinCollectPlayerInfo playerInfoList = 5;
+	uint32 LevelId = 6;
+	uint32 PlayIndex = 12;
+	repeated CoinCollectPlayerInfo PlayerInfoList = 5;
 }

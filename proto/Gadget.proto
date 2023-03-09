@@ -1,0 +1,74 @@
+syntax = "proto3";
+
+package Proto;
+
+import "GadgetBornType.proto";
+import "TrifleItem.proto";
+import "GatherGadget.proto";
+import "Worktop.proto";
+import "ClientGadget.proto";
+import "Weather.proto";
+import "AbilityGadget.proto";
+import "StatueGadget.proto";
+import "BossChest.proto";
+import "BlossomChest.proto";
+import "MpPlayReward.proto";
+import "GeneralReward.proto";
+import "OfferingInfo.proto";
+import "FoundationInfo.proto";
+import "VehicleInfo.proto";
+import "ShellInfo.proto";
+import "ScreenInfo.proto";
+import "FishPoolInfo.proto";
+import "CustomGadgetTreeInfo.proto";
+import "RoguelikeGadgetInfo.proto";
+import "NightCrowGadgetInfo.proto";
+import "DeshretObeliskGadgetInfo.proto";
+import "CoinCollectOperatorInfo.proto";
+import "PlatformInfo.proto";
+import "GadgetPlayInfo.proto";
+
+message Gadget {
+	uint32 GadgetId = 1;
+	uint32 GroupId = 2;
+	uint32 ConfigId = 3;
+	uint32 OwnerEntityId = 4;
+	GadgetBornType BornType = 5;
+	uint32 GadgetState = 6;
+	uint32 GadgetType = 7;
+	bool IsShowCutscene = 8;
+	uint32 AuthorityPeerId = 9;
+	bool IsEnableInteract = 10;
+	uint32 InteractId = 11;
+	oneof SceneGadgetInfo_ContentOneofCase {
+		TrifleItem trifle_item = 12;
+		GatherGadget gather_gadget = 13;
+		Worktop worktop = 14;
+		ClientGadget client_gadget = 15;
+		Weather weather = 17;
+		AbilityGadget ability_gadget = 18;
+		StatueGadget statue_gadget = 19;
+		BossChest boss_chest = 20;
+		BlossomChest blossom_chest = 41;
+		MpPlayReward mp_play_reward = 42;
+		GeneralReward general_reward = 43;
+		OfferingInfo offering_info = 44;
+		FoundationInfo foundation_info = 45;
+		VehicleInfo vehicle_info = 46;
+		ShellInfo shell_info = 47;
+		ScreenInfo screen_info = 48;
+		FishPoolInfo fish_pool_info = 59;
+		CustomGadgetTreeInfo custom_gadget_tree_info = 60;
+		RoguelikeGadgetInfo roguelike_gadget_info = 61;
+		NightCrowGadgetInfo night_crow_gadget_info = 62;
+		DeshretObeliskGadgetInfo deshret_obelisk_gadget_info = 63;
+		CoinCollectOperatorInfo coin_collect_operator_info = 64;
+	}
+	uint32 MarkFlag = 21;
+	uint32 PropOwnerEntityId = 22;
+	PlatformInfo Platform = 23;
+	repeated uint32 InteractUidList = 24;
+	uint32 DraftId = 25;
+	uint32 GadgetTalkState = 26;
+	GadgetPlayInfo PlayInfo = 100;
+}

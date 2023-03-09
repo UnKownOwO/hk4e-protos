@@ -1,9 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message MichiaeMatsuriStage {
-	bool isOpen = 8;
-	uint32 stageId = 11;
-	uint32 openTime = 13;
+	bool IsOpen = 8;
+	uint32 StageId = 11;
+	uint32 OpenTime = 13;
 }

@@ -1,25 +1,25 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "FishBattleResult.proto";
-import "FishNoRewardReason.proto";
+import "FishBattleEndRsp_FishNoRewardReason.proto";
 import "ItemParam.proto";
 
 message FishBattleEndRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 5814;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum FishBattleEndRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 5814;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	repeated ItemParam rewardItemList = 3;
-	repeated ItemParam Unk3300_MDCKKPGNKGL = 12;
-	FishBattleResult battleResult = 10;
-	FishNoRewardReason noRewardReason = 5;
-	bool isGotReward = 8;
-	int32 retcode = 2;
-	repeated ItemParam Unk3300_ABBBGOBDJEC = 15;
+	repeated ItemParam RewardItemList = 3;
+	repeated ItemParam DropItemList = 12;
+	FishBattleResult BattleResult = 10;
+	FishBattleEndRsp_FishNoRewardReason NoRewardReason = 5;
+	bool IsGotReward = 8;
+	int32 Retcode = 2;
+	repeated ItemParam TalentItemList = 15;
 }

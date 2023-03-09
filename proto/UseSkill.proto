@@ -1,8 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message UseSkill {
-	uint32 cardGuid = 11;
-	uint32 skillId = 14;
+	uint32 CardGuid = 11;
+	uint32 SkillId = 14;
 }

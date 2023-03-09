@@ -1,12 +1,12 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "EffigyDailyInfo.proto";
 
 message EffigyInfo {
-	repeated uint32 takenRewardIndexList = 7;
-	repeated EffigyDailyInfo dailyInfoList = 9;
-	uint32 curScore = 5;
-	uint32 lastDifficultyId = 10;
+	repeated uint32 TakenRewardIndexList = 7;
+	repeated EffigyDailyInfo DailyInfoList = 9;
+	uint32 CurScore = 5;
+	uint32 LastDifficultyId = 10;
 }

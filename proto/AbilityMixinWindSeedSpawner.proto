@@ -1,22 +1,22 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
-import "Vector.proto";
+import "Rotation.proto";
 
 message AbilityMixinWindSeedSpawner {
-	message AddSignal {
+	message AbilityMixinWindSeedSpawner_AddSignal {
 	}
-	message RefreshSeed {
-		repeated Vector lfglcalgdac = 1;
+	message AbilityMixinWindSeedSpawner_RefreshSeed {
+		repeated Rotation PosList = 1;
 	}
-	message CatchSeed {
-		uint32 entityId = 5;
+	message AbilityMixinWindSeedSpawner_CatchSeed {
+		uint32 EntityId = 5;
 	}
 
-	oneof EMKLHFDNJMA {
-		AddSignal add_signal = 13;
-		RefreshSeed refresh_seed = 3;
-		CatchSeed catch_seed = 4;
+	oneof AbilityMixinWindSeedSpawner_CmdOneofCase {
+		AbilityMixinWindSeedSpawner_AddSignal add_signal = 13;
+		AbilityMixinWindSeedSpawner_RefreshSeed refresh_seed = 3;
+		AbilityMixinWindSeedSpawner_CatchSeed catch_seed = 4;
 	}
 }

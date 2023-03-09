@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "ShopMcoinProduct.proto";
 import "ShopCardProduct.proto";
@@ -8,17 +8,17 @@ import "PlayProduct.proto";
 import "ShopConcertProduct.proto";
 
 message RechargeReq {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 4138;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// 	IS_ALLOW_CLIENT = 1;
-	// }
+	enum RechargeReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4138;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
 
-	ShopMcoinProduct mcoinProduct = 11;
-	ShopCardProduct cardProduct = 5;
-	PlayProduct playProduct = 6;
-	ShopConcertProduct concertProduct = 3;
+	ShopMcoinProduct McoinProduct = 11;
+	ShopCardProduct CardProduct = 5;
+	PlayProduct PlayProduct = 6;
+	ShopConcertProduct ConcertProduct = 3;
 }

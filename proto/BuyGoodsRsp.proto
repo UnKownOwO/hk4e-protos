@@ -1,21 +1,21 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "ShopGoods.proto";
 
 message BuyGoodsRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 798;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum BuyGoodsRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 798;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 buyCount = 2;
-	ShopGoods goods = 1;
-	repeated ShopGoods goodsList = 7;
-	int32 retcode = 5;
-	uint32 shopType = 14;
+	uint32 BuyCount = 2;
+	ShopGoods Goods = 1;
+	repeated ShopGoods GoodsList = 7;
+	int32 Retcode = 5;
+	uint32 ShopType = 14;
 }

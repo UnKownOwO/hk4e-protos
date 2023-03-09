@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package Proto;
+
+enum CoopPoint_State {
+	Unstarted = 0;
+	Started = 1;
+	Finished = 2;
+}

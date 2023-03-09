@@ -1,8 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message TowerLevelRecord {
-	uint32 levelId = 11;
-	repeated uint32 satisfiedCondList = 7;
+	uint32 LevelId = 11;
+	repeated uint32 SatisfiedCondList = 7;
 }

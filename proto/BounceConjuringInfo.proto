@@ -1,8 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message BounceConjuringInfo {
-	uint32 totalDestroyedMachineCount = 5;
-	uint32 totalScore = 4;
+	uint32 TotalDestroyedMachineCount = 5;
+	uint32 TotalScore = 4;
 }

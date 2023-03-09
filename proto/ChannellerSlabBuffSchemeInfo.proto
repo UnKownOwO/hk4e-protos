@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message ChannellerSlabBuffSchemeInfo {
+	map<uint32, uint32> SlotMap = 9;
+	uint32 SelfEnergy = 1;
+	uint32 TotalEnergy = 10;
+}

@@ -1,19 +1,19 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "SceneRouteChangeInfo.proto";
 
 message SceneRouteChangeNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 201;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum SceneRouteChangeNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 201;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 sceneId = 10;
-	repeated SceneRouteChangeInfo routeList = 12;
-	uint32 sceneTime = 6;
+	uint32 SceneId = 10;
+	repeated SceneRouteChangeInfo RouteList = 12;
+	uint32 SceneTime = 6;
 }

@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+import "Rotation.proto";
+
+message HomeTransferData {
+	Rotation SpawnPos = 15;
+	uint32 Guid = 8;
+}

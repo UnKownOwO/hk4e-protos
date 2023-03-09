@@ -1,8 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message SumoAvatarInfo {
-	uint64 avatarId = 9;
-	bool isTrial = 2;
+	uint64 AvatarId = 9;
+	bool IsTrial = 2;
 }

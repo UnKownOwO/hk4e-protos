@@ -1,10 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "GCGCostReviseInfo.proto";
 
 message CostRevise {
-	uint32 controllerId = 15;
-	GCGCostReviseInfo costRevise = 10;
+	uint32 ControllerId = 15;
+	GCGCostReviseInfo CostRevise = 10;
 }

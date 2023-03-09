@@ -1,9 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 enum CreateReason {
-  CREATE_NONE   = 0;
-  CREATE_QUEST  = 1;
-  CREATE_ENERGY = 2;
+	CreateNone = 0;
+	CreateQuest = 1;
+	CreateEnergy = 2;
 }

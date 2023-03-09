@@ -1,27 +1,27 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "WeeklyBossResinDiscountInfo.proto";
-import "LockState.proto";
-import "Vector.proto";
+import "InvestigationMonster_LockState.proto";
+import "Rotation.proto";
 
 message InvestigationMonster {
-	uint32 nextRefreshTime = 1;
-	uint32 bossChestNum = 10;
-	WeeklyBossResinDiscountInfo weeklyBossResinDiscountInfo = 8;
-	LockState lockState = 2;
-	uint32 refreshInterval = 6;
-	uint32 groupId = 80;
-	uint32 sceneId = 13;
-	uint32 cityId = 7;
-	uint32 maxBossChestNum = 11;
-	Vector pos = 4;
-	bool isAreaLocked = 5;
-	uint32 level = 3;
-	uint32 id = 15;
-	uint32 monsterId = 1493;
-	uint32 nextBossChestRefreshTime = 12;
-	uint32 resin = 9;
-	bool isAlive = 14;
+	uint32 NextRefreshTime = 1;
+	uint32 NextBossChestRefreshTime = 10;
+	WeeklyBossResinDiscountInfo WeeklyBossResinDiscountInfo = 8;
+	InvestigationMonster_LockState LockState = 2;
+	uint32 RefreshInterval = 6;
+	uint32 GroupId = 80;
+	uint32 SceneId = 13;
+	uint32 CityId = 7;
+	uint32 MaxBossChestNum = 11;
+	Rotation Pos = 4;
+	bool IsAreaLocked = 5;
+	uint32 Level = 3;
+	uint32 Id = 15;
+	uint32 MonsterId = 1493;
+	uint32 BossChestNum = 12;
+	uint32 Resin = 9;
+	bool IsAlive = 14;
 }

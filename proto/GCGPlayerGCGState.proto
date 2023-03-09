@@ -1,9 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message GCGPlayerGCGState {
-	bool plmancmlpmo = 14;
-	uint32 uid = 15;
-	bool pdjilolocgj = 11;
+	bool IsReasouceComplete = 14;
+	uint32 Uid = 15;
+	bool IsGcgStateOpen = 11;
 }

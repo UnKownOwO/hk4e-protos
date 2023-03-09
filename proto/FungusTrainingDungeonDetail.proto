@@ -1,9 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message FungusTrainingDungeonDetail {
-	bool isOpen = 8;
-	uint32 bestScore = 7;
-	uint32 dungeonId = 6;
+	bool IsOpen = 8;
+	uint32 BestScore = 7;
+	uint32 DungeonId = 6;
 }

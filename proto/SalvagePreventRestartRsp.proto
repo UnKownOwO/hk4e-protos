@@ -1,16 +1,17 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message SalvagePreventRestartRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 8904;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum SalvagePreventRestartRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8904;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	int32 retcode = 12;
-	uint32 galleryId = 3;
+	int32 Retcode = 12;
+	uint32 GalleryId = 3;
 }

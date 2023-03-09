@@ -1,10 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "GCGLimitsInfo.proto";
 
 message GCGSkillLimitsInfo {
-	repeated GCGLimitsInfo limitsList = 8;
-	uint32 skillId = 9;
+	repeated GCGLimitsInfo LimitsList = 8;
+	uint32 SkillId = 9;
 }

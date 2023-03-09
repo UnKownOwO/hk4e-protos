@@ -1,17 +1,17 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "GroupLinkBundle.proto";
 
 message GroupLinkMarkUpdateNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 5791;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum GroupLinkMarkUpdateNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 5791;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	GroupLinkBundle bundle = 7;
+	GroupLinkBundle Bundle = 7;
 }

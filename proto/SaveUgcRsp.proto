@@ -1,19 +1,19 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "UgcType.proto";
 
 message SaveUgcRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 6335;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum SaveUgcRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 6335;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	int32 retcode = 8;
-	uint64 ugcGuid = 12;
-	UgcType ugcType = 15;
+	int32 Retcode = 8;
+	uint64 UgcGuid = 12;
+	UgcType UgcType = 15;
 }

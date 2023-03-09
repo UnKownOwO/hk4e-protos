@@ -1,20 +1,20 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "ArenaChallengeChildChallengeInfo.proto";
 
 message ArenaChallengeFinishNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 2199;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum ArenaChallengeFinishNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 2199;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	bool isSuccess = 7;
-	repeated ArenaChallengeChildChallengeInfo childChallengeList = 6;
-	uint32 Unk3300_DBHAGHMMLAI = 15;
-	uint32 Unk3300_FDFNFLAKONG = 9;
+	bool IsSuccess = 7;
+	repeated ArenaChallengeChildChallengeInfo ChildChallengeList = 6;
+	uint32 ArenaChallengeId = 15;
+	uint32 ArenaChallengeLevel = 9;
 }

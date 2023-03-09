@@ -1,8 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message GatherGadget {
-	uint32 itemId = 1;
-	bool is_forbid_guest = 2;
+	uint32 ItemId = 1;
+	bool IsForbidGuest = 2;
 }

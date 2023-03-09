@@ -1,10 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "Uint32Pair.proto";
 
 message GCGAttackCostInfo {
-	repeated Uint32Pair costMap = 6;
-	uint32 skillId = 13;
+	repeated Uint32Pair CostMap = 6;
+	uint32 SkillId = 13;
 }

@@ -1,10 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
-import "Vector.proto";
+import "Rotation.proto";
 
 message WeekendDjinnInfo {
-	Vector rot = 11;
-	Vector pos = 10;
+	Rotation Rot = 11;
+	Rotation Pos = 10;
 }

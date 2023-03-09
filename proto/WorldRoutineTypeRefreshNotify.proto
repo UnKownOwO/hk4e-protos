@@ -1,17 +1,17 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "WorldRoutineTypeInfo.proto";
 
 message WorldRoutineTypeRefreshNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 3546;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum WorldRoutineTypeRefreshNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 3546;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	WorldRoutineTypeInfo worldRoutineType = 15;
+	WorldRoutineTypeInfo WorldRoutineType = 15;
 }

@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message TeamChainChooseAvatarInfo {
+	uint32 AvatarId = 13;
+	bool IsTrialAvatar = 5;
+}

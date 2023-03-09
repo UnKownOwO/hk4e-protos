@@ -1,18 +1,19 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message GachaActivityPercentNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 8200;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum GachaActivityPercentNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8200;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	map<uint32, uint32> targetNumMap = 5;
-	uint32 Unk3300_GHHIGKFDONE = 13;
-	uint32 Unk3300_IOLPAJKDEEA = 14;
-	uint32 Unk3300_EOPJBPHFDEE = 15;
+	map<uint32, uint32> TargetNumMap = 5;
+	uint32 SubItemStage = 13;
+	uint32 ItemStage = 14;
+	uint32 Percent = 15;
 }

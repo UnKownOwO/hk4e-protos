@@ -1,18 +1,19 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message HomeExchangeWoodRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 4812;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum LEHHCIKIGDM {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4812;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 woodId = 11;
-	int32 retcode = 13;
-	uint32 exchangedCount = 2;
-	uint32 woodCount = 5;
+	uint32 WoodId = 11;
+	int32 Retcode = 13;
+	uint32 ExchangedCount = 2;
+	uint32 WoodCount = 5;
 }

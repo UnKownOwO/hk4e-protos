@@ -1,22 +1,23 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message SummerTimeSprintBoatSettleNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 8474;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum SummerTimeSprintBoatSettleNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8474;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 leftTime = 11;
-	uint32 score = 14;
-	uint32 groupId = 1;
-	uint32 Unk3300_MEEKFJJIOKE = 3;
-	uint32 Unk3300_PLFMJPNPPLI = 8;
-	bool isSuccess = 2;
-	uint32 totalNum = 7;
-	bool isNewRecord = 4;
+	uint32 LeftTime = 11;
+	uint32 Score = 14;
+	uint32 GroupId = 1;
+	uint32 CollectNum = 3;
+	uint32 MedalLevel = 8;
+	bool IsSuccess = 2;
+	uint32 TotalNum = 7;
+	bool IsNewRecord = 4;
 }

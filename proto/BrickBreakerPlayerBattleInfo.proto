@@ -1,13 +1,14 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message BrickBreakerPlayerBattleInfo {
-	repeated uint32 skillList = 9;
-	bool isReady = 6;
-	string nickname = 15;
-	bool isChanging = 14;
-	repeated uint32 costumeId = 12;
-	repeated uint32 avatarId = 5;
-	uint32 uid = 3;
+	repeated uint32 SkillList = 9;
+	bool IsReady = 6;
+	string Nickname = 15;
+	bool IsChanging = 14;
+	repeated uint32 CostumeId = 12;
+	repeated uint32 AvatarId = 5;
+	uint32 Uid = 3;
 }

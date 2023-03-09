@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "RacingGalleryInfo.proto";
 import "BalloonGalleryInfo.proto";
@@ -8,8 +8,8 @@ import "StakePlayInfo.proto";
 import "SeekFurnitureGalleryInfo.proto";
 
 message HomeGroupRecord {
-	uint32 groupId = 8;
-	oneof detail {
+	uint32 GroupId = 8;
+	oneof HomeGroupRecord_DetailOneofCase {
 		RacingGalleryInfo racing_gallery_info = 1457;
 		BalloonGalleryInfo balloon_gallery_info = 1480;
 		StakePlayInfo stake_play_info = 1758;

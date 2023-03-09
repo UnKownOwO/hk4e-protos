@@ -1,8 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message VintageBoothUsedItemData {
-	uint32 gadgetId = 12;
-	bool isOpen = 2;
+	uint32 GadgetId = 12;
+	bool IsOpen = 2;
 }

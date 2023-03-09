@@ -1,8 +1,0 @@
-syntax = "proto3";
-
-option go_package = "./;proto";
-
-enum LockReason {
-    LEVEL = 0;
-    QUEST = 1;
-}

@@ -1,7 +1,8 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message GCGZone {
-	repeated uint32 cardList = 14;
+	repeated uint32 CardList = 14;
 }

@@ -1,20 +1,21 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 import "LuaShellType.proto";
 
 message PlayerLuaShellNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 191;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum PlayerLuaShellNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 191;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	bytes luaShell = 5;
-	uint32 useType = 8;
-	LuaShellType shellType = 7;
-	uint32 id = 12;
+	bytes LuaShell = 5;
+	uint32 UseType = 8;
+	LuaShellType ShellType = 7;
+	uint32 Id = 12;
 }

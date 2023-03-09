@@ -1,18 +1,18 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "AvatarSkillInfo.proto";
 
 message AvatarSkillInfoNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 1070;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum AvatarSkillInfoNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 1070;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	map<uint32, AvatarSkillInfo> skillMap = 2;
-	uint64 guid = 4;
+	map<uint32, AvatarSkillInfo> SkillMap = 2;
+	uint64 Guid = 4;
 }

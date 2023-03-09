@@ -1,11 +1,11 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "ChessEntranceDetailInfo.proto";
 
 message ChessMysteryInfo {
-	repeated uint32 mdilcblhnao = 2;
-	map<uint32, uint32> lneiknbbcdd = 11;
-	map<uint32, ChessEntranceDetailInfo> fhmdalcaomp = 5;
+	repeated uint32 ExitPointIdList = 2;
+	map<uint32, uint32> EntrancePointMap = 11;
+	map<uint32, ChessEntranceDetailInfo> DetailInfoMap = 5;
 }

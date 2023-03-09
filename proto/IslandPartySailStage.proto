@@ -1,9 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 enum IslandPartySailStage {
-  ISLAND_PARTY_SAIL_STAGE_NONE   = 0;
-  ISLAND_PARTY_SAIL_STAGE_SAIL   = 1;
-  ISLAND_PARTY_SAIL_STAGE_BATTLE = 2;
+	None = 0;
+	Sail = 1;
+	Battle = 2;
 }

@@ -1,9 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 enum LunaRiteHintStatusType {
-  LUNA_RITE_HINT_STATUS_DEFAULT  = 0;
-  LUNA_RITE_HINT_STATUS_NO_COUNT = 1;
-  LUNA_RITE_HINT_STATUS_FINISH   = 2;
+	LunaRiteHintStatusDefault = 0;
+	LunaRiteHintStatusNoCount = 1;
+	LunaRiteHintStatusFinish = 2;
 }

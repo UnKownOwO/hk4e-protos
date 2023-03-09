@@ -1,13 +1,13 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 enum ReportReasonType {
-  REPORT_REASON_NONE          = 0;
-  REPORT_REASON_DECEPTIVE_ADS = 1;
-  REPORT_REASON_ABUSING       = 2;
-  REPORT_REASON_CHEAT         = 3;
-  REPORT_REASON_POLITICAL     = 4;
-  REPORT_REASON_OTHER         = 5;
-  REPORT_REASON_HOME          = 6;
+	ReportReasonNone = 0;
+	ReportReasonDeceptiveAds = 1;
+	ReportReasonAbusing = 2;
+	ReportReasonCheat = 3;
+	ReportReasonPolitical = 4;
+	ReportReasonOther = 5;
+	ReportReasonHome = 6;
 }

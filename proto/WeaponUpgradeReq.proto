@@ -1,20 +1,20 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "ItemParam.proto";
 
 message WeaponUpgradeReq {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 646;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// 	IS_ALLOW_CLIENT = 1;
-	// }
+	enum WeaponUpgradeReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 646;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
 
-	repeated ItemParam itemParamList = 1;
-	uint64 targetWeaponGuid = 11;
-	repeated uint64 foodWeaponGuidList = 7;
+	repeated ItemParam ItemParamList = 1;
+	uint64 TargetWeaponGuid = 11;
+	repeated uint64 FoodWeaponGuidList = 7;
 }

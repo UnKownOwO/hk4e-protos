@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package ProtoLog;
+
+
+message ClientLogBodyLogin {
+	string ActionType = 1;
+	string ActionResult = 2;
+	uint32 ActionTime = 3;
+	string Xg = 4;
+	uint32 SignalLevel = 5;
+	string Dns = 6;
+}

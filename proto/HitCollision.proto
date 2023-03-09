@@ -1,15 +1,15 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
-import "Vector.proto";
+import "Rotation.proto";
 import "HitColliderType.proto";
 
 message HitCollision {
-	float attackeeHitEntityAngle = 12;
-	Vector hitDir = 4;
-	Vector hitPoint = 3;
-	int32 hitBoxIndex = 10;
-	float attackeeHitForceAngle = 15;
-	HitColliderType hitColliderType = 9;
+	float AttackeeHitEntityAngle = 12;
+	Rotation HitDir = 4;
+	Rotation HitPoint = 3;
+	int32 HitBoxIndex = 10;
+	float AttackeeHitForceAngle = 15;
+	HitColliderType HitColliderType = 9;
 }

@@ -1,9 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message AvatarSkillInfo {
-	uint32 passCdTime = 1;
-	repeated uint32 fullCdTimeList = 2;
-	uint32 maxChargeCount = 3;
+	uint32 PassCdTime = 1;
+	repeated uint32 FullCdTimeList = 2;
+	uint32 MaxChargeCount = 3;
 }

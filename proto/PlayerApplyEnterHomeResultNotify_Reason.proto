@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package Proto;
+
+enum PlayerApplyEnterHomeResultNotify_Reason {
+	PlayerJudge = 0;
+	PlayerEnterOptionRefuse = 1;
+	PlayerEnterOptionDirect = 2;
+	SystemJudge = 3;
+	HostInMatch = 4;
+	PsPlayerNotAcceptOthers = 5;
+	OpenStateNotOpen = 6;
+	HostInEditMode = 7;
+	PriorCheck = 8;
+}

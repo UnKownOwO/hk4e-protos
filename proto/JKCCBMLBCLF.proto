@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+import "FGAFMCEGHPG.proto";
+
+message JKCCBMLBCLF {
+	enum GHNDNNPCIJP {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 7534;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	FGAFMCEGHPG mjjacnclhpf = 1;
+}

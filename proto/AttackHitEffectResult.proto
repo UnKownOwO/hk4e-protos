@@ -1,12 +1,13 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message AttackHitEffectResult {
-	uint32 Unk3300_KLNGDAMMFIF = 3;
-	float airStrength = 6;
-	uint32 Unk3300_LCKECJCKKJK = 13;
-	float hitHaltTime = 15;
-	float retreatStrength = 4;
-	float hitHaltTimeScale = 7;
+	uint32 OriginalHitEffLevel = 3;
+	float AirStrength = 6;
+	uint32 HitEffLevel = 13;
+	float HitHaltTime = 15;
+	float RetreatStrength = 4;
+	float HitHaltTimeScale = 7;
 }

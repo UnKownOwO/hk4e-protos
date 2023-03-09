@@ -1,10 +1,11 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message RegionalPlayVar {
-	float baseValue = 4;
-	float maxValue = 15;
-	uint32 type = 8;
-	float value = 12;
+	float BaseValue = 4;
+	float MaxValue = 15;
+	uint32 Type = 8;
+	float Value = 12;
 }

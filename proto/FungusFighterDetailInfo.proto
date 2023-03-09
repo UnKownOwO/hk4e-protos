@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "FungusDetail.proto";
 import "FungusTrainingProgressDetail.proto";
@@ -8,11 +8,11 @@ import "FungusPlotStageDetail.proto";
 import "FungusTrainingDungeonDetail.proto";
 
 message FungusFighterDetailInfo {
-	repeated FungusDetail fungusDetailList = 3;
-	repeated uint32 Unk3300_GIHAKKAJHDH = 9;
-	repeated FungusTrainingProgressDetail trainingDungeonProgressDetailList = 4;
-	repeated uint32 Unk3300_HPDOJOBPFMJ = 2;
-	repeated uint32 Unk3300_KGKFJJHFHAB = 13;
-	repeated FungusPlotStageDetail plotStageDetailList = 6;
-	repeated FungusTrainingDungeonDetail trainingDungeonDetailList = 12;
+	repeated FungusDetail FungusDetailList = 3;
+	repeated uint32 UnlockCampIdList = 9;
+	repeated FungusTrainingProgressDetail TrainingDungeonProgressDetailList = 4;
+	repeated uint32 FinishCampIdList = 2;
+	repeated uint32 UnlockCultivateIdList = 13;
+	repeated FungusPlotStageDetail PlotStageDetailList = 6;
+	repeated FungusTrainingDungeonDetail TrainingDungeonDetailList = 12;
 }

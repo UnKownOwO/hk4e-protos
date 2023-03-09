@@ -1,13 +1,14 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message ShopMcoinProduct {
-	string productId = 1;
-	string priceTier = 2;
-	uint32 mcoinBase = 3;
-	uint32 mcoinNonFirst = 4;
-	uint32 mcoinFirst = 5;
-	uint32 boughtNum = 6;
-	bool isAudit = 7;
+	string ProductId = 1;
+	string PriceTier = 2;
+	uint32 McoinBase = 3;
+	uint32 McoinNonFirst = 4;
+	uint32 McoinFirst = 5;
+	uint32 BoughtNum = 6;
+	bool IsAudit = 7;
 }

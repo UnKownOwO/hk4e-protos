@@ -1,21 +1,17 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message GCGTCInviteRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 7206;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum MINOBCLFFCG {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 7188;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	bool ibiikedgnhn = 3;
-	uint32 elementType = 9;
-	uint32 pointId = 15;
-	bool retcode = 2;
-	uint32 caaaccpgkff = 5;
-	uint32 levelId = 7;
-	uint32 avatarId = 13;
+	uint32 CharacterId = 13;
+	int32 Retcode = 4;
 }

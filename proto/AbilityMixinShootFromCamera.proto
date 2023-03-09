@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+import "Rotation.proto";
+
+message AbilityMixinShootFromCamera {
+	Rotation InitPos = 6;
+	Rotation Forward = 9;
+}

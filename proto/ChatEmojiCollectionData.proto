@@ -1,7 +1,8 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message ChatEmojiCollectionData {
-	repeated uint32 emojiIdList = 1;
+	repeated uint32 EmojiIdList = 1;
 }

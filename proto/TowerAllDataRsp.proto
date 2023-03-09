@@ -1,35 +1,35 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "TowerCurLevelRecord.proto";
 import "TowerMonthlyBrief.proto";
 import "TowerFloorRecord.proto";
 
 message TowerAllDataRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 2462;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum TowerAllDataRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 2462;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 Unk3300_OHCHCJGJIDK = 7;
-	TowerCurLevelRecord curLevelRecord = 1;
-	bool isFirstInteract = 8;
-	repeated TowerFloorRecord towerFloorRecordList = 6;
-	uint32 nextScheduleChangeTime = 15;
-	uint32 towerScheduleId = 9;
-	map<uint32, uint32> floorOpenTimeMap = 12;
-	uint32 validTowerRecordNum = 5;
-	map<uint32, uint32> skipFloorGrantedRewardItemMap = 11;
-	uint32 scheduleStartTime = 591;
-	TowerMonthlyBrief lastScheduleMonthlyBrief = 1482;
-	uint32 Unk3300_LEKODCFPINJ = 10;
-	uint32 Unk3300_HCDFJBHMHHF = 3;
-	uint32 Unk3300_JBACKENDHDG = 14;
-	bool isFinishedEntranceFloor = 2;
-	TowerMonthlyBrief monthlyBrief = 13;
-	int32 retcode = 4;
+	uint32 DailyLevelIndex = 7;
+	TowerCurLevelRecord CurLevelRecord = 1;
+	bool IsFirstInteract = 8;
+	repeated TowerFloorRecord TowerFloorRecordList = 6;
+	uint32 NextScheduleChangeTime = 15;
+	uint32 TowerScheduleId = 9;
+	map<uint32, uint32> FloorOpenTimeMap = 12;
+	uint32 ValidTowerRecordNum = 5;
+	map<uint32, uint32> SkipFloorGrantedRewardItemMap = 11;
+	uint32 ScheduleStartTime = 591;
+	TowerMonthlyBrief LastScheduleMonthlyBrief = 1482;
+	uint32 SkipToFloorIndex = 10;
+	uint32 CommemorativeRewardId = 3;
+	uint32 DailyFloorId = 14;
+	bool IsFinishedEntranceFloor = 2;
+	TowerMonthlyBrief MonthlyBrief = 13;
+	int32 Retcode = 4;
 }

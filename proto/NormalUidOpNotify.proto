@@ -1,18 +1,19 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message NormalUidOpNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 5738;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum NormalUidOpNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 5738;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 duration = 1;
-	repeated uint32 paramList = 12;
-	repeated uint32 paramUidList = 7;
-	uint32 paramIndex = 6;
+	uint32 Duration = 1;
+	repeated uint32 ParamList = 12;
+	repeated uint32 ParamUidList = 7;
+	uint32 ParamIndex = 6;
 }

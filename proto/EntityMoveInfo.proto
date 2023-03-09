@@ -1,13 +1,13 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "MotionInfo.proto";
 
 message EntityMoveInfo {
-	uint32 entityId = 1;
-	MotionInfo motionInfo = 2;
-	uint32 sceneTime = 3;
-	uint32 reliableSeq = 4;
-	bool isReliable = 5;
+	uint32 EntityId = 1;
+	MotionInfo MotionInfo = 2;
+	uint32 SceneTime = 3;
+	uint32 ReliableSeq = 4;
+	bool IsReliable = 5;
 }

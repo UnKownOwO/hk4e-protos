@@ -1,15 +1,15 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 enum GCGDiceSideType {
-  GCG_DICE_SIDE_INVALID = 0;
-  GCG_DICE_SIDE_CRYO    = 1;
-  GCG_DICE_SIDE_HYDRO   = 2;
-  GCG_DICE_SIDE_PYRO    = 3;
-  GCG_DICE_SIDE_ELECTRO = 4;
-  GCG_DICE_SIDE_GEO     = 5;
-  GCG_DICE_SIDE_DENDRO  = 6;
-  GCG_DICE_SIDE_ANEMO   = 7;
-  GCG_DICE_SIDE_PAIMON  = 8;
+	Invalid = 0;
+	Cryo = 1;
+	Hydro = 2;
+	Pyro = 3;
+	Electro = 4;
+	Geo = 5;
+	Dendro = 6;
+	Anemo = 7;
+	Paimon = 8;
 }

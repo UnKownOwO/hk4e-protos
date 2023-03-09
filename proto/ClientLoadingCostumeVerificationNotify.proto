@@ -1,18 +1,19 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message ClientLoadingCostumeVerificationNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 3441;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// 	IS_ALLOW_CLIENT = 1;
-	// }
+	enum ClientLoadingCostumeVerificationNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 3441;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
 
-	uint64 prefabHash = 15;
-	uint32 costumeId = 8;
-	uint64 guid = 13;
+	uint64 PrefabHash = 15;
+	uint32 CostumeId = 8;
+	uint64 Guid = 13;
 }

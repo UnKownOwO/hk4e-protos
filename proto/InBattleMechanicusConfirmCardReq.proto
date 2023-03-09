@@ -1,18 +1,19 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message InBattleMechanicusConfirmCardReq {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 5324;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// 	IS_ALLOW_CLIENT = 1;
-	// }
+	enum InBattleMechanicusConfirmCardReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 5324;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
 
-	uint32 playIndex = 4;
-	uint32 groupId = 15;
-	uint32 cardId = 9;
+	uint32 PlayIndex = 4;
+	uint32 GroupId = 15;
+	uint32 CardId = 9;
 }

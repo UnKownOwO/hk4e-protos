@@ -1,8 +1,8 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 enum InterOpType {
-  INTER_OP_FINISH = 0;
-  INTER_OP_START  = 1;
+	InterOpFinish = 0;
+	InterOpStart = 1;
 }

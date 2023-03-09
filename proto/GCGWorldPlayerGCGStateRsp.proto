@@ -1,16 +1,18 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
+import "GCGPlayerGCGState.proto";
 
 message GCGWorldPlayerGCGStateRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 7941;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum NGMOOLEDMPJ {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 7280;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	int32 retcode = 14;
-	bool isAgree = 10;
+	int32 Retcode = 2;
+	repeated GCGPlayerGCGState PlayerState = 5;
 }

@@ -1,9 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message PlantFlowerAcceptFlowerResultInfo {
-	map<uint32, uint32> Unk3300_PALEJEDIAJP = 9;
-	uint32 uid = 10;
-	map<uint32, uint32> Unk3300_ILAADDCOPKE = 4;
+	map<uint32, uint32> UnacceptFlowerNumMap = 9;
+	uint32 Uid = 10;
+	map<uint32, uint32> AcceptFlowerNumMap = 4;
 }

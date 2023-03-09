@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message InfernceWordInfo {
+	bool IsAssociate = 3;
+	uint32 WordId = 5;
+	uint32 UnlockByWordId = 13;
+	bool IsSubmit = 4;
+	bool IsInterpret = 7;
+}

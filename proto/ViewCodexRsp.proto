@@ -1,21 +1,21 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "CodexTypeData.proto";
 
 message ViewCodexRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 4209;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum ViewCodexRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4209;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	repeated uint32 Unk3300_CBGDAAOBGNB = 14;
-	repeated uint32 recentViewedPushtipsList = 13;
-	repeated CodexTypeData typeDataList = 8;
-	int32 retcode = 10;
-	repeated uint32 Unk3300_IDNOLALHFFA = 7;
+	repeated uint32 PushTipsRewardList = 14;
+	repeated uint32 RecentViewedPushtipsList = 13;
+	repeated CodexTypeData TypeDataList = 8;
+	int32 Retcode = 10;
+	repeated uint32 PushTipsReadList = 7;
 }

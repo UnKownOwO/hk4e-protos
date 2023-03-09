@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package Proto;
+
+enum RegionSearchChangeRegionNotify_RegionEvent {
+	None = 0;
+	Enter = 1;
+	Leave = 2;
+}

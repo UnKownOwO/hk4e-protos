@@ -1,11 +1,12 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message Reliquary {
-	uint32 level = 1;
-	uint32 exp = 2;
-	uint32 promoteLevel = 3;
-	uint32 mainPropId = 4;
-	repeated uint32 appendPropIdList = 5;
+	uint32 Level = 1;
+	uint32 Exp = 2;
+	uint32 PromoteLevel = 3;
+	uint32 MainPropId = 4;
+	repeated uint32 AppendPropIdList = 5;
 }

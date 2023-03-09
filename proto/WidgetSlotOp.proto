@@ -1,8 +1,8 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 enum WidgetSlotOp {
-  WIDGET_SLOT_OP_ATTACH = 0;
-  WIDGET_SLOT_OP_DETACH = 1;
+	Attach = 0;
+	Detach = 1;
 }

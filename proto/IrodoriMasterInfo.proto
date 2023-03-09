@@ -1,9 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message IrodoriMasterInfo {
-	bool isCgViewed = 6;
-	uint32 difficulty = 12;
-	uint32 levelId = 13;
+	bool IsCgViewed = 6;
+	uint32 Difficulty = 12;
+	uint32 LevelId = 13;
 }

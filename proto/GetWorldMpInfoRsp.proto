@@ -1,17 +1,18 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message GetWorldMpInfoRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 3320;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum GetWorldMpInfoRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 3320;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	int32 retcode = 12;
-	bool isInMpMode = 11;
-	uint32 quitMpValidTime = 15;
+	int32 Retcode = 12;
+	bool IsInMpMode = 11;
+	uint32 QuitMpValidTime = 15;
 }

@@ -1,21 +1,21 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
-import "Vector.proto";
+import "Rotation.proto";
 import "HuntingPair.proto";
 
 message HuntingRevealClueNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 4335;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum HuntingRevealClueNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4335;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 finishedGroupId = 13;
-	uint32 finishClueCount = 11;
-	Vector cluePosition = 5;
-	HuntingPair huntingPair = 4;
+	uint32 FinishedGroupId = 13;
+	uint32 FinishClueCount = 11;
+	Rotation CluePosition = 5;
+	HuntingPair HuntingPair = 4;
 }

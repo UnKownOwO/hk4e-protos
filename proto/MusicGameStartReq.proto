@@ -1,18 +1,19 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message MusicGameStartReq {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 8536;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// 	IS_ALLOW_CLIENT = 1;
-	// }
+	enum MusicGameStartReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8536;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
 
-	uint64 ugcGuid = 5;
-	uint32 musicBasicId = 7;
-	bool isSaveScore = 15;
+	uint64 UgcGuid = 5;
+	uint32 MusicBasicId = 7;
+	bool IsSaveScore = 15;
 }

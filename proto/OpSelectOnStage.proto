@@ -1,8 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message OpSelectOnStage {
-	uint32 cardGuid = 6;
-	repeated uint32 costDiceIndexList = 13;
+	uint32 CardGuid = 6;
+	repeated uint32 CostDiceIndexList = 13;
 }

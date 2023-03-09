@@ -1,10 +1,11 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message RockBoardExploreStageData {
-	bool isFinish = 1;
-	uint32 stageId = 9;
-	bool isOpen = 6;
-	uint32 openTime = 7;
+	bool IsFinish = 1;
+	uint32 StageId = 9;
+	bool IsOpen = 6;
+	uint32 OpenTime = 7;
 }

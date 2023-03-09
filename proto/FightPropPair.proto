@@ -1,8 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message FightPropPair {
-	uint32 propType = 1;
-	float propValue = 2;
+	uint32 PropType = 1;
+	float PropValue = 2;
 }

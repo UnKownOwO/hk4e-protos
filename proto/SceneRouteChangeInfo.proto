@@ -1,12 +1,12 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "RoutePointChangeInfo.proto";
 
 message SceneRouteChangeInfo {
-	bool isForward = 7;
-	repeated RoutePointChangeInfo pointList = 14;
-	uint32 type = 11;
-	uint32 routeId = 6;
+	bool IsForward = 7;
+	repeated RoutePointChangeInfo PointList = 14;
+	uint32 Type = 11;
+	uint32 RouteId = 6;
 }

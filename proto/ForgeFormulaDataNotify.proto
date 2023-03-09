@@ -1,16 +1,17 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message ForgeFormulaDataNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 661;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum ForgeFormulaDataNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 661;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	bool isLocked = 1;
-	uint32 forgeId = 12;
+	bool IsLocked = 1;
+	uint32 ForgeId = 12;
 }

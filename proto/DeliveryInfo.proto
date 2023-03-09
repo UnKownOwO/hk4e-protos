@@ -1,9 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message DeliveryInfo {
-	uint32 dayIndex = 6;
-	repeated uint32 finishedDeliveryQuestIndex = 7;
-	bool isTakenReward = 4;
+	uint32 DayIndex = 6;
+	repeated uint32 FinishedDeliveryQuestIndex = 7;
+	bool IsTakenReward = 4;
 }

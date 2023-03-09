@@ -1,24 +1,24 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "RecordUsage.proto";
 import "GetUgcType.proto";
 import "UgcType.proto";
 
 message GetUgcReq {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 6338;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// 	IS_ALLOW_CLIENT = 1;
-	// }
+	enum GetUgcReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 6338;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
 
-	RecordUsage ugcRecordUsage = 8;
-	GetUgcType getUgcType = 10;
-	uint64 ugcGuid = 15;
-	UgcType ugcType = 2;
-	bool isRequireBrief = 5;
+	RecordUsage UgcRecordUsage = 8;
+	GetUgcType GetUgcType = 10;
+	uint64 UgcGuid = 15;
+	UgcType UgcType = 2;
+	bool IsRequireBrief = 5;
 }

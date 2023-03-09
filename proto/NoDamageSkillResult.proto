@@ -1,15 +1,15 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "GCGDamageDetail.proto";
 
 message NoDamageSkillResult {
-	uint32 Unk3300_NNJAOEHNPPD = 3;
-	uint32 Unk3300_NIGDCIGLAKE = 1;
-	uint32 Unk3300_LPGLOCDDPCL = 13;
-	repeated GCGDamageDetail detailList = 9;
-	uint32 Unk3300_EPNDCIAJOJP = 5;
-	uint32 skillId = 15;
-	uint32 targetCardGuid = 4;
+	uint32 ResultSeq = 3;
+	uint32 EffectElement = 1;
+	uint32 FromResultSeq = 13;
+	repeated GCGDamageDetail DetailList = 9;
+	uint32 SrcCardGuid = 5;
+	uint32 SkillId = 15;
+	uint32 TargetCardGuid = 4;
 }

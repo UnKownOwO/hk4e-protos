@@ -1,11 +1,11 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "RogueDiaryDungeonRecord.proto";
 
 message RogueDiaryStageInfo {
-	uint32 stageId = 3;
-	RogueDiaryDungeonRecord bestRecord = 4;
-	bool isHaveTry = 9;
+	uint32 StageId = 3;
+	RogueDiaryDungeonRecord BestRecord = 4;
+	bool IsHaveTry = 9;
 }

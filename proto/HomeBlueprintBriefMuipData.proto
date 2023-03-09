@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message HomeBlueprintBriefMuipData {
+	string ShareCode = 1;
+	uint32 OwnerUid = 2;
+	uint32 ModuleId = 3;
+	uint32 SceneId = 4;
+	uint32 BlockId = 5;
+	bool IsAllowCopy = 6;
+	uint32 CreateTime = 7;
+}

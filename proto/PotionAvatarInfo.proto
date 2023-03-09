@@ -1,8 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message PotionAvatarInfo {
-	uint64 avatarId = 10;
-	bool isTrial = 3;
+	uint64 AvatarId = 10;
+	bool IsTrial = 3;
 }

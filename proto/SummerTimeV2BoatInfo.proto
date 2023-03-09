@@ -1,10 +1,11 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message SummerTimeV2BoatInfo {
-	uint32 param3 = 10;
-	uint32 usedTime = 6;
-	uint32 param1 = 4;
-	uint32 param2 = 5;
+	uint32 Param3 = 10;
+	uint32 UsedTime = 6;
+	uint32 Param1 = 4;
+	uint32 Param2 = 5;
 }

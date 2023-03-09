@@ -1,8 +1,0 @@
-syntax = "proto3";
-
-option go_package = "./;proto";
-
-message NALEOFHPMKN {
-	uint32 aeppldffjcf = 5;
-	uint32 ilhofemcpji = 7;
-}

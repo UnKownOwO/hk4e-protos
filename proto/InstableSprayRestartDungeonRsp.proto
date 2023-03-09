@@ -1,16 +1,17 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message InstableSprayRestartDungeonRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 21689;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum JGPPFHHEHEO {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 21689;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 levelId = 9;
-	int32 retcode = 12;
+	uint32 LevelId = 9;
+	int32 Retcode = 12;
 }

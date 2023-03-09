@@ -1,14 +1,14 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "SummerTimeV2BoatStageInfo.proto";
 import "SummerTimeV2DungeonStageInfo.proto";
 
 message SummerTimeV2Info {
-	bool leftMonsters = 7;
-	uint32 Unk3300_BNNMNCKEHHO = 10;
-	repeated SummerTimeV2BoatStageInfo boatStageInfoList = 6;
-	uint32 Unk3300_JHBCHFHAGFO = 14;
-	repeated SummerTimeV2DungeonStageInfo dungeonStageInfoList = 11;
+	bool IsContentClosed = 7;
+	uint32 CurDungeonRewardLimit = 10;
+	repeated SummerTimeV2BoatStageInfo BoatStageInfoList = 6;
+	uint32 TakenRewardCount = 14;
+	repeated SummerTimeV2DungeonStageInfo DungeonStageInfoList = 11;
 }

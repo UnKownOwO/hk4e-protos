@@ -1,11 +1,11 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "BattlePassUnlockStatus.proto";
 
 message BattlePassRewardTag {
-	uint32 level = 8;
-	BattlePassUnlockStatus unlockStatus = 13;
-	uint32 rewardId = 15;
+	uint32 Level = 8;
+	BattlePassUnlockStatus UnlockStatus = 13;
+	uint32 RewardId = 15;
 }

@@ -1,20 +1,20 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "MatchType.proto";
 
 message PlayerConfirmMatchRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 4166;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum PlayerConfirmMatchRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4166;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	bool isAgreed = 6;
-	MatchType matchType = 12;
-	uint32 matchId = 3;
-	int32 retcode = 1;
+	bool IsAgreed = 6;
+	MatchType MatchType = 12;
+	uint32 MatchId = 3;
+	int32 Retcode = 1;
 }

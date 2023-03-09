@@ -1,11 +1,11 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "GalleryStopReason.proto";
 
 message RacingGallerySettleInfo {
-	uint32 useTime = 9;
-	GalleryStopReason reason = 3;
-	uint32 winnerUid = 10;
+	uint32 UseTime = 9;
+	GalleryStopReason Reason = 3;
+	uint32 WinnerUid = 10;
 }

@@ -1,20 +1,20 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "CrystalLinkTeamInfo.proto";
 
 message CrystalLinkEnterDungeonRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 8936;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum CrystalLinkEnterDungeonRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8936;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 levelId = 11;
-	uint32 difficultyId = 2;
-	int32 retcode = 3;
-	repeated CrystalLinkTeamInfo teamInfoList = 10;
+	uint32 LevelId = 11;
+	uint32 DifficultyId = 2;
+	int32 Retcode = 3;
+	repeated CrystalLinkTeamInfo TeamInfoList = 10;
 }

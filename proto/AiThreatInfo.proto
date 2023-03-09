@@ -1,7 +1,8 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message AiThreatInfo {
-	map<uint32, uint32> aiThreatMap = 13;
+	map<uint32, uint32> AiThreatMap = 13;
 }

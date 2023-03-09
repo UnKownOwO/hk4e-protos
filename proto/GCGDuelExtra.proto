@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package Proto;
+
+import "PlatformType.proto";
+import "GCGChallengeData.proto";
+
+message GCGDuelExtra {
+	repeated uint32 CardIdList = 1;
+	uint32 FieldId = 2;
+	uint32 CardBackId = 3;
+	map<uint32, uint32> CardFaceMap = 4;
+	repeated GCGChallengeData ChallengeList = 5;
+	uint32 Score = 6;
+	bool IsMatchAi = 7;
+	uint32 AiDeckId = 8;
+	bool IsInternal = 9;
+	repeated uint32 ForbidFinishChallengeList = 10;
+	uint32 Level = 11;
+	uint32 ClientVersion = 12;
+	PlatformType PlatformType = 13;
+}

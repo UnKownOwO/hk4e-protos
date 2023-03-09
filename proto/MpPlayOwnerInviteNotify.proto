@@ -1,17 +1,18 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message MpPlayOwnerInviteNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 1810;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum MpPlayOwnerInviteNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 1810;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 cd = 6;
-	bool isRemainReward = 9;
-	uint32 mpPlayId = 3;
+	uint32 Cd = 6;
+	bool IsRemainReward = 9;
+	uint32 MpPlayId = 3;
 }

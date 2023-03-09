@@ -1,19 +1,20 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message GetCityReputationMapInfoRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 2878;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum GetCityReputationMapInfoRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 2878;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	bool Unk3300_NCMHMODIIKM = 13;
-	int32 retcode = 4;
-	repeated uint32 unlockHuntingCityList = 12;
-	bool Unk3300_GJFNOPNMFNG = 7;
-	repeated uint32 rewardCityList = 1;
+	bool IsNewRequest = 13;
+	int32 Retcode = 4;
+	repeated uint32 UnlockHuntingCityList = 12;
+	bool IsNewHunting = 7;
+	repeated uint32 RewardCityList = 1;
 }

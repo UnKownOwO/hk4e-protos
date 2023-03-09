@@ -1,20 +1,20 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "OnlinePlayerInfo.proto";
 
 message GetOnlinePlayerInfoRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 39;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum GetOnlinePlayerInfoRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 39;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	int32 retcode = 14;
-	OnlinePlayerInfo targetPlayerInfo = 11;
-	uint32 targetUid = 3;
-	uint32 param = 10;
+	int32 Retcode = 14;
+	OnlinePlayerInfo TargetPlayerInfo = 11;
+	uint32 TargetUid = 3;
+	uint32 Param = 10;
 }

@@ -1,9 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message GCGSkillPreviewTokenInfo {
-	uint32 Unk3300_MMIKPPJMHAD = 7;
-	uint32 Unk3300_IKICJMEFEON = 6;
-	uint32 tokenType = 8;
+	uint32 BeforeValue = 7;
+	uint32 AfterValue = 6;
+	uint32 TokenType = 8;
 }

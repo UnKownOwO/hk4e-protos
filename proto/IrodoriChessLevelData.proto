@@ -1,12 +1,12 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "IrodoriChessMapData.proto";
 
 message IrodoriChessLevelData {
-	uint32 levelId = 10;
-	uint32 openTime = 7;
-	IrodoriChessMapData Unk3300_BGINEMHBNAD = 14;
-	IrodoriChessMapData Unk3300_GCIGNCGOBML = 15;
+	uint32 LevelId = 10;
+	uint32 OpenTime = 7;
+	IrodoriChessMapData NormalMapData = 14;
+	IrodoriChessMapData HardMapData = 15;
 }

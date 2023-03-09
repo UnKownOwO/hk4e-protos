@@ -1,10 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "ItemParam.proto";
 
 message Reward {
-	uint32 rewardId = 1;
-	repeated ItemParam itemList = 2;
+	uint32 RewardId = 1;
+	repeated ItemParam ItemList = 2;
 }

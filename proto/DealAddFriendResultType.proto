@@ -1,8 +1,8 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 enum DealAddFriendResultType {
-  DEAL_ADD_FRIEND_REJECT = 0;
-  DEAL_ADD_FRIEND_ACCEPT = 1;
+	DealAddFriendReject = 0;
+	DealAddFriendAccept = 1;
 }

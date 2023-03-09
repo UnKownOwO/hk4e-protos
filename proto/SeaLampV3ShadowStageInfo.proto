@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package Proto;
+
+import "SeaLampV3ShadowLevelInfo.proto";
+
+message SeaLampV3ShadowStageInfo {
+	uint32 StageId = 5;
+	repeated SeaLampV3ShadowLevelInfo LevelInfoList = 4;
+	bool IsOpen = 11;
+}

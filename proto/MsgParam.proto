@@ -1,9 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message MsgParam {
-	oneof param {
+	oneof MsgParam_ParamOneofCase {
 		uint32 int_param = 10;
 		float flt_param = 7;
 		string str_param = 15;

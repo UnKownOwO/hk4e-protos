@@ -1,16 +1,17 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message H5ActivityIdsNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 5696;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum H5ActivityIdsNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 5696;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	map<uint32, uint32> h5ActivityMap = 15;
-	uint32 clientRedDotTimestamp = 1;
+	map<uint32, uint32> H5ActivityMap = 15;
+	uint32 ClientRedDotTimestamp = 1;
 }

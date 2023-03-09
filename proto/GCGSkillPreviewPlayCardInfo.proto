@@ -1,11 +1,11 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "GCGSkillPreviewInfo.proto";
 
 message GCGSkillPreviewPlayCardInfo {
-	GCGSkillPreviewInfo playCardInfo = 15;
-	uint32 targetCardGuid = 9;
-	uint32 handCardGuid = 2;
+	GCGSkillPreviewInfo PlayCardInfo = 15;
+	uint32 TargetCardGuid = 9;
+	uint32 HandCardGuid = 2;
 }

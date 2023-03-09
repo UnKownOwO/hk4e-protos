@@ -1,10 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "ChannelerSlabCamp.proto";
 
 message ChannelerSlabChallenge {
-	repeated ChannelerSlabCamp campList = 15;
-	uint32 activeCampIndex = 14;
+	repeated ChannelerSlabCamp CampList = 15;
+	uint32 ActiveCampIndex = 14;
 }

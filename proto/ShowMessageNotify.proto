@@ -1,19 +1,19 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "SvrMsgId.proto";
 import "MsgParam.proto";
 
 message ShowMessageNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 98;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum ShowMessageNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 98;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	SvrMsgId msgId = 7;
-	repeated MsgParam params = 5;
+	SvrMsgId MsgId = 7;
+	repeated MsgParam Params = 5;
 }

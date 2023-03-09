@@ -1,21 +1,21 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
-import "Vector.proto";
-import "Type.proto";
+import "Rotation.proto";
+import "EntityJumpNotify_Type.proto";
 
 message EntityJumpNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 292;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum EntityJumpNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 292;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	Vector rot = 8;
-	Vector pos = 5;
-	uint32 entityId = 11;
-	Type jumpType = 3;
+	Rotation Rot = 8;
+	Rotation Pos = 5;
+	uint32 EntityId = 11;
+	EntityJumpNotify_Type JumpType = 3;
 }

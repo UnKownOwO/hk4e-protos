@@ -1,20 +1,20 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "EvtAnimatorParameterInfo.proto";
 import "ForwardType.proto";
 
 message EvtAnimatorParameterNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 355;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// 	IS_ALLOW_CLIENT = 1;
-	// }
+	enum EvtAnimatorParameterNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 355;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
 
-	EvtAnimatorParameterInfo animatorParamInfo = 10;
-	ForwardType forwardType = 4;
+	EvtAnimatorParameterInfo AnimatorParamInfo = 10;
+	ForwardType ForwardType = 4;
 }

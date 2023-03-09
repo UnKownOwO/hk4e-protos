@@ -1,18 +1,18 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "MapMarkTipsInfo.proto";
 
 message GetMapMarkTipsRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 3089;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum GetMapMarkTipsRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 3089;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	int32 retcode = 12;
-	repeated MapMarkTipsInfo markTipsList = 14;
+	int32 Retcode = 12;
+	repeated MapMarkTipsInfo MarkTipsList = 14;
 }

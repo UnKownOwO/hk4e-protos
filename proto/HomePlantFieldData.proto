@@ -1,14 +1,14 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
-import "Vector.proto";
+import "Rotation.proto";
 import "HomePlantSubFieldData.proto";
 
 message HomePlantFieldData {
-	uint32 sceneId = 1;
-	uint32 fieldGuid = 3;
-	repeated HomePlantSubFieldData subFieldList = 2;
-	uint32 furnitureId = 4;
-	Vector spawnPos = 9;
+	uint32 SceneId = 1;
+	uint32 FieldGuid = 3;
+	repeated HomePlantSubFieldData SubFieldList = 2;
+	uint32 FurnitureId = 4;
+	Rotation SpawnPos = 9;
 }

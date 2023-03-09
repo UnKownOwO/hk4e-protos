@@ -1,16 +1,17 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message UnlockCoopChapterRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 1990;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum UnlockCoopChapterRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 1990;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	int32 retcode = 6;
-	uint32 chapterId = 15;
+	int32 Retcode = 6;
+	uint32 ChapterId = 15;
 }

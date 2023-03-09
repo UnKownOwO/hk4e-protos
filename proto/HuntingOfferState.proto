@@ -1,10 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 enum HuntingOfferState {
-  HUNTING_OFFER_STATE_NONE      = 0;
-  HUNTING_OFFER_STATE_STARTED   = 1;
-  HUNTING_OFFER_STATE_UNSTARTED = 2;
-  HUNTING_OFFER_STATE_SUCC      = 3;
+	None = 0;
+	Started = 1;
+	Unstarted = 2;
+	Succ = 3;
 }

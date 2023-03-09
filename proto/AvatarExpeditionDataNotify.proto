@@ -1,17 +1,17 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "AvatarExpeditionInfo.proto";
 
 message AvatarExpeditionDataNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 1638;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum AvatarExpeditionDataNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 1638;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	map<uint64, AvatarExpeditionInfo> expeditionInfoMap = 4;
+	map<uint64, AvatarExpeditionInfo> ExpeditionInfoMap = 4;
 }

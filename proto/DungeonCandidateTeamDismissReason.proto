@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package Proto;
+
+enum DungeonCandidateTeamDismissReason {
+	DungeonCandidateTpdrNormal = 0;
+	DungeonCandidateTpdrDie = 1;
+	DungeonCandidateTpdrDisconnect = 2;
+}

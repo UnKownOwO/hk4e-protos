@@ -1,8 +1,8 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 enum EventTriggerType {
-  EVENT_TRIGGER_NONE        = 0;
-  EVENT_TRIGGER_ENTER_FORCE = 1;
+	EventTriggerNone = 0;
+	EventTriggerEnterForce = 1;
 }

@@ -1,8 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message CrucibleInfo {
-	uint32 mpPlayId = 1;
-	uint32 prepareEndTime = 2;
+	uint32 MpPlayId = 1;
+	uint32 PrepareEndTime = 2;
 }

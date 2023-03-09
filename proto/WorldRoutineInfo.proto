@@ -1,10 +1,11 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message WorldRoutineInfo {
-	bool isFinished = 9;
-	uint32 finishProgress = 15;
-	uint32 progress = 5;
-	uint32 routineId = 4;
+	bool IsFinished = 9;
+	uint32 FinishProgress = 15;
+	uint32 Progress = 5;
+	uint32 RoutineId = 4;
 }

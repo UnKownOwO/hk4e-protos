@@ -1,18 +1,18 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "WinterCampStageInfo.proto";
 
 message WinterCampStageInfoChangeNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 8517;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum WinterCampStageInfoChangeNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8517;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	WinterCampStageInfo battleInfo = 15;
-	WinterCampStageInfo exploreInfo = 3;
+	WinterCampStageInfo BattleInfo = 15;
+	WinterCampStageInfo ExploreInfo = 3;
 }

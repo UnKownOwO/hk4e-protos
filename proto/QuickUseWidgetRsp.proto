@@ -1,23 +1,23 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "DetectorData.proto";
 import "ClientCollectorData.proto";
 import "SkyCrystalDetectorQuickUseResult.proto";
 
 message QuickUseWidgetRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 4252;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum QuickUseWidgetRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4252;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	int32 retcode = 8;
-	uint32 materialId = 6;
-	oneof param {
+	int32 Retcode = 8;
+	uint32 MaterialId = 6;
+	oneof QuickUseWidgetRsp_ParamOneofCase {
 		DetectorData detector_data = 1;
 		ClientCollectorData client_collector_data = 7;
 		SkyCrystalDetectorQuickUseResult sky_crystal_detector_quick_use_result = 139827;

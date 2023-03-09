@@ -1,11 +1,11 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 enum BrickBreakerStageType {
-  BRICK_BREAKER_STAGE_PREPARE = 0;
-  BRICK_BREAKER_STAGE_PICK    = 1;
-  BRICK_BREAKER_STAGE_GAME    = 2;
-  BRICK_BREAKER_STAGE_PLAY    = 3;
-  BRICK_BREAKER_STAGE_SETTLE  = 4;
+	BrickBreakerStagePrepare = 0;
+	BrickBreakerStagePick = 1;
+	BrickBreakerStageGame = 2;
+	BrickBreakerStagePlay = 3;
+	BrickBreakerStageSettle = 4;
 }

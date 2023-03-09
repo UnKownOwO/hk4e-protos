@@ -1,9 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message AvatarSatiationData {
-	uint64 avatarGuid = 5;
-	float finishTime = 15;
-	float penaltyFinishTime = 12;
+	uint64 AvatarGuid = 5;
+	float FinishTime = 15;
+	float PenaltyFinishTime = 12;
 }

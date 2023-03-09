@@ -1,10 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "AbilityString.proto";
 
 message ModifierProperty {
-	float value = 14;
-	AbilityString key = 8;
+	float Value = 14;
+	AbilityString Key = 8;
 }

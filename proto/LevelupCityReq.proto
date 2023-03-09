@@ -1,18 +1,19 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message LevelupCityReq {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 295;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// 	IS_ALLOW_CLIENT = 1;
-	// }
+	enum LevelupCityReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 295;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
 
-	uint32 sceneId = 14;
-	uint32 itemNum = 8;
-	uint32 areaId = 13;
+	uint32 SceneId = 14;
+	uint32 ItemNum = 8;
+	uint32 AreaId = 13;
 }

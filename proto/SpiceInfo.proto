@@ -1,11 +1,11 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "SpiceStageData.proto";
 
 message SpiceInfo {
-	uint32 Unk3300_CIHIAJEGCBO = 8;
-	repeated SpiceStageData spiceStageDataList = 11;
-	uint32 Unk3300_LAKPMMIPBMI = 14;
+	uint32 IncreaseAvatarFetterLimitTimes = 8;
+	repeated SpiceStageData SpiceStageDataList = 11;
+	uint32 CurrentIncreaseAvatarFetterTimes = 14;
 }

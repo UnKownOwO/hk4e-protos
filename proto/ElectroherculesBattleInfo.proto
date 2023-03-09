@@ -1,10 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
-import "KJJKCDHJMGD.proto";
+import "ElectroherculesBattleStageInfo.proto";
 
 message ElectroherculesBattleInfo {
-	repeated KJJKCDHJMGD stageInfoList = 7;
+	repeated ElectroherculesBattleStageInfo StageInfoList = 7;
 	bool pdpfimhpajd = 14;
 }

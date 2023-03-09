@@ -1,12 +1,12 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "CodexType.proto";
 
 message CodexTypeData {
-	repeated uint32 codexIdList = 4;
-	repeated bool haveViewedList = 8;
-	CodexType type = 14;
-	map<uint32, uint32> weaponMaxPromoteLevelMap = 3;
+	repeated uint32 CodexIdList = 4;
+	repeated bool HaveViewedList = 8;
+	CodexType Type = 14;
+	map<uint32, uint32> WeaponMaxPromoteLevelMap = 3;
 }

@@ -1,21 +1,21 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "FoundationOpType.proto";
 
 message FoundationRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 806;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum FoundationRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 806;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 pointConfigId = 14;
-	int32 retcode = 1;
-	uint32 gadgetEntityId = 10;
-	FoundationOpType opType = 15;
-	uint32 buildingId = 8;
+	uint32 PointConfigId = 14;
+	int32 Retcode = 1;
+	uint32 GadgetEntityId = 10;
+	FoundationOpType OpType = 15;
+	uint32 BuildingId = 8;
 }

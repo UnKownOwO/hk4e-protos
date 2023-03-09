@@ -1,15 +1,16 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message AnnounceData {
-	uint32 configId = 9;
-	uint32 centerSystemFrequency = 14;
-	uint32 endTime = 5;
-	uint32 beginTime = 4;
-	string countDownText = 7;
-	bool isCenterSystemLast_5EveryMinutes = 12;
-	string dungeonConfirmText = 2;
-	uint32 countDownFrequency = 8;
-	string centerSystemText = 13;
+	uint32 ConfigId = 9;
+	uint32 CountDownFrequency = 14;
+	uint32 EndTime = 5;
+	uint32 BeginTime = 4;
+	string CountDownText = 7;
+	bool IsCenterSystemLast5EveryMinutes = 12;
+	string CenterSystemText = 2;
+	uint32 CenterSystemFrequency = 8;
+	string DungeonConfirmText = 13;
 }

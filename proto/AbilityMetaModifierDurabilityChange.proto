@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message AbilityMetaModifierDurabilityChange {
+	float RemainDurability = 14;
+	float ReduceDurability = 7;
+}

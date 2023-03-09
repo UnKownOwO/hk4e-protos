@@ -1,9 +1,0 @@
-syntax = "proto3";
-
-option go_package = "./;proto";
-
-message IBBGEJCNPEI {
-	string flopankfnol = 1;
-	string gameBiz = 2;
-	string mnlpmamhoem = 3;
-}

@@ -1,20 +1,22 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
+
 
 message PingReq {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 20;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// 	IS_ALLOW_CLIENT = 1;
-	// }
+	enum PingReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 20;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
 
-	uint32 seq = 11;
-	bytes scData = 13;
-	double totalTickTime = 4;
-	float ueTime = 15;
-	uint32 clientTime = 8;
+	uint32 Seq = 11;
+	bytes ScData = 13;
+	double TotalTickTime = 4;
+	float UeTime = 15;
+	uint32 ClientTime = 8;
 }

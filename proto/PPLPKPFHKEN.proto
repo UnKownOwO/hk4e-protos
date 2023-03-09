@@ -1,7 +1,0 @@
-syntax = "proto3";
-
-option go_package = "./;proto";
-
-message PPLPKPFHKEN {
-	uint32 himcohkddah = 4;
-}

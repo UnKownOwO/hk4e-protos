@@ -1,12 +1,12 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "InstableSprayTeamInfo.proto";
 
 message InstableSprayStageInfo {
-	uint32 maxScore = 2;
-	repeated InstableSprayTeamInfo teamInfoList = 3;
-	bool isFinished = 13;
-	uint32 stageId = 8;
+	uint32 MaxScore = 2;
+	repeated InstableSprayTeamInfo TeamInfoList = 3;
+	bool IsFinished = 13;
+	uint32 StageId = 8;
 }

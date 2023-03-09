@@ -1,12 +1,12 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 enum ResinCostType {
-  RESIN_COST_TYPE_NONE              = 0;
-  RESIN_COST_TYPE_NORMAL            = 1;
-  RESIN_COST_TYPE_CONDENSE          = 2;
-  RESIN_COST_TYPE_REUNION_PRIVILEGE = 3;
-  RESIN_COST_TYPE_OP_ACTIVITY       = 4;
-  RESIN_COST_TYPE_MATERIAL          = 5;
+	None = 0;
+	Normal = 1;
+	Condense = 2;
+	ReunionPrivilege = 3;
+	OpActivity = 4;
+	Material = 5;
 }

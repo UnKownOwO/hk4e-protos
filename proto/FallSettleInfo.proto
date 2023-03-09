@@ -1,14 +1,14 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "OnlinePlayerInfo.proto";
 
 message FallSettleInfo {
-	OnlinePlayerInfo playerInfo = 7;
-	uint32 remainTime = 14;
-	uint32 uid = 3;
-	uint32 catchCount = 10;
-	map<uint32, uint32> flowerRingCatchCountMap = 4;
-	uint32 finalScore = 9;
+	OnlinePlayerInfo PlayerInfo = 7;
+	uint32 RemainTime = 14;
+	uint32 Uid = 3;
+	uint32 CatchCount = 10;
+	map<uint32, uint32> FlowerRingCatchCountMap = 4;
+	uint32 FinalScore = 9;
 }

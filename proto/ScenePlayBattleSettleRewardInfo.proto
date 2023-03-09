@@ -1,10 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "ItemParam.proto";
 
 message ScenePlayBattleSettleRewardInfo {
-	uint32 uid = 8;
-	repeated ItemParam rewardItemList = 5;
+	uint32 Uid = 8;
+	repeated ItemParam RewardItemList = 5;
 }

@@ -1,15 +1,16 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message TreasureMapCurrencyNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 2038;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum TreasureMapCurrencyNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 2038;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 currencyNum = 13;
+	uint32 CurrencyNum = 13;
 }

@@ -1,9 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message AbilityArgument {
-	oneof arg {
+	oneof AbilityArgument_ArgOneofCase {
 		uint32 int_arg = 11;
 		float float_arg = 2;
 		string str_arg = 8;

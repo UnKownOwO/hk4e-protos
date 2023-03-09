@@ -1,21 +1,21 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
-import "Vector.proto";
+import "Rotation.proto";
 
 message ChangeAvatarReq {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 1649;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// 	IS_ALLOW_CLIENT = 1;
-	// }
+	enum ChangeAvatarReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 1649;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
 
-	uint64 guid = 12;
-	bool isMove = 10;
-	Vector movePos = 3;
-	uint32 skillId = 5;
+	uint64 Guid = 12;
+	bool IsMove = 10;
+	Rotation MovePos = 3;
+	uint32 SkillId = 5;
 }

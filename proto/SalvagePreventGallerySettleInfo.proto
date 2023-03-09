@@ -1,12 +1,12 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "SalvagePreventStopReason.proto";
 
 message SalvagePreventGallerySettleInfo {
-	uint32 timeRemain = 10;
-	uint32 finalScore = 6;
-	SalvagePreventStopReason reason = 2;
-	uint32 monsterCount = 3;
+	uint32 TimeRemain = 10;
+	uint32 FinalScore = 6;
+	SalvagePreventStopReason Reason = 2;
+	uint32 MonsterCount = 3;
 }

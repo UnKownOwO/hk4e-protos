@@ -1,18 +1,19 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message PlayerApplyEnterMpResultRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 1843;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum PlayerApplyEnterMpResultRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 1843;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 applyUid = 10;
-	bool isAgreed = 9;
-	int32 retcode = 2;
-	uint32 param = 4;
+	uint32 ApplyUid = 10;
+	bool IsAgreed = 9;
+	int32 Retcode = 2;
+	uint32 Param = 4;
 }

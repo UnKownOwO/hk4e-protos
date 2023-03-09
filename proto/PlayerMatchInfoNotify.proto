@@ -1,25 +1,25 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "MatchType.proto";
 
 message PlayerMatchInfoNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 4196;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum PlayerMatchInfoNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4196;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 hostUid = 1;
-	uint32 estimateMatchCostTime = 13;
-	uint32 mechanicusDifficultLevel = 2;
-	repeated uint32 matchParamList = 10;
-	uint32 matchBeginTime = 14;
-	uint32 mpPlayId = 6;
-	MatchType matchType = 5;
-	uint32 matchId = 8;
-	uint32 dungeonId = 7;
+	uint32 HostUid = 1;
+	uint32 EstimateMatchCostTime = 13;
+	uint32 MechanicusDifficultLevel = 2;
+	repeated uint32 MatchParamList = 10;
+	uint32 MatchBeginTime = 14;
+	uint32 MpPlayId = 6;
+	MatchType MatchType = 5;
+	uint32 MatchId = 8;
+	uint32 DungeonId = 7;
 }

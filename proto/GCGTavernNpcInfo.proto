@@ -1,10 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
-enum GCGTavernNpcInfo {
-	GCG_SETTLE_OPTION_OPT_NONE = 0;
-	GCG_SETTLE_OPTION_OPT_EXIT = 1;
-	GCG_SETTLE_OPTION_OPT_CONTINUE = 2;
-	GCG_SETTLE_OPTION_OPT_RESTART = 3;
+
+message GCGTavernNpcInfo {
+	uint32 LevelId = 3;
+	uint32 ScenePointId = 2;
+	uint32 Id = 6;
 }

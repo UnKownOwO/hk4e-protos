@@ -1,9 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "SumoDungeonAvatar.proto";
 
 message SumoDungeonTeam {
-	repeated SumoDungeonAvatar dungeonAvatarList = 4;
+	repeated SumoDungeonAvatar DungeonAvatarList = 4;
 }

@@ -1,16 +1,17 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message BlessingRedeemRewardRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 2104;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum BlessingRedeemRewardRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 2104;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	int32 retcode = 2;
-	map<uint32, uint32> picNumMap = 6;
+	int32 Retcode = 2;
+	map<uint32, uint32> PicNumMap = 6;
 }

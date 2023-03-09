@@ -1,17 +1,18 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message GalleryCrystalLinkBuffInfoNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 5546;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum GalleryCrystalLinkBuffInfoNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 5546;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	bool isBuffValid = 11;
-	uint32 galleryId = 6;
-	uint32 buffId = 2;
+	bool IsBuffValid = 11;
+	uint32 GalleryId = 6;
+	uint32 BuffId = 2;
 }

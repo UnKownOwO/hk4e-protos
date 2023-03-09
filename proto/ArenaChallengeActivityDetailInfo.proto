@@ -1,12 +1,12 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "ArenaChallengeMonsterLevel.proto";
 
 message ArenaChallengeActivityDetailInfo {
-	map<uint32, uint32> levelOpenTimeMap = 2;
-	uint32 worldLevel = 6;
-	repeated ArenaChallengeMonsterLevel levelList = 7;
-	bool isFinishAnyLevel = 5;
+	map<uint32, uint32> LevelOpenTimeMap = 2;
+	uint32 WorldLevel = 6;
+	repeated ArenaChallengeMonsterLevel LevelList = 7;
+	bool IsFinishAnyLevel = 5;
 }

@@ -1,10 +1,11 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message CustomDungeonSocial {
-	uint32 storeNum = 7;
-	uint32 winNum = 11;
-	uint32 likeNum = 6;
-	uint32 playNum = 12;
+	uint32 StoreNum = 7;
+	uint32 WinNum = 11;
+	uint32 LikeNum = 6;
+	uint32 PlayNum = 12;
 }

@@ -1,18 +1,19 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message VintageMarketStartStorePlayRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 21141;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum ENOKLJEALMK {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 21141;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	int32 retcode = 3;
-	uint32 Unk3300_LCCNEKGONFG = 1;
-	uint32 Unk3300_ADJKIIJFNME = 13;
-	uint32 storeRound = 6;
+	int32 Retcode = 3;
+	uint32 PrevRoundCoinC = 1;
+	uint32 PrevRoundCoinB = 13;
+	uint32 StoreRound = 6;
 }

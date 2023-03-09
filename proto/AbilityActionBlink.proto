@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+import "Rotation.proto";
+
+message AbilityActionBlink {
+	Rotation Pos = 9;
+	Rotation Rot = 5;
+}

@@ -1,17 +1,17 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "CataLogGlobalWatcherFinishedData.proto";
 
 message CataLogFinishedGlobalWatcherAllDataNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 6352;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum KGDHMHMGKCN {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 6352;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	repeated CataLogGlobalWatcherFinishedData finishedGlobalWatcherDataList = 13;
+	repeated CataLogGlobalWatcherFinishedData FinishedGlobalWatcherDataList = 13;
 }

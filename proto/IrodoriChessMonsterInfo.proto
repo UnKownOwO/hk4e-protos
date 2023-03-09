@@ -1,10 +1,11 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message IrodoriChessMonsterInfo {
-	uint32 monsterId = 12;
-	uint32 level = 13;
-	uint32 hhmklcpngkl = 14;
-	repeated uint32 affixList = 1;
+	uint32 MonsterId = 12;
+	uint32 Level = 13;
+	uint32 GrantPoints = 14;
+	repeated uint32 AffixList = 1;
 }

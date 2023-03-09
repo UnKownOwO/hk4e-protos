@@ -1,17 +1,17 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "HomeFishFarmingInfo.proto";
 
 message HomeFishFarmingInfoNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 4605;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum HomeFishFarmingInfoNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4605;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	repeated HomeFishFarmingInfo fishFarmingInfoList = 7;
+	repeated HomeFishFarmingInfo FishFarmingInfoList = 7;
 }

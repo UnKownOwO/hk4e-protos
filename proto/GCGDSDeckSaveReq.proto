@@ -1,18 +1,20 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message GCGDSDeckSaveReq {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 7769;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// 	IS_ALLOW_CLIENT = 1;
-	// }
+	enum ICKJBGMKFAN {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 7478;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
 
-	bool isValid = 7;
-	string createTime = 1;
-	uint32 rewardIndex = 5;
+	string Name = 11;
+	uint32 DeckId = 14;
+	repeated uint32 CardList = 13;
+	repeated uint32 CharacterCardList = 12;
 }

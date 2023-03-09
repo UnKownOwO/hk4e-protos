@@ -1,10 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "SalvageEscortStopReason.proto";
 
 message SalvageEscortGallerySettleInfo {
-	SalvageEscortStopReason reason = 6;
-	uint32 timeRemain = 8;
+	SalvageEscortStopReason Reason = 6;
+	uint32 TimeRemain = 8;
 }

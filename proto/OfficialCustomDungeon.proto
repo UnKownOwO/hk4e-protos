@@ -1,8 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message OfficialCustomDungeon {
-	uint32 dungeonId = 3;
-	uint32 winTimes = 14;
+	uint32 DungeonId = 3;
+	uint32 WinTimes = 14;
 }

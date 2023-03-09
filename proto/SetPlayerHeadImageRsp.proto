@@ -1,19 +1,19 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "ProfilePicture.proto";
 
 message SetPlayerHeadImageRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 4039;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum SetPlayerHeadImageRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4039;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	int32 retcode = 5;
-	uint32 avatarId = 2;
-	ProfilePicture profilePicture = 9;
+	int32 Retcode = 5;
+	uint32 AvatarId = 2;
+	ProfilePicture ProfilePicture = 9;
 }

@@ -1,10 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "MapMarkTipsType.proto";
 
 message MapMarkTipsInfo {
-	MapMarkTipsType tipsType = 1;
-	repeated uint32 pointIdList = 2;
+	MapMarkTipsType TipsType = 1;
+	repeated uint32 PointIdList = 2;
 }

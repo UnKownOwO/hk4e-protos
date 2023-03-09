@@ -1,11 +1,11 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "VehicleMember.proto";
 
 message VehicleInfo {
-	repeated VehicleMember memberList = 1;
-	uint32 ownerUid = 2;
-	float curStamina = 3;
+	repeated VehicleMember MemberList = 1;
+	uint32 OwnerUid = 2;
+	float CurStamina = 3;
 }

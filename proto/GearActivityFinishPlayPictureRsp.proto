@@ -1,16 +1,17 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message GearActivityFinishPlayPictureRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 21610;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum GearActivityFinishPlayPictureRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 21610;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	int32 retcode = 8;
-	bool isSuccess = 7;
+	int32 Retcode = 8;
+	bool IsSuccess = 7;
 }

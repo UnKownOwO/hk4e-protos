@@ -1,13 +1,14 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message AbilityInvokeEntryHead {
-	int32 localId = 7;
-	uint32 serverBuffUid = 15;
-	uint32 targetId = 5;
-	uint32 instancedAbilityId = 2;
-	uint32 instancedModifierId = 9;
-	bool isServerbuffModifier = 10;
-	int32 modifierConfigLocalId = 8;
+	int32 LocalId = 7;
+	uint32 ServerBuffUid = 15;
+	uint32 TargetId = 5;
+	uint32 InstancedAbilityId = 2;
+	uint32 InstancedModifierId = 9;
+	bool IsServerbuffModifier = 10;
+	int32 ModifierConfigLocalId = 8;
 }

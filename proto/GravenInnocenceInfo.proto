@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "GravenInnocenceCarveInfo.proto";
 import "GravenInnocencePhotoInfo.proto";
@@ -8,9 +8,9 @@ import "GravenInnocenceRaceInfo.proto";
 import "GravenInnocenceCampInfo.proto";
 
 message GravenInnocenceInfo {
-	GravenInnocenceCarveInfo carveInfo = 12;
-	GravenInnocencePhotoInfo photoInfo = 5;
-	GravenInnocenceRaceInfo raceInfo = 13;
-	bool leftMonsters = 8;
-	GravenInnocenceCampInfo campInfo = 11;
+	GravenInnocenceCarveInfo CarveInfo = 12;
+	GravenInnocencePhotoInfo PhotoInfo = 5;
+	GravenInnocenceRaceInfo RaceInfo = 13;
+	bool IsContentClosed = 8;
+	GravenInnocenceCampInfo CampInfo = 11;
 }

@@ -1,23 +1,23 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "ItemParam.proto";
 
 message ShopCardProduct {
-	message ResinCard {
-		repeated ItemParam baseItemList = 1;
-		repeated ItemParam perDayItemList = 2;
+	message ShopCardProduct_ResinCard {
+		repeated ItemParam BaseItemList = 1;
+		repeated ItemParam PerDayItemList = 2;
 	}
 
-	string productId = 1;
-	string priceTier = 2;
-	uint32 mcoinBase = 3;
-	uint32 hcoinPerDay = 4;
-	uint32 days = 5;
-	uint32 remainRewardDays = 6;
-	uint32 cardProductType = 7;
-	oneof extra_card_data {
-		ResinCard resin_card = 101;
+	string ProductId = 1;
+	string PriceTier = 2;
+	uint32 McoinBase = 3;
+	uint32 HcoinPerDay = 4;
+	uint32 Days = 5;
+	uint32 RemainRewardDays = 6;
+	uint32 CardProductType = 7;
+	oneof ShopCardProduct_ExtraCardDataOneofCase {
+		ShopCardProduct_ResinCard resin_card = 101;
 	}
 }

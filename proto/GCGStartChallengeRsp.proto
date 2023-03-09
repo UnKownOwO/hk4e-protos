@@ -1,19 +1,20 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "GCGLevelType.proto";
 
 message GCGStartChallengeRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 7851;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum OBMPGGOELEB {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 7351;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	repeated GCGLevelType megbpmengog = 15;
-	repeated GCGLevelType nojngpppded = 5;
-	GCGLevelType levelType = 12;
+	uint32 ConfigId = 11;
+	GCGLevelType LevelType = 6;
+	uint32 LevelId = 5;
+	int32 Retcode = 14;
 }

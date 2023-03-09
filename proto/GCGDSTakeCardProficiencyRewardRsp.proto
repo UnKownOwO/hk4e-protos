@@ -1,16 +1,18 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message GCGDSTakeCardProficiencyRewardRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 7763;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum JNIEFIACMPI {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 7198;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 retcode = 12;
-	uint32 cardId = 1;
+	int32 Retcode = 11;
+	uint32 CardId = 14;
+	uint32 RewardIndex = 12;
 }

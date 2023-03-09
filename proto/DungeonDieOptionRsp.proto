@@ -1,19 +1,19 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "PlayerDieOption.proto";
 
 message DungeonDieOptionRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 978;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum DungeonDieOptionRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 978;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	int32 retcode = 15;
-	PlayerDieOption dieOption = 4;
-	uint32 reviveCount = 10;
+	int32 Retcode = 15;
+	PlayerDieOption DieOption = 4;
+	uint32 ReviveCount = 10;
 }

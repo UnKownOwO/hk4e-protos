@@ -1,14 +1,14 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "Reliquary.proto";
 import "Weapon.proto";
 
 message Equip {
-	oneof detail {
+	oneof Equip_DetailOneofCase {
 		Reliquary reliquary = 1;
 		Weapon weapon = 2;
 	}
-	bool isLocked = 3;
+	bool IsLocked = 3;
 }

@@ -1,19 +1,19 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "ChessMysteryInfo.proto";
 import "ChessPlayerInfo.proto";
 import "ChessCardInfo.proto";
 
 message InBattleChessInfo {
-	uint32 ddhmhajjmfk = 12;
-	repeated uint32 gkhmchgepli = 11;
-	map<uint32, ChessPlayerInfo> abhkjjjcfcd = 15;
-	uint32 round = 2;
-	ChessMysteryInfo dcfcppdjgod = 10;
-	uint32 leftMonsters = 3;
-	uint32 escapedMonsters = 9;
-	repeated ChessCardInfo selectedCardInfoList = 1;
-	uint32 mechanicusId = 14;
+	uint32 MaxEscapableMonsters = 12;
+	repeated uint32 BanCardTagList = 11;
+	map<uint32, ChessPlayerInfo> PlayerInfoMap = 15;
+	uint32 Round = 2;
+	ChessMysteryInfo MysteryInfo = 10;
+	uint32 LeftMonsters = 3;
+	uint32 ExcapedMonsters = 9;
+	repeated ChessCardInfo SelectedCardInfoList = 1;
+	uint32 TotalRound = 14;
 }

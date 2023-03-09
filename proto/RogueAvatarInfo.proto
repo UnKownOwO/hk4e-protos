@@ -1,9 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message RogueAvatarInfo {
-	uint32 avatarId = 15;
-	bool isAlive = 5;
-	bool egkmacmbgbe = 1;
+	uint32 AvatarId = 15;
+	bool IsAlive = 5;
+	bool IsOnstage = 1;
 }

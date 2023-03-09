@@ -1,17 +1,18 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message ReceivedTrialAvatarActivityRewardRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 2074;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum ReceivedTrialAvatarActivityRewardRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 2074;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 activityId = 12;
-	int32 retcode = 5;
-	uint32 trialAvatarIndexId = 4;
+	uint32 ActivityId = 12;
+	int32 Retcode = 5;
+	uint32 TrialAvatarIndexId = 4;
 }

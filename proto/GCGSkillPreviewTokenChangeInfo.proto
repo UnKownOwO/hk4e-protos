@@ -1,9 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "GCGSkillPreviewTokenInfo.proto";
 
 message GCGSkillPreviewTokenChangeInfo {
-	repeated GCGSkillPreviewTokenInfo tokenChangeList = 1;
+	repeated GCGSkillPreviewTokenInfo TokenChangeList = 1;
 }

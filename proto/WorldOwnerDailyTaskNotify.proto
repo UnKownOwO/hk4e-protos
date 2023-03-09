@@ -1,20 +1,20 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "DailyTaskInfo.proto";
 
 message WorldOwnerDailyTaskNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 163;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// 	IS_ALLOW_CLIENT = 1;
-	// }
+	enum WorldOwnerDailyTaskNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 163;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
 
-	uint32 finishedDailyTaskNum = 4;
-	repeated DailyTaskInfo taskList = 9;
-	uint32 filterCityId = 15;
+	uint32 FinishedDailyTaskNum = 4;
+	repeated DailyTaskInfo TaskList = 9;
+	uint32 FilterCityId = 15;
 }

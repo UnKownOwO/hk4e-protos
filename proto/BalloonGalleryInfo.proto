@@ -1,9 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "HomeBalloonGalleryRecord.proto";
 
 message BalloonGalleryInfo {
-	repeated HomeBalloonGalleryRecord recordList = 7;
+	repeated HomeBalloonGalleryRecord RecordList = 7;
 }

@@ -1,20 +1,20 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "AvatarExpeditionInfo.proto";
 
 message AvatarExpeditionAllDataRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 1654;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum AvatarExpeditionAllDataRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 1654;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 expeditionCountLimit = 12;
-	repeated uint32 openExpeditionList = 9;
-	int32 retcode = 4;
-	map<uint64, AvatarExpeditionInfo> expeditionInfoMap = 10;
+	uint32 ExpeditionCountLimit = 12;
+	repeated uint32 OpenExpeditionList = 9;
+	int32 Retcode = 4;
+	map<uint64, AvatarExpeditionInfo> ExpeditionInfoMap = 10;
 }

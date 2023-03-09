@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+enum CheckAddItemExceedLimitNotify_ItemExceedLimitMsgType {
+	ItemExceedLimitMsgDefault = 0;
+	ItemExceedLimitMsgText = 1;
+	ItemExceedLimitMsgDialog = 2;
+	ItemExceedLimitMsgDialogNonblock = 3;
+}

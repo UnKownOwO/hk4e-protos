@@ -1,19 +1,20 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message ScenePointUnlockNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 239;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum ScenePointUnlockNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 239;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	repeated uint32 lockedPointList = 5;
-	uint32 sceneId = 12;
-	repeated uint32 pointList = 9;
-	repeated uint32 hidePointList = 15;
-	repeated uint32 unhidePointList = 7;
+	repeated uint32 LockedPointList = 5;
+	uint32 SceneId = 12;
+	repeated uint32 PointList = 9;
+	repeated uint32 HidePointList = 15;
+	repeated uint32 UnhidePointList = 7;
 }

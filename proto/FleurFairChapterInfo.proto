@@ -1,8 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message FleurFairChapterInfo {
-	uint32 openTime = 10;
-	uint32 chapterId = 14;
+	uint32 OpenTime = 10;
+	uint32 ChapterId = 14;
 }

@@ -1,8 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message HomePictureFrameInfo {
-	uint32 pictureId = 1;
-	uint32 guid = 8;
+	uint32 PictureId = 1;
+	uint32 Guid = 8;
 }

@@ -1,14 +1,14 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "TowerTeam.proto";
 
 message TowerCurLevelRecord {
-	repeated TowerTeam towerTeamList = 13;
-	uint32 curLevelIndex = 14;
-	repeated uint32 buffIdList = 12;
-	bool isUpperPart = 1;
-	bool isEmpty = 7;
-	uint32 curFloorId = 9;
+	repeated TowerTeam TowerTeamList = 13;
+	uint32 CurLevelIndex = 14;
+	repeated uint32 BuffIdList = 12;
+	bool IsUpperPart = 1;
+	bool IsEmpty = 7;
+	uint32 CurFloorId = 9;
 }

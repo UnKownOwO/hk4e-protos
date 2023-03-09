@@ -1,12 +1,13 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message BlossomScheduleInfo {
-	uint32 refreshId = 6;
-	uint32 state = 9;
-	uint32 circleCampId = 1;
-	uint32 finishProgress = 12;
-	uint32 round = 14;
-	uint32 progress = 15;
+	uint32 RefreshId = 6;
+	uint32 State = 9;
+	uint32 CircleCampId = 1;
+	uint32 FinishProgress = 12;
+	uint32 Round = 14;
+	uint32 Progress = 15;
 }

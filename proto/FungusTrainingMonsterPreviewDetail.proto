@@ -1,9 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message FungusTrainingMonsterPreviewDetail {
-	uint32 monsterId = 3;
-	uint32 level = 5;
-	repeated uint32 affixList = 11;
+	uint32 MonsterId = 3;
+	uint32 Level = 5;
+	repeated uint32 AffixList = 11;
 }

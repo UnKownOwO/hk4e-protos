@@ -1,12 +1,13 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message PropValue {
-	uint32 type = 1;
-	oneof value {
+	uint32 Type = 1;
+	oneof PropValue_ValueOneofCase {
 		int64 ival = 2;
 		float fval = 3;
 	}
-	int64 val = 4;
+	int64 Val = 4;
 }

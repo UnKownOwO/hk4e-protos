@@ -1,19 +1,19 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "PlayerLocationInfo.proto";
 import "PlayerWorldLocationInfo.proto";
 
 message WorldPlayerLocationNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 283;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum WorldPlayerLocationNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 283;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	repeated PlayerLocationInfo playerLocList = 4;
-	repeated PlayerWorldLocationInfo playerWorldLocList = 3;
+	repeated PlayerLocationInfo PlayerLocList = 4;
+	repeated PlayerWorldLocationInfo PlayerWorldLocList = 3;
 }

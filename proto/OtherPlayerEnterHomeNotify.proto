@@ -1,18 +1,18 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
-import "Reason.proto";
+import "OtherPlayerEnterHomeNotify_Reason.proto";
 
 message OtherPlayerEnterHomeNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 4582;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum OtherPlayerEnterHomeNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4582;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	Reason reason = 15;
-	string nickname = 11;
+	OtherPlayerEnterHomeNotify_Reason Reason = 15;
+	string Nickname = 11;
 }

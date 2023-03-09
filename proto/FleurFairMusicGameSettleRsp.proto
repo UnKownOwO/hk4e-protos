@@ -1,18 +1,19 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message FleurFairMusicGameSettleRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 2200;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum FleurFairMusicGameSettleRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 2200;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 musicBasicId = 4;
-	bool isNewRecord = 5;
-	bool isUnlockNextLevel = 7;
-	int32 retcode = 3;
+	uint32 MusicBasicId = 4;
+	bool IsNewRecord = 5;
+	bool IsUnlockNextLevel = 7;
+	int32 Retcode = 3;
 }

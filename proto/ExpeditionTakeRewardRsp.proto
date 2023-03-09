@@ -1,18 +1,19 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message ExpeditionTakeRewardRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 2065;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum ExpeditionTakeRewardRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 2065;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 pathId = 14;
-	uint32 rewardLevel = 7;
-	int32 retcode = 8;
-	bool isBonus = 13;
+	uint32 PathId = 14;
+	uint32 RewardLevel = 7;
+	int32 Retcode = 8;
+	bool IsBonus = 13;
 }

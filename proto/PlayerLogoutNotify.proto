@@ -1,12 +1,13 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message PlayerLogoutNotify {
-	// enum CmdId {
-	// 	NONE = 0;
-	// 	CMD_ID = 180;
-	// }
+	enum PlayerLogoutNotify_CmdId {
+		None = 0;
+		CmdId = 180;
+	}
 
-	int32 retcode = 7;
+	int32 Retcode = 7;
 }

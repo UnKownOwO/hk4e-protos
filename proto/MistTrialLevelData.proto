@@ -1,14 +1,14 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "MistTrialBestAvatar.proto";
 
 message MistTrialLevelData {
-	uint32 openTime = 2;
-	uint32 firstPassTime = 4;
-	uint32 levelId = 12;
-	bool isOpen = 6;
-	MistTrialBestAvatar bestHitAvatar = 14;
-	repeated MistTrialBestAvatar bestAvatarList = 13;
+	uint32 OpenTime = 2;
+	uint32 FirstPassTime = 4;
+	uint32 LevelId = 12;
+	bool IsOpen = 6;
+	MistTrialBestAvatar BestHitAvatar = 14;
+	repeated MistTrialBestAvatar BestAvatarList = 13;
 }

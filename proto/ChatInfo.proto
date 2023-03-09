@@ -1,20 +1,21 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message ChatInfo {
-	message SystemHint {
-		uint32 type = 14;
+	message ChatInfo_SystemHint {
+		uint32 Type = 14;
 	}
 
-	bool isRead = 6;
-	uint32 uid = 15;
-	uint32 toUid = 3;
-	oneof content {
+	bool IsRead = 6;
+	uint32 Uid = 15;
+	uint32 ToUid = 3;
+	oneof ChatInfo_ContentOneofCase {
 		string text = 1809;
 		uint32 icon = 1168;
-		SystemHint system_hint = 523;
+		ChatInfo_SystemHint system_hint = 523;
 	}
-	uint32 sequence = 2;
-	uint32 time = 11;
+	uint32 Sequence = 2;
+	uint32 Time = 11;
 }

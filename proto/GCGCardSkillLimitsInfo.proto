@@ -1,9 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "GCGSkillLimitsInfo.proto";
 
 message GCGCardSkillLimitsInfo {
-	repeated GCGSkillLimitsInfo skillLimitsList = 13;
+	repeated GCGSkillLimitsInfo SkillLimitsList = 13;
 }

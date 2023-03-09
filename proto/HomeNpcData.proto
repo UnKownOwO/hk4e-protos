@@ -1,12 +1,12 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
-import "Vector.proto";
+import "Rotation.proto";
 
 message HomeNpcData {
-	Vector spawnPos = 4;
-	uint32 costumeId = 13;
-	uint32 avatarId = 5;
-	Vector spawnRot = 6;
+	Rotation SpawnPos = 4;
+	uint32 CostumeId = 13;
+	uint32 AvatarId = 5;
+	Rotation SpawnRot = 6;
 }

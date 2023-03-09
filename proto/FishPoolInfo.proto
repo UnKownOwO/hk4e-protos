@@ -1,9 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message FishPoolInfo {
-	uint32 poolId = 1;
-	repeated uint32 fishAreaList = 2;
-	uint32 todayFishNum = 3;
+	uint32 PoolId = 1;
+	repeated uint32 FishAreaList = 2;
+	uint32 TodayFishNum = 3;
 }

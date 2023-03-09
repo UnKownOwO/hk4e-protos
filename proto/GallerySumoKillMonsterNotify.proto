@@ -1,18 +1,19 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message GallerySumoKillMonsterNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 5506;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum GallerySumoKillMonsterNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 5506;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 score = 2;
-	uint32 killNormalMonsterNum = 13;
-	uint32 killEliteMonsterNum = 4;
-	uint32 galleryId = 10;
+	uint32 Score = 2;
+	uint32 KillNormalMosnterNum = 13;
+	uint32 KillEliteMonsterNum = 4;
+	uint32 GalleryId = 10;
 }

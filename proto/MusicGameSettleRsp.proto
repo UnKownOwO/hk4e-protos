@@ -1,19 +1,20 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message MusicGameSettleRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 8735;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum MusicGameSettleRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8735;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	int32 retcode = 9;
-	bool isUnlockNextLevel = 1;
-	uint64 ugcGuid = 7;
-	uint32 musicBasicId = 4;
-	bool isNewRecord = 14;
+	int32 Retcode = 9;
+	bool IsUnlockNextLevel = 1;
+	uint64 UgcGuid = 7;
+	uint32 MusicBasicId = 4;
+	bool IsNewRecord = 14;
 }

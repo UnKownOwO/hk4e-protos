@@ -1,13 +1,13 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "RogueDiaryProgress.proto";
 import "RogueDiaryStageInfo.proto";
 
 message RogueDiaryInfo {
-	RogueDiaryProgress curProgress = 5;
-	repeated RogueDiaryStageInfo stageList = 8;
-	bool leftMonsters = 1;
-	bool isHaveProgress = 13;
+	RogueDiaryProgress CurProgress = 5;
+	repeated RogueDiaryStageInfo StageList = 8;
+	bool IsContentClosed = 1;
+	bool IsHaveProgress = 13;
 }

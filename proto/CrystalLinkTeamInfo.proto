@@ -1,11 +1,11 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "CrystalLinkAvatarInfo.proto";
 import "CrystalLinkBuffInfo.proto";
 
 message CrystalLinkTeamInfo {
-	repeated CrystalLinkAvatarInfo avatarInfoList = 13;
-	repeated CrystalLinkBuffInfo buffInfoList = 10;
+	repeated CrystalLinkAvatarInfo AvatarInfoList = 13;
+	repeated CrystalLinkBuffInfo BuffInfoList = 10;
 }

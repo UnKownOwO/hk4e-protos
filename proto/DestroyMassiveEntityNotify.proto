@@ -1,18 +1,18 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "ClientMassiveEntity.proto";
 
 message DestroyMassiveEntityNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 383;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// 	IS_ALLOW_CLIENT = 1;
-	// }
+	enum DestroyMassiveEntityNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 383;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
 
-	repeated ClientMassiveEntity massiveEntityList = 9;
+	repeated ClientMassiveEntity MassiveEntityList = 9;
 }

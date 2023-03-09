@@ -1,18 +1,19 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message InBattleMechanicusPickCardRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 5362;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum InBattleMechanicusPickCardRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 5362;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 playIndex = 15;
-	uint32 groupId = 13;
-	uint32 cardId = 5;
-	int32 retcode = 4;
+	uint32 PlayIndex = 15;
+	uint32 GroupId = 13;
+	uint32 CardId = 5;
+	int32 Retcode = 4;
 }

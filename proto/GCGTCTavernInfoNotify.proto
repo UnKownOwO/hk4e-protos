@@ -1,17 +1,22 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message GCGTCTavernInfoNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 7198;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum BJPECKHGPIC {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 7206;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	int32 retcode = 11;
-	uint32 cardId = 14;
-	uint32 rewardIndex = 12;
+	bool IsOwnerInDuel = 3;
+	uint32 ElementType = 9;
+	uint32 PointId = 15;
+	bool IsLastDuelWin = 2;
+	uint32 CharacterId = 5;
+	uint32 LevelId = 7;
+	uint32 AvatarId = 13;
 }

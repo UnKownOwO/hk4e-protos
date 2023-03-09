@@ -1,16 +1,17 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message TakeCoopRewardRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 1960;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum TakeCoopRewardRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 1960;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 rewardConfigId = 8;
-	int32 retcode = 4;
+	uint32 RewardConfigId = 8;
+	int32 Retcode = 4;
 }

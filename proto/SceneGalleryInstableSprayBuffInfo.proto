@@ -1,9 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message SceneGalleryInstableSprayBuffInfo {
-	uint32 buffId = 9;
-	uint64 Unk3300_EPHAABKNLHC = 3;
-	uint64 Unk3300_KKDFLBMKGEF = 8;
+	uint32 BuffId = 9;
+	uint64 BuffMaxTime = 3;
+	uint64 BuffEndTime = 8;
 }

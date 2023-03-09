@@ -1,18 +1,18 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "OtherCustomDungeonBrief.proto";
 
 message SearchCustomDungeonRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 6224;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum SearchCustomDungeonRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 6224;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	OtherCustomDungeonBrief customDungeonBrief = 6;
-	int32 retcode = 5;
+	OtherCustomDungeonBrief CustomDungeonBrief = 6;
+	int32 Retcode = 5;
 }

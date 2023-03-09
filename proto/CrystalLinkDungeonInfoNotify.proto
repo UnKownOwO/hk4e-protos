@@ -1,23 +1,23 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "CrystalLinkDungeonAvatarInfo.proto";
 import "CrystalLinkBuffInfo.proto";
 
 message CrystalLinkDungeonInfoNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 8343;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum CrystalLinkDungeonInfoNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8343;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 initGalleryProgress = 7;
-	uint32 difficultyId = 9;
-	repeated CrystalLinkDungeonAvatarInfo dungeonAvatarInfoList = 10;
-	bool isUpperPart = 15;
-	uint32 levelId = 6;
-	repeated CrystalLinkBuffInfo buffInfoList = 2;
+	uint32 InitGalleryProgress = 7;
+	uint32 DifficultyId = 9;
+	repeated CrystalLinkDungeonAvatarInfo DungeonAvatarInfoList = 10;
+	bool IsUpperPart = 15;
+	uint32 LevelId = 6;
+	repeated CrystalLinkBuffInfo BuffInfoList = 2;
 }

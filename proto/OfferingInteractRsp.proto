@@ -1,18 +1,18 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "PlayerOfferingData.proto";
 
 message OfferingInteractRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 2922;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum OfferingInteractRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 2922;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	int32 retcode = 10;
-	PlayerOfferingData offeringData = 14;
+	int32 Retcode = 10;
+	PlayerOfferingData OfferingData = 14;
 }

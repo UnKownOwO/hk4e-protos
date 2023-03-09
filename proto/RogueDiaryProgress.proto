@@ -1,11 +1,12 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message RogueDiaryProgress {
-	bool isEnterDungeon = 5;
-	repeated uint32 optionalCardList = 12;
-	uint32 curRound = 7;
-	uint32 stageId = 3;
-	uint32 difficulty = 11;
+	bool IsEnterDungeon = 5;
+	repeated uint32 OptionalCardList = 12;
+	uint32 CurRound = 7;
+	uint32 StageId = 3;
+	uint32 Difficulty = 11;
 }

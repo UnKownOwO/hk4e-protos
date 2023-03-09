@@ -1,10 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "PhotoPosData.proto";
 
 message PhotoInfo {
-	repeated PhotoPosData photoPosDataList = 13;
-	bool leftMonsters = 9;
+	repeated PhotoPosData PhotoPosDataList = 13;
+	bool IsContentClosed = 9;
 }

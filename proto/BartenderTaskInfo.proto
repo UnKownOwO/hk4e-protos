@@ -1,8 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message BartenderTaskInfo {
-	bool isFinish = 7;
-	uint32 id = 4;
+	bool IsFinish = 7;
+	uint32 Id = 4;
 }

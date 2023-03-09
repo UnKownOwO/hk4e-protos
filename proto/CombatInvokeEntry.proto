@@ -1,12 +1,13 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 import "CombatTypeArgument.proto";
 import "ForwardType.proto";
 
 message CombatInvokeEntry {
-	bytes combatData = 7;
-	CombatTypeArgument argumentType = 8;
-	ForwardType forwardType = 15;
+	bytes CombatData = 7;
+	CombatTypeArgument ArgumentType = 8;
+	ForwardType ForwardType = 15;
 }

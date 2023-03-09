@@ -1,12 +1,13 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message CrystalLinkSettleInfo {
-	uint32 killNormalMonsterNum = 11;
-	bool isNewRecord = 6;
-	uint32 finalScore = 13;
-	uint32 killEliteMonsterNum = 15;
-	uint32 difficultyId = 3;
-	uint32 levelId = 10;
+	uint32 KillNormalMosnterNum = 11;
+	bool IsNewRecord = 6;
+	uint32 FinalScore = 13;
+	uint32 KillEliteMonsterNum = 15;
+	uint32 DifficultyId = 3;
+	uint32 LevelId = 10;
 }

@@ -1,9 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message RoutePointChangeInfo {
-	float targetVelocity = 7;
-	uint32 pointIndex = 11;
-	float waitTime = 15;
+	float TargetVelocity = 7;
+	uint32 PointIndex = 11;
+	float WaitTime = 15;
 }

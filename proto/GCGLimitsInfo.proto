@@ -1,8 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message GCGLimitsInfo {
-	uint32 Unk3300_MNCNOLHHGPA = 15;
-	uint32 Unk3300_PHKPKFBDGJF = 3;
+	uint32 LimitType = 15;
+	uint32 LimitValue = 3;
 }

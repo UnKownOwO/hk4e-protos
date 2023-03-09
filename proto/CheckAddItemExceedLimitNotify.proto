@@ -1,21 +1,21 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
-import "ItemExceedLimitMsgType.proto";
+import "CheckAddItemExceedLimitNotify_ItemExceedLimitMsgType.proto";
 
 message CheckAddItemExceedLimitNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 634;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum CheckAddItemExceedLimitNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 634;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	repeated uint32 finishedChallengeIdList = 15;
-	repeated uint32 exceededItemList = 5;
-	uint32 reason = 2;
-	ItemExceedLimitMsgType msgType = 7;
-	bool isDrop = 1;
+	repeated uint32 ExceededItemTypeList = 15;
+	repeated uint32 ExceededItemList = 5;
+	uint32 Reason = 2;
+	CheckAddItemExceedLimitNotify_ItemExceedLimitMsgType MsgType = 7;
+	bool IsDrop = 1;
 }

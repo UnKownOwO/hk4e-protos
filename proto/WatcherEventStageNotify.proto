@@ -1,18 +1,19 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message WatcherEventStageNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 2220;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// 	IS_ALLOW_CLIENT = 1;
-	// }
+	enum LLEOBAOBBNG {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 2220;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
 
-	uint32 addProgress = 3;
-	uint32 watcherId = 13;
-	uint32 stage = 6;
+	uint32 AddProgress = 3;
+	uint32 WatcherId = 13;
+	uint32 Stage = 6;
 }

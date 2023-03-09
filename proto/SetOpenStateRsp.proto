@@ -1,17 +1,18 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message SetOpenStateRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 125;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum SetOpenStateRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 125;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	int32 retcode = 9;
-	uint32 value = 15;
-	uint32 key = 10;
+	int32 Retcode = 9;
+	uint32 Value = 15;
+	uint32 Key = 10;
 }

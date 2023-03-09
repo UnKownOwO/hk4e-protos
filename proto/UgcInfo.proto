@@ -1,12 +1,12 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "OfficialCustomDungeon.proto";
 
 message UgcInfo {
-	bool isUgcFeatureClosed = 5;
-	repeated OfficialCustomDungeon officialCustomDungeonList = 10;
-	bool isEnableUgc = 15;
-	uint32 customDungeonGroupId = 3;
+	bool IsUgcFeatureClosed = 5;
+	repeated OfficialCustomDungeon OfficialCustomDungeonList = 10;
+	bool IsEnableUgc = 15;
+	uint32 CustomDungeonGroupId = 3;
 }

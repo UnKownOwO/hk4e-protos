@@ -1,17 +1,18 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message AvatarChangeAnimHashReq {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 1603;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// 	IS_ALLOW_CLIENT = 1;
-	// }
+	enum AvatarChangeAnimHashReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 1603;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
 
-	uint64 avatarGuid = 2;
-	uint32 animHash = 12;
+	uint64 AvatarGuid = 2;
+	uint32 AnimHash = 12;
 }

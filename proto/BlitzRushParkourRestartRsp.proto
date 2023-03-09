@@ -1,17 +1,18 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message BlitzRushParkourRestartRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 8502;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum BlitzRushParkourRestartRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8502;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 scheduleId = 2;
-	uint32 groupId = 15;
-	int32 retcode = 3;
+	uint32 ScheduleId = 2;
+	uint32 GroupId = 15;
+	int32 Retcode = 3;
 }

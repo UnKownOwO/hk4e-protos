@@ -1,18 +1,18 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "CompoundQueueData.proto";
 
 message CompoundDataNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 135;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum CompoundDataNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 135;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	repeated CompoundQueueData compoundQueueDataList = 14;
-	repeated uint32 unlockCompoundList = 5;
+	repeated CompoundQueueData CompoundQueDataList = 14;
+	repeated uint32 UnlockCompoundList = 5;
 }

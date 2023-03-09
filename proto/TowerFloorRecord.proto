@@ -1,12 +1,12 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "TowerLevelRecord.proto";
 
 message TowerFloorRecord {
-	uint32 floorStarRewardProgress = 4;
-	map<uint32, uint32> passedLevelMap = 6;
-	repeated TowerLevelRecord passedLevelRecordList = 7;
-	uint32 floorId = 15;
+	uint32 FloorStarRewardProgress = 4;
+	map<uint32, uint32> PassedLevelMap = 6;
+	repeated TowerLevelRecord PassedLevelRecordList = 7;
+	uint32 FloorId = 15;
 }

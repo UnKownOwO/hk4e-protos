@@ -1,19 +1,20 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message SceneAreaWeatherNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 281;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum SceneAreaWeatherNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 281;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 climateType = 10;
-	float transDuration = 5;
-	uint32 weatherGadgetId = 15;
-	map<uint32, string> weatherValueMap = 7;
-	uint32 weatherAreaId = 13;
+	uint32 ClimateType = 10;
+	float TransDuration = 5;
+	uint32 WeatherGadgetId = 15;
+	map<uint32, string> WeatherValueMap = 7;
+	uint32 WeatherAreaId = 13;
 }

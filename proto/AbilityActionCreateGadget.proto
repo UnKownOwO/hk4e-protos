@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package Proto;
+
+import "Rotation.proto";
+
+message AbilityActionCreateGadget {
+	uint32 RoomId = 9;
+	Rotation Rot = 2;
+	Rotation Pos = 15;
+}

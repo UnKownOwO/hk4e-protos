@@ -1,17 +1,18 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message SetEquipLockStateRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 611;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum SetEquipLockStateRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 611;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	int32 retcode = 8;
-	bool isLocked = 4;
-	uint64 targetEquipGuid = 11;
+	int32 Retcode = 8;
+	bool IsLocked = 4;
+	uint64 TargetEquipGuid = 11;
 }

@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package Proto;
+
+import "Rotation.proto";
+
+message AbilityActionFireAfterImgae {
+	Rotation Dir = 2;
+}

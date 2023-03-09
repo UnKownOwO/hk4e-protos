@@ -1,23 +1,23 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "HuntingPair.proto";
-import "Vector.proto";
+import "Rotation.proto";
 
 message HuntingOngoingNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 4340;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum HuntingOngoingNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4340;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 failTime = 9;
-	uint32 finishClueCount = 8;
-	bool isStarted = 5;
-	HuntingPair huntingPair = 10;
-	Vector nextPosition = 14;
-	bool isFinal = 11;
+	uint32 FailTime = 9;
+	uint32 FinishClueCount = 8;
+	bool IsStarted = 5;
+	HuntingPair HuntingPair = 10;
+	Rotation NextPosition = 14;
+	bool IsFinal = 11;
 }

@@ -1,9 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "GCGCardSkillLimitsInfo.proto";
 
 message GCGMsgSkillLimitsChange {
-	map<uint32, GCGCardSkillLimitsInfo> cardLimitsChangeMap = 13;
+	map<uint32, GCGCardSkillLimitsInfo> CardLimitsChangeMap = 13;
 }

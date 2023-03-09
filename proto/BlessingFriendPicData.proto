@@ -1,15 +1,15 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "ProfilePicture.proto";
 
 message BlessingFriendPicData {
-	uint32 avatarId = 2;
-	ProfilePicture profilePicture = 4;
-	string nickname = 5;
-	string signature = 6;
-	map<uint32, uint32> picNumMap = 12;
-	string remarkName = 3;
-	uint32 uid = 9;
+	uint32 AvatarId = 2;
+	ProfilePicture ProfilePicture = 4;
+	string Nickname = 5;
+	string Signature = 6;
+	map<uint32, uint32> PicNumMap = 12;
+	string RemarkName = 3;
+	uint32 Uid = 9;
 }

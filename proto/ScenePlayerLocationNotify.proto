@@ -1,20 +1,20 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "VehicleLocationInfo.proto";
 import "PlayerLocationInfo.proto";
 
 message ScenePlayerLocationNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 278;
-	// 	ENET_CHANNEL_ID = 1;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum ScenePlayerLocationNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 278;
+		EnetChannelId = 1;
+		EnetIsReliable = 1;
+	}
 
-	uint32 sceneId = 1;
-	repeated VehicleLocationInfo vehicleLocList = 3;
-	repeated PlayerLocationInfo playerLocList = 12;
+	uint32 SceneId = 1;
+	repeated VehicleLocationInfo VehicleLocList = 3;
+	repeated PlayerLocationInfo PlayerLocList = 12;
 }

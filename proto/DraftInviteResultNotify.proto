@@ -1,16 +1,17 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message DraftInviteResultNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 5462;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum DraftInviteResultNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 5462;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	bool isAllAgree = 1;
-	uint32 draftId = 5;
+	bool IsAllArgee = 1;
+	uint32 DraftId = 5;
 }

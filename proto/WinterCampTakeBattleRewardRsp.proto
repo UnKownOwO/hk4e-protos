@@ -1,16 +1,17 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message WinterCampTakeBattleRewardRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 8088;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum WinterCampTakeBattleRewardRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8088;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 id = 13;
-	int32 retcode = 5;
+	uint32 Id = 13;
+	int32 Retcode = 5;
 }

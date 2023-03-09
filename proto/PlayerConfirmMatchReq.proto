@@ -1,19 +1,19 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "MatchType.proto";
 
 message PlayerConfirmMatchReq {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 4185;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// 	IS_ALLOW_CLIENT = 1;
-	// }
+	enum PlayerConfirmMatchReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4185;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
 
-	MatchType matchType = 12;
-	bool isAgreed = 13;
+	MatchType MatchType = 12;
+	bool IsAgreed = 13;
 }

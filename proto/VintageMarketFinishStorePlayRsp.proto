@@ -1,24 +1,25 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message VintageMarketFinishStorePlayRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 23367;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum MNGADGCMBJB {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 23367;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 Unk3300_DGECJOKMDGN = 4;
-	uint32 Unk3300_DJILELFHFHJ = 14;
-	int32 retcode = 11;
-	repeated uint32 Unk3300_HJIHIOIGAPP = 2;
-	uint32 Unk3300_DLNFCBPDBBH = 15;
-	uint32 Unk3300_GCDNOPJEIBG = 7;
-	map<uint32, uint32> storeIncomeMap = 1;
-	uint32 storeRound = 6;
-	repeated uint32 Unk3300_BDAIONEPKIK = 5;
-	repeated uint32 Unk3300_OCIMKEPJOOL = 9;
+	uint32 RoundTotalIncome = 4;
+	uint32 RoundCoinBIncome = 14;
+	int32 Retcode = 11;
+	repeated uint32 TriggerNpcEventList = 2;
+	uint32 DisplayReturnCoinB = 15;
+	uint32 RoundDeltaCoinC = 7;
+	map<uint32, uint32> StoreIncomeMap = 1;
+	uint32 StoreRound = 6;
+	repeated uint32 TriggerEnvEventList = 5;
+	repeated uint32 LowAttrStoreList = 9;
 }

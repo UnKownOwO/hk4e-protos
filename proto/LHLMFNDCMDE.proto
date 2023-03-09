@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message LHLMFNDCMDE {
+	enum BLAFLFHMGNI {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4156;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 MatchId = 10;
+}

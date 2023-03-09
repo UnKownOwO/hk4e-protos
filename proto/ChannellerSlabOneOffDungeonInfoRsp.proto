@@ -1,16 +1,17 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message ChannellerSlabOneOffDungeonInfoRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 8731;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum ChannellerSlabOneOffDungeonInfoRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8731;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	int32 retcode = 2;
-	repeated uint32 gihlcdadndf = 11;
+	int32 Retcode = 2;
+	repeated uint32 SchemeBuffIdList = 11;
 }

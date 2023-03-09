@@ -1,17 +1,17 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "EntityMoveInfo.proto";
 
 message SceneEntitiesMoveCombineNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 3025;
-	// 	ENET_CHANNEL_ID = 1;
-	// 	ENET_IS_RELIABLE = 0;
-	// }
+	enum SceneEntitiesMoveCombineNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 3025;
+		EnetChannelId = 1;
+		EnetIsReliable = 0;
+	}
 
-	repeated EntityMoveInfo entityMoveInfoList = 9;
+	repeated EntityMoveInfo EntityMoveInfoList = 9;
 }

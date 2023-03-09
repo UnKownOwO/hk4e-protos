@@ -1,12 +1,13 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message BrickBreakerLevelInfo {
-	repeated uint32 chosenSkillList = 12;
-	uint32 levelId = 2;
-	bool isFinish = 11;
-	bool isCanStart = 1;
-	uint32 maxScore = 6;
-	repeated uint32 chosenAvatarList = 4;
+	repeated uint32 ChosenSkillList = 12;
+	uint32 LevelId = 2;
+	bool IsFinish = 11;
+	bool IsCanStart = 1;
+	uint32 MaxScore = 6;
+	repeated uint32 ChosenAvatarList = 4;
 }

@@ -1,15 +1,16 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message PlayerFishingDataNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 5810;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum PlayerFishingDataNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 5810;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 lastFishRodId = 4;
+	uint32 LastFishRodId = 4;
 }

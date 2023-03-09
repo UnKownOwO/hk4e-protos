@@ -1,17 +1,18 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message GCGDSChangeCardBackRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 7641;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum OFPOBKOCGBC {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 7569;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 deckId = 13;
-	int32 retcode = 3;
-	uint32 cardId = 6;
+	uint32 CardBackId = 6;
+	uint32 DeckId = 3;
+	int32 Retcode = 4;
 }

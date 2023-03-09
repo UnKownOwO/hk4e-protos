@@ -1,22 +1,22 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "InteractType.proto";
 import "InterOpType.proto";
 
 message MiracleRingDeliverItemRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 5235;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum MiracleRingDeliverItemRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 5235;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 gadgetEntityId = 14;
-	int32 retcode = 5;
-	InteractType interactType = 7;
-	uint32 gadgetId = 4;
-	InterOpType opType = 15;
+	uint32 GadgetEntityId = 14;
+	int32 Retcode = 5;
+	InteractType InteractType = 7;
+	uint32 GadgetId = 4;
+	InterOpType OpType = 15;
 }

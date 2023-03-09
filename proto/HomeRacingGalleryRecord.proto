@@ -1,11 +1,11 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "HomeGroupPlayerInfo.proto";
 
 message HomeRacingGalleryRecord {
-	uint32 useTime = 3;
-	uint32 timestamp = 8;
-	HomeGroupPlayerInfo playerInfo = 4;
+	uint32 UseTime = 3;
+	uint32 Timestamp = 8;
+	HomeGroupPlayerInfo PlayerInfo = 4;
 }

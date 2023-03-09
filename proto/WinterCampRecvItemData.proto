@@ -1,13 +1,13 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "ProfilePicture.proto";
 import "ItemParam.proto";
 
 message WinterCampRecvItemData {
-	repeated ItemParam itemList = 9;
-	ProfilePicture profilePicture = 2;
-	string nickname = 8;
-	uint32 uid = 3;
+	repeated ItemParam ItemList = 9;
+	ProfilePicture ProfilePicture = 2;
+	string Nickname = 8;
+	uint32 Uid = 3;
 }

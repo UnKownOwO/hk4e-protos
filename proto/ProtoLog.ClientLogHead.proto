@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package ProtoLog;
+
+
+message ClientLogHead {
+	string EventTime = 1;
+	string LogSerialNumber = 2;
+	uint32 ActionId = 3;
+	string ActionName = 4;
+	string UploadIp = 5;
+	string ProductId = 6;
+	string ChannelId = 7;
+	string RegionName = 8;
+	string GameVersion = 9;
+	string DeviceType = 10;
+	string DeviceUuid = 11;
+	string MacAddr = 12;
+	string AccountName = 13;
+	string AccountUuid = 14;
+}

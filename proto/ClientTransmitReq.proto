@@ -1,22 +1,22 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
-import "Vector.proto";
+import "Rotation.proto";
 import "TransmitReason.proto";
 
 message ClientTransmitReq {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 203;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// 	IS_ALLOW_CLIENT = 1;
-	// }
+	enum ClientTransmitReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 203;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
 
-	Vector rot = 9;
-	TransmitReason reason = 13;
-	Vector pos = 12;
-	uint32 sceneId = 8;
+	Rotation Rot = 9;
+	TransmitReason Reason = 13;
+	Rotation Pos = 12;
+	uint32 SceneId = 8;
 }

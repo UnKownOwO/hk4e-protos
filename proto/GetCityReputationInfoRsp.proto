@@ -1,19 +1,19 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "CityReputationInfo.proto";
 
 message GetCityReputationInfoRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 2855;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum GetCityReputationInfoRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 2855;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	int32 retcode = 10;
-	uint32 cityId = 6;
-	CityReputationInfo cityReputationInfo = 5;
+	int32 Retcode = 10;
+	uint32 CityId = 6;
+	CityReputationInfo CityReputationInfo = 5;
 }

@@ -1,12 +1,12 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "IrodoriChessEntranceDetailInfo.proto";
 
 message IrodoriChessMapData {
-	uint32 mapId = 13;
-	uint32 bestScore = 3;
-	repeated uint32 becodaoleil = 4;
-	IrodoriChessEntranceDetailInfo ajcepcgbnfe = 5;
+	uint32 MapId = 13;
+	uint32 BestScore = 3;
+	repeated uint32 EquipedCardList = 4;
+	IrodoriChessEntranceDetailInfo EntranceDetailInfo = 5;
 }

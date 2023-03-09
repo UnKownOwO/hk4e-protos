@@ -1,10 +1,11 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message HachiStageInfo {
-	uint32 openTime = 10;
-	bool isFinished = 12;
-	uint32 stageId = 13;
-	bool isOpen = 3;
+	uint32 OpenTime = 10;
+	bool IsFinished = 12;
+	uint32 StageId = 13;
+	bool IsOpen = 3;
 }

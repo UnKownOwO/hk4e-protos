@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+enum CoopChapter_State {
+	Close = 0;
+	CondNotMeet = 1;
+	CondMeet = 2;
+	Accept = 3;
+}

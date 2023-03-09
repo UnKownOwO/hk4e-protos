@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package Proto;
+
+import "HomeVerifyBlockData.proto";
+
+message HomeVerifySceneData {
+	uint32 SceneId = 11;
+	uint32 IsRoom = 15;
+	repeated HomeVerifyBlockData Blocks = 5;
+	uint32 ModuleId = 13;
+	uint32 Version = 9;
+}

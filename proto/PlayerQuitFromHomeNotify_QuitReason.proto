@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package Proto;
+
+enum PlayerQuitFromHomeNotify_QuitReason {
+	Invalid = 0;
+	KickByHost = 1;
+	BackToMyWorld = 2;
+	HomeBlocked = 3;
+	HomeInEditMode = 4;
+	ByMuip = 5;
+	CurModuleClosed = 6;
+}

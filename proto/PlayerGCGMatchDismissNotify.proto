@@ -1,19 +1,19 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "MatchReason.proto";
 
 message PlayerGCGMatchDismissNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 4153;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum GPKMBGCPIIA {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4153;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	MatchReason reason = 8;
-	repeated uint32 uidList = 7;
-	uint32 matchId = 3;
+	MatchReason Reason = 8;
+	repeated uint32 UidList = 7;
+	uint32 MatchId = 3;
 }

@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package Proto;
+
+enum MainCoop_Status {
+	Invalid = 0;
+	Running = 1;
+	Finished = 2;
+}

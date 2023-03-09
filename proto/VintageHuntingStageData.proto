@@ -1,11 +1,12 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message VintageHuntingStageData {
-	bool isOpen = 12;
-	bool isFinish = 11;
-	uint32 stageId = 10;
-	uint32 openTime = 1;
-	uint32 recordValue = 2;
+	bool IsOpen = 12;
+	bool IsFinish = 11;
+	uint32 StageId = 10;
+	uint32 OpenTime = 1;
+	uint32 RecordValue = 2;
 }

@@ -1,9 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message CharAmusementStageData {
-	uint32 finishTime = 11;
-	uint32 stageId = 12;
-	bool isOpen = 9;
+	uint32 FinishTime = 11;
+	uint32 StageId = 12;
+	bool IsOpen = 9;
 }

@@ -1,10 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "AranaraCollectionState.proto";
 
 message AranaraCollectionSuite {
-	map<uint32, AranaraCollectionState> collectionIdStateMap = 8;
-	uint32 collectionType = 12;
+	map<uint32, AranaraCollectionState> CollectionIdStateMap = 8;
+	uint32 CollectionType = 12;
 }

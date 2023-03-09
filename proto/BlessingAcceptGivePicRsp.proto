@@ -1,18 +1,19 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message BlessingAcceptGivePicRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 2069;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum BlessingAcceptGivePicRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 2069;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 picId = 12;
-	uint32 index = 13;
-	uint32 uid = 11;
-	int32 retcode = 14;
+	uint32 PicId = 12;
+	uint32 Index = 13;
+	uint32 Uid = 11;
+	int32 Retcode = 14;
 }

@@ -1,11 +1,11 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
-import "EdgeType.proto";
+import "PBNavMeshPoly_EdgeType.proto";
 
 message PBNavMeshPoly {
-	repeated EdgeType edgeTypes = 1;
-	int32 area = 5;
-	repeated int32 vects = 14;
+	repeated PBNavMeshPoly_EdgeType EdgeTypes = 1;
+	int32 Area = 5;
+	repeated int32 Vects = 14;
 }

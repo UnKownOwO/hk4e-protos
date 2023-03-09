@@ -1,22 +1,22 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "InBattleMechanicusCardInfo.proto";
 
 message InBattleMechanicusCardResultNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 5316;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum InBattleMechanicusCardResultNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 5316;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 playIndex = 10;
-	uint64 waitBeginTimeUs = 4;
-	repeated InBattleMechanicusCardInfo cardList = 5;
-	map<uint32, uint32> playerConfirmedCardMap = 12;
-	uint32 groupId = 15;
-	uint32 waitSeconds = 9;
+	uint32 PlayIndex = 10;
+	uint64 WaitBeginTimeUs = 4;
+	repeated InBattleMechanicusCardInfo CardList = 5;
+	map<uint32, uint32> PlayerConfirmedCardMap = 12;
+	uint32 GroupId = 15;
+	uint32 WaitSeconds = 9;
 }

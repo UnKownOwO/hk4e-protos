@@ -1,10 +1,11 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message ScenePlayInfo {
-	uint32 entryId = 1;
-	uint32 playId = 8;
-	bool isOpen = 2;
-	uint32 playType = 12;
+	uint32 EntryId = 1;
+	uint32 PlayId = 8;
+	bool IsOpen = 2;
+	uint32 PlayType = 12;
 }

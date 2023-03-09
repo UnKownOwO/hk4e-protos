@@ -1,18 +1,19 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message SetUpAvatarTeamRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 1745;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum SetUpAvatarTeamRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 1745;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 teamId = 5;
-	repeated uint64 avatarTeamGuidList = 6;
-	uint64 curAvatarGuid = 2;
-	int32 retcode = 3;
+	uint32 TeamId = 5;
+	repeated uint64 AvatarTeamGuidList = 6;
+	uint64 CurAvatarGuid = 2;
+	int32 Retcode = 3;
 }

@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "TrialAvatarInfo.proto";
 import "AvatarFetterInfo.proto";
@@ -12,31 +12,31 @@ import "AvatarSkillInfo.proto";
 import "AvatarEquipAffixInfo.proto";
 
 message AvatarInfo {
-	uint32 avatarId = 1;
-	uint64 guid = 2;
-	map<uint32, PropValue> propMap = 3;
-	uint32 lifeState = 4;
-	repeated uint64 equipGuidList = 5;
-	repeated uint32 talentIdList = 6;
-	map<uint32, float> fightPropMap = 7;
-	TrialAvatarInfo trialAvatarInfo = 9;
-	map<uint32, AvatarSkillInfo> skillMap = 10;
-	uint32 skillDepotId = 11;
-	AvatarFetterInfo fetterInfo = 12;
-	uint32 coreProudSkillLevel = 13;
-	repeated uint32 inherentProudSkillList = 14;
-	map<uint32, uint32> skillLevelMap = 15;
-	AvatarExpeditionState expeditionState = 16;
-	map<uint32, uint32> proudSkillExtraLevelMap = 17;
-	bool isFocus = 18;
-	uint32 avatarType = 19;
-	repeated uint32 teamResonanceList = 20;
-	uint32 wearingFlycloakId = 21;
-	repeated AvatarEquipAffixInfo equipAffixList = 22;
-	uint32 bornTime = 23;
-	repeated uint32 pendingPromoteRewardList = 24;
-	uint32 costumeId = 25;
-	AvatarExcelInfo excelInfo = 26;
-	uint32 animHash = 27;
+	uint32 AvatarId = 1;
+	uint64 Guid = 2;
+	map<uint32, PropValue> PropMap = 3;
+	uint32 LifeState = 4;
+	repeated uint64 EquipGuidList = 5;
+	repeated uint32 TalentIdList = 6;
+	map<uint32, float> FightPropMap = 7;
+	TrialAvatarInfo TrialAvatarInfo = 9;
+	map<uint32, AvatarSkillInfo> SkillMap = 10;
+	uint32 SkillDepotId = 11;
+	AvatarFetterInfo FetterInfo = 12;
+	uint32 CoreProudSkillLevel = 13;
+	repeated uint32 InherentProudSkillList = 14;
+	map<uint32, uint32> SkillLevelMap = 15;
+	AvatarExpeditionState ExpeditionState = 16;
+	map<uint32, uint32> ProudSkillExtraLevelMap = 17;
+	bool IsFocus = 18;
+	uint32 AvatarType = 19;
+	repeated uint32 TeamResonanceList = 20;
+	uint32 WearingFlycloakId = 21;
+	repeated AvatarEquipAffixInfo EquipAffixList = 22;
+	uint32 BornTime = 23;
+	repeated uint32 PendingPromoteRewardList = 24;
+	uint32 CostumeId = 25;
+	AvatarExcelInfo ExcelInfo = 26;
+	uint32 AnimHash = 27;
 	PIDFKDHMHKA lejhmjbbjcp = 28;
 }

@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package Proto;
+
+import "AISnapshotEntitySkillCycle.proto";
+
+message AISnapshotEntityData {
+	float TickTime = 11;
+	uint32 AttackTargetId = 15;
+	float MovedDistance = 6;
+	repeated AISnapshotEntitySkillCycle FinishedSkillCycles = 1;
+	float RealTime = 3;
+	float DistanceToPlayer = 14;
+	map<uint32, uint32> HittingAvatars = 12;
+	uint32 ThreatTargetId = 7;
+	uint32 AiTargetId = 4;
+	uint32 Tactic = 9;
+	uint32 ThreatListSize = 5;
+	uint32 EntityId = 2;
+}

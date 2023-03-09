@@ -1,18 +1,18 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "TransmitReason.proto";
 
 message ClientTransmitRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 253;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum ClientTransmitRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 253;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	TransmitReason reason = 12;
-	int32 retcode = 7;
+	TransmitReason Reason = 12;
+	int32 Retcode = 7;
 }

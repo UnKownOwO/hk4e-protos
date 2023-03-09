@@ -1,10 +1,11 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message SceneGalleryProgressInfo {
-	repeated uint32 progressStageList = 8;
-	string key = 1;
-	uint32 progress = 13;
-	uint32 uiForm = 2;
+	repeated uint32 ProgressStageList = 8;
+	string Key = 1;
+	uint32 Progress = 13;
+	uint32 UiForm = 2;
 }

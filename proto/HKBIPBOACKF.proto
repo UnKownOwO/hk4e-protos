@@ -1,7 +1,0 @@
-syntax = "proto3";
-
-option go_package = "./;proto";
-
-message HKBIPBOACKF {
-	repeated int32 paramList = 5;
-}

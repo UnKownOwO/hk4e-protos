@@ -1,14 +1,15 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message TreasureMapGuideTaskDoneNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 2053;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum TreasureMapGuideTaskDoneNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 2053;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
 }

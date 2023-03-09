@@ -1,14 +1,14 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "ItemParam.proto";
 import "GachaTransferItem.proto";
 
 message GachaItem {
-	repeated GachaTransferItem transferItems = 10;
-	bool isGachaItemNew = 9;
-	repeated ItemParam tokenItemList = 12;
-	ItemParam gachaItem = 4;
-	bool isFlashCard = 11;
+	repeated GachaTransferItem TransferItems = 10;
+	bool IsGachaItemNew = 9;
+	repeated ItemParam TokenItemList = 12;
+	ItemParam GachaItem_ = 4;
+	bool IsFlashCard = 11;
 }

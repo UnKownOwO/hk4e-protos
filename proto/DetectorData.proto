@@ -1,15 +1,15 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
-import "Vector.proto";
+import "Rotation.proto";
 
 message DetectorData {
-	bool isHintValid = 2;
-	uint32 configId = 9;
-	Vector hintCenterPos = 3;
-	uint32 materialId = 10;
-	bool isAllCollected = 13;
-	uint32 groupId = 14;
-	uint32 hintRadius = 5;
+	bool IsHintValid = 2;
+	uint32 ConfigId = 9;
+	Rotation HintCenterPos = 3;
+	uint32 MaterialId = 10;
+	bool IsAllCollected = 13;
+	uint32 GroupId = 14;
+	uint32 HintRadius = 5;
 }

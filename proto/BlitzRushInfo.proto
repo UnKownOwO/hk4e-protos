@@ -1,13 +1,13 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "BlitzRushStage.proto";
 import "ParkourLevelInfo.proto";
 
 message BlitzRushInfo {
-	repeated BlitzRushStage stageList = 11;
-	uint32 contentCloseTime = 1;
-	repeated ParkourLevelInfo parkourLevelInfoList = 6;
-	bool leftMonsters = 5;
+	repeated BlitzRushStage StageList = 11;
+	uint32 ContentCloseTime = 1;
+	repeated ParkourLevelInfo ParkourLevelInfoList = 6;
+	bool IsContentClosed = 5;
 }

@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message RegionSimpleInfo {
+	string Name = 1;
+	string Title = 2;
+	string Type = 3;
+	string DispatchUrl = 4;
+}

@@ -1,15 +1,16 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message MetNpcIdListNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 574;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum MetNpcIdListNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 574;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	repeated uint32 npcFirstMetIdList = 9;
+	repeated uint32 NpcFirstMetIdList = 9;
 }

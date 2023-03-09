@@ -1,11 +1,12 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message GearColumnInfo {
-	bool Unk3300_HGIKKDOBANK = 9;
-	uint32 gearId = 6;
-	bool Unk3300_KEEGLHMBAKM = 8;
-	uint32 Unk3300_GHIBPOIAIGF = 11;
-	uint32 Unk3300_EDLLMBGNDEH = 15;
+	bool HasGear = 9;
+	uint32 GearId = 6;
+	bool IsOverturn = 8;
+	uint32 PlacementLayer = 11;
+	uint32 GearColumnIndex = 15;
 }

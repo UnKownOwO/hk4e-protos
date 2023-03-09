@@ -1,21 +1,21 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "CreateEntityInfo.proto";
 import "CreateReason.proto";
 
 message SceneCreateEntityReq {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 228;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// 	IS_ALLOW_CLIENT = 1;
-	// }
+	enum SceneCreateEntityReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 228;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
 
-	bool isDestroyWhenDisconnect = 13;
-	CreateEntityInfo entity = 9;
-	CreateReason reason = 1;
+	bool IsDestroyWhenDisconnect = 13;
+	CreateEntityInfo Entity = 9;
+	CreateReason Reason = 1;
 }

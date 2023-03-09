@@ -1,9 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message QuestVarOp {
-	uint32 index = 14;
-	int32 value = 6;
-	bool isAdd = 5;
+	uint32 Index = 14;
+	int32 Value = 6;
+	bool IsAdd = 5;
 }

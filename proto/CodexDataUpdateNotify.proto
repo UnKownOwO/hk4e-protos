@@ -1,19 +1,19 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "CodexType.proto";
 
 message CodexDataUpdateNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 4202;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum CodexDataUpdateNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4202;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	CodexType type = 15;
-	uint32 id = 6;
-	uint32 weaponMaxPromoteLevel = 1;
+	CodexType Type = 15;
+	uint32 Id = 6;
+	uint32 WeaponMaxPromoteLevel = 1;
 }

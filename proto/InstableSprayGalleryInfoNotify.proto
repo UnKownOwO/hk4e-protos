@@ -1,15 +1,16 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message InstableSprayGalleryInfoNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 5528;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum OGNGOKHGDCB {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 5528;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 score = 8;
+	uint32 Score = 8;
 }

@@ -1,17 +1,17 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "HomeMarkPointSceneData.proto";
 
 message HomeMarkPointNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 4832;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum HomeMarkPointNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4832;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	repeated HomeMarkPointSceneData markPointDataList = 11;
+	repeated HomeMarkPointSceneData MarkPointDataList = 11;
 }

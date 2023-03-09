@@ -1,19 +1,19 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "HomeCustomFurnitureInfo.proto";
 
 message HomeCustomFurnitureInfoNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 4784;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum HomeCustomFurnitureInfoNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4784;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	repeated uint32 deleteCustomFurnitureList = 14;
-	repeated HomeCustomFurnitureInfo customFurnitureInfoList = 15;
-	map<uint32, uint32> usedSubFurnitureCountMap = 2;
+	repeated uint32 DeleteCustomFurnitureList = 14;
+	repeated HomeCustomFurnitureInfo CustomFurnitureInfoList = 15;
+	map<uint32, uint32> UsedSubFurnitureCountMap = 2;
 }

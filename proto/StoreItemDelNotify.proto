@@ -1,18 +1,18 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "StoreType.proto";
 
 message StoreItemDelNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 698;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum StoreItemDelNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 698;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	repeated uint64 guidList = 6;
-	StoreType storeType = 10;
+	repeated uint64 GuidList = 6;
+	StoreType StoreType = 10;
 }

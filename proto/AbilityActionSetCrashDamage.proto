@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+import "Rotation.proto";
+
+message AbilityActionSetCrashDamage {
+	Rotation HitPos = 10;
+	float Damage = 4;
+}

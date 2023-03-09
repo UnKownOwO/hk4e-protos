@@ -1,12 +1,12 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "SummerTimeDungeonInfo.proto";
 
 message EchoShellInfo {
-	repeated uint32 Unk3300_NEFBJPKBEHF = 10;
-	repeated uint32 Unk3300_OOCDFANFFDG = 5;
-	repeated uint32 takenRewardList = 14;
-	repeated SummerTimeDungeonInfo summerTimeDungeonList = 13;
+	repeated uint32 ShellList = 10;
+	repeated uint32 PassDungeonList = 5;
+	repeated uint32 TakenRewardList = 14;
+	repeated SummerTimeDungeonInfo SummerTimeDungeonList = 13;
 }

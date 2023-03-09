@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+import "AvatarRenameAuditContent.proto";
+
+message AvatarRenameContentAuditField {
+	repeated AvatarRenameAuditContent SegmentList = 1;
+	string Name = 2;
+}

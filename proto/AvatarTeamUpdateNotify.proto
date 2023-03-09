@@ -1,18 +1,18 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "AvatarTeam.proto";
 
 message AvatarTeamUpdateNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 1723;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum AvatarTeamUpdateNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 1723;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	map<uint32, AvatarTeam> avatarTeamMap = 6;
-	repeated uint64 tempAvatarGuidList = 8;
+	map<uint32, AvatarTeam> AvatarTeamMap = 6;
+	repeated uint64 TempAvatarGuidList = 8;
 }

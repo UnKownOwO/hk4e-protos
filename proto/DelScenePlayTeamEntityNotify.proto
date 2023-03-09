@@ -1,16 +1,17 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message DelScenePlayTeamEntityNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 3203;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum DelScenePlayTeamEntityNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 3203;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 sceneId = 9;
-	repeated uint32 delEntityIdList = 6;
+	uint32 SceneId = 9;
+	repeated uint32 DelEntityIdList = 6;
 }

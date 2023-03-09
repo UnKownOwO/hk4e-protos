@@ -1,8 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message LanternRiteFireworksReformFactorInfo {
-	uint32 factorId = 1;
-	uint32 factorValue = 4;
+	uint32 FactorId = 1;
+	uint32 FactorValue = 4;
 }

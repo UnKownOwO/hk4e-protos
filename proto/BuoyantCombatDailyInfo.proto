@@ -1,8 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message BuoyantCombatDailyInfo {
-	uint32 bestScore = 12;
-	uint32 startTime = 2;
+	uint32 BestScore = 12;
+	uint32 StartTime = 2;
 }

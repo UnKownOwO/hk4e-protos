@@ -1,18 +1,19 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message LuaEnvironmentEffectNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 3240;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum LuaEnvironmentEffectNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 3240;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 type = 14;
-	repeated float floatParamList = 12;
-	string effectAlias = 13;
-	repeated int32 intParamList = 1;
+	uint32 Type = 14;
+	repeated float FloatParamList = 12;
+	string EffectAlias = 13;
+	repeated int32 IntParamList = 1;
 }

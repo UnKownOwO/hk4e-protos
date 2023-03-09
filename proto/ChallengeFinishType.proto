@@ -1,10 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 enum ChallengeFinishType {
-  CHALLENGE_FINISH_TYPE_NONE  = 0;
-  CHALLENGE_FINISH_TYPE_FAIL  = 1;
-  CHALLENGE_FINISH_TYPE_SUCC  = 2;
-  CHALLENGE_FINISH_TYPE_PAUSE = 3;
+	None = 0;
+	Fail = 1;
+	Succ = 2;
+	Pause = 3;
 }

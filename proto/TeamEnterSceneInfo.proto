@@ -1,12 +1,12 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "AbilityControlBlock.proto";
 import "AbilitySyncStateInfo.proto";
 
 message TeamEnterSceneInfo {
-	uint32 teamEntityId = 4;
-	AbilityControlBlock abilityControlBlock = 12;
-	AbilitySyncStateInfo teamAbilityInfo = 10;
+	uint32 TeamEntityId = 4;
+	AbilityControlBlock AbilityControlBlock = 12;
+	AbilitySyncStateInfo TeamAbilityInfo = 10;
 }

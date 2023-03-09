@@ -1,16 +1,17 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message VintageMarketDeliverItemRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 21050;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum MLCPBOCDIPB {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 21050;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 traderId = 14;
-	int32 retcode = 10;
+	uint32 TraderId = 14;
+	int32 Retcode = 10;
 }

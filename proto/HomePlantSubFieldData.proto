@@ -1,13 +1,13 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "HomePlantFieldStatus.proto";
 
 message HomePlantSubFieldData {
-	uint32 endTime = 15;
-	repeated uint32 entityIdList = 4;
-	uint32 homeGatherId = 10;
-	HomePlantFieldStatus fieldStatus = 8;
-	uint32 seedId = 6;
+	uint32 EndTime = 15;
+	repeated uint32 EntityIdList = 4;
+	uint32 HomeGatherId = 10;
+	HomePlantFieldStatus FieldStatus = 8;
+	uint32 SeedId = 6;
 }

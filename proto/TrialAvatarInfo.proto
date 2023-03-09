@@ -1,12 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
-import "TrialAvatarGrantRecord.proto";
-import "Item.proto";
+import "TrialAvatarActivityRewardDetailInfo.proto";
 
 message TrialAvatarInfo {
-	uint32 trialAvatarId = 1;
-	repeated Item trialEquipList = 2;
-	TrialAvatarGrantRecord grantRecord = 3;
+	repeated TrialAvatarActivityRewardDetailInfo RewardInfoList = 10;
 }

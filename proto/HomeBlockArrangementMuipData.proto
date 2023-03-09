@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+import "HomeFurnitureArrangementMuipData.proto";
+
+message HomeBlockArrangementMuipData {
+	uint32 BlockId = 1;
+	repeated HomeFurnitureArrangementMuipData FurnitureDataList = 2;
+}

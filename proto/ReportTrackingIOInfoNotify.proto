@@ -1,20 +1,21 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message ReportTrackingIOInfoNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 4131;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// 	IS_ALLOW_CLIENT = 1;
-	// }
+	enum ReportTrackingIOInfoNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4131;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
 
-	string Unk3300_CNPIGDOEJPB = 5;
-	string rydevicetype = 8;
-	string Unk3300_DJHKHEFPCDK = 3;
-	string clientTz = 2;
-	string Unk3300_PIBFPDAMJLE = 9;
+	string Appid = 5;
+	string Rydevicetype = 8;
+	string Mac = 3;
+	string ClientTz = 2;
+	string Deviceid = 9;
 }

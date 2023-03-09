@@ -1,17 +1,18 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message EnterFungusFighterPlotDungeonRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 23496;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum BJGOKLGJCHD {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 23496;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	int32 retcode = 3;
-	repeated uint32 fungusIdList = 13;
-	uint32 dungeonId = 4;
+	int32 Retcode = 3;
+	repeated uint32 FungusIdList = 13;
+	uint32 DungeonId = 4;
 }

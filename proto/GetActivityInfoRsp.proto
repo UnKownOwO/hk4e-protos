@@ -1,21 +1,21 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "ActivityInfo.proto";
 import "Uint32Pair.proto";
 
 message GetActivityInfoRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 2073;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum GetActivityInfoRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 2073;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	repeated ActivityInfo activityInfoList = 13;
-	repeated Uint32Pair disableTransferPointInteractionList = 3;
-	repeated uint32 activatedSaleIdList = 7;
-	int32 retcode = 14;
+	repeated ActivityInfo ActivityInfoList = 13;
+	repeated Uint32Pair DisableTransferPointInteractionList = 3;
+	repeated uint32 ActivatedSaleIdList = 7;
+	int32 Retcode = 14;
 }

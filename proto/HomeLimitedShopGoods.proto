@@ -1,14 +1,14 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "ItemParam.proto";
 
 message HomeLimitedShopGoods {
-	uint32 disableType = 5;
-	ItemParam goodsItem = 12;
-	uint32 goodsId = 6;
-	repeated ItemParam costItemList = 15;
-	uint32 boughtNum = 7;
-	uint32 buyLimit = 13;
+	uint32 DisableType = 5;
+	ItemParam GoodsItem = 12;
+	uint32 GoodsId = 6;
+	repeated ItemParam CostItemList = 15;
+	uint32 BoughtNum = 7;
+	uint32 BuyLimit = 13;
 }

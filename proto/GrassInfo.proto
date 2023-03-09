@@ -1,11 +1,11 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
-import "Vector.proto";
+import "Rotation.proto";
 
 message GrassInfo {
-	uint32 id = 1;
-	Vector center = 2;
-	Vector size = 3;
+	uint32 Id = 1;
+	Rotation Center = 2;
+	Rotation Size = 3;
 }

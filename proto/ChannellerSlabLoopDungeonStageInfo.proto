@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package Proto;
+
+import "ChannellerSlabLoopDungeonInfo.proto";
+
+message ChannellerSlabLoopDungeonStageInfo {
+	repeated ChannellerSlabLoopDungeonInfo DungeonInfoList = 10;
+	uint32 OpenTime = 12;
+	uint32 LastDifficultyId = 2;
+	bool IsOpen = 8;
+	repeated uint32 TakenRewardIndexList = 9;
+}

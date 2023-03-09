@@ -1,23 +1,23 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "MechanicusSettleInfo.proto";
 import "ChessSettleInfo.proto";
 import "IrodoriChessSettleInfo.proto";
 
 message MultistagePlaySettleNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 5347;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum MultistagePlaySettleNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 5347;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 playIndex = 15;
-	uint32 groupId = 1;
-	oneof detail {
+	uint32 PlayIndex = 15;
+	uint32 GroupId = 1;
+	oneof MultistagePlaySettleNotify_DetailOneofCase {
 		MechanicusSettleInfo mechanicus_settle_info = 1241;
 		ChessSettleInfo chess_settle_info = 200;
 		IrodoriChessSettleInfo irodori_chess_settle_info = 96;

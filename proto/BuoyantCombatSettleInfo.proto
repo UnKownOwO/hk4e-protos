@@ -1,10 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "BuoyantCombatGallerySettleInfo.proto";
 
 message BuoyantCombatSettleInfo {
-	BuoyantCombatGallerySettleInfo settleInfo = 9;
-	bool isNewRecord = 1;
+	BuoyantCombatGallerySettleInfo SettleInfo = 9;
+	bool IsNewRecord = 1;
 }

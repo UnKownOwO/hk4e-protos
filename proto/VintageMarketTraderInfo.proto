@@ -1,10 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "ItemParam.proto";
 
 message VintageMarketTraderInfo {
-	repeated ItemParam hiiflfhdkkg = 10;
-	uint32 traderId = 6;
+	repeated ItemParam AvailableItemList = 10;
+	uint32 TraderId = 6;
 }

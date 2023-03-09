@@ -1,18 +1,18 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "ReunionSignInInfo.proto";
 
 message GetReunionSignInInfoRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 5093;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum GetReunionSignInInfoRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 5093;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	int32 retcode = 14;
-	ReunionSignInInfo signInInfo = 4;
+	int32 Retcode = 14;
+	ReunionSignInInfo SignInInfo = 4;
 }

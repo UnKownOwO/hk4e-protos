@@ -1,17 +1,18 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message UgcNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 6337;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum UgcNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 6337;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	bool Unk3300_IBLDINGJJFI = 13;
-	bool Unk3300_KPABJPMLHCD = 5;
-	bool isUgcFeatureClosed = 10;
+	bool IsUgcPublishBan = 13;
+	bool IsUgcPublishFeatureClosed = 5;
+	bool IsUgcFeatureClosed = 10;
 }

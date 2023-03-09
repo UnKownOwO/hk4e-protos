@@ -1,10 +1,11 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message HideAndSeekPlayerBattleInfo {
-	uint32 costumeId = 5;
-	bool isReady = 13;
-	repeated uint32 skillList = 3;
-	uint32 avatarId = 11;
+	uint32 CostumeId = 5;
+	bool IsReady = 13;
+	repeated uint32 SkillList = 3;
+	uint32 AvatarId = 11;
 }

@@ -1,18 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "ActivityPushTipsState.proto";
 
 message ActivityPushTipsData {
-	ActivityPushTipsState state = 12;
-	uint32 activityPushTipsId = 11;
+	ActivityPushTipsState State = 12;
+	uint32 ActivityPushTipsId = 11;
 }
-
-
-
-
-
-
-
-

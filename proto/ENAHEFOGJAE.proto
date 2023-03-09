@@ -1,9 +1,0 @@
-syntax = "proto3";
-
-option go_package = "./;proto";
-
-import "GalleryStopReason.proto";
-
-message ENAHEFOGJAE {
-	GalleryStopReason reason = 3;
-}

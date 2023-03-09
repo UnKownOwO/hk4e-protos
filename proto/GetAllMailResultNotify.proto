@@ -1,22 +1,22 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "MailData.proto";
 
 message GetAllMailResultNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 1413;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum IGKIIEJOOAC {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 1413;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	bool isCollected = 12;
-	repeated MailData mailList = 1;
-	uint32 totalPageCount = 7;
-	int32 retcode = 8;
-	uint32 pageIndex = 6;
-	string transaction = 15;
+	bool IsCollected = 12;
+	repeated MailData MailList = 1;
+	uint32 TotalPageCount = 7;
+	int32 Retcode = 8;
+	uint32 PageIndex = 6;
+	string Transaction = 15;
 }

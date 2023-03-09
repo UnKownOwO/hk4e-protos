@@ -1,16 +1,17 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message ActivitySaleChangeNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 2058;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum ActivitySaleChangeNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 2058;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 saleId = 2;
-	bool isClose = 8;
+	uint32 SaleId = 2;
+	bool IsClose = 8;
 }

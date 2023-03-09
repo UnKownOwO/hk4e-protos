@@ -1,21 +1,16 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
-import "Vector.proto";
-import "MathQuaternion.proto";
+import "Rotation.proto";
 import "Vector3Int.proto";
+import "ObstacleInfo_ShapeType.proto";
+import "RotationSpeed.proto";
 
 message ObstacleInfo {
-
-	enum ShapeType {
-    OBSTACLE_SHAPE_CAPSULE = 0;
-    OBSTACLE_SHAPE_BOX     = 1;
-    }
-
-	Vector center = 4;
-	Vector3Int extents = 12;
-	ShapeType shape = 5;
-	int32 obstacleId = 9;
-	MathQuaternion rotation = 2;
+	Rotation Center = 4;
+	Vector3Int Extents = 12;
+	ObstacleInfo_ShapeType Shape = 5;
+	int32 ObstacleId = 9;
+	RotationSpeed Rotation = 2;
 }

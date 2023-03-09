@@ -1,12 +1,12 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "FriendEnterHomeOption.proto";
 
 message PlayerHomeCompInfo {
-	repeated uint32 seenModuleIdList = 2;
-	FriendEnterHomeOption friendEnterHomeOption = 4;
-	repeated uint32 unlockedModuleIdList = 10;
-	repeated uint32 levelupRewardGotLevelList = 12;
+	repeated uint32 SeenModuleIdList = 2;
+	FriendEnterHomeOption FriendEnterHomeOption = 4;
+	repeated uint32 UnlockedModuleIdList = 10;
+	repeated uint32 LevelupRewardGotLevelList = 12;
 }

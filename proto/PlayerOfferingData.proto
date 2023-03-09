@@ -1,11 +1,12 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message PlayerOfferingData {
-	bool isNewMaxLevel = 11;
-	uint32 offeringId = 8;
-	bool isFirstInteract = 4;
-	repeated uint32 takenLevelRewardList = 7;
-	uint32 level = 1;
+	bool IsNewMaxLevel = 11;
+	uint32 OfferingId = 8;
+	bool IsFirstInteract = 4;
+	repeated uint32 TakenLevelRewardList = 7;
+	uint32 Level = 1;
 }

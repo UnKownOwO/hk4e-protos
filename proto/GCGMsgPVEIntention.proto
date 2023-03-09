@@ -1,8 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message GCGMsgPVEIntention {
-	repeated uint32 skillIdList = 3;
-	uint32 cardGuid = 9;
+	repeated uint32 SkillIdList = 3;
+	uint32 CardGuid = 9;
 }

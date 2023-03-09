@@ -1,18 +1,18 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "FleurFairFallSettleInfo.proto";
 
 message FleurFairFallSettleNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 2150;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum FleurFairFallSettleNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 2150;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	map<uint32, FleurFairFallSettleInfo> settleInfoMap = 5;
-	uint32 minigameId = 12;
+	map<uint32, FleurFairFallSettleInfo> SettleInfoMap = 5;
+	uint32 MinigameId = 12;
 }

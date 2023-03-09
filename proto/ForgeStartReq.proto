@@ -1,18 +1,19 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message ForgeStartReq {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 652;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// 	IS_ALLOW_CLIENT = 1;
-	// }
+	enum ForgeStartReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 652;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
 
-	uint32 avatarId = 10;
-	uint32 forgeCount = 6;
-	uint32 forgeId = 3;
+	uint32 AvatarId = 10;
+	uint32 ForgeCount = 6;
+	uint32 ForgeId = 3;
 }

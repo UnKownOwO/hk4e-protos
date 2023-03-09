@@ -1,22 +1,22 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "StoreType.proto";
 
 message StoreWeightLimitNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 655;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum StoreWeightLimitNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 655;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 furnitureCountLimit = 2;
-	uint32 materialCountLimit = 3;
-	uint32 reliquaryCountLimit = 5;
-	uint32 weightLimit = 14;
-	StoreType storeType = 11;
-	uint32 weaponCountLimit = 9;
+	uint32 FurnitureCountLimit = 2;
+	uint32 MaterialCountLimit = 3;
+	uint32 ReliquaryCountLimit = 5;
+	uint32 WeightLimit = 14;
+	StoreType StoreType = 11;
+	uint32 WeaponCountLimit = 9;
 }

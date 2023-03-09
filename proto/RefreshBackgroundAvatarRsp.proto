@@ -1,16 +1,17 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message RefreshBackgroundAvatarRsp {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 1720;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum RefreshBackgroundAvatarRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 1720;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	int32 retcode = 13;
-	map<uint64, uint32> hpFullTimeMap = 4;
+	int32 Retcode = 13;
+	map<uint64, uint32> HpFullTimeMap = 4;
 }

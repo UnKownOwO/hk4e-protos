@@ -1,14 +1,14 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "FetterData.proto";
 
 message AvatarFetterInfo {
-	uint32 expNumber = 1;
-	uint32 expLevel = 2;
-	repeated uint32 openIdList = 3;
-	repeated uint32 finishIdList = 4;
-	repeated uint32 rewardedFetterLevelList = 5;
-	repeated FetterData fetterList = 6;
+	uint32 ExpNumber = 1;
+	uint32 ExpLevel = 2;
+	repeated uint32 OpenIdList = 3;
+	repeated uint32 FinishIdList = 4;
+	repeated uint32 RewardedFetterLevelList = 5;
+	repeated FetterData FetterList = 6;
 }

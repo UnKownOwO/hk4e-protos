@@ -1,9 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "DynamicLayerNodes.proto";
 
 message DynamicNodes {
-	repeated DynamicLayerNodes nodes = 8;
+	repeated DynamicLayerNodes Nodes = 8;
 }

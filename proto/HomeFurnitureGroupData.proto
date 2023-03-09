@@ -1,10 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "HomeFurnitureData.proto";
 
 message HomeFurnitureGroupData {
-	repeated HomeFurnitureData virtualFurnitureList = 12;
-	uint32 groupFurnitureIndex = 4;
+	repeated HomeFurnitureData VirtualFurniureList = 12;
+	uint32 GroupFurnitureIndex = 4;
 }

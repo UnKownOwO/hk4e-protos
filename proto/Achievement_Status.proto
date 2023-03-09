@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+enum Achievement_Status {
+	Invalid = 0;
+	Unfinished = 1;
+	Finished = 2;
+	RewardTaken = 3;
+}

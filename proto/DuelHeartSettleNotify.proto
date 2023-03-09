@@ -1,17 +1,18 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message DuelHeartSettleNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 20655;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum DCPKPJOKOHK {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 20655;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	bool isNewRecord = 4;
-	bool isSucc = 5;
-	uint32 costTime = 1;
+	bool IsNewRecord = 4;
+	bool IsSucc = 5;
+	uint32 CostTime = 1;
 }

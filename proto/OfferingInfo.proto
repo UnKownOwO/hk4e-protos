@@ -1,7 +1,8 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message OfferingInfo {
-	uint32 offeringId = 1;
+	uint32 OfferingId = 1;
 }

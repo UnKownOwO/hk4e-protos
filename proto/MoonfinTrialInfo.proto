@@ -1,10 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "MoonfinTrialLevelInfo.proto";
 
 message MoonfinTrialInfo {
-	map<uint32, MoonfinTrialLevelInfo> levelInfoMap = 7;
-	uint32 specialFishCount = 2;
+	map<uint32, MoonfinTrialLevelInfo> LevelInfoMap = 7;
+	uint32 SpecialFishCount = 2;
 }

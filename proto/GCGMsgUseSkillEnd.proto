@@ -1,8 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message GCGMsgUseSkillEnd {
-	uint32 skillId = 5;
-	uint32 cardGuid = 13;
+	uint32 SkillId = 5;
+	uint32 CardGuid = 13;
 }

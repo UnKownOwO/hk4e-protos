@@ -1,15 +1,15 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "GadgetBornType.proto";
 
 message CreateGadgetInfo {
-	message Chest {
-		uint32 chest_drop_id = 1;
-		bool isShowCutscene = 2;
+	message CreateGadgetInfo_Chest {
+		uint32 ChestDropId = 1;
+		bool IsShowCutscene = 2;
 	}
 
-	GadgetBornType bornType = 1;
-	Chest chest = 2;
+	GadgetBornType BornType = 1;
+	CreateGadgetInfo_Chest Chest = 2;
 }

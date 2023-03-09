@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package Proto;
+
+enum ServerUpdateGlobalValueNotify_UpdateType {
+	Invalue = 0;
+	Add = 1;
+	Set = 2;
+}

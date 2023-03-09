@@ -1,22 +1,22 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "SumoDungeonTeam.proto";
 
 message SumoEnterDungeonNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 8559;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum SumoEnterDungeonNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8559;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	uint32 Unk3300_BNJBIGHIJOC = 8;
-	uint32 activityId = 6;
-	uint32 stageId = 15;
-	uint32 Unk3300_CBAMLHDMKJF = 7;
-	uint32 Unk3300_DJBJACGHGDM = 14;
-	repeated SumoDungeonTeam dungeonTeamList = 1;
+	uint32 NextValidSwitchTime = 8;
+	uint32 ActivityId = 6;
+	uint32 StageId = 15;
+	uint32 NoSwitchPunishTime = 7;
+	uint32 CurTeamIndex = 14;
+	repeated SumoDungeonTeam DungeonTeamList = 1;
 }

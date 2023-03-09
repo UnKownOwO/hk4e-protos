@@ -1,11 +1,12 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message AbilityAttachedModifier {
-	bool isInvalid = 1;
-	uint32 ownerEntityId = 2;
-	uint32 instancedModifierId = 3;
-	bool isServerbuffModifier = 4;
-	int32 attachNameHash = 5;
+	bool IsInvalid = 1;
+	uint32 OwnerEntityId = 2;
+	uint32 InstancedModifierId = 3;
+	bool IsServerbuffModifier = 4;
+	int32 AttachNameHash = 5;
 }

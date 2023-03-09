@@ -1,9 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message FetterData {
-	uint32 fetterId = 1;
-	uint32 fetterState = 2;
-	repeated uint32 condIndexList = 3;
+	uint32 FetterId = 1;
+	uint32 FetterState = 2;
+	repeated uint32 CondIndexList = 3;
 }

@@ -1,9 +1,0 @@
-syntax = "proto3";
-
-option go_package = "./;proto";
-
-import "EquipParam.proto";
-
-message HKKPOPLHMCL {
-	repeated EquipParam itemList = 1;
-}

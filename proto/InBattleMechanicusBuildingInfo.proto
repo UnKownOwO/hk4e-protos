@@ -1,10 +1,11 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message InBattleMechanicusBuildingInfo {
-	uint32 buildingId = 6;
-	uint32 level = 3;
-	uint32 knajgcafgjo = 14;
-	uint32 costPoints = 4;
+	uint32 BuildingId = 6;
+	uint32 Level = 3;
+	uint32 RefundPoints = 14;
+	uint32 CostPoints = 4;
 }

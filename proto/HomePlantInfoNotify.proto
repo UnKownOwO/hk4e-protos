@@ -1,17 +1,17 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "HomePlantFieldData.proto";
 
 message HomePlantInfoNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 4547;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum HomePlantInfoNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4547;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	repeated HomePlantFieldData fieldList = 8;
+	repeated HomePlantFieldData FieldList = 8;
 }

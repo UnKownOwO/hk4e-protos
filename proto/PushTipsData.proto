@@ -1,8 +1,9 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message PushTipsData {
-	uint32 pushTipsId = 13;
-	uint32 state = 8;
+	uint32 PushTipsId = 13;
+	uint32 State = 8;
 }

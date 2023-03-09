@@ -1,17 +1,17 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "MapMarkPoint.proto";
 
 message AllMarkPointNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 3284;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum AllMarkPointNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 3284;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	repeated MapMarkPoint markList = 6;
+	repeated MapMarkPoint MarkList = 6;
 }

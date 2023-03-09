@@ -1,20 +1,21 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message DoGachaReq {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 1587;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// 	IS_ALLOW_CLIENT = 1;
-	// }
+	enum DoGachaReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 1587;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
 
-	uint32 gachaRandom = 12;
-	uint32 gachaType = 2;
-	uint32 gachaScheduleId = 3;
-	string gachaTag = 15;
-	uint32 gachaTimes = 10;
+	uint32 GachaRandom = 12;
+	uint32 GachaType = 2;
+	uint32 GachaScheduleId = 3;
+	string GachaTag = 15;
+	uint32 GachaTimes = 10;
 }

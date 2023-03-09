@@ -1,8 +1,0 @@
-syntax = "proto3";
-
-option go_package = "./;proto";
-
-message MaterialInfo {
-	uint32 count = 3;
-	uint64 guid = 12;
-}

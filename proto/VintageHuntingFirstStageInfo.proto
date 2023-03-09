@@ -1,10 +1,11 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message VintageHuntingFirstStageInfo {
-	uint32 Unk3300_NILGNHOPGLD = 14;
-	uint32 Unk3300_HIKADHBLPEB = 1;
-	uint32 Unk3300_IPAJLKOBDKC = 12;
-	uint32 score = 15;
+	uint32 BrutalCnt = 14;
+	uint32 EliteCnt = 1;
+	uint32 TimidCnt = 12;
+	uint32 Score = 15;
 }

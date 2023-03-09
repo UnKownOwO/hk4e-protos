@@ -1,17 +1,17 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "ScenePlayBattleInfo.proto";
 
 message ScenePlayBattleInfoListNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 4363;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum ScenePlayBattleInfoListNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4363;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	repeated ScenePlayBattleInfo battleInfoList = 13;
+	repeated ScenePlayBattleInfo BattleInfoList = 13;
 }

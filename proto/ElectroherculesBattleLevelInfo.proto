@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message ElectroherculesBattleLevelInfo {
+	uint32 MinFinishTime = 2;
+	uint32 LevelId = 12;
+	bool IsFinish = 13;
+}

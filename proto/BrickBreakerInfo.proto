@@ -1,13 +1,13 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "BrickBreakerLevelInfo.proto";
 import "BrickBreakerActivityStageInfo.proto";
 
 message BrickBreakerInfo {
-	repeated BrickBreakerLevelInfo dungeonLevelInfoList = 7;
-	repeated BrickBreakerActivityStageInfo stageInfoList = 9;
-	repeated BrickBreakerLevelInfo worldLevelInfoList = 3;
-	map<uint32, uint32> skillInfoMap = 8;
+	repeated BrickBreakerLevelInfo DungeonLevelInfoList = 7;
+	repeated BrickBreakerActivityStageInfo StageInfoList = 9;
+	repeated BrickBreakerLevelInfo WorldLevelInfoList = 3;
+	map<uint32, uint32> SkillInfoMap = 8;
 }

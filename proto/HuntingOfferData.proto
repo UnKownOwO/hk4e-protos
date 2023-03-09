@@ -1,12 +1,12 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
 
 import "HuntingOfferState.proto";
 import "HuntingPair.proto";
 
 message HuntingOfferData {
-	HuntingOfferState state = 11;
-	uint32 cityId = 8;
-	HuntingPair huntingPair = 13;
+	HuntingOfferState State = 11;
+	uint32 CityId = 8;
+	HuntingPair HuntingPair = 13;
 }

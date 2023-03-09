@@ -1,16 +1,17 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message DungeonWayPointNotify {
-	// enum CmdId {
-	// 	option allow_alias = true;
-	// 	NONE = 0;
-	// 	CMD_ID = 980;
-	// 	ENET_CHANNEL_ID = 0;
-	// 	ENET_IS_RELIABLE = 1;
-	// }
+	enum DungeonWayPointNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 980;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
 
-	repeated uint32 activeWayPointList = 15;
-	bool isAdd = 3;
+	repeated uint32 ActiveWayPointList = 15;
+	bool IsAdd = 3;
 }

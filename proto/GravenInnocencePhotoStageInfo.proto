@@ -1,9 +1,10 @@
 syntax = "proto3";
 
-option go_package = "./;proto";
+package Proto;
+
 
 message GravenInnocencePhotoStageInfo {
-	uint32 stageId = 12;
-	bool isFinished = 5;
-	bool isOpen = 13;
+	uint32 StageId = 12;
+	bool IsFinished = 5;
+	bool IsOpen = 13;
 }
